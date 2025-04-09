@@ -184,8 +184,6 @@
 /Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/obj/Debug/net9.0/compressed/jxudiy0mgy-h1s4sie4z3.gz
 /Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/obj/Debug/net9.0/compressed/u8ea1g2t9r-63fj8s7r0e.gz
 /Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/obj/Debug/net9.0/compressed/5ssff0m2p0-0j3bgjxly4.gz
-/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/obj/Debug/net9.0/compressed/cdau1ibg9m-9d6xrndm25.gz
-/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/obj/Debug/net9.0/compressed/s8dcfm6vs9-9d6xrndm25.gz
 /Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/obj/Debug/net9.0/staticwebassets.build.json
 /Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/obj/Debug/net9.0/staticwebassets.development.json
 /Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/obj/Debug/net9.0/staticwebassets.build.endpoints.json
@@ -212,4 +210,7 @@
 /Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/bin/Debug/net9.0/MudBlazor.dll
 /Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/obj/Debug/net9.0/compressed/tzxjg6is5z-u34o0xbo4m.gz
 /Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/obj/Debug/net9.0/compressed/0wz98yz2xy-gtd3sm4n1q.gz
+/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/obj/Debug/net9.0/CinemaApp.sourcelink.json
 /Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/obj/Debug/net9.0/compressed/f7r7dgan13-cjivqlkkpa.gz
+/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/obj/Debug/net9.0/compressed/cdau1ibg9m-yfmnnfd4o2.gz
+/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/obj/Debug/net9.0/compressed/s8dcfm6vs9-yfmnnfd4o2.gz

@@ -15,6 +15,8 @@ builder.Services.AddRazorComponents()
 
 builder.Services.AddMudServices();
 
+builder.Services.AddHttpClient();
+
 builder.Services.AddDbContext<CinemaDbContext>(options =>
     options.UseSqlite(connectionString));
 

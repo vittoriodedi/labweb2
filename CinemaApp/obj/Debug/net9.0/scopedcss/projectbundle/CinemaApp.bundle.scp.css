@@ -11,6 +11,11 @@ main[b-344ttqj0ko] {
 
 .sidebar[b-344ttqj0ko] {
     background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+    
+}
+.topbar[b-344ttqj0ko]{
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+
 }
 
 .top-row[b-344ttqj0ko] {
@@ -56,6 +61,13 @@ main[b-344ttqj0ko] {
         width: 250px;
         height: 100vh;
         position: sticky;
+        top: 0;
+    }
+    .topbar[b-344ttqj0ko] {
+        
+        width: 100%;
+        height: 100vh;
+        position: absolute;
         top: 0;
     }
 
