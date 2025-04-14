@@ -1,0 +1,63 @@
+body[b-ha7466lrev] {
+    font-family: Montserrat, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+    margin: 0;
+}
+
+h1[b-ha7466lrev] {
+    color: #a3bd2a;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+p[b-ha7466lrev] {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 0.5em;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.programma[b-ha7466lrev] {
+    max-width: 800px;
+    margin: 2em auto;
+}
+
+.orario[b-ha7466lrev] {
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.orario h2[b-ha7466lrev] {
+    color: #a3bd2a;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.orario ul[b-ha7466lrev] {
+    list-style: none;
+    padding-left: 0;
+}
+
+.orario li[b-ha7466lrev] {
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 1.05rem;
+}
+
+.orario li:last-child[b-ha7466lrev] {
+    border-bottom: none;
+}
+
+strong[b-ha7466lrev] {
+    color: #444;
+}

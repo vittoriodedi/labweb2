@@ -1,17 +1,65 @@
 ﻿@inherits LayoutComponentBase
 
-<div class="page">
-    <div class="sidebar">
-        <NavMenu/>
-    </div>
+<div>
+    
+    @* prima navbar *@
+    <nav class="navbar">
+        <ul class="navbar-left">
+            <li>
+                <a href=""> CinemaNova </a>
+            </li>
+        </ul>
+        <ul class="navbar-right">
+            <li>
+                <a href="programma"> Programma </a>
+            </li>
+            <li>
+                <a href="biglietti"> Biglietti </a>
+            </li>
+            <li>
+                <a href="film"> Film </a>
+            </li>
+            <li>
+                <a href="about"> About </a>
+            </li>
+            <li>
+                <a href="login"> Login </a>
+            </li>
+        </ul>
+    </nav>
+    
+    @* seconda navbar *@
+    <nav class="navbar">
+        <ul class="navbar-left">
+            <li>
+                <a href=""> Dipendenti CinemaNova </a>
+            </li>
+        </ul>
+        <ul class="navbar-right">
+            <li>
+                <a href="gestione-programma"> Edit Programma Db </a>
+            </li>
+            <li>
+                <a href="gestione-film"> Edit Film db e api</a>
+            </li>
+
+        </ul>
+    </nav>
+
 
     <main>
-
-        <article class="content px-4">
+        <article>
             @Body
         </article>
     </main>
+
 </div>
+
+
+
+
+@* <footer> &copy; 2025 Cinema CineNova - Tutti i diritti riservati </footer> *@
+
 
 <div id="blazor-error-ui" data-nosnippet>
     An unhandled error has occurred.

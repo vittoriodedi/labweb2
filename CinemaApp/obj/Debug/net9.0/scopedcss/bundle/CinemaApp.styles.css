@@ -1,22 +1,64 @@
 /* _content/CinemaApp/Components/Layout/MainLayout.razor.rz.scp.css */
 .page[b-344ttqj0ko] {
-    position: relative;
-    display: flex;
-    flex-direction: column;
+    /*position: relative;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
 }
 
 main[b-344ttqj0ko] {
     flex: 1;
 }
-
-.sidebar[b-344ttqj0ko] {
-    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
-    
+.navbar[b-344ttqj0ko] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: rgba(198, 198, 198, 0.21);
 }
-.topbar[b-344ttqj0ko]{
-    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
 
+.navbar-left[b-344ttqj0ko], .navbar-right[b-344ttqj0ko] {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
+
+.navbar-left li[b-344ttqj0ko], .navbar-right li[b-344ttqj0ko] {
+    margin: 0 0.5rem;
+    padding: 1em;
+}
+
+.navbar-left li a[b-344ttqj0ko], .navbar-right li a[b-344ttqj0ko] {
+    color: #1c1c1c;
+    text-decoration: none;
+}
+
+.navbar-right li a:hover[b-344ttqj0ko] {
+    color: #717171;
+}
+.navbar-left li a:hover[b-344ttqj0ko] {
+    color: #1574b5;
+}
+.navbar-left a[b-344ttqj0ko] {
+    font-size: 1.5em;
+}
+article[b-344ttqj0ko]{
+    padding: 0;
+    margin:0;
+}
+footer[b-344ttqj0ko] {
+    text-align: center;
+    padding: 2rem;
+    background-color: #ffffff;
+    color: #888;
+    width: 100%;
+}
+
+
+
+
+
+
 
 .top-row[b-344ttqj0ko] {
     background-color: #f7f7f7;
@@ -65,10 +107,6 @@ main[b-344ttqj0ko] {
     }
     .topbar[b-344ttqj0ko] {
         
-        width: 100%;
-        height: 100vh;
-        position: absolute;
-        top: 0;
     }
 
     .top-row[b-344ttqj0ko] {
@@ -214,4 +252,314 @@ main[b-344ttqj0ko] {
         height: calc(100vh - 3.5rem);
         overflow-y: auto;
     }
+}
+/* _content/CinemaApp/Components/Pages/About.razor.rz.scp.css */
+body[b-9591dx9cxn] {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #ffffff;
+    color: #202020;
+    line-height: 1.6;
+}
+
+header[b-9591dx9cxn] {
+    background: linear-gradient(90deg, #dcdcdc, #fff8dc); /* grigio chiaro → dorato chiaro */
+    padding: 2rem;
+    text-align: center;
+    margin: 2em;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+header h1[b-9591dx9cxn] {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #FFD700;
+}
+
+.container[b-9591dx9cxn] {
+    max-width: 1100px;
+    margin: auto;
+    padding: 2rem;
+}
+
+section[b-9591dx9cxn] {
+    margin-bottom: 3rem;
+}
+
+h2[b-9591dx9cxn] {
+    color: #FFD700;
+    border-bottom: 2px solid #FFD700;
+    padding-bottom: 0.5rem;
+}
+
+.about-grid[b-9591dx9cxn] {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.about-grid div[b-9591dx9cxn] {
+    flex: 1;
+    min-width: 250px;
+}
+
+.timeline[b-9591dx9cxn] {
+    border-left: 3px solid #FFD700;
+    padding-left: 1rem;
+}
+
+.timeline-event[b-9591dx9cxn] {
+    margin-bottom: 1.5rem;
+}
+
+.timeline-event h4[b-9591dx9cxn] {
+    margin: 0;
+    color: #FFD700;
+}
+
+.testimonials[b-9591dx9cxn] {
+    background-color: #9f9f9f;
+    padding: 1rem;
+    border-left: 4px solid #FFD700;
+    margin-bottom: 1rem;
+}
+
+.cta[b-9591dx9cxn] {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.cta a[b-9591dx9cxn] {
+    background-color: #FFD700;
+    color: #000;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta a:hover[b-9591dx9cxn] {
+    background-color: #e6c200;
+}
+
+footer[b-9591dx9cxn] {
+    text-align: center;
+    padding: 2rem;
+    background-color: #ffffff;
+    color: #888;
+    width: 100%;
+}
+/* _content/CinemaApp/Components/Pages/Biglietti.razor.rz.scp.css */
+body[b-nn9zja53ir] {
+    font-family: Montserrat, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+    margin: 0;
+}
+
+h1[b-nn9zja53ir], h2[b-nn9zja53ir] {
+    font-family: Montserrat, sans-serif;
+    color: #a3bd2a;
+    font-weight: 400;
+    text-align: center;
+    margin: 1.5em 0 0.5em 0;
+}
+
+a[b-nn9zja53ir] {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover[b-nn9zja53ir] {
+    text-decoration: underline;
+}
+
+table[b-nn9zja53ir] {
+    width: 80%;
+    margin: 2em auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+th[b-nn9zja53ir], td[b-nn9zja53ir] {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #eaeaea;
+    font-size: 1rem;
+}
+
+th[b-nn9zja53ir] {
+    background-color: #0078d7;
+    color: white;
+    font-weight: 500;
+}
+
+tr:last-child td[b-nn9zja53ir] {
+    border-bottom: none;
+}
+
+p[b-nn9zja53ir] {
+    text-align: center;
+    font-size: 1.05rem;
+    margin: 1em auto;
+    max-width: 700px;
+}
+
+.table-container[b-nn9zja53ir]{
+    width: 80%;
+    margin: auto auto auto auto;
+}
+/* _content/CinemaApp/Components/Pages/Film.razor.rz.scp.css */
+/* _content/CinemaApp/Components/Pages/GestioneFilm.razor.rz.scp.css */
+.card-container[b-6uhx3pnp58] {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.card-wrapper[b-6uhx3pnp58] {
+    height: 100%;
+}
+
+.search-container[b-6uhx3pnp58] {
+    text-align: center;
+    margin-top: 40px;
+    font-family: Montserrat, sans-serif;
+    color: #444;
+    margin-bottom: 3em;
+}
+
+.search-container h1[b-6uhx3pnp58] {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.search-bar[b-6uhx3pnp58] {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.search-bar input[type="text"][b-6uhx3pnp58] {
+    padding: 8px 12px;
+    font-size: 0.95rem;
+    width: 260px;
+    border: 1.5px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.search-bar input[type="text"]:focus[b-6uhx3pnp58] {
+    border-color: #0078D7;
+}
+
+.search-bar button[b-6uhx3pnp58] {
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    background-color: #0078D7;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.search-bar button:hover[b-6uhx3pnp58] {
+    background-color: #005fa3;
+}
+
+
+
+
+/* _content/CinemaApp/Components/Pages/GestioneProgramma.razor.rz.scp.css */
+.wallpaper[b-hk2xscwyz9] {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+/* _content/CinemaApp/Components/Pages/Home.razor.rz.scp.css */
+.wallpaper[b-e0k4l342bb] {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+/* _content/CinemaApp/Components/Pages/Login.razor.rz.scp.css */
+/* _content/CinemaApp/Components/Pages/Programma.razor.rz.scp.css */
+body[b-ha7466lrev] {
+    font-family: Montserrat, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+    margin: 0;
+}
+
+h1[b-ha7466lrev] {
+    color: #a3bd2a;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+p[b-ha7466lrev] {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 0.5em;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.programma[b-ha7466lrev] {
+    max-width: 800px;
+    margin: 2em auto;
+}
+
+.orario[b-ha7466lrev] {
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.orario h2[b-ha7466lrev] {
+    color: #a3bd2a;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.orario ul[b-ha7466lrev] {
+    list-style: none;
+    padding-left: 0;
+}
+
+.orario li[b-ha7466lrev] {
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 1.05rem;
+}
+
+.orario li:last-child[b-ha7466lrev] {
+    border-bottom: none;
+}
+
+strong[b-ha7466lrev] {
+    color: #444;
 }

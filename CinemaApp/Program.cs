@@ -1,5 +1,6 @@
 using CinemaApp.Components;
 using CinemaManager;
+using CinemaManager.Services;
 using Microsoft.EntityFrameworkCore;
 using MudBlazor.Services;
 
@@ -20,6 +21,10 @@ builder.Services.AddHttpClient();
 builder.Services.AddDbContext<CinemaDbContext>(options =>
     options.UseSqlite(connectionString));
 
+
+// Aggiungi queste linee dopo la configurazione del DbContext
+builder.Services.AddHttpClient();
+builder.Services.AddScoped<TmdbService>();
 
 var app = builder.Build();
 

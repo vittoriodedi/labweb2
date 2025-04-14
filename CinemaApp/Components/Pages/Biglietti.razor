@@ -1,0 +1,44 @@
+﻿@page "/biglietti"
+@rendermode InteractiveServer
+
+<PageTitle>Biglietti</PageTitle>
+
+<h1>Tariffe Biglietti</h1>
+
+<p>Benvenuti al Cinema CineNova! Di seguito trovate il nostro tariffario aggiornato per tutte le categorie di spettatori:</p>
+
+<h2>Prezzi Biglietti</h2>
+<div class="table-container">
+    <MudSimpleTable Dense="false" Hover="true" Bordered="false" Striped="true" Style="overflow-x: auto;">
+        <thead>
+            <tr>
+                <th>Categoria</th>
+                <th>Prezzo</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Intero</td>
+                <td>€9,00</td>
+            </tr>
+            <tr>
+                <td>Minori di 14 anni</td>
+                <td>€6,00</td>
+            </tr>
+            <tr>
+                <td>Over 65</td>
+                <td>€6,50</td>
+            </tr>
+            <tr>
+                <td>Studenti universitari</td>
+                <td>€7,00</td>
+            </tr>
+        </tbody>
+    </MudSimpleTable>
+</div>
+<p>Per consultare la programmazione dei film in sala, visita la nostra <a href="film">pagina dei film</a>.</p>
+
+
+@code {
+}

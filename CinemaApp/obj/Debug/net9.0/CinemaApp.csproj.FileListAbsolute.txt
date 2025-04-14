@@ -212,5 +212,13 @@
 /Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/obj/Debug/net9.0/compressed/0wz98yz2xy-gtd3sm4n1q.gz
 /Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/obj/Debug/net9.0/CinemaApp.sourcelink.json
 /Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/obj/Debug/net9.0/compressed/f7r7dgan13-cjivqlkkpa.gz
-/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/obj/Debug/net9.0/compressed/cdau1ibg9m-yfmnnfd4o2.gz
-/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/obj/Debug/net9.0/compressed/s8dcfm6vs9-yfmnnfd4o2.gz
+/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/obj/Debug/net9.0/scopedcss/Components/Pages/About.razor.rz.scp.css
+/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/obj/Debug/net9.0/scopedcss/Components/Pages/Biglietti.razor.rz.scp.css
+/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/obj/Debug/net9.0/scopedcss/Components/Pages/Film.razor.rz.scp.css
+/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/obj/Debug/net9.0/scopedcss/Components/Pages/Home.razor.rz.scp.css
+/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/obj/Debug/net9.0/scopedcss/Components/Pages/Login.razor.rz.scp.css
+/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/obj/Debug/net9.0/scopedcss/Components/Pages/Programma.razor.rz.scp.css
+/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/obj/Debug/net9.0/scopedcss/Components/Pages/GestioneFilm.razor.rz.scp.css
+/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/obj/Debug/net9.0/scopedcss/Components/Pages/GestioneProgramma.razor.rz.scp.css
+/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/obj/Debug/net9.0/compressed/cdau1ibg9m-trk0mjsogj.gz
+/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/obj/Debug/net9.0/compressed/s8dcfm6vs9-trk0mjsogj.gz

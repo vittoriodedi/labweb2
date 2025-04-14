@@ -17,4 +17,13 @@
       <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Include="wwwroot\data\Minecraft.jpg" />
+      <None Include="wwwroot\data\Oppenheimer.jpg" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Services\" />
+    </ItemGroup>
+
 </Project>

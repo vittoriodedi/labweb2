@@ -1,0 +1,61 @@
+﻿@page "/programma"
+@rendermode InteractiveServer
+
+<PageTitle>Programma</PageTitle>
+
+<h1>Programma Giornaliero</h1>
+<p>Scopri cosa proiettiamo oggi, <strong><span id="data-oggi"></span></strong>. Le proiezioni iniziano dal primo pomeriggio. Alcuni film sono disponibili in più sale!</p>
+
+
+<div class="programma">
+    <div class="orario">
+        <h2>14:00</h2>
+        <ul>
+            <li><strong>Inside Out 2</strong> – Sala 1</li>
+            <li><strong>Garfield</strong> – Sala 2</li>
+            <li><strong>Godzilla x Kong</strong> – Sala 3</li>
+            <li><strong>Garfield</strong> – Sala 5</li>
+        </ul>
+    </div>
+
+    <div class="orario">
+        <h2>16:30</h2>
+        <ul>
+            <li><strong>Godzilla x Kong</strong> – Sala 1</li>
+            <li><strong>Inside Out 2</strong> – Sala 2</li>
+            <li><strong>Challengers</strong> – Sala 3</li>
+            <li><strong>Garfield</strong> – Sala 4</li>
+        </ul>
+    </div>
+
+    <div class="orario">
+        <h2>19:00</h2>
+        <ul>
+            <li><strong>Dune: Parte Due</strong> – Sala 1</li>
+            <li><strong>Challengers</strong> – Sala 2</li>
+            <li><strong>Garfield</strong> – Sala 3</li>
+            <li><strong>Inside Out 2</strong> – Sala 4</li>
+            <li><strong>Dune: Parte Due</strong> – Sala 5</li>
+        </ul>
+    </div>
+
+    <div class="orario">
+        <h2>21:30</h2>
+        <ul>
+            <li><strong>Challengers</strong> – Sala 1</li>
+            <li><strong>Godzilla x Kong</strong> – Sala 2</li>
+            <li><strong>Dune: Parte Due</strong> – Sala 3</li>
+            <li><strong>Garfield</strong> – Sala 4</li>
+            <li><strong>Inside Out 2</strong> – Sala 5</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    // Mostra la data odierna in italiano
+    const dataOggi = new Date().toLocaleDateString('it-IT', {
+        weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
+    });
+    document.getElementById('data-oggi').textContent = dataOggi;
+</script>
+

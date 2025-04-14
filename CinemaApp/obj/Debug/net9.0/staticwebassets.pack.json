@@ -2,11 +2,31 @@
   "Files": [
     {
       "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/obj/Debug/net9.0/scopedcss/projectbundle/CinemaApp.bundle.scp.css",
-      "PackagePath": "staticwebassets/CinemaApp.yfmnnfd4o2.bundle.scp.css"
+      "PackagePath": "staticwebassets/CinemaApp.trk0mjsogj.bundle.scp.css"
     },
     {
       "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/app.css",
       "PackagePath": "staticwebassets/app.css"
+    },
+    {
+      "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/default.png",
+      "PackagePath": "staticwebassets/data/default.png"
+    },
+    {
+      "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/isleofdogs.jpg",
+      "PackagePath": "staticwebassets/data/isleofdogs.jpg"
+    },
+    {
+      "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/minecraft.jpg",
+      "PackagePath": "staticwebassets/data/minecraft.jpg"
+    },
+    {
+      "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/oppenheimer.jpg",
+      "PackagePath": "staticwebassets/data/oppenheimer.jpg"
+    },
+    {
+      "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/transformers.jpg",
+      "PackagePath": "staticwebassets/data/transformers.jpg"
     },
     {
       "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/favicon.png",

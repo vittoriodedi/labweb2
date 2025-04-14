@@ -1,0 +1,105 @@
+﻿@page "/gestione-film"
+@rendermode InteractiveServer
+@inject HttpClient Http
+
+<PageTitle>Home</PageTitle>
+
+
+<h1>ciaoo gestione film</h1>
+
+<div class="search-container">
+    <h1>Cerca Film</h1>
+    <div class="search-bar">
+        <input type="text" @bind="filmTitle" placeholder="Titolo del film" />
+        <button @onclick="Cerca">Cerca</button>
+    </div>
+</div>
+
+
+@if (movies?.Any() == true)
+{
+    <p>Risultati trovati per <strong>@savedTitle</strong>:</p>
+
+    <div class="card-container">
+        @foreach (var movie in movies) 
+        {
+            
+            <div class="card-wrapper">
+                <div class="card h-100 shadow-sm">
+                    @if (@movie.poster_path == null)
+                    {
+                        <img src="data/default.png"
+                             class="card-img-top"
+                             loading="lazy"
+                             alt="Poster film"/>
+                    }
+                    else
+                    {
+                        <img src="@($"https://image.tmdb.org/t/p/original{movie.poster_path}")"
+                             class="card-img-top"
+                             loading="lazy"
+                             alt="Poster film"/>
+                    }
+                    
+
+                    <div class="card-body">
+                        <h5 class="card-title">@movie.original_title (@movie.original_language)</h5>
+                        <h5 class="card-title">Uscita: @movie.release_date</h5>
+                        <h5 class="card-title">url:@movie.poster_path</h5>
+                    </div>
+
+                    <div class="card-footer">
+                        <button class="btn btn-sm btn-success w-100">
+                            <span class="oi oi-plus me-1"></span> Aggiungi al catalogo
+                        </button>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>    
+}
+else if (savedTitle != string.Empty)
+{
+    <p>Nessun risultato trovato per <strong>@savedTitle</strong>.</p>
+}
+
+
+@code {
+    private string filmTitle = string.Empty;
+    private string savedTitle = string.Empty;
+    private List<Movie> movies = new();
+    private async Task Cerca()
+    {
+        savedTitle = filmTitle;
+        filmTitle = string.Empty;
+
+        var apiKey = "5231f6dfdae8de15cba5211efb76142c";
+        var language = "it-IT";
+        var url = $"https://api.themoviedb.org/3/search/movie?api_key={apiKey}&language={language}&query={Uri.EscapeDataString(savedTitle)}";
+
+        try
+        {
+            var response = await Http.GetFromJsonAsync<RootResponse>(url);
+            movies = response?.results ?? new List<Movie>();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Errore nella chiamata API: {ex.Message}");
+            movies = new List<Movie>();
+        }
+    }
+
+    public class RootResponse
+    {
+        public List<Movie> results { get; set; }
+    }
+
+    public class Movie
+    {
+        public bool adult { get; set; }
+        public string original_title { get; set; }
+        public string original_language { get; set; }
+        public string poster_path { get; set; }
+        public string release_date { get; set; }
+    }
+}
