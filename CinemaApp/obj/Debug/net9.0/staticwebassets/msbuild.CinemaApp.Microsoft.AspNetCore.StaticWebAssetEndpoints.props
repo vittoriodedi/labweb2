@@ -240,6 +240,30 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-\u002BDR50xCYiPszedXe/a49OhjwxiCBL01vrci1GvUGKJE="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"9912810"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022\u002BDR50xCYiPszedXe/a49OhjwxiCBL01vrci1GvUGKJE=\u0022"},{"Name":"Last-Modified","Value":"Thu, 17 Apr 2025 18:51:50 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/CinemaApp/data/Wallpaper_6.j6xdnvcav3.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\data\Wallpaper_6.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"j6xdnvcav3"},{"Name":"integrity","Value":"sha256-O3y/zOSU3AMA41C1BoAf32y08mhhsl6KrJN2DOZQ81w="},{"Name":"label","Value":"_content/CinemaApp/data/Wallpaper_6.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5251888"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022O3y/zOSU3AMA41C1BoAf32y08mhhsl6KrJN2DOZQ81w=\u0022"},{"Name":"Last-Modified","Value":"Thu, 17 Apr 2025 21:56:23 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/CinemaApp/data/Wallpaper_6.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\data\Wallpaper_6.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-O3y/zOSU3AMA41C1BoAf32y08mhhsl6KrJN2DOZQ81w="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"5251888"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022O3y/zOSU3AMA41C1BoAf32y08mhhsl6KrJN2DOZQ81w=\u0022"},{"Name":"Last-Modified","Value":"Thu, 17 Apr 2025 21:56:23 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/CinemaApp/data/Wallpaper_7.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\data\Wallpaper_7.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-1ur32gTUgkwTd87Eb\u002BMaOPGd/P27dVZbL6o/E6rjdb8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"2877790"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00221ur32gTUgkwTd87Eb\u002BMaOPGd/P27dVZbL6o/E6rjdb8=\u0022"},{"Name":"Last-Modified","Value":"Thu, 17 Apr 2025 21:56:23 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/CinemaApp/data/Wallpaper_7.ypj4ifckqb.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\data\Wallpaper_7.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ypj4ifckqb"},{"Name":"integrity","Value":"sha256-1ur32gTUgkwTd87Eb\u002BMaOPGd/P27dVZbL6o/E6rjdb8="},{"Name":"label","Value":"_content/CinemaApp/data/Wallpaper_7.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2877790"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00221ur32gTUgkwTd87Eb\u002BMaOPGd/P27dVZbL6o/E6rjdb8=\u0022"},{"Name":"Last-Modified","Value":"Thu, 17 Apr 2025 21:56:23 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/CinemaApp/favicon.ifv42okdf2.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.png'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

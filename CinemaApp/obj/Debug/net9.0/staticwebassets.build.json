@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "S1rkTlO87s5dF5bGd3/c1CSdALveVHnqIWcr9RVRga4=",
+  "Hash": "7iAoV1UMqaGKToLUKRmJzOQIJY52MEz3eRrfmHkKcTQ=",
   "Source": "CinemaApp",
   "BasePath": "_content/CinemaApp",
   "Mode": "Default",
@@ -1527,6 +1527,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/data/Wallpaper_5.jpg"
+    },
+    {
+      "Identity": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/Wallpaper_6.jpg",
+      "SourceId": "CinemaApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/",
+      "BasePath": "_content/CinemaApp",
+      "RelativePath": "data/Wallpaper_6#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "j6xdnvcav3",
+      "Integrity": "O3y/zOSU3AMA41C1BoAf32y08mhhsl6KrJN2DOZQ81w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/data/Wallpaper_6.jpg"
+    },
+    {
+      "Identity": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/Wallpaper_7.jpg",
+      "SourceId": "CinemaApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/",
+      "BasePath": "_content/CinemaApp",
+      "RelativePath": "data/Wallpaper_7#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ypj4ifckqb",
+      "Integrity": "1ur32gTUgkwTd87Eb+MaOPGd/P27dVZbL6o/E6rjdb8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/data/Wallpaper_7.jpg"
     },
     {
       "Identity": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/favicon.png",
@@ -5206,6 +5248,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-+DR50xCYiPszedXe/a49OhjwxiCBL01vrci1GvUGKJE="
+        }
+      ]
+    },
+    {
+      "Route": "data/Wallpaper_6.j6xdnvcav3.jpg",
+      "AssetFile": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/Wallpaper_6.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5251888"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"O3y/zOSU3AMA41C1BoAf32y08mhhsl6KrJN2DOZQ81w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 17 Apr 2025 21:56:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "j6xdnvcav3"
+        },
+        {
+          "Name": "label",
+          "Value": "data/Wallpaper_6.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-O3y/zOSU3AMA41C1BoAf32y08mhhsl6KrJN2DOZQ81w="
+        }
+      ]
+    },
+    {
+      "Route": "data/Wallpaper_6.jpg",
+      "AssetFile": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/Wallpaper_6.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5251888"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"O3y/zOSU3AMA41C1BoAf32y08mhhsl6KrJN2DOZQ81w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 17 Apr 2025 21:56:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-O3y/zOSU3AMA41C1BoAf32y08mhhsl6KrJN2DOZQ81w="
+        }
+      ]
+    },
+    {
+      "Route": "data/Wallpaper_7.jpg",
+      "AssetFile": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/Wallpaper_7.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2877790"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1ur32gTUgkwTd87Eb+MaOPGd/P27dVZbL6o/E6rjdb8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 17 Apr 2025 21:56:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1ur32gTUgkwTd87Eb+MaOPGd/P27dVZbL6o/E6rjdb8="
+        }
+      ]
+    },
+    {
+      "Route": "data/Wallpaper_7.ypj4ifckqb.jpg",
+      "AssetFile": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/Wallpaper_7.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2877790"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1ur32gTUgkwTd87Eb+MaOPGd/P27dVZbL6o/E6rjdb8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 17 Apr 2025 21:56:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ypj4ifckqb"
+        },
+        {
+          "Name": "label",
+          "Value": "data/Wallpaper_7.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1ur32gTUgkwTd87Eb+MaOPGd/P27dVZbL6o/E6rjdb8="
         }
       ]
     },

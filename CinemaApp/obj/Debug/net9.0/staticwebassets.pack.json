@@ -29,6 +29,14 @@
       "PackagePath": "staticwebassets/data/Wallpaper_5.jpg"
     },
     {
+      "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/Wallpaper_6.jpg",
+      "PackagePath": "staticwebassets/data/Wallpaper_6.jpg"
+    },
+    {
+      "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/Wallpaper_7.jpg",
+      "PackagePath": "staticwebassets/data/Wallpaper_7.jpg"
+    },
+    {
       "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/default_poster.png",
       "PackagePath": "staticwebassets/data/default_poster.png"
     },
