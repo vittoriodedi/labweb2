@@ -1,0 +1,63 @@
+body[b-n0vkws5w05] {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #191919;
+}
+section[b-n0vkws5w05]{
+    width: 1100px;
+    margin: auto;
+}
+h2[b-n0vkws5w05]{
+    font-weight: 600;
+}
+p[b-n0vkws5w05]{
+    margin: 0;
+}
+
+
+.section-newsletter[b-n0vkws5w05]{
+    margin-top: 3em;
+    background: #191919;
+    height: 300px;
+    display: flex;
+}
+
+.newsletter p[b-n0vkws5w05]{
+    color: #e1e1e1;
+}
+
+
+
+.section-contatti[b-n0vkws5w05]{
+    margin-top: 3em;
+    display: flex;
+}
+.contatti-text[b-n0vkws5w05]{
+    width: 50%;
+    padding: 4em;
+    text-align: center;
+    border-radius: 20px 0 0 20px  ;
+    background-color: rgb(255, 255, 255);
+}
+.contatti-links[b-n0vkws5w05] {
+    width: 50%;
+    padding: 1.5em;
+    border-radius: 0 20px 20px 0;
+    border-left: 4px solid #ff6a00;
+    background: linear-gradient(to left, white, rgb(243, 242, 243));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;     
+    gap: 1.5em;              
+}
+.contatti-links div[b-n0vkws5w05] {
+    display: flex;
+    align-items: center;
+}
+.contatti-links a[b-n0vkws5w05] {
+    color: #191919;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-left: 0.5em;
+}

@@ -2,19 +2,43 @@
   "Files": [
     {
       "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/obj/Debug/net9.0/scopedcss/projectbundle/CinemaApp.bundle.scp.css",
-      "PackagePath": "staticwebassets/CinemaApp.trk0mjsogj.bundle.scp.css"
+      "PackagePath": "staticwebassets/CinemaApp.fx59p1m2z6.bundle.scp.css"
     },
     {
       "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/app.css",
       "PackagePath": "staticwebassets/app.css"
     },
     {
+      "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/batman.jpg",
+      "PackagePath": "staticwebassets/data/batman.jpg"
+    },
+    {
+      "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/batmann.jpg",
+      "PackagePath": "staticwebassets/data/batmann.jpg"
+    },
+    {
+      "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/cinenova.png",
+      "PackagePath": "staticwebassets/data/cinenova.png"
+    },
+    {
       "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/default.png",
       "PackagePath": "staticwebassets/data/default.png"
     },
     {
+      "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/isleofdog.webp",
+      "PackagePath": "staticwebassets/data/isleofdog.webp"
+    },
+    {
+      "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/isleofdogg.webp",
+      "PackagePath": "staticwebassets/data/isleofdogg.webp"
+    },
+    {
       "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/isleofdogs.jpg",
       "PackagePath": "staticwebassets/data/isleofdogs.jpg"
+    },
+    {
+      "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/lilpeep.jpg",
+      "PackagePath": "staticwebassets/data/lilpeep.jpg"
     },
     {
       "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/minecraft.jpg",
@@ -23,6 +47,14 @@
     {
       "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/oppenheimer.jpg",
       "PackagePath": "staticwebassets/data/oppenheimer.jpg"
+    },
+    {
+      "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/totoro.jpg",
+      "PackagePath": "staticwebassets/data/totoro.jpg"
+    },
+    {
+      "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/totoroo.jpg",
+      "PackagePath": "staticwebassets/data/totoroo.jpg"
     },
     {
       "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/transformers.jpg",

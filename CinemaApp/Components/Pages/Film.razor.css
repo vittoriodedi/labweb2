@@ -1,0 +1,40 @@
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: #191919;
+
+}
+.section-cards {
+    max-width: 1600px;
+    margin: auto;
+    margin-top: 2em;
+    padding: 0 1rem;
+}
+
+.card-group {
+    display: flex;
+    flex-wrap: wrap;                /* le card vanno su più righe */
+    justify-content: center;        /* centra le card orizzontalmente */
+    gap: 20px;
+    margin-top: 1em;
+}
+
+.container-card {
+    flex: 1 1 300px;
+    min-width: 460px;              /* larghezza massima */
+    
+    max-width: 460px;              /* larghezza massima */
+    box-sizing: border-box;
+}
+
+
+.card-group h2{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+.card-group p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+}

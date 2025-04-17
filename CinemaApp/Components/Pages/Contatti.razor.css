@@ -1,0 +1,63 @@
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #191919;
+}
+section{
+    width: 1100px;
+    margin: auto;
+}
+h2{
+    font-weight: 600;
+}
+p{
+    margin: 0;
+}
+
+
+.section-newsletter{
+    margin-top: 3em;
+    background: #191919;
+    height: 300px;
+    display: flex;
+}
+
+.newsletter p{
+    color: #e1e1e1;
+}
+
+
+
+.section-contatti{
+    margin-top: 3em;
+    display: flex;
+}
+.contatti-text{
+    width: 50%;
+    padding: 4em;
+    text-align: center;
+    border-radius: 20px 0 0 20px  ;
+    background-color: rgb(255, 255, 255);
+}
+.contatti-links {
+    width: 50%;
+    padding: 1.5em;
+    border-radius: 0 20px 20px 0;
+    border-left: 4px solid #ff6a00;
+    background: linear-gradient(to left, white, rgb(243, 242, 243));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;     
+    gap: 1.5em;              
+}
+.contatti-links div {
+    display: flex;
+    align-items: center;
+}
+.contatti-links a {
+    color: #191919;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-left: 0.5em;
+}
