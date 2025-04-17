@@ -6,8 +6,15 @@
     background-color: rgb(243, 242, 243);
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    color: #191919;
 }
+.logo{
+    height:70px;
+    width:160px;
+    margin-left: 30px;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+}
+
 .navbar-left, .navbar-right {
     display: flex;
     list-style: none;

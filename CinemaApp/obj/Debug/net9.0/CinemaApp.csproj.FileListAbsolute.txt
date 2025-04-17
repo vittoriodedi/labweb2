@@ -220,5 +220,5 @@
 /Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/obj/Debug/net9.0/scopedcss/Components/Pages/GestioneFilm.razor.rz.scp.css
 /Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/obj/Debug/net9.0/scopedcss/Components/Pages/GestioneProgramma.razor.rz.scp.css
 /Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/obj/Debug/net9.0/scopedcss/Components/Pages/Contatti.razor.rz.scp.css
-/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/obj/Debug/net9.0/compressed/cdau1ibg9m-fx59p1m2z6.gz
-/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/obj/Debug/net9.0/compressed/s8dcfm6vs9-fx59p1m2z6.gz
+/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/obj/Debug/net9.0/compressed/cdau1ibg9m-oxcswc9p6n.gz
+/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/obj/Debug/net9.0/compressed/s8dcfm6vs9-oxcswc9p6n.gz

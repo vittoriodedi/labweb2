@@ -5,10 +5,12 @@ h2[b-lixmm13add] {
 
 }
 .section-cards[b-lixmm13add] {
-    max-width: 1600px;
+    max-width: 1450px;
     margin: auto;
     margin-top: 2em;
-    padding: 0 1rem;
+}
+.title[b-lixmm13add]{
+    margin-left: 0.5em;
 }
 
 .card-group[b-lixmm13add] {

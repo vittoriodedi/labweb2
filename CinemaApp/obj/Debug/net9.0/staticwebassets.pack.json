@@ -2,63 +2,83 @@
   "Files": [
     {
       "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/obj/Debug/net9.0/scopedcss/projectbundle/CinemaApp.bundle.scp.css",
-      "PackagePath": "staticwebassets/CinemaApp.fx59p1m2z6.bundle.scp.css"
+      "PackagePath": "staticwebassets/CinemaApp.oxcswc9p6n.bundle.scp.css"
     },
     {
       "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/app.css",
       "PackagePath": "staticwebassets/app.css"
     },
     {
-      "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/batman.jpg",
-      "PackagePath": "staticwebassets/data/batman.jpg"
+      "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/Wallpaper_1.jpg",
+      "PackagePath": "staticwebassets/data/Wallpaper_1.jpg"
     },
     {
-      "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/batmann.jpg",
-      "PackagePath": "staticwebassets/data/batmann.jpg"
+      "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/Wallpaper_2.jpg",
+      "PackagePath": "staticwebassets/data/Wallpaper_2.jpg"
     },
     {
-      "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/cinenova.png",
-      "PackagePath": "staticwebassets/data/cinenova.png"
+      "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/Wallpaper_3.jpg",
+      "PackagePath": "staticwebassets/data/Wallpaper_3.jpg"
     },
     {
-      "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/default.png",
-      "PackagePath": "staticwebassets/data/default.png"
+      "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/Wallpaper_4.jpg",
+      "PackagePath": "staticwebassets/data/Wallpaper_4.jpg"
     },
     {
-      "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/isleofdog.webp",
-      "PackagePath": "staticwebassets/data/isleofdog.webp"
+      "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/Wallpaper_5.jpg",
+      "PackagePath": "staticwebassets/data/Wallpaper_5.jpg"
     },
     {
-      "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/isleofdogg.webp",
-      "PackagePath": "staticwebassets/data/isleofdogg.webp"
+      "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/default_poster.png",
+      "PackagePath": "staticwebassets/data/default_poster.png"
     },
     {
-      "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/isleofdogs.jpg",
-      "PackagePath": "staticwebassets/data/isleofdogs.jpg"
+      "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/front_batman.jpg",
+      "PackagePath": "staticwebassets/data/front_batman.jpg"
     },
     {
-      "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/lilpeep.jpg",
-      "PackagePath": "staticwebassets/data/lilpeep.jpg"
+      "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/front_flow.jpg",
+      "PackagePath": "staticwebassets/data/front_flow.jpg"
     },
     {
-      "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/minecraft.jpg",
-      "PackagePath": "staticwebassets/data/minecraft.jpg"
+      "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/front_minecraft.jpg",
+      "PackagePath": "staticwebassets/data/front_minecraft.jpg"
     },
     {
-      "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/oppenheimer.jpg",
-      "PackagePath": "staticwebassets/data/oppenheimer.jpg"
+      "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/front_minecraft_1.webp",
+      "PackagePath": "staticwebassets/data/front_minecraft_1.webp"
     },
     {
-      "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/totoro.jpg",
-      "PackagePath": "staticwebassets/data/totoro.jpg"
+      "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/front_sinners.jpg",
+      "PackagePath": "staticwebassets/data/front_sinners.jpg"
     },
     {
-      "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/totoroo.jpg",
-      "PackagePath": "staticwebassets/data/totoroo.jpg"
+      "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/front_snowwhite.jpg",
+      "PackagePath": "staticwebassets/data/front_snowwhite.jpg"
     },
     {
-      "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/transformers.jpg",
-      "PackagePath": "staticwebassets/data/transformers.jpg"
+      "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/logo.png",
+      "PackagePath": "staticwebassets/data/logo.png"
+    },
+    {
+      "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/poster_batman.jpg",
+      "PackagePath": "staticwebassets/data/poster_batman.jpg"
+    },
+    {
+      "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/poster_flow.jpg",
+      "PackagePath": "staticwebassets/data/poster_flow.jpg"
+    },
+    {
+      "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/poster_minecraft.jpg",
+      "PackagePath": "staticwebassets/data/poster_minecraft.jpg"
+    },
+    {
+      "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/poster_sinners.jpg",
+      "PackagePath": "staticwebassets/data/poster_sinners.jpg"
+    },
+    {
+      "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/data/poster_snowwhite.jpg",
+      "PackagePath": "staticwebassets/data/poster_snowwhite.jpg"
     },
     {
       "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/wwwroot/favicon.png",
