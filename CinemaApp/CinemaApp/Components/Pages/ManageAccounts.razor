@@ -1,0 +1,48 @@
+@page "/manage-accounts"
+@using CinemaApp.Models
+@using Microsoft.EntityFrameworkCore
+@rendermode InteractiveServer
+
+<MudText Typo="Typo.h5" Class="mb-4">Lista Utenti</MudText>
+
+<MudTable Items="@users" Hover="true" Breakpoint="Breakpoint.Sm">
+    <HeaderContent>
+        <MudTh>Username</MudTh>
+        <MudTh>Email</MudTh>
+        <MudTh>Ruoli</MudTh>
+        <MudTh>Azioni</MudTh>
+
+    </HeaderContent>
+    <RowTemplate>
+        <MudTd>@context.UserName</MudTd>
+        <MudTd>@context.Email</MudTd>
+        <MudTd>@context.Role</MudTd>
+        <MudTd>
+            <MudButton Color="Color.Error" Variant="Variant.Filled" Size="Size.Small"OnClick="@(() => DeleteUser(context))">
+                Elimina
+            </MudButton>
+        </MudTd>
+    </RowTemplate>
+</MudTable>
+
+@inject CinemaDbContext dbContext
+@code {
+    private List<UserAccount> users = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadUsers();
+    }
+
+    private async Task LoadUsers()
+    {
+        users = await dbContext.UserAccounts.ToListAsync();
+    }
+
+    private async Task DeleteUser(UserAccount user)
+    {
+        dbContext.UserAccounts.Remove(user);
+        await dbContext.SaveChangesAsync();
+        await LoadUsers();
+    }
+}

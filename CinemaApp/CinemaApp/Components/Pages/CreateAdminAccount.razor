@@ -1,0 +1,29 @@
+@page "/create-admin-account"
+@using CinemaApp.Models
+@rendermode InteractiveServer
+
+<EditForm Model="@userAccount" OnValidSubmit="OnValidSubmit">
+    <MudGrid>
+        <MudItem>
+            <MudTextField Label="Email" @bind-Value="@userAccount.Email" />
+            <MudTextField Label="Username" @bind-Value="@userAccount.UserName"/>
+            <MudTextField Label="Password" @bind-Value="@userAccount.Password" InputType="InputType.Password"/>
+            <MudButton ButtonType="ButtonType.Submit">Insert</MudButton>
+        </MudItem>
+    </MudGrid>
+</EditForm>
+
+@inject CinemaDbContext dbContext;
+@code {
+    UserAccount userAccount = new UserAccount();
+
+    private async Task OnValidSubmit()
+    {
+        userAccount.Role = "Administrator";
+        dbContext.UserAccounts.Add(userAccount);
+        await dbContext.SaveChangesAsync();
+
+        userAccount = new UserAccount();
+        StateHasChanged();
+    }
+}
