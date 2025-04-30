@@ -1,6 +1,8 @@
 using CinemaApp.Components;
 using CinemaApp.Models;
 using MudBlazor.Services;
+using Microsoft.AspNetCore.Authentication.Cookies;
+
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,6 +15,19 @@ builder.Services.AddSingleton<CinemaDbContext>();
 
 builder.Services.AddMudServices();
 
+//guida autenticazione
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options =>
+    {
+        options.Cookie.Name = "auth_token";
+        options.LoginPath = "/login";
+        options.Cookie.MaxAge = TimeSpan.FromMinutes(30);
+        options.AccessDeniedPath = "/access-denied";
+    });
+builder.Services.AddAuthorization();
+builder.Services.AddCascadingAuthenticationState();
+//fine guida autenticazione
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -24,12 +39,14 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
-
 app.UseAntiforgery();
+
+//guida autenticazione
+app.UseAuthentication();
+app.UseAuthorization();
+//fine guida autenticazione
 
 app.MapStaticAssets();
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();
-
 app.Run();

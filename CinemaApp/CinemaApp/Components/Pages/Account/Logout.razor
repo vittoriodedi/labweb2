@@ -1,0 +1,36 @@
+@page "/logout"
+@using Microsoft.AspNetCore.Authentication
+@inject NavigationManager NavigationManager
+
+<div class="login-container">
+    <div class="login-card">
+        <div class="login-header">
+            <h1 class="login-title">Logout Effettuato</h1>
+            <p class="login-subtitle">Disconnessione completata</p>
+        </div>
+        
+        <p class="error-message">
+            La disconnessione è stata effettuata con successo. Grazie per aver utilizzato l'applicazione.
+        </p>
+        
+        <div class="action-buttons">
+            <a href="/login" class="btn-primary">Torna al Login</a>
+            <a href="/" class="btn-outline">Vai alla Home</a>
+        </div>
+    </div>
+</div>
+
+@code {
+    [CascadingParameter]
+    public HttpContext HttpContext { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+        if (HttpContext.User.Identity.IsAuthenticated)
+        {
+            await HttpContext.SignOutAsync();
+            NavigationManager.NavigateTo("/logout", true);
+        }
+    }
+}

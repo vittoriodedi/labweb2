@@ -1,0 +1,55 @@
+p {
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    font-size: 1.05rem;
+    margin: 1em auto;
+}
+a {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    color: #070707;
+}
+a:hover {
+    text-decoration: underline;
+}
+.film-introduction-text {
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 1.5em;
+    margin-top: 2em;
+    text-align: center;
+}
+
+
+.table-container{
+    width: 80%;
+    margin: auto auto auto auto;
+}
+
+table {
+    width: 80%;
+    margin: 2em auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #eaeaea;
+    font-size: 1rem;
+}
+
+th {
+    background-color: #800020;
+    color: white;
+    font-weight: 500;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+

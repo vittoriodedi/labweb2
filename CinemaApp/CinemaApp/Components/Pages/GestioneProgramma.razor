@@ -1,0 +1,123 @@
+﻿@* @page "/aggiungi-film" *@
+@* @using CinemaManager.Data *@
+@* @using Microsoft.EntityFrameworkCore *@
+@* @using CinemaManager.Models.ViewModels *@
+@* @using CinemaManager.Models.Entities *@
+@* @inject IDbContextFactory<CinemaDbContext> DbFactory *@
+@* @inject NavigationManager NavigationManager *@
+@* *@
+@* <h3>Aggiungi Nuovo Film</h3> *@
+@* *@
+@* <EditForm Model="@filmViewModel" OnSubmit="@HandleSubmit" FormName="aggiungi-film"> *@
+@*     <DataAnnotationsValidator /> *@
+@*     <ValidationSummary /> *@
+@* *@
+@*     <div class="mb-3"> *@
+@*         <label for="titolo" class="form-label">Titolo</label> *@
+@*         <InputText id="titolo" @bind-Value="filmViewModel.Titolo" class="form-control" /> *@
+@*     </div> *@
+@* *@
+@*     <div class="mb-3"> *@
+@*         <label for="dataUscita" class="form-label">Data di uscita</label> *@
+@*         <InputDate id="dataUscita" @bind-Value="filmViewModel.DataUscita" class="form-control" /> *@
+@*     </div> *@
+@* *@
+@*     <div class="mb-3"> *@
+@*         <label for="genere" class="form-label">Genere</label> *@
+@*         <InputText id="genere" @bind-Value="filmViewModel.Genere" class="form-control" /> *@
+@*     </div> *@
+@* *@
+@*     <div class="mb-3"> *@
+@*         <label for="regista" class="form-label">Regista</label> *@
+@*         <InputText id="regista" @bind-Value="filmViewModel.Regista" class="form-control" /> *@
+@*     </div> *@
+@* *@
+@*     <div class="mb-3"> *@
+@*         <label for="durataMinuti" class="form-label">Durata (minuti)</label> *@
+@*         <InputNumber id="durataMinuti" @bind-Value="filmViewModel.DurataMinuti" class="form-control" /> *@
+@*     </div> *@
+@* *@
+@*     <div class="mb-3"> *@
+@*         <label for="trama" class="form-label">Trama</label> *@
+@*         <InputTextArea id="trama" @bind-Value="filmViewModel.Trama" class="form-control" rows="3" /> *@
+@*     </div> *@
+@* *@
+@*     <div class="mb-3"> *@
+@*         <label for="locandinaUrl" class="form-label">URL Locandina</label> *@
+@*         <InputText id="locandinaUrl" @bind-Value="filmViewModel.LocandinaUrl" class="form-control" /> *@
+@*     </div> *@
+@* *@
+@*     <div class="form-check mb-3"> *@
+@*         <InputCheckbox id="adulti" @bind-Value="filmViewModel.Adulti" class="form-check-input" /> *@
+@*         <label class="form-check-label" for="adulti">Contenuto per adulti</label> *@
+@*     </div> *@
+@* *@
+@*     <div class="mb-3"> *@
+@*         <label for="valutazione" class="form-label">Valutazione (1-5)</label> *@
+@*         <InputNumber id="valutazione" @bind-Value="filmViewModel.Valutazione" class="form-control" min="1" max="5" /> *@
+@*     </div> *@
+@* *@
+@*     <button type="submit" class="btn btn-primary">Salva</button> *@
+@*     <button type="button" class="btn btn-secondary" @onclick="Annulla">Annulla</button> *@
+@*     <button type="button" class="btn btn-info" @onclick="DebugForm">Debug</button> *@
+@* </EditForm> *@
+@* *@
+@* @if (!string.IsNullOrEmpty(messaggio)) *@
+@* { *@
+@*     <div class="alert @(successo ? "alert-success" : "alert-danger") mt-3"> *@
+@*         @messaggio *@
+@*     </div> *@
+@* } *@
+@* *@
+@* @code { *@
+@*     private FilmViewModel filmViewModel = new FilmViewModel(); *@
+@*     private string messaggio = string.Empty; *@
+@*     private bool successo = false; *@
+@* *@
+@*     private async Task HandleSubmit() *@
+@*     { *@
+@*         try *@
+@*         { *@
+@*             // Utilizza il metodo di conversione già definito nel ViewModel *@
+@*             Film film = filmViewModel.ToFilm(); *@
+@*              *@
+@*             // Stampa per debug *@
+@*             Console.WriteLine($"FILM - Titolo: '{film.Titolo}'"); *@
+@*             Console.WriteLine($"FILM - Genere: '{film.Genere}'"); *@
+@*             Console.WriteLine($"FILM - Regista: '{film.Regista}'"); *@
+@*              *@
+@*             using var context = await DbFactory.CreateDbContextAsync(); *@
+@*             context.Films.Add(film); *@
+@*             await context.SaveChangesAsync(); *@
+@*          *@
+@*             successo = true; *@
+@*             messaggio = "Film salvato con successo!"; *@
+@*          *@
+@*             // Reset del form *@
+@*             filmViewModel = new FilmViewModel(); *@
+@*         } *@
+@*         catch (Exception ex) *@
+@*         { *@
+@*             successo = false; *@
+@*             messaggio = $"Errore durante il salvataggio: {ex.Message}"; *@
+@*             Console.WriteLine($"Exception: {ex.Message}"); *@
+@*         } *@
+@*     } *@
+@* *@
+@*     private void DebugForm() *@
+@*     { *@
+@*         Console.WriteLine($"Titolo: '{filmViewModel.Titolo}'"); *@
+@*         Console.WriteLine($"Genere: '{filmViewModel.Genere}'"); *@
+@*         Console.WriteLine($"Regista: '{filmViewModel.Regista}'"); *@
+@*         Console.WriteLine($"LocandinaUrl: '{filmViewModel.LocandinaUrl}'"); *@
+@*         Console.WriteLine($"Trama: '{filmViewModel.Trama}'"); *@
+@*         Console.WriteLine($"DurataMinuti: {filmViewModel.DurataMinuti}"); *@
+@*         Console.WriteLine($"Adulti: {filmViewModel.Adulti}"); *@
+@*         Console.WriteLine($"Valutazione: {filmViewModel.Valutazione}"); *@
+@*     } *@
+@* *@
+@*     private void Annulla() *@
+@*     { *@
+@*         NavigationManager.NavigateTo("/"); *@
+@*     } *@
+@* } *@

@@ -1,98 +1,68 @@
-.page {
-    position: relative;
+body{
+    font-family: 'Inter', sans-serif;
+    color: #191919;
+}
+.navbar {
     display: flex;
-    flex-direction: column;
-}
-
-main {
-    flex: 1;
-}
-
-.sidebar {
-    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
-}
-
-.top-row {
-    background-color: #f7f7f7;
-    border-bottom: 1px solid #d6d5d5;
-    justify-content: flex-end;
-    height: 3.5rem;
-    display: flex;
+    justify-content: space-between;
     align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: #171717FF;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+.logo{
+    height:60px;
+    width:145px;
+    margin-left: 30px;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
 }
 
-    .top-row ::deep a, .top-row ::deep .btn-link {
-        white-space: nowrap;
-        margin-left: 1.5rem;
-        text-decoration: none;
-    }
-
-    .top-row ::deep a:hover, .top-row ::deep .btn-link:hover {
-        text-decoration: underline;
-    }
-
-    .top-row ::deep a:first-child {
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-@media (max-width: 640.98px) {
-    .top-row {
-        justify-content: space-between;
-    }
-
-    .top-row ::deep a, .top-row ::deep .btn-link {
-        margin-left: 0;
-    }
+.navbar-left, .navbar-right {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
-
-@media (min-width: 641px) {
-    .page {
-        flex-direction: row;
-    }
-
-    .sidebar {
-        width: 250px;
-        height: 100vh;
-        position: sticky;
-        top: 0;
-    }
-
-    .top-row {
-        position: sticky;
-        top: 0;
-        z-index: 1;
-    }
-
-    .top-row.auth ::deep a:first-child {
-        flex: 1;
-        text-align: right;
-        width: 0;
-    }
-
-    .top-row, article {
-        padding-left: 2rem !important;
-        padding-right: 1.5rem !important;
-    }
+.navbar-left li, .navbar-right li {
+    margin: 0 0.5rem;
+    padding: 1em;
 }
-
-#blazor-error-ui {
-    color-scheme: light only;
-    background: lightyellow;
-    bottom: 0;
-    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
-    box-sizing: border-box;
-    display: none;
-    left: 0;
-    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
-    position: fixed;
+article{
+    padding: 0;
+    margin:0;
+}
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #171717FF;
+    color: #888;
     width: 100%;
-    z-index: 1000;
 }
 
-    #blazor-error-ui .dismiss {
-        cursor: pointer;
-        position: absolute;
-        right: 0.75rem;
-        top: 0.5rem;
-    }
+::deep .active {
+    color: #bfbfbf !important;
+    font-weight: bold;
+    border-bottom: 3px solid #bfbfbf;
+}
+
+
+::deep .navlink-left {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 600;
+    font-size: 3em;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+::deep .navlink-right {
+    font-family: "Bebas Neue", sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+::deep .navlink-right:hover {
+    color: #bfbfbf;
+}

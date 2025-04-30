@@ -1,22 +1,59 @@
 ﻿@inherits LayoutComponentBase
 
-<div class="page">
-    <div class="sidebar">
-        <NavMenu/>
-    </div>
+<nav class="navbar">
+    <ul class="navbar-left">
+        <li><NavLink href="" Match="NavLinkMatch.All" class="navlink-left">Cinemanova</NavLink></li>
+    </ul>
+    <ul class="navbar-right">
+        <AuthorizeView Roles="User">
+            <Authorized>
+                <li><NavLink href="film-catalogo" class="navlink-right">Film</NavLink></li>
+                <li><NavLink href="programma" class="navlink-right">Programma</NavLink></li>
+                <li><NavLink href="biglietti" class="navlink-right">Biglietti</NavLink></li>
+                <li><NavLink href="about" class="navlink-right">About</NavLink></li>
+                <li><NavLink href="contatti" class="navlink-right">Contatti</NavLink></li>
+            </Authorized>
+        </AuthorizeView>
+        <AuthorizeView>
+            <NotAuthorized>
+                <li><NavLink href="film-catalogo" class="navlink-right">Film</NavLink></li>
+                <li><NavLink href="programma" class="navlink-right">Programma</NavLink></li>
+                <li><NavLink href="biglietti" class="navlink-right">Biglietti</NavLink></li>
+                <li><NavLink href="about" class="navlink-right">About</NavLink></li>
+                <li><NavLink href="contatti" class="navlink-right">Contatti</NavLink></li>
+            </NotAuthorized>
+        </AuthorizeView>
+        <AuthorizeView>
+            <NotAuthorized>
+                <li><NavLink href="login" class="navlink-right">Login</NavLink></li>
+            </NotAuthorized>
+        </AuthorizeView>
+        <AuthorizeView Roles="Administrator">
+            <Authorized>
+                <li><NavLink href="create-admin-account" class="navlink-right">Create Admin</NavLink></li>
+                <li><NavLink href="manage-accounts" class="navlink-right">Edit Utenti</NavLink></li>
+                @* <li><NavLink href="manage-films" class="navlink-right">Edit Film</NavLink></li> *@
+                @* <li><NavLink href="" class="navlink-right"></NavLink></li> *@
+                @* <li><NavLink href="" class="navlink-right">Film </NavLink></li> *@
+            </Authorized>
+        </AuthorizeView>
+        <AuthorizeView>
+            <Authorized>
+                <li><NavLink href="logout" class="navlink-right">Logout</NavLink></li>
+            </Authorized>
+        </AuthorizeView>
+    </ul>
+</nav>
 
-    <main>
-        <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
-        </div>
+<main>
+    <article>
+        @Body
+    </article>
+</main>
 
-        <article class="content px-4">
-            @Body
-        </article>
-    </main>
-</div>
+<footer> &copy; 2025 Cinema CineNova - Tutti i diritti riservati </footer>
 
-<div id="blazor-error-ui" data-nosnippet>
+<div id="blazor-error-ui" images-nosnippet>
     An unhandled error has occurred.
     <a href="." class="reload">Reload</a>
     <span class="dismiss">🗙</span>

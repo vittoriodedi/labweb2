@@ -1,0 +1,93 @@
+﻿@page "/filmdettaglio/{Id:int}"
+@rendermode InteractiveServer
+@using CinemaApp.Models.Entities
+@using Microsoft.EntityFrameworkCore
+@inject Models.CinemaDbContext DbContext
+
+<PageTitle>@(film?.Titolo ?? "Dettaglio Film")</PageTitle>
+
+@if (film == null)
+{
+    <div class="movie-container">
+        <div class="error-container">
+            <p>Questa pagina non è disponibile!</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-exclamation-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4m.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2"/>
+            </svg>
+        </div>
+    </div>
+}
+else
+{
+    <div class="container">
+        <div class="movie-card">
+            <div class="movie-header">
+                <h1 class="movie-title">@film.Titolo</h1>
+            </div>
+            
+            <div class="movie-content">
+                <div class="movie-poster">
+                    <div class="poster-container">
+                        <MudCardMedia Image="@($"https://image.tmdb.org/t/p/original/{film.LocandinaUrl}")" 
+                                      Style="height: 500px; width: 100%; object-fit: cover;" />
+                    </div>
+                </div>
+                
+                <div class="movie-details">
+                    <div class="movie-meta">
+                        <div class="meta-item">
+                            <div class="meta-label">Regista</div>
+                            <div class="meta-value">@film.Regista</div>
+                        </div>
+
+                        <div class="meta-item">
+                            <div class="meta-label">Genere</div>
+                            <div class="meta-value">@film.Genere</div>
+                        </div>
+
+                        <div class="meta-item">
+                            <div class="meta-label">Data d'uscita</div>
+                            <div class="meta-value">@film.DataUscita.ToShortDateString()</div>
+                        </div>
+
+                        <div class="meta-item">
+                            <div class="meta-label">Durata</div>
+                            <div class="meta-value">@film.DurataMinuti minuti</div>
+                        </div>
+
+                        <div class="meta-item">
+                            <div class="meta-label">Per adulti</div>
+                            <div class="meta-value">@(film.Adulti ? "Si" : "No")</div>
+                        </div>
+                        <div class="meta-item">
+                            <div class="meta-label">Valutazione</div>
+                            <MudRating ReadOnly="true" SelectedValue="@film.Valutazione"/>
+                        </div>
+
+                    </div>
+
+                    <div class="plot-section">
+                        <h3 class="section-title">Trama</h3>
+                        <p class="plot-content">
+                            @film.Trama
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+    
+    private Film? film;
+    
+    protected override async Task OnInitializedAsync()
+    {
+        film = await DbContext.Films.FirstOrDefaultAsync(f => f.Id == Id);
+    }
+}

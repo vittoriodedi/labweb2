@@ -1,7 +1,6 @@
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
-namespace CinemaApp.Models
+namespace CinemaApp.Models.Entities
 {
     public class UserAccount
     {

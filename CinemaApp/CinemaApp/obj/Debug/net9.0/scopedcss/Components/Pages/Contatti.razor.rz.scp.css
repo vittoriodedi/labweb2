@@ -1,0 +1,233 @@
+body[b-n0vkws5w05] {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #191919;
+}
+h2[b-n0vkws5w05]{
+    font-weight: 600;
+}
+p[b-n0vkws5w05]{
+    margin: 0;
+}
+
+
+
+section[b-n0vkws5w05]{
+    width: 1100px;
+    margin: auto;
+}
+section h2[b-n0vkws5w05]{
+    margin-bottom: 0.5em;
+}
+
+
+.section-orari[b-n0vkws5w05]{
+    margin-top: 3em;
+}
+
+
+.section-map[b-n0vkws5w05]{
+    margin-top: 4em;
+}
+.section-map p[b-n0vkws5w05]{
+    margin-bottom: 1em;
+}
+.map[b-n0vkws5w05]{
+    height: 500px;
+}
+
+
+.section-contatti[b-n0vkws5w05]{
+    margin-top: 3em;
+    display: flex;
+}
+.contatti-text[b-n0vkws5w05]{
+    width: 50%;
+    padding: 4em;
+    text-align: center;
+    border-radius: 20px 0 0 20px  ;
+    background-color: rgb(255, 255, 255);
+}
+.contatti-links[b-n0vkws5w05] {
+    width: 50%;
+    padding: 1.5em;
+    border-radius: 0 20px 20px 0;
+    border-left: 4px solid #800020;
+    background: linear-gradient(to left, white, rgb(243, 242, 243));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
+.contatti-links div[b-n0vkws5w05] {
+    display: flex;
+    align-items: center;
+}
+.contatti-links a[b-n0vkws5w05] {
+    color: #191919;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-left: 0.5em;
+}
+
+
+
+
+body[b-n0vkws5w05] {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container[b-n0vkws5w05] {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+}
+
+h1[b-n0vkws5w05] {
+    color: #d81b60;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.schedule[b-n0vkws5w05] {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.schedule li[b-n0vkws5w05] {
+    padding: 16px 20px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+}
+
+.schedule li:last-child[b-n0vkws5w05] {
+    border-bottom: none;
+}
+
+.day[b-n0vkws5w05] {
+    font-weight: bold;
+}
+
+.hours[b-n0vkws5w05] {
+    color: #555;
+}
+
+.current-day[b-n0vkws5w05] {
+    background-color: #ffecf2;
+    border-left: 4px solid #d81b60;
+    font-weight: bold;
+    color: #d81b60;
+}
+
+.current-day .hours[b-n0vkws5w05] {
+    color: #d81b60;
+}
+
+.closed[b-n0vkws5w05] {
+    color: #999;
+    font-style: italic;
+}
+
+.footer[b-n0vkws5w05] {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.section-newsletter {*/
+/*    background-color: #1e1e1e;*/
+/*    color: white;*/
+/*    padding: 60px;*/
+/*    margin-top:3em;*/
+/*}*/
+/*.newsletter-content {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    position: relative;*/
+/*    z-index: 1;*/
+/*    margin: 0 auto;*/
+/*    gap: 30px;*/
+/*}*/
+/*.newsletter-text {*/
+/*    flex: 1;*/
+/*}*/
+/*.newsletter-text h1 {*/
+/*    font-size: 40px;*/
+/*    font-weight: bold;*/
+/*    margin-bottom: 20px;*/
+/*}*/
+/*.newsletter-text p {*/
+/*    font-size: 16px;*/
+/*    line-height: 1.5;*/
+/*    color: #ccc;*/
+/*}*/
+/*.div-newsletter-form {*/
+/*    flex: 1;*/
+/*}*/
+/*.div-input {*/
+/*    display: flex;*/
+/*    margin-bottom: 15px;*/
+/*}*/
+/*.div-input input[type="email"] {*/
+/*    flex: 1;*/
+/*    padding: 12px 15px;*/
+/*    background-color: rgba(255, 255, 255, 0.1);*/
+/*    color: white;*/
+/*    border: 1px solid rgba(255, 255, 255, 0.3);*/
+/*}*/
+/*.div-input button {*/
+/*    padding: 12px 25px;*/
+/*    background-color: white;*/
+/*    border: none;*/
+/*    cursor: pointer;*/
+/*}*/
+/*.div-checkbox {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    gap: 10px;*/
+/*    font-size: 14px;*/
+/*    color: #ccc;*/
+/*}*/
+/*.div-checkbox input[type="checkbox"] {*/
+/*    width: 16px;*/
+/*    height: 16px;*/
+/*}*/
+/*.div-checkbox a {*/
+/*    color: white;*/
+/*    text-decoration: none;*/
+/*}*/

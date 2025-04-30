@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace CinemaApp.Models
+namespace CinemaApp.Models.Entities
 {
     public class Film
     {

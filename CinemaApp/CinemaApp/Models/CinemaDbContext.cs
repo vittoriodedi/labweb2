@@ -1,3 +1,4 @@
+using CinemaApp.Models.Entities;
 using Microsoft.EntityFrameworkCore;
 namespace CinemaApp.Models;
 
