@@ -14,7 +14,8 @@ public class CinemaDbContext : DbContext
     {
         options.UseSqlite(Configuration.GetConnectionString("DefaultConnection"));
     }
-    
     public DbSet<UserAccount> UserAccounts { get; set; }
+    public DbSet<Film> Films { get; set; }
+
 
 }

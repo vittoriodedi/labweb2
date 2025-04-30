@@ -398,8 +398,6 @@
 /Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/compressed/jxudiy0mgy-h1s4sie4z3.gz
 /Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/compressed/u8ea1g2t9r-63fj8s7r0e.gz
 /Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/compressed/5ssff0m2p0-0j3bgjxly4.gz
-/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/compressed/cdau1ibg9m-9d6xrndm25.gz
-/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/compressed/s8dcfm6vs9-9d6xrndm25.gz
 /Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/staticwebassets.build.json
 /Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/staticwebassets.development.json
 /Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/staticwebassets.build.endpoints.json
@@ -415,3 +413,6 @@
 /Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/CinemaApp.pdb
 /Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/CinemaApp.genruntimeconfig.cache
 /Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/ref/CinemaApp.dll
+/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/scopedcss/Components/Pages/FilmCatalogo.razor.rz.scp.css
+/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/compressed/cdau1ibg9m-m01ta2sdho.gz
+/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/compressed/s8dcfm6vs9-m01ta2sdho.gz

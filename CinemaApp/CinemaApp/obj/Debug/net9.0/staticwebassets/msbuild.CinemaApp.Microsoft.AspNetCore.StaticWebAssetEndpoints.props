@@ -12,17 +12,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"w7mf952350"},{"Name":"integrity","Value":"sha256-PNvEyASL960qpWmVJ5Purzbr0F4hodQnu\u002Bu/XkKHuE0="},{"Name":"label","Value":"_content/CinemaApp/app.css"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2841"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022PNvEyASL960qpWmVJ5Purzbr0F4hodQnu\u002Bu/XkKHuE0=\u0022"},{"Name":"Last-Modified","Value":"Wed, 30 Apr 2025 09:01:06 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/CinemaApp/CinemaApp.9d6xrndm25.bundle.scp.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CinemaApp.9d6xrndm25.bundle.scp.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"9d6xrndm25"},{"Name":"integrity","Value":"sha256-faUDyODHUwsKfSO/F7Ne0XjofASxX5gpE35CakmZhd8="},{"Name":"label","Value":"_content/CinemaApp/CinemaApp.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5760"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022faUDyODHUwsKfSO/F7Ne0XjofASxX5gpE35CakmZhd8=\u0022"},{"Name":"Last-Modified","Value":"Wed, 30 Apr 2025 09:01:06 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/CinemaApp/CinemaApp.bundle.scp.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CinemaApp.9d6xrndm25.bundle.scp.css'))</AssetFile>
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CinemaApp.m01ta2sdho.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-faUDyODHUwsKfSO/F7Ne0XjofASxX5gpE35CakmZhd8="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5760"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022faUDyODHUwsKfSO/F7Ne0XjofASxX5gpE35CakmZhd8=\u0022"},{"Name":"Last-Modified","Value":"Wed, 30 Apr 2025 09:01:06 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-msMl7AEbMUDaPbSUUpJ/Vye66oDO2Mj/Wsy12G8dAxM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"10340"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022msMl7AEbMUDaPbSUUpJ/Vye66oDO2Mj/Wsy12G8dAxM=\u0022"},{"Name":"Last-Modified","Value":"Wed, 30 Apr 2025 09:59:25 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/CinemaApp/CinemaApp.m01ta2sdho.bundle.scp.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CinemaApp.m01ta2sdho.bundle.scp.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"m01ta2sdho"},{"Name":"integrity","Value":"sha256-msMl7AEbMUDaPbSUUpJ/Vye66oDO2Mj/Wsy12G8dAxM="},{"Name":"label","Value":"_content/CinemaApp/CinemaApp.bundle.scp.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"10340"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022msMl7AEbMUDaPbSUUpJ/Vye66oDO2Mj/Wsy12G8dAxM=\u0022"},{"Name":"Last-Modified","Value":"Wed, 30 Apr 2025 09:59:25 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/CinemaApp/favicon.ifv42okdf2.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.png'))</AssetFile>
