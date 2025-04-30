@@ -1,0 +1,62 @@
+@page "/insertuser"
+@using CinemaApp.Models
+@rendermode InteractiveServer
+
+<EditForm Model="@userAccount" OnValidSubmit="OnValidSubmit">
+    <MudGrid>
+        <MudItem>
+            <MudTextField Label="Username" @bind-Value="@userAccount.UserName" />
+            <MudTextField Label="Password" @bind-Value="@userAccount.Password" InputType="InputType.Password" />
+            <MudTextField Label="Email" @bind-Value="@userAccount.Email" />
+            <MudTextField Label="Role" @bind-Value="@userAccount.Role" />
+            <MudButton ButtonType="ButtonType.Submit">Insert</MudButton>
+        </MudItem>
+    </MudGrid>
+</EditForm>
+
+@inject CinemaDbContext dbContext;
+@code {
+    UserAccount userAccount = new UserAccount();
+
+    private async Task OnValidSubmit()
+    {
+        dbContext.UserAccounts.Add(userAccount);
+        await dbContext.SaveChangesAsync();
+
+        // Resetta il modello dopo l'inserimento
+        userAccount = new UserAccount();
+        StateHasChanged(); // Forza l'aggiornamento dell'UI
+    }
+}
+
+Commento (Prima Versione):
+@* @page "/insertuser" *@
+@* @using CinemaApp.Models *@
+@* @rendermode InteractiveServer *@
+@* *@
+@* <EditForm Model="@userAccount" OnValidSubmit="OnValidSubmit"> *@
+@*     <MudGrid> *@
+@*         <MudItem> *@
+@*             <MudTextField Label="Username" @bind-Value="@userAccount.UserName" /> *@
+@*             <MudTextField Label="Password" @bind-Value="@userAccount.Password" /> *@
+@*             <MudTextField Label="Email" @bind-Value="@userAccount.Email" /> *@
+@*             <MudTextField Label="Role" @bind-Value="@userAccount.Role" /> *@
+@*             <MudButton ButtonType="ButtonType.Submit">insert</MudButton> *@
+@*         </MudItem> *@
+@*     </MudGrid> *@
+@* *@
+@* </EditForm> *@
+@* @inject CinemaDbContext dbContext; *@
+@* @code { *@
+@*     UserAccount userAccount = new UserAccount(); *@
+@* *@
+@*     private async Task OnValidSubmit() *@
+@*     { *@
+@*         dbContext.UserAccounts.Add(userAccount); *@
+@*         await dbContext.SaveChangesAsync(); *@
+@*          *@
+@*         // Resetta il modello dopo l'inserimento *@
+@*         userAccount = new UserAccount(); *@
+@*         StateHasChanged(); // Forza l'aggiornamento dell'UI *@
+@*     } *@
+@* } *@

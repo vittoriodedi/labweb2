@@ -1,4 +1,7 @@
 is_global = true
+build_property.MudDebugAnalyzer = 
+build_property.MudAllowedAttributePattern = 
+build_property.MudAllowedAttributeList = 
 build_property.TargetFramework = net9.0
 build_property.TargetFramework = net9.0
 build_property.TargetPlatformMinVersion = 
@@ -42,6 +45,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Ib21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/Components/Pages/InsertProduct.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9JbnNlcnRQcm9kdWN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/Components/Pages/InsertUser.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9JbnNlcnRVc2VyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/Components/Pages/Weather.razor]

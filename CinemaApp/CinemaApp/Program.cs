@@ -1,10 +1,17 @@
 using CinemaApp.Components;
+using CinemaApp.Models;
+using MudBlazor.Services;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
+
+builder.Services.AddSingleton<CinemaDbContext>();
+
+builder.Services.AddMudServices();
 
 var app = builder.Build();
 

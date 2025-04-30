@@ -1,0 +1,32 @@
+@page "/insertproduct"
+@using CinemaApp.Models
+@rendermode InteractiveServer
+
+<EditForm Model="@product" OnValidSubmit="OnValidSubmit">
+    <MudGrid>
+        <MudItem>
+            <MudTextField Label="Name" @bind-Value="@product.Name" />
+            <MudTextField Label="Price" @bind-Value="@product.Price" />
+            <MudTextField Label="Year" @bind-Value="@product.Year" />
+            <MudCheckBox Label="Product" @bind-Value="@product.Available" />
+            
+            <MudButton ButtonType="ButtonType.Submit">insert</MudButton>
+
+        </MudItem>
+    </MudGrid>
+    
+</EditForm>
+@inject CinemaDbContext dbContext;
+@code {
+    Product product = new Product();
+
+    private async Task OnValidSubmit()
+    {
+        dbContext.Products.Add(product);
+        await dbContext.SaveChangesAsync();
+        
+        // Resetta il modello dopo l'inserimento
+        product = new Product();
+        StateHasChanged(); // Forza l'aggiornamento dell'UI
+    }
+}
