@@ -1,233 +1,204 @@
-body {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
+.contacts-container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.divider {
+    height: 4px;
+    width: 80px;
+    background-color: #191919;
+    margin: 0 auto 2.5em;
+}
+
+
+/* Start Hours Section */
+.hours-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4.5em;
+    margin-bottom: 60px;
+}
+
+.hours-title {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+    text-align: center;
     color: #191919;
+    margin-bottom: 10px;
 }
-h2{
-    font-weight: 600;
+
+.hours-info {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
 }
-p{
+
+.hours-schedule {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    list-style-type: none;
+    width: 100%;
+    justify-content: center;
+    overflow-x: auto;
+    padding: 20px 0;
     margin: 0;
 }
 
-
-
-section{
-    width: 1100px;
-    margin: auto;
-}
-section h2{
-    margin-bottom: 0.5em;
-}
-
-
-.section-orari{
-    margin-top: 3em;
-}
-
-
-.section-map{
-    margin-top: 4em;
-}
-.section-map p{
-    margin-bottom: 1em;
-}
-.map{
-    height: 500px;
-}
-
-
-.section-contatti{
-    margin-top: 3em;
+.hours-schedule li {
+    flex: 1;
+    min-width: 130px;
+    border-radius: 8px;
+    border: none;
+    padding: 16px 20px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.3s ease;
 }
-.contatti-text{
+
+.hours-schedule li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.current-day {
+    background-color: #000;
+    border-color: #000;
+    border-left: 4px solid #191919;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.current-day .hours {
+    color: #ffffff;
+}
+
+.day {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.hours {
+    color: #555;
+    font-size: 16px;
+}
+
+/* End Hours Section */
+
+
+/* Start Map Section */
+.map-section {
+    margin-top: 4.5em;
+}
+
+.map-section p {
+    margin-bottom: 1em;
+    text-align: center;
+    color: #555;
+}
+
+.map-title {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #191919;
+    margin-bottom: 10px;
+}
+
+.map {
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+/* End Map Section */
+
+
+/* Start Contacts Section */
+.contacts-section {
+    margin-top: 4.5em;
+    margin-bottom: 4.5em;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.contacts-text {
     width: 50%;
     padding: 4em;
     text-align: center;
-    border-radius: 20px 0 0 20px  ;
+    border-radius: 10px 0 0 10px;
     background-color: rgb(255, 255, 255);
 }
-.contatti-links {
+
+.contacts-text h2 {
+    margin-bottom: 20px;
+    color: #191919;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.contacts-text p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.contacts-links {
     width: 50%;
-    padding: 1.5em;
-    border-radius: 0 20px 20px 0;
-    border-left: 4px solid #800020;
-    background: linear-gradient(to left, white, rgb(243, 242, 243));
+    padding: 4em 1.5em;
+    border-radius: 0 10px 10px 0;
+    border-left: 4px solid #191919;
+    background: linear-gradient(to left, white, rgb(248, 248, 248));
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 1.5em;
 }
-.contatti-links div {
+
+.contacts-links div {
     display: flex;
     align-items: center;
+    transition: transform 0.3s ease;
 }
-.contatti-links a {
+
+.contacts-links div:hover {
+    transform: translateY(-3px);
+}
+
+.contacts-links a {
     color: #191919;
-    text-decoration: underline;
-    font-weight: bold;
+    text-decoration: none;
+    font-weight: 500;
     margin-left: 0.5em;
+    transition: color 0.3s;
 }
 
-
-
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-
-.container {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    width: 100%;
-    max-width: 600px;
-}
-
-h1 {
-    color: #d81b60;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 30px;
-    font-size: 28px;
-}
-
-.schedule {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.schedule li {
-    padding: 16px 20px;
-    border-bottom: 1px solid #eee;
-    display: flex;
-    justify-content: space-between;
-    transition: all 0.3s ease;
-}
-
-.schedule li:last-child {
-    border-bottom: none;
-}
-
-.day {
-    font-weight: bold;
-}
-
-.hours {
+.contacts-links a:hover {
     color: #555;
+    text-decoration: underline;
 }
+/* End Contacts Section */
 
-.current-day {
-    background-color: #ffecf2;
-    border-left: 4px solid #d81b60;
-    font-weight: bold;
-    color: #d81b60;
+
+@media (max-width: 768px) {
+    .schedule {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .schedule li {
+        width: 100%;
+        min-width: auto;
+    }
 }
-
-.current-day .hours {
-    color: #d81b60;
-}
-
-.closed {
-    color: #999;
-    font-style: italic;
-}
-
-.footer {
-    margin-top: 20px;
-    text-align: center;
-    font-size: 14px;
-    color: #777;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*.section-newsletter {*/
-/*    background-color: #1e1e1e;*/
-/*    color: white;*/
-/*    padding: 60px;*/
-/*    margin-top:3em;*/
-/*}*/
-/*.newsletter-content {*/
-/*    display: flex;*/
-/*    justify-content: space-between;*/
-/*    align-items: center;*/
-/*    position: relative;*/
-/*    z-index: 1;*/
-/*    margin: 0 auto;*/
-/*    gap: 30px;*/
-/*}*/
-/*.newsletter-text {*/
-/*    flex: 1;*/
-/*}*/
-/*.newsletter-text h1 {*/
-/*    font-size: 40px;*/
-/*    font-weight: bold;*/
-/*    margin-bottom: 20px;*/
-/*}*/
-/*.newsletter-text p {*/
-/*    font-size: 16px;*/
-/*    line-height: 1.5;*/
-/*    color: #ccc;*/
-/*}*/
-/*.div-newsletter-form {*/
-/*    flex: 1;*/
-/*}*/
-/*.div-input {*/
-/*    display: flex;*/
-/*    margin-bottom: 15px;*/
-/*}*/
-/*.div-input input[type="email"] {*/
-/*    flex: 1;*/
-/*    padding: 12px 15px;*/
-/*    background-color: rgba(255, 255, 255, 0.1);*/
-/*    color: white;*/
-/*    border: 1px solid rgba(255, 255, 255, 0.3);*/
-/*}*/
-/*.div-input button {*/
-/*    padding: 12px 25px;*/
-/*    background-color: white;*/
-/*    border: none;*/
-/*    cursor: pointer;*/
-/*}*/
-/*.div-checkbox {*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    gap: 10px;*/
-/*    font-size: 14px;*/
-/*    color: #ccc;*/
-/*}*/
-/*.div-checkbox input[type="checkbox"] {*/
-/*    width: 16px;*/
-/*    height: 16px;*/
-/*}*/
-/*.div-checkbox a {*/
-/*    color: white;*/
-/*    text-decoration: none;*/
-/*}*/

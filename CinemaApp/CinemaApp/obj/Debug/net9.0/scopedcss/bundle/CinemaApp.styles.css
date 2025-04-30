@@ -80,78 +80,180 @@ footer[b-344ttqj0ko] {
     color: #bfbfbf;
 }
 /* _content/CinemaApp/Components/Pages/About.razor.rz.scp.css */
-body[b-9591dx9cxn] {
+.about-container[b-9591dx9cxn] {
+    max-width: 1100px;
+    margin: 0 auto;
     font-family: 'Inter', sans-serif;
-    font-weight: 400;
     color: #191919;
 }
-section[b-9591dx9cxn]{
-    width: 1100px;
-    margin: auto;
-}
-h2[b-9591dx9cxn]{
-    font-weight: 600;
-}
-h3[b-9591dx9cxn]{
-    font-weight: 500;
-}
-p[b-9591dx9cxn]{
-    margin: 0;
+
+.divider[b-9591dx9cxn] {
+    height: 4px;
+    width: 80px;
+    background-color: #191919;
+    margin: 0 auto;
+    margin-bottom: 2.5em;
 }
 
 
-.section-descrizione[b-9591dx9cxn]{
-    margin-top: 4em;
+/* Start About Section */
+.about-section[b-9591dx9cxn] {
+    margin-top: 4.5em;
+    margin-bottom: 60px;
 }
-.section-descrizione h2[b-9591dx9cxn]{
+
+.about-title[b-9591dx9cxn] {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #191919;
+    margin-bottom: 10px;
+}
+
+.about-text p[b-9591dx9cxn] {
+    color: #333;
+    font-size: 1em;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+/* End About Section */
+
+
+/* Start Story Section */
+.story-section[b-9591dx9cxn]{
+    margin-top: 4.5em;
+}
+
+.story-title[b-9591dx9cxn]{
+    font-family: "Bebas Neue", sans-serif;
+    color: #191919;
+    letter-spacing: 0.5px;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.story-subtitle[b-9591dx9cxn]{
+    font-family: "Bebas Neue", sans-serif;
+    color: #191919;
     margin-bottom: 0.5em;
-}
-.section-descrizione p[b-9591dx9cxn]{
-    margin-bottom: 1em;
+    letter-spacing: 0.5px;
+    font-size: 25px;
 }
 
-.section-storia[b-9591dx9cxn]{
-    margin-top: 3em;
-}
-.section-storia h2[b-9591dx9cxn]{
-    margin-bottom: 0.5em;
-}
-.section-storia p[b-9591dx9cxn]{
+.story-section p[b-9591dx9cxn]{
     margin-bottom: 1.5em;
 }
-#titolo-storia[b-9591dx9cxn]{
-    margin-bottom: 1em;
-}
 
-.tappa-1[b-9591dx9cxn]{
+.stage-1[b-9591dx9cxn]{
     margin-left: 0%;
 }
-.tappa-2[b-9591dx9cxn]{
+
+.stage-2[b-9591dx9cxn]{
     margin-left: 25%;
 }
-.tappa-3[b-9591dx9cxn]{
+
+.stage-3[b-9591dx9cxn]{
     margin-left: 50%;
 }
-.tappa-4[b-9591dx9cxn]{
+
+.stage-4[b-9591dx9cxn]{
     margin-left: 75%;
 }
+/* End Story Section */
 
 
-.section-recensioni[b-9591dx9cxn]{
-    margin-top: 3em;
-    margin-bottom: 2em;
+/* Start Reviews Section */
+.reviews-section[b-9591dx9cxn] {
+    margin-top: 4.5em;
+    margin-bottom: 4.5em;
 }
-.section-recensioni h2[b-9591dx9cxn]{
-    margin-bottom: 0.5em;
+.reviews-title[b-9591dx9cxn] {
+    color: #191919;
+    font-size: 2.5em;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 0.5px;
 }
-.recensione[b-9591dx9cxn] {
-    background-color: rgb(243, 242, 243);
-    padding: 2em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    border-radius: 0 20px 20px 0;
-    border-left: 4px solid #800020;
+
+.reviews-subtitle[b-9591dx9cxn] {
+    text-align: center;
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 30px;
 }
+
+.reviews-container[b-9591dx9cxn] {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.review-card[b-9591dx9cxn] {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(128, 0, 32, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    border-left: 4px solid #191919;
+}
+
+.review-card:hover[b-9591dx9cxn] {
+    transform: translateY(-5px);
+}
+
+.review-content[b-9591dx9cxn] {
+    padding: 30px;
+    position: relative;
+}
+
+.review-content i[b-9591dx9cxn] {
+    font-size: 24px;
+    color: #800020;
+    opacity: 0.3;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.review-content p[b-9591dx9cxn] {
+    font-style: italic;
+    color: #444;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 1;
+    padding-left: 0.5em;
+}
+
+.review-source[b-9591dx9cxn] {
+    text-align: right;
+    color: #191919;
+    font-size: 15px;
+}
+/* End Reviews Section */
+
+
+@media (max-width: 768px) {
+    .section-storia > div[b-9591dx9cxn] {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stage-1[b-9591dx9cxn], .stage-2[b-9591dx9cxn], .stage-3[b-9591dx9cxn], .stage-4[b-9591dx9cxn] {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .reviews-container[b-9591dx9cxn] {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* _content/CinemaApp/Components/Pages/Account/AccessDenied.razor.rz.scp.css */
 .login-container[b-0eecoxf1xh] {
     max-width: 1100px;
@@ -227,6 +329,222 @@ p[b-9591dx9cxn]{
     transform: translateY(-1px);
     box-shadow: 0 3px 6px rgba(128, 0, 32, 0.35);
 }
+/* _content/CinemaApp/Components/Pages/Account/ConfirmLogout.razor.rz.scp.css */
+.login-container[b-9dzaq4it9s] {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0;
+}
+
+.login-card[b-9dzaq4it9s] {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(62, 62, 62, 0.1);
+    border-top: 5px solid #171717FF;
+    border-bottom: 5px solid #ffffff;
+    padding: 40px;
+    width: 100%;
+    max-width: 450px;
+    margin: 217px auto;
+    text-align: center;
+}
+
+.login-header[b-9dzaq4it9s] {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-title[b-9dzaq4it9s] {
+    color: #171717FF;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.login-subtitle[b-9dzaq4it9s] {
+    color: #666;
+    font-size: 0.8rem;
+    margin-bottom: 25px;
+}
+
+.logout-icon[b-9dzaq4it9s] {
+    font-size: 48px;
+    color: #171717FF;
+    margin-bottom: 20px;
+}
+
+.logout-message[b-9dzaq4it9s] {
+    margin-bottom: 30px;
+    color: #444;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.action-buttons[b-9dzaq4it9s] {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-primary[b-9dzaq4it9s] {
+    background-color: #171717FF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 16px;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+    box-shadow: 0 2px 4px rgba(37, 37, 37, 0.25);
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.btn-primary:hover[b-9dzaq4it9s] {
+    background-color: #232323;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 6px rgba(58, 58, 58, 0.35);
+}
+
+.btn-outline[b-9dzaq4it9s] {
+    background-color: #f8f9fa;
+    color: #444;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 12px 16px;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.btn-outline:hover[b-9dzaq4it9s] {
+    background-color: #e9ecef;
+}
+/* _content/CinemaApp/Components/Pages/Account/CreateUserAccount.razor.rz.scp.css */
+.login-container[b-uo54siompd] {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0;
+}
+
+.login-card[b-uo54siompd] {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(62, 62, 62, 0.1);
+    border-top: 5px solid #171717FF;
+    border-bottom: 5px solid #ffffff;
+    padding: 40px;
+    width: 100%;
+    max-width: 450px;
+    margin: 47px auto;
+}
+
+.login-header[b-uo54siompd] {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-title[b-uo54siompd] {
+    color: #171717FF;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.login-subtitle[b-uo54siompd] {
+    color: #666;
+    font-size: 0.8rem;
+    margin-bottom: 25px;
+}
+
+.form-group[b-uo54siompd] {
+    margin-bottom: 20px;
+}
+
+.form-label[b-uo54siompd] {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #444;
+}
+
+.form-control[b-uo54siompd] {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-control:focus[b-uo54siompd] {
+    border-color: #171717FF;
+    box-shadow: 0 0 0 3px rgba(74, 74, 74, 0.15);
+    outline: none;
+}
+
+.validation-message[b-uo54siompd] {
+    color: #d9534f;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.error-message[b-uo54siompd] {
+    color: #d9534f;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+    min-height: 21px;
+}
+
+.btn-login[b-uo54siompd] {
+    background-color: #171717FF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 16px;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+    box-shadow: 0 2px 4px rgba(37, 37, 37, 0.25);
+}
+
+.btn-login:hover[b-uo54siompd] {
+    background-color: #232323;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 6px rgba(58, 58, 58, 0.35);
+}
+
+.register-link[b-uo54siompd] {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+}
+
+.register-link a[b-uo54siompd] {
+    font-weight: bold;
+    color: #107bff;
+    text-decoration: none;
+}
+
+.register-link a:hover[b-uo54siompd] {
+    text-decoration: underline;
+}
 /* _content/CinemaApp/Components/Pages/Account/Login.razor.rz.scp.css */
 .login-container[b-sbt0m71zwm] {
     max-width: 1100px;
@@ -237,12 +555,13 @@ p[b-9591dx9cxn]{
 .login-card[b-sbt0m71zwm] {
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 16px rgba(128, 0, 32, 0.1);
-    border-top: 4px solid #800020;
+    box-shadow: 0 4px 16px rgba(62, 62, 62, 0.1);
+    border-top: 5px solid #171717FF;
+    border-bottom: 5px solid #ffffff;
     padding: 40px;
     width: 100%;
     max-width: 450px;
-    margin: 0 auto;
+    margin: 150px auto;
 }
 
 .login-header[b-sbt0m71zwm] {
@@ -251,16 +570,15 @@ p[b-9591dx9cxn]{
 }
 
 .login-title[b-sbt0m71zwm] {
-    color: #800020;
+    color: #171717FF;
     font-size: 26px;
     font-weight: 700;
-    margin-top: 15px;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 
 .login-subtitle[b-sbt0m71zwm] {
     color: #666;
-    font-size: 14px;
+    font-size: 0.8rem;
     margin-bottom: 25px;
 }
 
@@ -285,8 +603,8 @@ p[b-9591dx9cxn]{
 }
 
 .form-control:focus[b-sbt0m71zwm] {
-    border-color: #800020;
-    box-shadow: 0 0 0 3px rgba(128, 0, 32, 0.15);
+    border-color: #171717FF;
+    box-shadow: 0 0 0 3px rgba(74, 74, 74, 0.15);
     outline: none;
 }
 
@@ -300,12 +618,12 @@ p[b-9591dx9cxn]{
     color: #d9534f;
     text-align: center;
     font-size: 14px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     min-height: 21px;
 }
 
 .btn-login[b-sbt0m71zwm] {
-    background-color: #800020;
+    background-color: #171717FF;
     color: white;
     border: none;
     border-radius: 4px;
@@ -315,23 +633,24 @@ p[b-9591dx9cxn]{
     width: 100%;
     cursor: pointer;
     transition: background-color 0.2s, transform 0.2s;
-    box-shadow: 0 2px 4px rgba(128, 0, 32, 0.25);
+    box-shadow: 0 2px 4px rgba(37, 37, 37, 0.25);
 }
 
 .btn-login:hover[b-sbt0m71zwm] {
-    background-color: #6a001a;
+    background-color: #232323;
     transform: translateY(-1px);
-    box-shadow: 0 3px 6px rgba(128, 0, 32, 0.35);
+    box-shadow: 0 3px 6px rgba(58, 58, 58, 0.35);
 }
 
 .register-link[b-sbt0m71zwm] {
     text-align: center;
     margin-top: 1rem;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 .register-link a[b-sbt0m71zwm] {
-    color: #0066cc;
+    font-weight: bold;
+    color: #107bff;
     text-decoration: none;
 }
 
@@ -348,12 +667,14 @@ p[b-9591dx9cxn]{
 .login-card[b-e3abdc6rdb] {
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 16px rgba(128, 0, 32, 0.1);
-    border-top: 4px solid #800020;
+    box-shadow: 0 4px 16px rgba(62, 62, 62, 0.1);
+    border-top: 5px solid #171717FF;
+    border-bottom: 5px solid #ffffff;
     padding: 40px;
     width: 100%;
     max-width: 450px;
-    margin: 0 auto;
+    margin: 222px auto;
+    text-align: center;
 }
 
 .login-header[b-e3abdc6rdb] {
@@ -362,36 +683,39 @@ p[b-9591dx9cxn]{
 }
 
 .login-title[b-e3abdc6rdb] {
-    color: #800020;
+    color: #171717FF;
     font-size: 26px;
     font-weight: 700;
-    margin-top: 15px;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 
 .login-subtitle[b-e3abdc6rdb] {
     color: #666;
-    font-size: 14px;
+    font-size: 0.8rem;
     margin-bottom: 25px;
 }
 
 .error-message[b-e3abdc6rdb] {
-    color: #444;
+    color: #28a745;
     text-align: center;
-    line-height: 1.6;
-    margin-bottom: 30px;
     font-size: 15px;
+    margin-bottom: 30px;
+    line-height: 1.5;
 }
 
 .action-buttons[b-e3abdc6rdb] {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
+    margin-top: 20px;
     width: 100%;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .btn-primary[b-e3abdc6rdb] {
-    background-color: #800020;
+    background-color: #171717FF;
     color: white;
     border: none;
     border-radius: 4px;
@@ -401,20 +725,21 @@ p[b-9591dx9cxn]{
     width: 100%;
     cursor: pointer;
     transition: background-color 0.2s, transform 0.2s;
-    box-shadow: 0 2px 4px rgba(128, 0, 32, 0.25);
-    text-align: center;
+    box-shadow: 0 2px 4px rgba(37, 37, 37, 0.25);
     text-decoration: none;
+    display: block;
+    text-align: center;
 }
 
 .btn-primary:hover[b-e3abdc6rdb] {
-    background-color: #6a001a;
+    background-color: #232323;
     transform: translateY(-1px);
-    box-shadow: 0 3px 6px rgba(128, 0, 32, 0.35);
+    box-shadow: 0 3px 6px rgba(58, 58, 58, 0.35);
 }
 
 .btn-outline[b-e3abdc6rdb] {
-    background-color: transparent;
-    color: #666;
+    background-color: #f8f9fa;
+    color: #444;
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 12px 16px;
@@ -422,14 +747,14 @@ p[b-9591dx9cxn]{
     font-weight: 500;
     width: 100%;
     cursor: pointer;
-    transition: all 0.2s;
-    text-align: center;
+    transition: background-color 0.2s;
     text-decoration: none;
+    display: block;
+    text-align: center;
 }
 
 .btn-outline:hover[b-e3abdc6rdb] {
-    background-color: #f5f5f5;
-    border-color: #999;
+    background-color: #e9ecef;
 }
 /* _content/CinemaApp/Components/Pages/Biglietti.razor.rz.scp.css */
 p[b-nn9zja53ir] {
@@ -488,239 +813,210 @@ tr:last-child td[b-nn9zja53ir] {
 }
 
 /* _content/CinemaApp/Components/Pages/Contatti.razor.rz.scp.css */
-body[b-n0vkws5w05] {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
+.contacts-container[b-n0vkws5w05] {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.divider[b-n0vkws5w05] {
+    height: 4px;
+    width: 80px;
+    background-color: #191919;
+    margin: 0 auto 2.5em;
+}
+
+
+/* Start Hours Section */
+.hours-section[b-n0vkws5w05] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4.5em;
+    margin-bottom: 60px;
+}
+
+.hours-title[b-n0vkws5w05] {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+    text-align: center;
     color: #191919;
+    margin-bottom: 10px;
 }
-h2[b-n0vkws5w05]{
-    font-weight: 600;
+
+.hours-info[b-n0vkws5w05] {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
 }
-p[b-n0vkws5w05]{
+
+.hours-schedule[b-n0vkws5w05] {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    list-style-type: none;
+    width: 100%;
+    justify-content: center;
+    overflow-x: auto;
+    padding: 20px 0;
     margin: 0;
 }
 
-
-
-section[b-n0vkws5w05]{
-    width: 1100px;
-    margin: auto;
-}
-section h2[b-n0vkws5w05]{
-    margin-bottom: 0.5em;
-}
-
-
-.section-orari[b-n0vkws5w05]{
-    margin-top: 3em;
-}
-
-
-.section-map[b-n0vkws5w05]{
-    margin-top: 4em;
-}
-.section-map p[b-n0vkws5w05]{
-    margin-bottom: 1em;
-}
-.map[b-n0vkws5w05]{
-    height: 500px;
-}
-
-
-.section-contatti[b-n0vkws5w05]{
-    margin-top: 3em;
+.hours-schedule li[b-n0vkws5w05] {
+    flex: 1;
+    min-width: 130px;
+    border-radius: 8px;
+    border: none;
+    padding: 16px 20px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.3s ease;
 }
-.contatti-text[b-n0vkws5w05]{
+
+.hours-schedule li:hover[b-n0vkws5w05] {
+    transform: translateY(-5px);
+    box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.current-day[b-n0vkws5w05] {
+    background-color: #000;
+    border-color: #000;
+    border-left: 4px solid #191919;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.current-day .hours[b-n0vkws5w05] {
+    color: #ffffff;
+}
+
+.day[b-n0vkws5w05] {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.hours[b-n0vkws5w05] {
+    color: #555;
+    font-size: 16px;
+}
+
+/* End Hours Section */
+
+
+/* Start Map Section */
+.map-section[b-n0vkws5w05] {
+    margin-top: 4.5em;
+}
+
+.map-section p[b-n0vkws5w05] {
+    margin-bottom: 1em;
+    text-align: center;
+    color: #555;
+}
+
+.map-title[b-n0vkws5w05] {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #191919;
+    margin-bottom: 10px;
+}
+
+.map[b-n0vkws5w05] {
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+/* End Map Section */
+
+
+/* Start Contacts Section */
+.contacts-section[b-n0vkws5w05] {
+    margin-top: 4.5em;
+    margin-bottom: 4.5em;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.contacts-text[b-n0vkws5w05] {
     width: 50%;
     padding: 4em;
     text-align: center;
-    border-radius: 20px 0 0 20px  ;
+    border-radius: 10px 0 0 10px;
     background-color: rgb(255, 255, 255);
 }
-.contatti-links[b-n0vkws5w05] {
+
+.contacts-text h2[b-n0vkws5w05] {
+    margin-bottom: 20px;
+    color: #191919;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.contacts-text p[b-n0vkws5w05] {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.contacts-links[b-n0vkws5w05] {
     width: 50%;
-    padding: 1.5em;
-    border-radius: 0 20px 20px 0;
-    border-left: 4px solid #800020;
-    background: linear-gradient(to left, white, rgb(243, 242, 243));
+    padding: 4em 1.5em;
+    border-radius: 0 10px 10px 0;
+    border-left: 4px solid #191919;
+    background: linear-gradient(to left, white, rgb(248, 248, 248));
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 1.5em;
 }
-.contatti-links div[b-n0vkws5w05] {
+
+.contacts-links div[b-n0vkws5w05] {
     display: flex;
     align-items: center;
+    transition: transform 0.3s ease;
 }
-.contatti-links a[b-n0vkws5w05] {
+
+.contacts-links div:hover[b-n0vkws5w05] {
+    transform: translateY(-3px);
+}
+
+.contacts-links a[b-n0vkws5w05] {
     color: #191919;
-    text-decoration: underline;
-    font-weight: bold;
+    text-decoration: none;
+    font-weight: 500;
     margin-left: 0.5em;
+    transition: color 0.3s;
 }
 
-
-
-
-body[b-n0vkws5w05] {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-
-.container[b-n0vkws5w05] {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    width: 100%;
-    max-width: 600px;
-}
-
-h1[b-n0vkws5w05] {
-    color: #d81b60;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 30px;
-    font-size: 28px;
-}
-
-.schedule[b-n0vkws5w05] {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.schedule li[b-n0vkws5w05] {
-    padding: 16px 20px;
-    border-bottom: 1px solid #eee;
-    display: flex;
-    justify-content: space-between;
-    transition: all 0.3s ease;
-}
-
-.schedule li:last-child[b-n0vkws5w05] {
-    border-bottom: none;
-}
-
-.day[b-n0vkws5w05] {
-    font-weight: bold;
-}
-
-.hours[b-n0vkws5w05] {
+.contacts-links a:hover[b-n0vkws5w05] {
     color: #555;
+    text-decoration: underline;
 }
+/* End Contacts Section */
 
-.current-day[b-n0vkws5w05] {
-    background-color: #ffecf2;
-    border-left: 4px solid #d81b60;
-    font-weight: bold;
-    color: #d81b60;
+
+@media (max-width: 768px) {
+    .schedule[b-n0vkws5w05] {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .schedule li[b-n0vkws5w05] {
+        width: 100%;
+        min-width: auto;
+    }
 }
-
-.current-day .hours[b-n0vkws5w05] {
-    color: #d81b60;
-}
-
-.closed[b-n0vkws5w05] {
-    color: #999;
-    font-style: italic;
-}
-
-.footer[b-n0vkws5w05] {
-    margin-top: 20px;
-    text-align: center;
-    font-size: 14px;
-    color: #777;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*.section-newsletter {*/
-/*    background-color: #1e1e1e;*/
-/*    color: white;*/
-/*    padding: 60px;*/
-/*    margin-top:3em;*/
-/*}*/
-/*.newsletter-content {*/
-/*    display: flex;*/
-/*    justify-content: space-between;*/
-/*    align-items: center;*/
-/*    position: relative;*/
-/*    z-index: 1;*/
-/*    margin: 0 auto;*/
-/*    gap: 30px;*/
-/*}*/
-/*.newsletter-text {*/
-/*    flex: 1;*/
-/*}*/
-/*.newsletter-text h1 {*/
-/*    font-size: 40px;*/
-/*    font-weight: bold;*/
-/*    margin-bottom: 20px;*/
-/*}*/
-/*.newsletter-text p {*/
-/*    font-size: 16px;*/
-/*    line-height: 1.5;*/
-/*    color: #ccc;*/
-/*}*/
-/*.div-newsletter-form {*/
-/*    flex: 1;*/
-/*}*/
-/*.div-input {*/
-/*    display: flex;*/
-/*    margin-bottom: 15px;*/
-/*}*/
-/*.div-input input[type="email"] {*/
-/*    flex: 1;*/
-/*    padding: 12px 15px;*/
-/*    background-color: rgba(255, 255, 255, 0.1);*/
-/*    color: white;*/
-/*    border: 1px solid rgba(255, 255, 255, 0.3);*/
-/*}*/
-/*.div-input button {*/
-/*    padding: 12px 25px;*/
-/*    background-color: white;*/
-/*    border: none;*/
-/*    cursor: pointer;*/
-/*}*/
-/*.div-checkbox {*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    gap: 10px;*/
-/*    font-size: 14px;*/
-/*    color: #ccc;*/
-/*}*/
-/*.div-checkbox input[type="checkbox"] {*/
-/*    width: 16px;*/
-/*    height: 16px;*/
-/*}*/
-/*.div-checkbox a {*/
-/*    color: white;*/
-/*    text-decoration: none;*/
-/*}*/
 /* _content/CinemaApp/Components/Pages/FilmCatalogo.razor.rz.scp.css */
 h2[b-moqzcq8k5r] {
     font-family: "Inter", sans-serif;

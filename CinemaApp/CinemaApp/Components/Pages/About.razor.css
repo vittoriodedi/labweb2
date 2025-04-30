@@ -1,72 +1,174 @@
-body {
+.about-container {
+    max-width: 1100px;
+    margin: 0 auto;
     font-family: 'Inter', sans-serif;
-    font-weight: 400;
     color: #191919;
 }
-section{
-    width: 1100px;
-    margin: auto;
-}
-h2{
-    font-weight: 600;
-}
-h3{
-    font-weight: 500;
-}
-p{
-    margin: 0;
+
+.divider {
+    height: 4px;
+    width: 80px;
+    background-color: #191919;
+    margin: 0 auto;
+    margin-bottom: 2.5em;
 }
 
 
-.section-descrizione{
-    margin-top: 4em;
+/* Start About Section */
+.about-section {
+    margin-top: 4.5em;
+    margin-bottom: 60px;
 }
-.section-descrizione h2{
+
+.about-title {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #191919;
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    color: #333;
+    font-size: 1em;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+/* End About Section */
+
+
+/* Start Story Section */
+.story-section{
+    margin-top: 4.5em;
+}
+
+.story-title{
+    font-family: "Bebas Neue", sans-serif;
+    color: #191919;
+    letter-spacing: 0.5px;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.story-subtitle{
+    font-family: "Bebas Neue", sans-serif;
+    color: #191919;
     margin-bottom: 0.5em;
-}
-.section-descrizione p{
-    margin-bottom: 1em;
+    letter-spacing: 0.5px;
+    font-size: 25px;
 }
 
-.section-storia{
-    margin-top: 3em;
-}
-.section-storia h2{
-    margin-bottom: 0.5em;
-}
-.section-storia p{
+.story-section p{
     margin-bottom: 1.5em;
 }
-#titolo-storia{
-    margin-bottom: 1em;
-}
 
-.tappa-1{
+.stage-1{
     margin-left: 0%;
 }
-.tappa-2{
+
+.stage-2{
     margin-left: 25%;
 }
-.tappa-3{
+
+.stage-3{
     margin-left: 50%;
 }
-.tappa-4{
+
+.stage-4{
     margin-left: 75%;
 }
+/* End Story Section */
 
 
-.section-recensioni{
-    margin-top: 3em;
-    margin-bottom: 2em;
+/* Start Reviews Section */
+.reviews-section {
+    margin-top: 4.5em;
+    margin-bottom: 4.5em;
 }
-.section-recensioni h2{
-    margin-bottom: 0.5em;
+.reviews-title {
+    color: #191919;
+    font-size: 2.5em;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 0.5px;
 }
-.recensione {
-    background-color: rgb(243, 242, 243);
-    padding: 2em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    border-radius: 0 20px 20px 0;
-    border-left: 4px solid #800020;
+
+.reviews-subtitle {
+    text-align: center;
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 30px;
 }
+
+.reviews-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.review-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(128, 0, 32, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    border-left: 4px solid #191919;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+}
+
+.review-content {
+    padding: 30px;
+    position: relative;
+}
+
+.review-content i {
+    font-size: 24px;
+    color: #800020;
+    opacity: 0.3;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.review-content p {
+    font-style: italic;
+    color: #444;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 1;
+    padding-left: 0.5em;
+}
+
+.review-source {
+    text-align: right;
+    color: #191919;
+    font-size: 15px;
+}
+/* End Reviews Section */
+
+
+@media (max-width: 768px) {
+    .section-storia > div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stage-1, .stage-2, .stage-3, .stage-4 {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .reviews-container {
+        grid-template-columns: 1fr;
+    }
+}
+

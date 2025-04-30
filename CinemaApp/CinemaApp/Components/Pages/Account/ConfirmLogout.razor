@@ -1,0 +1,31 @@
+@page "/confirm-logout"
+@inject NavigationManager NavigationManager
+
+<div class="login-container">
+    <div class="login-card">
+        <div class="login-header">
+            <div class="logout-icon">
+                <i class="oi oi-account-logout"></i>
+            </div>
+            <h1 class="login-title">Conferma Logout</h1>
+            <p class="login-subtitle">Sei sicuro di voler uscire?</p>
+        </div>
+        
+        <p class="logout-message">
+            Sei sicuro di voler effettuare il logout?<br>
+            Dovrai effettuare nuovamente l'accesso per utilizzare tutte le funzionalità.
+        </p>
+        
+        <div class="action-buttons">
+            <a href="/logout" class="btn-primary">Conferma Logout</a>
+        </div>
+    </div>
+</div>
+
+@code {
+    private void CancelLogout()
+    {
+        // Reindirizza alla home page o alla pagina precedente
+        NavigationManager.NavigateTo("/");
+    }
+}

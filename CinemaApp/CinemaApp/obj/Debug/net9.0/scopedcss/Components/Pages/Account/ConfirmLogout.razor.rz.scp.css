@@ -1,10 +1,10 @@
-.login-container[b-e3abdc6rdb] {
+.login-container[b-9dzaq4it9s] {
     max-width: 1100px;
     margin: 40px auto;
     padding: 0;
 }
 
-.login-card[b-e3abdc6rdb] {
+.login-card[b-9dzaq4it9s] {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 16px rgba(62, 62, 62, 0.1);
@@ -13,37 +13,42 @@
     padding: 40px;
     width: 100%;
     max-width: 450px;
-    margin: 222px auto;
+    margin: 217px auto;
     text-align: center;
 }
 
-.login-header[b-e3abdc6rdb] {
+.login-header[b-9dzaq4it9s] {
     text-align: center;
     margin-bottom: 30px;
 }
 
-.login-title[b-e3abdc6rdb] {
+.login-title[b-9dzaq4it9s] {
     color: #171717FF;
     font-size: 26px;
     font-weight: 700;
     margin-bottom: 8px;
 }
 
-.login-subtitle[b-e3abdc6rdb] {
+.login-subtitle[b-9dzaq4it9s] {
     color: #666;
     font-size: 0.8rem;
     margin-bottom: 25px;
 }
 
-.error-message[b-e3abdc6rdb] {
-    color: #28a745;
-    text-align: center;
-    font-size: 15px;
+.logout-icon[b-9dzaq4it9s] {
+    font-size: 48px;
+    color: #171717FF;
+    margin-bottom: 20px;
+}
+
+.logout-message[b-9dzaq4it9s] {
     margin-bottom: 30px;
+    color: #444;
+    font-size: 16px;
     line-height: 1.5;
 }
 
-.action-buttons[b-e3abdc6rdb] {
+.action-buttons[b-9dzaq4it9s] {
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -54,7 +59,7 @@
     margin-right: auto;
 }
 
-.btn-primary[b-e3abdc6rdb] {
+.btn-primary[b-9dzaq4it9s] {
     background-color: #171717FF;
     color: white;
     border: none;
@@ -71,13 +76,13 @@
     text-align: center;
 }
 
-.btn-primary:hover[b-e3abdc6rdb] {
+.btn-primary:hover[b-9dzaq4it9s] {
     background-color: #232323;
     transform: translateY(-1px);
     box-shadow: 0 3px 6px rgba(58, 58, 58, 0.35);
 }
 
-.btn-outline[b-e3abdc6rdb] {
+.btn-outline[b-9dzaq4it9s] {
     background-color: #f8f9fa;
     color: #444;
     border: 1px solid #ddd;
@@ -93,6 +98,6 @@
     text-align: center;
 }
 
-.btn-outline:hover[b-e3abdc6rdb] {
+.btn-outline:hover[b-9dzaq4it9s] {
     background-color: #e9ecef;
 }
