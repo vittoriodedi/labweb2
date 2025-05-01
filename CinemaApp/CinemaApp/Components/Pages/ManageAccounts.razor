@@ -1,30 +1,54 @@
-@page "/manage-accounts"
+@page "/manage-accounts1"
 @using CinemaApp.Models
 @using CinemaApp.Models.Entities
 @using Microsoft.EntityFrameworkCore
 @rendermode InteractiveServer
 
-<MudText Typo="Typo.h5" Class="mb-4">Lista Utenti</MudText>
-
-<MudTable Items="@users" Hover="true" Breakpoint="Breakpoint.Sm">
-    <HeaderContent>
-        <MudTh>Username</MudTh>
-        <MudTh>Email</MudTh>
-        <MudTh>Ruoli</MudTh>
-        <MudTh>Azioni</MudTh>
-
-    </HeaderContent>
-    <RowTemplate>
-        <MudTd>@context.UserName</MudTd>
-        <MudTd>@context.Email</MudTd>
-        <MudTd>@context.Role</MudTd>
-        <MudTd>
-            <MudButton Color="Color.Error" Variant="Variant.Filled" Size="Size.Small"OnClick="@(() => DeleteUser(context))">
-                Elimina
-            </MudButton>
-        </MudTd>
-    </RowTemplate>
-</MudTable>
+@if (users == null || users.Count == 0)
+{
+    <MudText Typo="Typo.h5" Class="mb-4">Lista Utenti non presente</MudText>
+}
+else
+{
+    <div class="container">
+        <div class="header">
+            <h1>Gestione Account</h1>
+            <p>Visualizza e gestisci tutti gli account utente nel database</p>
+        </div>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Ruolo</th>
+                    <th>Azioni</th>
+                </tr>
+                </thead>
+                <tbody>
+                @foreach (var user in users)
+                {
+                    <tr>
+                        <td><span class="user-name">@user.UserName</span></td>
+                        <td>@user.Email</td>
+                        <td><span class="badge badge-admin">@user.Role</span></td>
+                        <td><button class="btn btn-delete" @onclick="() => DeleteUser(user)">Elimina</button></td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+        </div>
+        <div class="pagination">
+            <div class="page-info">
+                Visualizzando 1-@users.Count di @users.Count account
+            </div>
+            <div class="page-buttons">
+                <button class="btn btn-outline" disabled>Precedente</button>
+                <button class="btn btn-outline" disabled>Successivo</button>
+            </div>
+        </div>
+    </div>
+}
 
 @inject CinemaDbContext dbContext
 @code {

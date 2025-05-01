@@ -1,4 +1,4 @@
-@page "/create-user-account"
+@page "/create-account"
 
 @using CinemaApp.Models
 @using CinemaApp.Models.Entities
@@ -13,7 +13,7 @@
             <p class="login-subtitle">Crea un nuovo account <br/> Inserisci le tue informazioni qui sotto.</p>
         </div>
         
-        <EditForm Model="@Model" OnValidSubmit="CreateAccount" FormName="RegisterForm">
+        <EditForm Model="@Model" OnValidSubmit="CreateUserAccount" FormName="RegisterForm">
             <DataAnnotationsValidator />
             
             <div class="form-group">
@@ -67,7 +67,7 @@
 
     private string? errorMessage;
     
-    private async Task CreateAccount()
+    private async Task CreateUserAccount()
     {
         // Verifica se l'utente esiste già
         var existingUser = DbContext.UserAccounts.FirstOrDefault(x => x.UserName == Model.UserName);

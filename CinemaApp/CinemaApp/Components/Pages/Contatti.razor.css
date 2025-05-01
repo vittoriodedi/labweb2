@@ -27,12 +27,12 @@
     letter-spacing: 1px;
     text-align: center;
     color: #191919;
-    margin-bottom: 10px;
+    margin-bottom: .5rem;
 }
 
 .hours-info {
     text-align: center;
-    font-size: 14px;
+    font-size: 1em;
     color: #666;
 }
 
@@ -99,6 +99,7 @@
 }
 
 .map-section p {
+    font-size: 1em;
     margin-bottom: 1em;
     text-align: center;
     color: #555;
@@ -111,7 +112,7 @@
     letter-spacing: 1px;
     text-align: center;
     color: #191919;
-    margin-bottom: 10px;
+    margin-bottom: .5rem;
 }
 
 .map {
@@ -142,6 +143,7 @@
 }
 
 .contacts-text h2 {
+    font-size: 2em;
     margin-bottom: 20px;
     color: #191919;
     font-family: "Bebas Neue", sans-serif;
@@ -150,6 +152,7 @@
 .contacts-text p {
     margin-bottom: 10px;
     color: #555;
+    font-size: 1em;
 }
 
 .contacts-links {

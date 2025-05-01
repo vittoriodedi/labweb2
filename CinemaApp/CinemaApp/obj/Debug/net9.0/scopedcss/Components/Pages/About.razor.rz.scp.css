@@ -27,7 +27,7 @@
     letter-spacing: 1px;
     text-align: center;
     color: #191919;
-    margin-bottom: 10px;
+    margin-bottom: .5rem;
 }
 
 .about-text p[b-9591dx9cxn] {
@@ -51,6 +51,7 @@
     letter-spacing: 0.5px;
     font-size: 2.5em;
     text-align: center;
+    margin-bottom: .5rem;
 }
 
 .story-subtitle[b-9591dx9cxn]{
@@ -62,6 +63,7 @@
 }
 
 .story-section p[b-9591dx9cxn]{
+    font-size: 1em;
     margin-bottom: 1.5em;
 }
 
@@ -94,13 +96,11 @@
     text-align: center;
     font-family: "Bebas Neue", sans-serif;
     letter-spacing: 0.5px;
+    margin-bottom: .5rem;
 }
-
-.reviews-subtitle[b-9591dx9cxn] {
+#first-review-section-p[b-9591dx9cxn]{
     text-align: center;
-    color: #666;
-    font-size: 18px;
-    margin-bottom: 30px;
+    font-size: 1em;
 }
 
 .reviews-container[b-9591dx9cxn] {
@@ -128,19 +128,10 @@
     position: relative;
 }
 
-.review-content i[b-9591dx9cxn] {
-    font-size: 24px;
-    color: #800020;
-    opacity: 0.3;
-    position: absolute;
-    top: 15px;
-    left: 15px;
-}
-
 .review-content p[b-9591dx9cxn] {
     font-style: italic;
     color: #444;
-    font-size: 16px;
+    font-size: 1em;
     line-height: 1.6;
     margin-bottom: 15px;
     position: relative;

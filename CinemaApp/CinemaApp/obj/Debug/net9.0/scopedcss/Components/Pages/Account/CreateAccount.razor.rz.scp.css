@@ -1,10 +1,10 @@
-.login-container[b-uo54siompd] {
+.login-container[b-g6ulb2sawk] {
     max-width: 1100px;
     margin: 40px auto;
     padding: 0;
 }
 
-.login-card[b-uo54siompd] {
+.login-card[b-g6ulb2sawk] {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 16px rgba(62, 62, 62, 0.1);
@@ -16,36 +16,36 @@
     margin: 47px auto;
 }
 
-.login-header[b-uo54siompd] {
+.login-header[b-g6ulb2sawk] {
     text-align: center;
     margin-bottom: 30px;
 }
 
-.login-title[b-uo54siompd] {
+.login-title[b-g6ulb2sawk] {
     color: #171717FF;
     font-size: 26px;
     font-weight: 700;
     margin-bottom: 8px;
 }
 
-.login-subtitle[b-uo54siompd] {
+.login-subtitle[b-g6ulb2sawk] {
     color: #666;
     font-size: 0.8rem;
     margin-bottom: 25px;
 }
 
-.form-group[b-uo54siompd] {
+.form-group[b-g6ulb2sawk] {
     margin-bottom: 20px;
 }
 
-.form-label[b-uo54siompd] {
+.form-label[b-g6ulb2sawk] {
     display: block;
     margin-bottom: 8px;
     font-weight: 500;
     color: #444;
 }
 
-.form-control[b-uo54siompd] {
+.form-control[b-g6ulb2sawk] {
     width: 100%;
     padding: 12px 15px;
     font-size: 15px;
@@ -54,19 +54,19 @@
     transition: border-color 0.2s, box-shadow 0.2s;
 }
 
-.form-control:focus[b-uo54siompd] {
+.form-control:focus[b-g6ulb2sawk] {
     border-color: #171717FF;
     box-shadow: 0 0 0 3px rgba(74, 74, 74, 0.15);
     outline: none;
 }
 
-.validation-message[b-uo54siompd] {
+.validation-message[b-g6ulb2sawk] {
     color: #d9534f;
     font-size: 13px;
     margin-top: 5px;
 }
 
-.error-message[b-uo54siompd] {
+.error-message[b-g6ulb2sawk] {
     color: #d9534f;
     text-align: center;
     font-size: 14px;
@@ -74,7 +74,7 @@
     min-height: 21px;
 }
 
-.btn-login[b-uo54siompd] {
+.btn-login[b-g6ulb2sawk] {
     background-color: #171717FF;
     color: white;
     border: none;
@@ -88,24 +88,24 @@
     box-shadow: 0 2px 4px rgba(37, 37, 37, 0.25);
 }
 
-.btn-login:hover[b-uo54siompd] {
+.btn-login:hover[b-g6ulb2sawk] {
     background-color: #232323;
     transform: translateY(-1px);
     box-shadow: 0 3px 6px rgba(58, 58, 58, 0.35);
 }
 
-.register-link[b-uo54siompd] {
+.register-link[b-g6ulb2sawk] {
     text-align: center;
     margin-top: 1rem;
     font-size: 0.8rem;
 }
 
-.register-link a[b-uo54siompd] {
+.register-link a[b-g6ulb2sawk] {
     font-weight: bold;
     color: #107bff;
     text-decoration: none;
 }
 
-.register-link a:hover[b-uo54siompd] {
+.register-link a:hover[b-g6ulb2sawk] {
     text-decoration: underline;
 }
