@@ -13,7 +13,7 @@
     padding: 40px;
     width: 100%;
     max-width: 450px;
-    margin: 222px auto;
+    margin: 245px auto;
     text-align: center;
 }
 
@@ -24,7 +24,7 @@
 
 .login-title[b-e3abdc6rdb] {
     color: #171717FF;
-    font-size: 26px;
+    font-size: 25px;
     font-weight: 700;
     margin-bottom: 8px;
 }
@@ -33,14 +33,6 @@
     color: #666;
     font-size: 0.8rem;
     margin-bottom: 25px;
-}
-
-.error-message[b-e3abdc6rdb] {
-    color: #28a745;
-    text-align: center;
-    font-size: 15px;
-    margin-bottom: 30px;
-    line-height: 1.5;
 }
 
 .action-buttons[b-e3abdc6rdb] {
@@ -60,7 +52,7 @@
     border: none;
     border-radius: 4px;
     padding: 12px 16px;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
     width: 100%;
     cursor: pointer;
@@ -83,7 +75,7 @@
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 12px 16px;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
     width: 100%;
     cursor: pointer;

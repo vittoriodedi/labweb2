@@ -7,14 +7,14 @@
 .login-card {
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 16px rgba(128, 0, 32, 0.1);
-    border-top: 4px solid #800020;
+    box-shadow: 0 4px 16px rgba(62, 62, 62, 0.1);
+    border-top: 5px solid #171717FF;
+    border-bottom: 5px solid #ffffff;
     padding: 40px;
     width: 100%;
-    min-width: 450px;
     max-width: 450px;
-    height:471px;
-    margin: 0 auto;
+    margin: 270px auto;
+    text-align: center;
 }
 
 .login-header {
@@ -23,52 +23,81 @@
 }
 
 .login-title {
-    color: #800020;
-    font-size: 26px;
+    color: #171717FF;
+    font-size: 25px;
     font-weight: 700;
-    margin-top: 40px;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 
 .login-subtitle {
     color: #666;
-    font-size: 14px;
+    font-size: 0.8rem;
     margin-bottom: 25px;
 }
 
-.error-message {
-    color: #444;
-    text-align: center;
-    line-height: 1.6;
+.logout-icon {
+    font-size: 48px;
+    color: #171717FF;
+    margin-bottom: 20px;
+}
+
+.logout-message {
     margin-bottom: 30px;
+    color: #444;
     font-size: 15px;
+    line-height: 1.5;
 }
 
 .action-buttons {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
+    margin-top: 20px;
     width: 100%;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .btn-primary {
-    background-color: #800020;
+    background-color: #171717FF;
     color: white;
     border: none;
+    border-radius: 4px;
+    padding: 12px 16px;
+    font-size: 15px;
+    font-weight: 500;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+    box-shadow: 0 2px 4px rgba(37, 37, 37, 0.25);
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.btn-primary:hover {
+    background-color: #232323;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 6px rgba(58, 58, 58, 0.35);
+}
+
+.btn-outline {
+    background-color: #f8f9fa;
+    color: #444;
+    border: 1px solid #ddd;
     border-radius: 4px;
     padding: 12px 16px;
     font-size: 16px;
     font-weight: 500;
     width: 100%;
     cursor: pointer;
-    transition: background-color 0.2s, transform 0.2s;
-    box-shadow: 0 2px 4px rgba(128, 0, 32, 0.25);
-    text-align: center;
+    transition: background-color 0.2s;
     text-decoration: none;
+    display: block;
+    text-align: center;
 }
 
-.btn-primary:hover {
-    background-color: #6a001a;
-    transform: translateY(-1px);
-    box-shadow: 0 3px 6px rgba(128, 0, 32, 0.35);
+.btn-outline:hover {
+    background-color: #e9ecef;
 }

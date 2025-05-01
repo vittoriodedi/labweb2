@@ -13,7 +13,7 @@
     padding: 40px;
     width: 100%;
     max-width: 450px;
-    margin: 188px auto;
+    margin: 190px auto;
 }
 
 .login-header[b-sbt0m71zwm] {
@@ -23,7 +23,7 @@
 
 .login-title[b-sbt0m71zwm] {
     color: #171717FF;
-    font-size: 26px;
+    font-size: 25px;
     font-weight: 700;
     margin-bottom: 8px;
 }
@@ -80,7 +80,7 @@
     border: none;
     border-radius: 4px;
     padding: 12px 16px;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
     width: 100%;
     cursor: pointer;
@@ -102,7 +102,7 @@
 
 .register-link a[b-sbt0m71zwm] {
     font-weight: bold;
-    color: #107bff;
+    color: #171717FF;
     text-decoration: none;
 }
 
