@@ -1,10 +1,11 @@
-.login-container[b-g6ulb2sawk] {
+/* Stili per la pagina CreateAdmin.razor */
+.login-container[b-u6iyl2ckwo] {
     max-width: 1100px;
     margin: 40px auto;
     padding: 0;
 }
 
-.login-card[b-g6ulb2sawk] {
+.login-card[b-u6iyl2ckwo] {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 16px rgba(62, 62, 62, 0.1);
@@ -16,36 +17,36 @@
     margin: 95px auto;
 }
 
-.login-header[b-g6ulb2sawk] {
+.login-header[b-u6iyl2ckwo] {
     text-align: center;
     margin-bottom: 30px;
 }
 
-.login-title[b-g6ulb2sawk] {
+.login-title[b-u6iyl2ckwo] {
     color: #171717FF;
     font-size: 25px;
     font-weight: 700;
     margin-bottom: 8px;
 }
 
-.login-subtitle[b-g6ulb2sawk] {
+.login-subtitle[b-u6iyl2ckwo] {
     color: #666;
     font-size: 0.8rem;
     margin-bottom: 25px;
 }
 
-.form-group[b-g6ulb2sawk] {
+.form-group[b-u6iyl2ckwo] {
     margin-bottom: 20px;
 }
 
-.form-label[b-g6ulb2sawk] {
+.form-label[b-u6iyl2ckwo] {
     display: block;
     margin-bottom: 8px;
     font-weight: 500;
     color: #444;
 }
 
-.form-control[b-g6ulb2sawk] {
+.form-control[b-u6iyl2ckwo] {
     width: 100%;
     padding: 12px 15px;
     font-size: 15px;
@@ -54,19 +55,19 @@
     transition: border-color 0.2s, box-shadow 0.2s;
 }
 
-.form-control:focus[b-g6ulb2sawk] {
+.form-control:focus[b-u6iyl2ckwo] {
     border-color: #171717FF;
     box-shadow: 0 0 0 3px rgba(74, 74, 74, 0.15);
     outline: none;
 }
 
-.validation-message[b-g6ulb2sawk] {
+.validation-message[b-u6iyl2ckwo] {
     color: #d9534f;
     font-size: 13px;
     margin-top: 5px;
 }
 
-.error-message[b-g6ulb2sawk] {
+.error-message[b-u6iyl2ckwo] {
     color: #d9534f;
     text-align: center;
     font-size: 14px;
@@ -74,7 +75,7 @@
     min-height: 21px;
 }
 
-.btn-login[b-g6ulb2sawk] {
+.btn-login[b-u6iyl2ckwo] {
     background-color: #171717FF;
     color: white;
     border: none;
@@ -88,24 +89,34 @@
     box-shadow: 0 2px 4px rgba(37, 37, 37, 0.25);
 }
 
-.btn-login:hover[b-g6ulb2sawk] {
+.btn-login:hover[b-u6iyl2ckwo] {
     background-color: #232323;
     transform: translateY(-1px);
     box-shadow: 0 3px 6px rgba(58, 58, 58, 0.35);
 }
 
-.register-link[b-g6ulb2sawk] {
-    text-align: center;
-    margin-top: 1rem;
-    font-size: 0.8rem;
+/* Effetto specifico per il pulsante di creazione amministratore */
+.btn-login:active[b-u6iyl2ckwo] {
+    transform: translateY(1px);
+    box-shadow: 0 1px 2px rgba(37, 37, 37, 0.25);
 }
 
-.register-link a[b-g6ulb2sawk] {
-    font-weight: bold;
+/* Stile speciale per il titolo admin */
+.login-title[admin][b-u6iyl2ckwo] {
     color: #171717FF;
-    text-decoration: none;
+    border-bottom: 2px solid #171717FF;
+    display: inline-block;
+    padding-bottom: 5px;
 }
 
-.register-link a:hover[b-g6ulb2sawk] {
-    text-decoration: underline;
+/* Adattamenti responsive */
+@media (max-width: 576px) {
+    .login-card[b-u6iyl2ckwo] {
+        margin: 40px auto;
+        padding: 30px;
+    }
+
+    .login-title[b-u6iyl2ckwo] {
+        font-size: 22px;
+    }
 }

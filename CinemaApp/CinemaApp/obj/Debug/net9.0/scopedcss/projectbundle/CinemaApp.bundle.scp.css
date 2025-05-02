@@ -447,14 +447,14 @@ footer[b-344ttqj0ko] {
 .btn-outline:hover[b-9dzaq4it9s] {
     background-color: #e9ecef;
 }
-/* _content/CinemaApp/Components/Pages/Account/CreateAccount.razor.rz.scp.css */
-.login-container[b-g6ulb2sawk] {
+/* _content/CinemaApp/Components/Pages/Account/CreateUser.razor.rz.scp.css */
+.login-container[b-ovy8fa5mxx] {
     max-width: 1100px;
     margin: 40px auto;
     padding: 0;
 }
 
-.login-card[b-g6ulb2sawk] {
+.login-card[b-ovy8fa5mxx] {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 16px rgba(62, 62, 62, 0.1);
@@ -466,36 +466,36 @@ footer[b-344ttqj0ko] {
     margin: 95px auto;
 }
 
-.login-header[b-g6ulb2sawk] {
+.login-header[b-ovy8fa5mxx] {
     text-align: center;
     margin-bottom: 30px;
 }
 
-.login-title[b-g6ulb2sawk] {
+.login-title[b-ovy8fa5mxx] {
     color: #171717FF;
     font-size: 25px;
     font-weight: 700;
     margin-bottom: 8px;
 }
 
-.login-subtitle[b-g6ulb2sawk] {
+.login-subtitle[b-ovy8fa5mxx] {
     color: #666;
     font-size: 0.8rem;
     margin-bottom: 25px;
 }
 
-.form-group[b-g6ulb2sawk] {
+.form-group[b-ovy8fa5mxx] {
     margin-bottom: 20px;
 }
 
-.form-label[b-g6ulb2sawk] {
+.form-label[b-ovy8fa5mxx] {
     display: block;
     margin-bottom: 8px;
     font-weight: 500;
     color: #444;
 }
 
-.form-control[b-g6ulb2sawk] {
+.form-control[b-ovy8fa5mxx] {
     width: 100%;
     padding: 12px 15px;
     font-size: 15px;
@@ -504,19 +504,19 @@ footer[b-344ttqj0ko] {
     transition: border-color 0.2s, box-shadow 0.2s;
 }
 
-.form-control:focus[b-g6ulb2sawk] {
+.form-control:focus[b-ovy8fa5mxx] {
     border-color: #171717FF;
     box-shadow: 0 0 0 3px rgba(74, 74, 74, 0.15);
     outline: none;
 }
 
-.validation-message[b-g6ulb2sawk] {
+.validation-message[b-ovy8fa5mxx] {
     color: #d9534f;
     font-size: 13px;
     margin-top: 5px;
 }
 
-.error-message[b-g6ulb2sawk] {
+.error-message[b-ovy8fa5mxx] {
     color: #d9534f;
     text-align: center;
     font-size: 14px;
@@ -524,7 +524,7 @@ footer[b-344ttqj0ko] {
     min-height: 21px;
 }
 
-.btn-login[b-g6ulb2sawk] {
+.btn-login[b-ovy8fa5mxx] {
     background-color: #171717FF;
     color: white;
     border: none;
@@ -538,25 +538,25 @@ footer[b-344ttqj0ko] {
     box-shadow: 0 2px 4px rgba(37, 37, 37, 0.25);
 }
 
-.btn-login:hover[b-g6ulb2sawk] {
+.btn-login:hover[b-ovy8fa5mxx] {
     background-color: #232323;
     transform: translateY(-1px);
     box-shadow: 0 3px 6px rgba(58, 58, 58, 0.35);
 }
 
-.register-link[b-g6ulb2sawk] {
+.register-link[b-ovy8fa5mxx] {
     text-align: center;
     margin-top: 1rem;
     font-size: 0.8rem;
 }
 
-.register-link a[b-g6ulb2sawk] {
+.register-link a[b-ovy8fa5mxx] {
     font-weight: bold;
     color: #171717FF;
     text-decoration: none;
 }
 
-.register-link a:hover[b-g6ulb2sawk] {
+.register-link a:hover[b-ovy8fa5mxx] {
     text-decoration: underline;
 }
 /* _content/CinemaApp/Components/Pages/Account/Login.razor.rz.scp.css */
@@ -1087,7 +1087,129 @@ section p a[b-nn9zja53ir] {
         min-width: auto;
     }
 }
-/* _content/CinemaApp/Components/Pages/CreateAdminAccount.razor.rz.scp.css */
+/* _content/CinemaApp/Components/Pages/CreateAdmin.razor.rz.scp.css */
+/* Stili per la pagina CreateAdmin.razor */
+.login-container[b-u6iyl2ckwo] {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0;
+}
+
+.login-card[b-u6iyl2ckwo] {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(62, 62, 62, 0.1);
+    border-top: 5px solid #171717FF;
+    border-bottom: 5px solid #ffffff;
+    padding: 40px;
+    width: 100%;
+    max-width: 450px;
+    margin: 95px auto;
+}
+
+.login-header[b-u6iyl2ckwo] {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-title[b-u6iyl2ckwo] {
+    color: #171717FF;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.login-subtitle[b-u6iyl2ckwo] {
+    color: #666;
+    font-size: 0.8rem;
+    margin-bottom: 25px;
+}
+
+.form-group[b-u6iyl2ckwo] {
+    margin-bottom: 20px;
+}
+
+.form-label[b-u6iyl2ckwo] {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #444;
+}
+
+.form-control[b-u6iyl2ckwo] {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-control:focus[b-u6iyl2ckwo] {
+    border-color: #171717FF;
+    box-shadow: 0 0 0 3px rgba(74, 74, 74, 0.15);
+    outline: none;
+}
+
+.validation-message[b-u6iyl2ckwo] {
+    color: #d9534f;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.error-message[b-u6iyl2ckwo] {
+    color: #d9534f;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+    min-height: 21px;
+}
+
+.btn-login[b-u6iyl2ckwo] {
+    background-color: #171717FF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 16px;
+    font-size: 15px;
+    font-weight: 500;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+    box-shadow: 0 2px 4px rgba(37, 37, 37, 0.25);
+}
+
+.btn-login:hover[b-u6iyl2ckwo] {
+    background-color: #232323;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 6px rgba(58, 58, 58, 0.35);
+}
+
+/* Effetto specifico per il pulsante di creazione amministratore */
+.btn-login:active[b-u6iyl2ckwo] {
+    transform: translateY(1px);
+    box-shadow: 0 1px 2px rgba(37, 37, 37, 0.25);
+}
+
+/* Stile speciale per il titolo admin */
+.login-title[admin][b-u6iyl2ckwo] {
+    color: #171717FF;
+    border-bottom: 2px solid #171717FF;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Adattamenti responsive */
+@media (max-width: 576px) {
+    .login-card[b-u6iyl2ckwo] {
+        margin: 40px auto;
+        padding: 30px;
+    }
+
+    .login-title[b-u6iyl2ckwo] {
+        font-size: 22px;
+    }
+}
 /* _content/CinemaApp/Components/Pages/FilmCatalogo.razor.rz.scp.css */
 h2[b-moqzcq8k5r] {
     font-family: "Inter", sans-serif;
@@ -1378,7 +1500,7 @@ body[b-ciynt6jujz] {
     position: relative;
     height: 300px;
     overflow: hidden;
-    background: linear-gradient(to bottom, #000000, #ffffff);
+    background: linear-gradient(to bottom, #a61f1f, #ffffff);
 }
 
 .movie-content[b-ciynt6jujz] {

@@ -431,8 +431,8 @@
 /Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/scopedcss/Components/Pages/Account/Login.razor.rz.scp.css
 /Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/scopedcss/Components/Pages/Account/Logout.razor.rz.scp.css
 /Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/scopedcss/Components/Pages/Account/ConfirmLogout.razor.rz.scp.css
-/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/scopedcss/Components/Pages/CreateAdminAccount.razor.rz.scp.css
 /Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/scopedcss/Components/Pages/ManageAccounts.razor.rz.scp.css
-/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/scopedcss/Components/Pages/Account/CreateAccount.razor.rz.scp.css
-/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/compressed/cdau1ibg9m-7z91zitrv7.gz
-/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/compressed/s8dcfm6vs9-7z91zitrv7.gz
+/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/scopedcss/Components/Pages/Account/CreateUser.razor.rz.scp.css
+/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/scopedcss/Components/Pages/CreateAdmin.razor.rz.scp.css
+/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/compressed/cdau1ibg9m-6qz6a9fg1e.gz
+/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/compressed/s8dcfm6vs9-6qz6a9fg1e.gz
