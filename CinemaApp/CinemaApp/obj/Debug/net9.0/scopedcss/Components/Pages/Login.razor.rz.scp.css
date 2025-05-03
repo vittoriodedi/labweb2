@@ -1,10 +1,10 @@
-.login-container[b-sbt0m71zwm] {
+.login-container[b-em1ju1ywpi] {
     max-width: 1100px;
     margin: 40px auto;
     padding: 0;
 }
 
-.login-card[b-sbt0m71zwm] {
+.login-card[b-em1ju1ywpi] {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 16px rgba(62, 62, 62, 0.1);
@@ -16,36 +16,36 @@
     margin: 190px auto;
 }
 
-.login-header[b-sbt0m71zwm] {
+.login-header[b-em1ju1ywpi] {
     text-align: center;
     margin-bottom: 30px;
 }
 
-.login-title[b-sbt0m71zwm] {
+.login-title[b-em1ju1ywpi] {
     color: #171717FF;
     font-size: 25px;
     font-weight: 700;
     margin-bottom: 8px;
 }
 
-.login-subtitle[b-sbt0m71zwm] {
+.login-subtitle[b-em1ju1ywpi] {
     color: #666;
     font-size: 0.8rem;
     margin-bottom: 25px;
 }
 
-.form-group[b-sbt0m71zwm] {
+.form-group[b-em1ju1ywpi] {
     margin-bottom: 20px;
 }
 
-.form-label[b-sbt0m71zwm] {
+.form-label[b-em1ju1ywpi] {
     display: block;
     margin-bottom: 8px;
     font-weight: 500;
     color: #444;
 }
 
-.form-control[b-sbt0m71zwm] {
+.form-control[b-em1ju1ywpi] {
     width: 100%;
     padding: 12px 15px;
     font-size: 15px;
@@ -54,19 +54,19 @@
     transition: border-color 0.2s, box-shadow 0.2s;
 }
 
-.form-control:focus[b-sbt0m71zwm] {
+.form-control:focus[b-em1ju1ywpi] {
     border-color: #171717FF;
     box-shadow: 0 0 0 3px rgba(74, 74, 74, 0.15);
     outline: none;
 }
 
-.validation-message[b-sbt0m71zwm] {
+.validation-message[b-em1ju1ywpi] {
     color: #d9534f;
     font-size: 13px;
     margin-top: 5px;
 }
 
-.error-message[b-sbt0m71zwm] {
+.error-message[b-em1ju1ywpi] {
     color: #d9534f;
     text-align: center;
     font-size: 14px;
@@ -74,7 +74,7 @@
     min-height: 21px;
 }
 
-.btn-login[b-sbt0m71zwm] {
+.btn-login[b-em1ju1ywpi] {
     background-color: #171717FF;
     color: white;
     border: none;
@@ -88,24 +88,24 @@
     box-shadow: 0 2px 4px rgba(37, 37, 37, 0.25);
 }
 
-.btn-login:hover[b-sbt0m71zwm] {
+.btn-login:hover[b-em1ju1ywpi] {
     background-color: #232323;
     transform: translateY(-1px);
     box-shadow: 0 3px 6px rgba(58, 58, 58, 0.35);
 }
 
-.register-link[b-sbt0m71zwm] {
+.register-link[b-em1ju1ywpi] {
     text-align: center;
     margin-top: 1rem;
     font-size: 0.8rem;
 }
 
-.register-link a[b-sbt0m71zwm] {
+.register-link a[b-em1ju1ywpi] {
     font-weight: bold;
     color: #171717FF;
     text-decoration: none;
 }
 
-.register-link a:hover[b-sbt0m71zwm] {
+.register-link a:hover[b-em1ju1ywpi] {
     text-decoration: underline;
 }

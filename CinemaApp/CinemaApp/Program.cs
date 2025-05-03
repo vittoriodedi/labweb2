@@ -15,6 +15,8 @@ builder.Services.AddSingleton<CinemaDbContext>();
 
 builder.Services.AddMudServices();
 
+builder.Services.AddHttpClient();
+
 //guida autenticazione
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options =>

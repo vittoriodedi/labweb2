@@ -246,14 +246,14 @@ footer[b-344ttqj0ko] {
     }
 }
 
-/* _content/CinemaApp/Components/Pages/Account/AccessDenied.razor.rz.scp.css */
-.login-container[b-0eecoxf1xh] {
+/* _content/CinemaApp/Components/Pages/AccessDenied.razor.rz.scp.css */
+.login-container[b-h645feswqv] {
     max-width: 1100px;
     margin: 40px auto;
     padding: 0;
 }
 
-.login-card[b-0eecoxf1xh] {
+.login-card[b-h645feswqv] {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 16px rgba(62, 62, 62, 0.1);
@@ -266,38 +266,38 @@ footer[b-344ttqj0ko] {
     text-align: center;
 }
 
-.login-header[b-0eecoxf1xh] {
+.login-header[b-h645feswqv] {
     text-align: center;
     margin-bottom: 30px;
 }
 
-.login-title[b-0eecoxf1xh] {
+.login-title[b-h645feswqv] {
     color: #171717FF;
     font-size: 25px;
     font-weight: 700;
     margin-bottom: 8px;
 }
 
-.login-subtitle[b-0eecoxf1xh] {
+.login-subtitle[b-h645feswqv] {
     color: #666;
     font-size: 0.8rem;
     margin-bottom: 25px;
 }
 
-.logout-icon[b-0eecoxf1xh] {
+.logout-icon[b-h645feswqv] {
     font-size: 48px;
     color: #171717FF;
     margin-bottom: 20px;
 }
 
-.logout-message[b-0eecoxf1xh] {
+.logout-message[b-h645feswqv] {
     margin-bottom: 30px;
     color: #444;
     font-size: 15px;
     line-height: 1.5;
 }
 
-.action-buttons[b-0eecoxf1xh] {
+.action-buttons[b-h645feswqv] {
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -308,7 +308,7 @@ footer[b-344ttqj0ko] {
     margin-right: auto;
 }
 
-.btn-primary[b-0eecoxf1xh] {
+.btn-primary[b-h645feswqv] {
     background-color: #171717FF;
     color: white;
     border: none;
@@ -325,13 +325,13 @@ footer[b-344ttqj0ko] {
     text-align: center;
 }
 
-.btn-primary:hover[b-0eecoxf1xh] {
+.btn-primary:hover[b-h645feswqv] {
     background-color: #232323;
     transform: translateY(-1px);
     box-shadow: 0 3px 6px rgba(58, 58, 58, 0.35);
 }
 
-.btn-outline[b-0eecoxf1xh] {
+.btn-outline[b-h645feswqv] {
     background-color: #f8f9fa;
     color: #444;
     border: 1px solid #ddd;
@@ -347,419 +347,7 @@ footer[b-344ttqj0ko] {
     text-align: center;
 }
 
-.btn-outline:hover[b-0eecoxf1xh] {
-    background-color: #e9ecef;
-}
-/* _content/CinemaApp/Components/Pages/Account/ConfirmLogout.razor.rz.scp.css */
-.login-container[b-9dzaq4it9s] {
-    max-width: 1100px;
-    margin: 40px auto;
-    padding: 0;
-}
-
-.login-card[b-9dzaq4it9s] {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 16px rgba(62, 62, 62, 0.1);
-    border-top: 5px solid #171717FF;
-    border-bottom: 5px solid #ffffff;
-    padding: 40px;
-    width: 100%;
-    max-width: 450px;
-    margin: 275px auto;
-    text-align: center;
-}
-
-.login-header[b-9dzaq4it9s] {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.login-title[b-9dzaq4it9s] {
-    color: #171717FF;
-    font-size: 25px;
-    font-weight: 700;
-    margin-bottom: 8px;
-}
-
-.login-subtitle[b-9dzaq4it9s] {
-    color: #666;
-    font-size: 0.8rem;
-    margin-bottom: 25px;
-}
-
-.logout-icon[b-9dzaq4it9s] {
-    font-size: 48px;
-    color: #171717FF;
-    margin-bottom: 20px;
-}
-
-.action-buttons[b-9dzaq4it9s] {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin-top: 20px;
-    width: 100%;
-    max-width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.btn-primary[b-9dzaq4it9s] {
-    background-color: #171717FF;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    padding: 12px 16px;
-    font-size: 15px;
-    font-weight: 500;
-    width: 100%;
-    cursor: pointer;
-    transition: background-color 0.2s, transform 0.2s;
-    box-shadow: 0 2px 4px rgba(37, 37, 37, 0.25);
-    text-decoration: none;
-    display: block;
-    text-align: center;
-}
-
-.btn-primary:hover[b-9dzaq4it9s] {
-    background-color: #232323;
-    transform: translateY(-1px);
-    box-shadow: 0 3px 6px rgba(58, 58, 58, 0.35);
-}
-
-.btn-outline[b-9dzaq4it9s] {
-    background-color: #f8f9fa;
-    color: #444;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 12px 16px;
-    font-size: 16px;
-    font-weight: 500;
-    width: 100%;
-    cursor: pointer;
-    transition: background-color 0.2s;
-    text-decoration: none;
-    display: block;
-    text-align: center;
-}
-
-.btn-outline:hover[b-9dzaq4it9s] {
-    background-color: #e9ecef;
-}
-/* _content/CinemaApp/Components/Pages/Account/CreateUser.razor.rz.scp.css */
-.login-container[b-ovy8fa5mxx] {
-    max-width: 1100px;
-    margin: 40px auto;
-    padding: 0;
-}
-
-.login-card[b-ovy8fa5mxx] {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 16px rgba(62, 62, 62, 0.1);
-    border-top: 5px solid #171717FF;
-    border-bottom: 5px solid #ffffff;
-    padding: 40px;
-    width: 100%;
-    max-width: 450px;
-    margin: 95px auto;
-}
-
-.login-header[b-ovy8fa5mxx] {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.login-title[b-ovy8fa5mxx] {
-    color: #171717FF;
-    font-size: 25px;
-    font-weight: 700;
-    margin-bottom: 8px;
-}
-
-.login-subtitle[b-ovy8fa5mxx] {
-    color: #666;
-    font-size: 0.8rem;
-    margin-bottom: 25px;
-}
-
-.form-group[b-ovy8fa5mxx] {
-    margin-bottom: 20px;
-}
-
-.form-label[b-ovy8fa5mxx] {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 500;
-    color: #444;
-}
-
-.form-control[b-ovy8fa5mxx] {
-    width: 100%;
-    padding: 12px 15px;
-    font-size: 15px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    transition: border-color 0.2s, box-shadow 0.2s;
-}
-
-.form-control:focus[b-ovy8fa5mxx] {
-    border-color: #171717FF;
-    box-shadow: 0 0 0 3px rgba(74, 74, 74, 0.15);
-    outline: none;
-}
-
-.validation-message[b-ovy8fa5mxx] {
-    color: #d9534f;
-    font-size: 13px;
-    margin-top: 5px;
-}
-
-.error-message[b-ovy8fa5mxx] {
-    color: #d9534f;
-    text-align: center;
-    font-size: 14px;
-    margin-bottom: 10px;
-    min-height: 21px;
-}
-
-.btn-login[b-ovy8fa5mxx] {
-    background-color: #171717FF;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    padding: 12px 16px;
-    font-size: 15px;
-    font-weight: 500;
-    width: 100%;
-    cursor: pointer;
-    transition: background-color 0.2s, transform 0.2s;
-    box-shadow: 0 2px 4px rgba(37, 37, 37, 0.25);
-}
-
-.btn-login:hover[b-ovy8fa5mxx] {
-    background-color: #232323;
-    transform: translateY(-1px);
-    box-shadow: 0 3px 6px rgba(58, 58, 58, 0.35);
-}
-
-.register-link[b-ovy8fa5mxx] {
-    text-align: center;
-    margin-top: 1rem;
-    font-size: 0.8rem;
-}
-
-.register-link a[b-ovy8fa5mxx] {
-    font-weight: bold;
-    color: #171717FF;
-    text-decoration: none;
-}
-
-.register-link a:hover[b-ovy8fa5mxx] {
-    text-decoration: underline;
-}
-/* _content/CinemaApp/Components/Pages/Account/Login.razor.rz.scp.css */
-.login-container[b-sbt0m71zwm] {
-    max-width: 1100px;
-    margin: 40px auto;
-    padding: 0;
-}
-
-.login-card[b-sbt0m71zwm] {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 16px rgba(62, 62, 62, 0.1);
-    border-top: 5px solid #171717FF;
-    border-bottom: 5px solid #ffffff;
-    padding: 40px;
-    width: 100%;
-    max-width: 450px;
-    margin: 190px auto;
-}
-
-.login-header[b-sbt0m71zwm] {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.login-title[b-sbt0m71zwm] {
-    color: #171717FF;
-    font-size: 25px;
-    font-weight: 700;
-    margin-bottom: 8px;
-}
-
-.login-subtitle[b-sbt0m71zwm] {
-    color: #666;
-    font-size: 0.8rem;
-    margin-bottom: 25px;
-}
-
-.form-group[b-sbt0m71zwm] {
-    margin-bottom: 20px;
-}
-
-.form-label[b-sbt0m71zwm] {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 500;
-    color: #444;
-}
-
-.form-control[b-sbt0m71zwm] {
-    width: 100%;
-    padding: 12px 15px;
-    font-size: 15px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    transition: border-color 0.2s, box-shadow 0.2s;
-}
-
-.form-control:focus[b-sbt0m71zwm] {
-    border-color: #171717FF;
-    box-shadow: 0 0 0 3px rgba(74, 74, 74, 0.15);
-    outline: none;
-}
-
-.validation-message[b-sbt0m71zwm] {
-    color: #d9534f;
-    font-size: 13px;
-    margin-top: 5px;
-}
-
-.error-message[b-sbt0m71zwm] {
-    color: #d9534f;
-    text-align: center;
-    font-size: 14px;
-    margin-bottom: 10px;
-    min-height: 21px;
-}
-
-.btn-login[b-sbt0m71zwm] {
-    background-color: #171717FF;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    padding: 12px 16px;
-    font-size: 15px;
-    font-weight: 500;
-    width: 100%;
-    cursor: pointer;
-    transition: background-color 0.2s, transform 0.2s;
-    box-shadow: 0 2px 4px rgba(37, 37, 37, 0.25);
-}
-
-.btn-login:hover[b-sbt0m71zwm] {
-    background-color: #232323;
-    transform: translateY(-1px);
-    box-shadow: 0 3px 6px rgba(58, 58, 58, 0.35);
-}
-
-.register-link[b-sbt0m71zwm] {
-    text-align: center;
-    margin-top: 1rem;
-    font-size: 0.8rem;
-}
-
-.register-link a[b-sbt0m71zwm] {
-    font-weight: bold;
-    color: #171717FF;
-    text-decoration: none;
-}
-
-.register-link a:hover[b-sbt0m71zwm] {
-    text-decoration: underline;
-}
-/* _content/CinemaApp/Components/Pages/Account/Logout.razor.rz.scp.css */
-.login-container[b-e3abdc6rdb] {
-    max-width: 1100px;
-    margin: 40px auto;
-    padding: 0;
-}
-
-.login-card[b-e3abdc6rdb] {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 16px rgba(62, 62, 62, 0.1);
-    border-top: 5px solid #171717FF;
-    border-bottom: 5px solid #ffffff;
-    padding: 40px;
-    width: 100%;
-    max-width: 450px;
-    margin: 245px auto;
-    text-align: center;
-}
-
-.login-header[b-e3abdc6rdb] {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.login-title[b-e3abdc6rdb] {
-    color: #171717FF;
-    font-size: 25px;
-    font-weight: 700;
-    margin-bottom: 8px;
-}
-
-.login-subtitle[b-e3abdc6rdb] {
-    color: #666;
-    font-size: 0.8rem;
-    margin-bottom: 25px;
-}
-
-.action-buttons[b-e3abdc6rdb] {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin-top: 20px;
-    width: 100%;
-    max-width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.btn-primary[b-e3abdc6rdb] {
-    background-color: #171717FF;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    padding: 12px 16px;
-    font-size: 15px;
-    font-weight: 500;
-    width: 100%;
-    cursor: pointer;
-    transition: background-color 0.2s, transform 0.2s;
-    box-shadow: 0 2px 4px rgba(37, 37, 37, 0.25);
-    text-decoration: none;
-    display: block;
-    text-align: center;
-}
-
-.btn-primary:hover[b-e3abdc6rdb] {
-    background-color: #232323;
-    transform: translateY(-1px);
-    box-shadow: 0 3px 6px rgba(58, 58, 58, 0.35);
-}
-
-.btn-outline[b-e3abdc6rdb] {
-    background-color: #f8f9fa;
-    color: #444;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 12px 16px;
-    font-size: 15px;
-    font-weight: 500;
-    width: 100%;
-    cursor: pointer;
-    transition: background-color 0.2s;
-    text-decoration: none;
-    display: block;
-    text-align: center;
-}
-
-.btn-outline:hover[b-e3abdc6rdb] {
+.btn-outline:hover[b-h645feswqv] {
     background-color: #e9ecef;
 }
 /* _content/CinemaApp/Components/Pages/Biglietti.razor.rz.scp.css */
@@ -878,6 +466,103 @@ section p a[b-nn9zja53ir] {
     margin-bottom: 15px;
     position: relative;
     z-index: 1;
+}
+/* _content/CinemaApp/Components/Pages/ConfirmLogout.razor.rz.scp.css */
+.login-container[b-bjd4p2r73i] {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0;
+}
+
+.login-card[b-bjd4p2r73i] {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(62, 62, 62, 0.1);
+    border-top: 5px solid #171717FF;
+    border-bottom: 5px solid #ffffff;
+    padding: 40px;
+    width: 100%;
+    max-width: 450px;
+    margin: 275px auto;
+    text-align: center;
+}
+
+.login-header[b-bjd4p2r73i] {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-title[b-bjd4p2r73i] {
+    color: #171717FF;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.login-subtitle[b-bjd4p2r73i] {
+    color: #666;
+    font-size: 0.8rem;
+    margin-bottom: 25px;
+}
+
+.logout-icon[b-bjd4p2r73i] {
+    font-size: 48px;
+    color: #171717FF;
+    margin-bottom: 20px;
+}
+
+.action-buttons[b-bjd4p2r73i] {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-primary[b-bjd4p2r73i] {
+    background-color: #171717FF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 16px;
+    font-size: 15px;
+    font-weight: 500;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+    box-shadow: 0 2px 4px rgba(37, 37, 37, 0.25);
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.btn-primary:hover[b-bjd4p2r73i] {
+    background-color: #232323;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 6px rgba(58, 58, 58, 0.35);
+}
+
+.btn-outline[b-bjd4p2r73i] {
+    background-color: #f8f9fa;
+    color: #444;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 12px 16px;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.btn-outline:hover[b-bjd4p2r73i] {
+    background-color: #e9ecef;
 }
 /* _content/CinemaApp/Components/Pages/Contatti.razor.rz.scp.css */
 .contacts-container[b-n0vkws5w05] {
@@ -1104,7 +789,7 @@ section p a[b-nn9zja53ir] {
     padding: 40px;
     width: 100%;
     max-width: 450px;
-    margin: 95px auto;
+    margin: 112px auto;
 }
 
 .login-header[b-u6iyl2ckwo] {
@@ -1209,6 +894,118 @@ section p a[b-nn9zja53ir] {
     .login-title[b-u6iyl2ckwo] {
         font-size: 22px;
     }
+}
+/* _content/CinemaApp/Components/Pages/CreateUser.razor.rz.scp.css */
+.login-container[b-ut5083ifgb] {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0;
+}
+
+.login-card[b-ut5083ifgb] {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(62, 62, 62, 0.1);
+    border-top: 5px solid #171717FF;
+    border-bottom: 5px solid #ffffff;
+    padding: 40px;
+    width: 100%;
+    max-width: 450px;
+    margin: 95px auto;
+}
+
+.login-header[b-ut5083ifgb] {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-title[b-ut5083ifgb] {
+    color: #171717FF;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.login-subtitle[b-ut5083ifgb] {
+    color: #666;
+    font-size: 0.8rem;
+    margin-bottom: 25px;
+}
+
+.form-group[b-ut5083ifgb] {
+    margin-bottom: 20px;
+}
+
+.form-label[b-ut5083ifgb] {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #444;
+}
+
+.form-control[b-ut5083ifgb] {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-control:focus[b-ut5083ifgb] {
+    border-color: #171717FF;
+    box-shadow: 0 0 0 3px rgba(74, 74, 74, 0.15);
+    outline: none;
+}
+
+.validation-message[b-ut5083ifgb] {
+    color: #d9534f;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.error-message[b-ut5083ifgb] {
+    color: #d9534f;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+    min-height: 21px;
+}
+
+.btn-login[b-ut5083ifgb] {
+    background-color: #171717FF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 16px;
+    font-size: 15px;
+    font-weight: 500;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+    box-shadow: 0 2px 4px rgba(37, 37, 37, 0.25);
+}
+
+.btn-login:hover[b-ut5083ifgb] {
+    background-color: #232323;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 6px rgba(58, 58, 58, 0.35);
+}
+
+.register-link[b-ut5083ifgb] {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+}
+
+.register-link a[b-ut5083ifgb] {
+    font-weight: bold;
+    color: #171717FF;
+    text-decoration: none;
+}
+
+.register-link a:hover[b-ut5083ifgb] {
+    text-decoration: underline;
 }
 /* _content/CinemaApp/Components/Pages/FilmCatalogo.razor.rz.scp.css */
 h2[b-moqzcq8k5r] {
@@ -1759,13 +1556,13 @@ body[b-ciynt6jujz] {
 }
 
 .search-bar input[type="text"]:focus[b-6uhx3pnp58] {
-    border-color: #800020;
+    border-color: #0078D7;
 }
 
 .search-bar button[b-6uhx3pnp58] {
     padding: 8px 16px;
     font-size: 0.95rem;
-    background-color: #800020;
+    background-color: #0078D7;
     color: white;
     border: none;
     border-radius: 6px;
@@ -1774,7 +1571,7 @@ body[b-ciynt6jujz] {
 }
 
 .search-bar button:hover[b-6uhx3pnp58] {
-    background-color: #800020;
+    background-color: #005fa3;
 }
 
 
@@ -1793,6 +1590,209 @@ body[b-ciynt6jujz] {
     height: 100%;
     object-fit: cover;
     border-radius: 4px;
+}
+/* _content/CinemaApp/Components/Pages/Login.razor.rz.scp.css */
+.login-container[b-em1ju1ywpi] {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0;
+}
+
+.login-card[b-em1ju1ywpi] {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(62, 62, 62, 0.1);
+    border-top: 5px solid #171717FF;
+    border-bottom: 5px solid #ffffff;
+    padding: 40px;
+    width: 100%;
+    max-width: 450px;
+    margin: 190px auto;
+}
+
+.login-header[b-em1ju1ywpi] {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-title[b-em1ju1ywpi] {
+    color: #171717FF;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.login-subtitle[b-em1ju1ywpi] {
+    color: #666;
+    font-size: 0.8rem;
+    margin-bottom: 25px;
+}
+
+.form-group[b-em1ju1ywpi] {
+    margin-bottom: 20px;
+}
+
+.form-label[b-em1ju1ywpi] {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #444;
+}
+
+.form-control[b-em1ju1ywpi] {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-control:focus[b-em1ju1ywpi] {
+    border-color: #171717FF;
+    box-shadow: 0 0 0 3px rgba(74, 74, 74, 0.15);
+    outline: none;
+}
+
+.validation-message[b-em1ju1ywpi] {
+    color: #d9534f;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.error-message[b-em1ju1ywpi] {
+    color: #d9534f;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+    min-height: 21px;
+}
+
+.btn-login[b-em1ju1ywpi] {
+    background-color: #171717FF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 16px;
+    font-size: 15px;
+    font-weight: 500;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+    box-shadow: 0 2px 4px rgba(37, 37, 37, 0.25);
+}
+
+.btn-login:hover[b-em1ju1ywpi] {
+    background-color: #232323;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 6px rgba(58, 58, 58, 0.35);
+}
+
+.register-link[b-em1ju1ywpi] {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+}
+
+.register-link a[b-em1ju1ywpi] {
+    font-weight: bold;
+    color: #171717FF;
+    text-decoration: none;
+}
+
+.register-link a:hover[b-em1ju1ywpi] {
+    text-decoration: underline;
+}
+/* _content/CinemaApp/Components/Pages/Logout.razor.rz.scp.css */
+.login-container[b-m1jfx8qcoa] {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0;
+}
+
+.login-card[b-m1jfx8qcoa] {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(62, 62, 62, 0.1);
+    border-top: 5px solid #171717FF;
+    border-bottom: 5px solid #ffffff;
+    padding: 40px;
+    width: 100%;
+    max-width: 450px;
+    margin: 245px auto;
+    text-align: center;
+}
+
+.login-header[b-m1jfx8qcoa] {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-title[b-m1jfx8qcoa] {
+    color: #171717FF;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.login-subtitle[b-m1jfx8qcoa] {
+    color: #666;
+    font-size: 0.8rem;
+    margin-bottom: 25px;
+}
+
+.action-buttons[b-m1jfx8qcoa] {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-primary[b-m1jfx8qcoa] {
+    background-color: #171717FF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 16px;
+    font-size: 15px;
+    font-weight: 500;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+    box-shadow: 0 2px 4px rgba(37, 37, 37, 0.25);
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.btn-primary:hover[b-m1jfx8qcoa] {
+    background-color: #232323;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 6px rgba(58, 58, 58, 0.35);
+}
+
+.btn-outline[b-m1jfx8qcoa] {
+    background-color: #f8f9fa;
+    color: #444;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 12px 16px;
+    font-size: 15px;
+    font-weight: 500;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.btn-outline:hover[b-m1jfx8qcoa] {
+    background-color: #e9ecef;
 }
 /* _content/CinemaApp/Components/Pages/ManageAccounts.razor.rz.scp.css */
 body[b-4gfuyuq8j2] {
