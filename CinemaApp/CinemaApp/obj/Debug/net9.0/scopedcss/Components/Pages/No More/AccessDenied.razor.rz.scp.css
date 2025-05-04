@@ -1,10 +1,10 @@
-.login-container[b-j1c25n7rc5] {
+.login-container[b-d9xh2exdx0] {
     max-width: 1100px;
     margin: 40px auto;
     padding: 0;
 }
 
-.login-card[b-j1c25n7rc5] {
+.login-card[b-d9xh2exdx0] {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 16px rgba(62, 62, 62, 0.1);
@@ -13,29 +13,42 @@
     padding: 40px;
     width: 100%;
     max-width: 450px;
-    margin: 245px auto;
+    margin: 270px auto;
     text-align: center;
 }
 
-.login-header[b-j1c25n7rc5] {
+.login-header[b-d9xh2exdx0] {
     text-align: center;
     margin-bottom: 30px;
 }
 
-.login-title[b-j1c25n7rc5] {
+.login-title[b-d9xh2exdx0] {
     color: #171717FF;
     font-size: 25px;
     font-weight: 700;
     margin-bottom: 8px;
 }
 
-.login-subtitle[b-j1c25n7rc5] {
+.login-subtitle[b-d9xh2exdx0] {
     color: #666;
     font-size: 0.8rem;
     margin-bottom: 25px;
 }
 
-.action-buttons[b-j1c25n7rc5] {
+.logout-icon[b-d9xh2exdx0] {
+    font-size: 48px;
+    color: #171717FF;
+    margin-bottom: 20px;
+}
+
+.logout-message[b-d9xh2exdx0] {
+    margin-bottom: 30px;
+    color: #444;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.action-buttons[b-d9xh2exdx0] {
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -46,7 +59,7 @@
     margin-right: auto;
 }
 
-.btn-primary[b-j1c25n7rc5] {
+.btn-primary[b-d9xh2exdx0] {
     background-color: #171717FF;
     color: white;
     border: none;
@@ -63,19 +76,19 @@
     text-align: center;
 }
 
-.btn-primary:hover[b-j1c25n7rc5] {
+.btn-primary:hover[b-d9xh2exdx0] {
     background-color: #232323;
     transform: translateY(-1px);
     box-shadow: 0 3px 6px rgba(58, 58, 58, 0.35);
 }
 
-.btn-outline[b-j1c25n7rc5] {
+.btn-outline[b-d9xh2exdx0] {
     background-color: #f8f9fa;
     color: #444;
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 12px 16px;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 500;
     width: 100%;
     cursor: pointer;
@@ -85,6 +98,6 @@
     text-align: center;
 }
 
-.btn-outline:hover[b-j1c25n7rc5] {
+.btn-outline:hover[b-d9xh2exdx0] {
     background-color: #e9ecef;
 }

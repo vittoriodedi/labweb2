@@ -1,9 +1,9 @@
-.contacts-container[b-mnl1fkieor] {
+.contacts-container[b-es7swrauz7] {
     width: 1100px;
     margin: 0 auto;
 }
 
-.divider[b-mnl1fkieor] {
+.divider[b-es7swrauz7] {
     height: 4px;
     width: 80px;
     background-color: #191919;
@@ -12,7 +12,7 @@
 
 
 /* Start Hours Section */
-.hours-section[b-mnl1fkieor] {
+.hours-section[b-es7swrauz7] {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,7 +20,7 @@
     margin-bottom: 60px;
 }
 
-.hours-title[b-mnl1fkieor] {
+.hours-title[b-es7swrauz7] {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 700;
     font-size: 2.5em;
@@ -30,13 +30,13 @@
     margin-bottom: .5rem;
 }
 
-.hours-info[b-mnl1fkieor] {
+.hours-info[b-es7swrauz7] {
     text-align: center;
     font-size: 1em;
     color: #666;
 }
 
-.hours-schedule[b-mnl1fkieor] {
+.hours-schedule[b-es7swrauz7] {
     display: flex;
     flex-wrap: nowrap;
     gap: 10px;
@@ -48,7 +48,7 @@
     margin: 0;
 }
 
-.hours-schedule li[b-mnl1fkieor] {
+.hours-schedule li[b-es7swrauz7] {
     flex: 1;
     min-width: 130px;
     border-radius: 8px;
@@ -62,12 +62,12 @@
     transition: all 0.3s ease;
 }
 
-.hours-schedule li:hover[b-mnl1fkieor] {
+.hours-schedule li:hover[b-es7swrauz7] {
     transform: translateY(-5px);
     box-shadow: 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.current-day[b-mnl1fkieor] {
+.current-day[b-es7swrauz7] {
     background-color: #000;
     border-color: #000;
     border-left: 4px solid #191919;
@@ -75,17 +75,17 @@
     color: #ffffff;
 }
 
-.current-day .hours[b-mnl1fkieor] {
+.current-day .hours[b-es7swrauz7] {
     color: #ffffff;
 }
 
-.day[b-mnl1fkieor] {
+.day[b-es7swrauz7] {
     font-weight: bold;
     margin-bottom: 5px;
     font-size: 18px;
 }
 
-.hours[b-mnl1fkieor] {
+.hours[b-es7swrauz7] {
     color: #555;
     font-size: 16px;
 }
@@ -94,18 +94,18 @@
 
 
 /* Start Map Section */
-.map-section[b-mnl1fkieor] {
+.map-section[b-es7swrauz7] {
     margin-top: 4.5em;
 }
 
-.map-section p[b-mnl1fkieor] {
+.map-section p[b-es7swrauz7] {
     font-size: 1em;
     margin-bottom: 1em;
     text-align: center;
     color: #555;
 }
 
-.map-title[b-mnl1fkieor] {
+.map-title[b-es7swrauz7] {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 700;
     font-size: 2.5em;
@@ -115,7 +115,7 @@
     margin-bottom: .5rem;
 }
 
-.map[b-mnl1fkieor] {
+.map[b-es7swrauz7] {
     height: 500px;
     border-radius: 10px;
     overflow: hidden;
@@ -125,7 +125,7 @@
 
 
 /* Start Contacts Section */
-.contacts-section[b-mnl1fkieor] {
+.contacts-section[b-es7swrauz7] {
     margin-top: 4.5em;
     margin-bottom: 4.5em;
     display: flex;
@@ -134,7 +134,7 @@
     overflow: hidden;
 }
 
-.contacts-text[b-mnl1fkieor] {
+.contacts-text[b-es7swrauz7] {
     width: 50%;
     padding: 4em;
     text-align: center;
@@ -142,20 +142,20 @@
     background-color: rgb(255, 255, 255);
 }
 
-.contacts-text h2[b-mnl1fkieor] {
+.contacts-text h2[b-es7swrauz7] {
     font-size: 2em;
     margin-bottom: 20px;
     color: #191919;
     font-family: "Bebas Neue", sans-serif;
 }
 
-.contacts-text p[b-mnl1fkieor] {
+.contacts-text p[b-es7swrauz7] {
     margin-bottom: 10px;
     color: #555;
     font-size: 1em;
 }
 
-.contacts-links[b-mnl1fkieor] {
+.contacts-links[b-es7swrauz7] {
     width: 50%;
     padding: 4em 1.5em;
     border-radius: 0 10px 10px 0;
@@ -168,17 +168,17 @@
     gap: 1.5em;
 }
 
-.contacts-links div[b-mnl1fkieor] {
+.contacts-links div[b-es7swrauz7] {
     display: flex;
     align-items: center;
     transition: transform 0.3s ease;
 }
 
-.contacts-links div:hover[b-mnl1fkieor] {
+.contacts-links div:hover[b-es7swrauz7] {
     transform: translateY(-3px);
 }
 
-.contacts-links a[b-mnl1fkieor] {
+.contacts-links a[b-es7swrauz7] {
     color: #191919;
     text-decoration: none;
     font-weight: 500;
@@ -186,7 +186,7 @@
     transition: color 0.3s;
 }
 
-.contacts-links a:hover[b-mnl1fkieor] {
+.contacts-links a:hover[b-es7swrauz7] {
     color: #555;
     text-decoration: underline;
 }
@@ -194,13 +194,13 @@
 
 
 @media (max-width: 768px) {
-    .schedule[b-mnl1fkieor] {
+    .schedule[b-es7swrauz7] {
         flex-direction: column;
         align-items: center;
         width: 100%;
     }
 
-    .schedule li[b-mnl1fkieor] {
+    .schedule li[b-es7swrauz7] {
         width: 100%;
         min-width: auto;
     }

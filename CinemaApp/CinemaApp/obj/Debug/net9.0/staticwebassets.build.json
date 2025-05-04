@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "o0+r6TDJUATadMCxQ4L2GqbluF8S2WPpFj8PtqOl6CA=",
+  "Hash": "+CH5Fj/25qDnUyxYa1xIuWsM0snpw3oCqOd84uOgYBI=",
   "Source": "CinemaApp",
   "BasePath": "_content/CinemaApp",
   "Mode": "Default",
@@ -353,12 +353,12 @@
       "OriginalItemSpec": "/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/compressed/cdau1ibg9m-4iqwxefx57.gz",
+      "Identity": "/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/compressed/cdau1ibg9m-m4bhb0h7e4.gz",
       "SourceId": "CinemaApp",
       "SourceType": "Computed",
       "ContentRoot": "/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/CinemaApp",
-      "RelativePath": "CinemaApp#[.{fingerprint=4iqwxefx57}]?.styles.css.gz",
+      "RelativePath": "CinemaApp#[.{fingerprint=m4bhb0h7e4}]?.styles.css.gz",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Alternative",
@@ -367,8 +367,8 @@
       "RelatedAsset": "/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/scopedcss/bundle/CinemaApp.styles.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "8pxcnwbyxr",
-      "Integrity": "ZKO9ROohClCjG4+YcoVe/9F66wbUZQJZ85gLobDLVjQ=",
+      "Fingerprint": "5snpx9tjqo",
+      "Integrity": "W6YCrKOJ6Qz95jBV6cC/4FwPlyQmBDkM1ZEJHygUrvY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/scopedcss/bundle/CinemaApp.styles.css"
@@ -815,12 +815,12 @@
       "OriginalItemSpec": "/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css"
     },
     {
-      "Identity": "/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/compressed/s8dcfm6vs9-4iqwxefx57.gz",
+      "Identity": "/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/compressed/s8dcfm6vs9-m4bhb0h7e4.gz",
       "SourceId": "CinemaApp",
       "SourceType": "Computed",
       "ContentRoot": "/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/CinemaApp",
-      "RelativePath": "CinemaApp#[.{fingerprint=4iqwxefx57}]!.bundle.scp.css.gz",
+      "RelativePath": "CinemaApp#[.{fingerprint=m4bhb0h7e4}]!.bundle.scp.css.gz",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Alternative",
@@ -829,8 +829,8 @@
       "RelatedAsset": "/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/scopedcss/projectbundle/CinemaApp.bundle.scp.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "8pxcnwbyxr",
-      "Integrity": "ZKO9ROohClCjG4+YcoVe/9F66wbUZQJZ85gLobDLVjQ=",
+      "Fingerprint": "5snpx9tjqo",
+      "Integrity": "W6YCrKOJ6Qz95jBV6cC/4FwPlyQmBDkM1ZEJHygUrvY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/scopedcss/projectbundle/CinemaApp.bundle.scp.css"
@@ -1102,8 +1102,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "4iqwxefx57",
-      "Integrity": "1MjsLT62OJ3aZyeCn2LwJ1AEETYsI20awKw4/+jTUFw=",
+      "Fingerprint": "m4bhb0h7e4",
+      "Integrity": "avJ3w3w2I1yhkXS+l7mKFhnma9Ut6Xd23aFmjuM5b6o=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/scopedcss/bundle/CinemaApp.styles.css"
@@ -1123,8 +1123,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "4iqwxefx57",
-      "Integrity": "1MjsLT62OJ3aZyeCn2LwJ1AEETYsI20awKw4/+jTUFw=",
+      "Fingerprint": "m4bhb0h7e4",
+      "Integrity": "avJ3w3w2I1yhkXS+l7mKFhnma9Ut6Xd23aFmjuM5b6o=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/scopedcss/projectbundle/CinemaApp.bundle.scp.css"
@@ -2928,13 +2928,13 @@
       ]
     },
     {
-      "Route": "CinemaApp.4iqwxefx57.bundle.scp.css",
-      "AssetFile": "/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/compressed/s8dcfm6vs9-4iqwxefx57.gz",
+      "Route": "CinemaApp.bundle.scp.css",
+      "AssetFile": "/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/compressed/s8dcfm6vs9-m4bhb0h7e4.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000171115674"
+          "Quality": "0.000171673820"
         }
       ],
       "ResponseHeaders": [
@@ -2944,19 +2944,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5843"
+          "Value": "5824"
         },
         {
           "Name": "ETag",
-          "Value": "\"ZKO9ROohClCjG4+YcoVe/9F66wbUZQJZ85gLobDLVjQ=\""
+          "Value": "\"W6YCrKOJ6Qz95jBV6cC/4FwPlyQmBDkM1ZEJHygUrvY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 15:35:19 GMT"
+          "Value": "Sun, 04 May 2025 15:41:23 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -2972,26 +2972,18 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"1MjsLT62OJ3aZyeCn2LwJ1AEETYsI20awKw4/+jTUFw=\""
+          "Value": "W/\"avJ3w3w2I1yhkXS+l7mKFhnma9Ut6Xd23aFmjuM5b6o=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "4iqwxefx57"
-        },
-        {
-          "Name": "label",
-          "Value": "CinemaApp.bundle.scp.css"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-1MjsLT62OJ3aZyeCn2LwJ1AEETYsI20awKw4/+jTUFw="
+          "Value": "sha256-avJ3w3w2I1yhkXS+l7mKFhnma9Ut6Xd23aFmjuM5b6o="
         }
       ]
     },
     {
-      "Route": "CinemaApp.4iqwxefx57.bundle.scp.css",
+      "Route": "CinemaApp.bundle.scp.css",
       "AssetFile": "/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/scopedcss/projectbundle/CinemaApp.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3001,7 +2993,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "40620"
+          "Value": "40573"
         },
         {
           "Name": "Content-Type",
@@ -3009,11 +3001,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"1MjsLT62OJ3aZyeCn2LwJ1AEETYsI20awKw4/+jTUFw=\""
+          "Value": "\"avJ3w3w2I1yhkXS+l7mKFhnma9Ut6Xd23aFmjuM5b6o=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 15:35:19 GMT"
+          "Value": "Sun, 04 May 2025 15:41:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-avJ3w3w2I1yhkXS+l7mKFhnma9Ut6Xd23aFmjuM5b6o="
+        }
+      ]
+    },
+    {
+      "Route": "CinemaApp.bundle.scp.css.gz",
+      "AssetFile": "/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/compressed/s8dcfm6vs9-m4bhb0h7e4.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5824"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"W6YCrKOJ6Qz95jBV6cC/4FwPlyQmBDkM1ZEJHygUrvY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 04 May 2025 15:41:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-W6YCrKOJ6Qz95jBV6cC/4FwPlyQmBDkM1ZEJHygUrvY="
+        }
+      ]
+    },
+    {
+      "Route": "CinemaApp.m4bhb0h7e4.bundle.scp.css",
+      "AssetFile": "/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/compressed/s8dcfm6vs9-m4bhb0h7e4.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000171673820"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5824"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"W6YCrKOJ6Qz95jBV6cC/4FwPlyQmBDkM1ZEJHygUrvY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 04 May 2025 15:41:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"avJ3w3w2I1yhkXS+l7mKFhnma9Ut6Xd23aFmjuM5b6o=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m4bhb0h7e4"
+        },
+        {
+          "Name": "label",
+          "Value": "CinemaApp.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-avJ3w3w2I1yhkXS+l7mKFhnma9Ut6Xd23aFmjuM5b6o="
+        }
+      ]
+    },
+    {
+      "Route": "CinemaApp.m4bhb0h7e4.bundle.scp.css",
+      "AssetFile": "/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/scopedcss/projectbundle/CinemaApp.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "40573"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"avJ3w3w2I1yhkXS+l7mKFhnma9Ut6Xd23aFmjuM5b6o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 04 May 2025 15:41:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3023,7 +3160,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "4iqwxefx57"
+          "Value": "m4bhb0h7e4"
         },
         {
           "Name": "label",
@@ -3031,13 +3168,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-1MjsLT62OJ3aZyeCn2LwJ1AEETYsI20awKw4/+jTUFw="
+          "Value": "sha256-avJ3w3w2I1yhkXS+l7mKFhnma9Ut6Xd23aFmjuM5b6o="
         }
       ]
     },
     {
-      "Route": "CinemaApp.4iqwxefx57.bundle.scp.css.gz",
-      "AssetFile": "/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/compressed/s8dcfm6vs9-4iqwxefx57.gz",
+      "Route": "CinemaApp.m4bhb0h7e4.bundle.scp.css.gz",
+      "AssetFile": "/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/compressed/s8dcfm6vs9-m4bhb0h7e4.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3046,7 +3183,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5843"
+          "Value": "5824"
         },
         {
           "Name": "Content-Type",
@@ -3054,11 +3191,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ZKO9ROohClCjG4+YcoVe/9F66wbUZQJZ85gLobDLVjQ=\""
+          "Value": "\"W6YCrKOJ6Qz95jBV6cC/4FwPlyQmBDkM1ZEJHygUrvY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 15:35:19 GMT"
+          "Value": "Sun, 04 May 2025 15:41:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3076,7 +3213,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "4iqwxefx57"
+          "Value": "m4bhb0h7e4"
         },
         {
           "Name": "label",
@@ -3084,18 +3221,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-ZKO9ROohClCjG4+YcoVe/9F66wbUZQJZ85gLobDLVjQ="
+          "Value": "sha256-W6YCrKOJ6Qz95jBV6cC/4FwPlyQmBDkM1ZEJHygUrvY="
         }
       ]
     },
     {
-      "Route": "CinemaApp.4iqwxefx57.styles.css",
-      "AssetFile": "/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/compressed/cdau1ibg9m-4iqwxefx57.gz",
+      "Route": "CinemaApp.m4bhb0h7e4.styles.css",
+      "AssetFile": "/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/compressed/cdau1ibg9m-m4bhb0h7e4.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000171115674"
+          "Quality": "0.000171673820"
         }
       ],
       "ResponseHeaders": [
@@ -3105,15 +3242,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5843"
+          "Value": "5824"
         },
         {
           "Name": "ETag",
-          "Value": "\"ZKO9ROohClCjG4+YcoVe/9F66wbUZQJZ85gLobDLVjQ=\""
+          "Value": "\"W6YCrKOJ6Qz95jBV6cC/4FwPlyQmBDkM1ZEJHygUrvY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 15:35:19 GMT"
+          "Value": "Sun, 04 May 2025 15:41:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3133,13 +3270,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"1MjsLT62OJ3aZyeCn2LwJ1AEETYsI20awKw4/+jTUFw=\""
+          "Value": "W/\"avJ3w3w2I1yhkXS+l7mKFhnma9Ut6Xd23aFmjuM5b6o=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "4iqwxefx57"
+          "Value": "m4bhb0h7e4"
         },
         {
           "Name": "label",
@@ -3147,12 +3284,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-1MjsLT62OJ3aZyeCn2LwJ1AEETYsI20awKw4/+jTUFw="
+          "Value": "sha256-avJ3w3w2I1yhkXS+l7mKFhnma9Ut6Xd23aFmjuM5b6o="
         }
       ]
     },
     {
-      "Route": "CinemaApp.4iqwxefx57.styles.css",
+      "Route": "CinemaApp.m4bhb0h7e4.styles.css",
       "AssetFile": "/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/scopedcss/bundle/CinemaApp.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3162,7 +3299,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "40620"
+          "Value": "40573"
         },
         {
           "Name": "Content-Type",
@@ -3170,11 +3307,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"1MjsLT62OJ3aZyeCn2LwJ1AEETYsI20awKw4/+jTUFw=\""
+          "Value": "\"avJ3w3w2I1yhkXS+l7mKFhnma9Ut6Xd23aFmjuM5b6o=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 15:35:19 GMT"
+          "Value": "Sun, 04 May 2025 15:41:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3184,7 +3321,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "4iqwxefx57"
+          "Value": "m4bhb0h7e4"
         },
         {
           "Name": "label",
@@ -3192,13 +3329,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-1MjsLT62OJ3aZyeCn2LwJ1AEETYsI20awKw4/+jTUFw="
+          "Value": "sha256-avJ3w3w2I1yhkXS+l7mKFhnma9Ut6Xd23aFmjuM5b6o="
         }
       ]
     },
     {
-      "Route": "CinemaApp.4iqwxefx57.styles.css.gz",
-      "AssetFile": "/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/compressed/cdau1ibg9m-4iqwxefx57.gz",
+      "Route": "CinemaApp.m4bhb0h7e4.styles.css.gz",
+      "AssetFile": "/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/compressed/cdau1ibg9m-m4bhb0h7e4.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3207,7 +3344,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5843"
+          "Value": "5824"
         },
         {
           "Name": "Content-Type",
@@ -3215,11 +3352,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ZKO9ROohClCjG4+YcoVe/9F66wbUZQJZ85gLobDLVjQ=\""
+          "Value": "\"W6YCrKOJ6Qz95jBV6cC/4FwPlyQmBDkM1ZEJHygUrvY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 15:35:19 GMT"
+          "Value": "Sun, 04 May 2025 15:41:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3237,7 +3374,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "4iqwxefx57"
+          "Value": "m4bhb0h7e4"
         },
         {
           "Name": "label",
@@ -3245,155 +3382,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-ZKO9ROohClCjG4+YcoVe/9F66wbUZQJZ85gLobDLVjQ="
-        }
-      ]
-    },
-    {
-      "Route": "CinemaApp.bundle.scp.css",
-      "AssetFile": "/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/compressed/s8dcfm6vs9-4iqwxefx57.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000171115674"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5843"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ZKO9ROohClCjG4+YcoVe/9F66wbUZQJZ85gLobDLVjQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 15:35:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"1MjsLT62OJ3aZyeCn2LwJ1AEETYsI20awKw4/+jTUFw=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-1MjsLT62OJ3aZyeCn2LwJ1AEETYsI20awKw4/+jTUFw="
-        }
-      ]
-    },
-    {
-      "Route": "CinemaApp.bundle.scp.css",
-      "AssetFile": "/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/scopedcss/projectbundle/CinemaApp.bundle.scp.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "40620"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"1MjsLT62OJ3aZyeCn2LwJ1AEETYsI20awKw4/+jTUFw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 15:35:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-1MjsLT62OJ3aZyeCn2LwJ1AEETYsI20awKw4/+jTUFw="
-        }
-      ]
-    },
-    {
-      "Route": "CinemaApp.bundle.scp.css.gz",
-      "AssetFile": "/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/compressed/s8dcfm6vs9-4iqwxefx57.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5843"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ZKO9ROohClCjG4+YcoVe/9F66wbUZQJZ85gLobDLVjQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 15:35:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-ZKO9ROohClCjG4+YcoVe/9F66wbUZQJZ85gLobDLVjQ="
+          "Value": "sha256-W6YCrKOJ6Qz95jBV6cC/4FwPlyQmBDkM1ZEJHygUrvY="
         }
       ]
     },
     {
       "Route": "CinemaApp.styles.css",
-      "AssetFile": "/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/compressed/cdau1ibg9m-4iqwxefx57.gz",
+      "AssetFile": "/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/compressed/cdau1ibg9m-m4bhb0h7e4.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000171115674"
+          "Quality": "0.000171673820"
         }
       ],
       "ResponseHeaders": [
@@ -3403,15 +3403,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5843"
+          "Value": "5824"
         },
         {
           "Name": "ETag",
-          "Value": "\"ZKO9ROohClCjG4+YcoVe/9F66wbUZQJZ85gLobDLVjQ=\""
+          "Value": "\"W6YCrKOJ6Qz95jBV6cC/4FwPlyQmBDkM1ZEJHygUrvY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 15:35:19 GMT"
+          "Value": "Sun, 04 May 2025 15:41:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3431,13 +3431,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"1MjsLT62OJ3aZyeCn2LwJ1AEETYsI20awKw4/+jTUFw=\""
+          "Value": "W/\"avJ3w3w2I1yhkXS+l7mKFhnma9Ut6Xd23aFmjuM5b6o=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-1MjsLT62OJ3aZyeCn2LwJ1AEETYsI20awKw4/+jTUFw="
+          "Value": "sha256-avJ3w3w2I1yhkXS+l7mKFhnma9Ut6Xd23aFmjuM5b6o="
         }
       ]
     },
@@ -3452,7 +3452,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "40620"
+          "Value": "40573"
         },
         {
           "Name": "Content-Type",
@@ -3460,11 +3460,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"1MjsLT62OJ3aZyeCn2LwJ1AEETYsI20awKw4/+jTUFw=\""
+          "Value": "\"avJ3w3w2I1yhkXS+l7mKFhnma9Ut6Xd23aFmjuM5b6o=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 15:35:19 GMT"
+          "Value": "Sun, 04 May 2025 15:41:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3474,13 +3474,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-1MjsLT62OJ3aZyeCn2LwJ1AEETYsI20awKw4/+jTUFw="
+          "Value": "sha256-avJ3w3w2I1yhkXS+l7mKFhnma9Ut6Xd23aFmjuM5b6o="
         }
       ]
     },
     {
       "Route": "CinemaApp.styles.css.gz",
-      "AssetFile": "/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/compressed/cdau1ibg9m-4iqwxefx57.gz",
+      "AssetFile": "/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/compressed/cdau1ibg9m-m4bhb0h7e4.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3489,7 +3489,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5843"
+          "Value": "5824"
         },
         {
           "Name": "Content-Type",
@@ -3497,11 +3497,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ZKO9ROohClCjG4+YcoVe/9F66wbUZQJZ85gLobDLVjQ=\""
+          "Value": "\"W6YCrKOJ6Qz95jBV6cC/4FwPlyQmBDkM1ZEJHygUrvY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 15:35:19 GMT"
+          "Value": "Sun, 04 May 2025 15:41:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3519,7 +3519,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ZKO9ROohClCjG4+YcoVe/9F66wbUZQJZ85gLobDLVjQ="
+          "Value": "sha256-W6YCrKOJ6Qz95jBV6cC/4FwPlyQmBDkM1ZEJHygUrvY="
         }
       ]
     },

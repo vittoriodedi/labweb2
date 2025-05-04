@@ -80,7 +80,13 @@ footer[b-344ttqj0ko] {
     color: #bfbfbf;
 }
 
-/* _content/CinemaApp/Components/Pages/GestioneProgramma.razor.rz.scp.css */
+/* _content/CinemaApp/Components/Pages/Home.razor.rz.scp.css */
+.wallpaper[b-e0k4l342bb] {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
 /* _content/CinemaApp/Components/Pages/InsertMovieSearch.razor.rz.scp.css */
 .layout-wrapper[b-944zq4bmqb] {
     max-width: 1400px;
@@ -303,1028 +309,8 @@ html[b-944zq4bmqb], body[b-944zq4bmqb] {
     padding-top: 5vh;
     padding-bottom: 5vh;
 }
-/* _content/CinemaApp/Components/Pages/Ok/About.razor.rz.scp.css */
-.about-container[b-hxiygxa1uw] {
-    max-width: 1100px;
-    margin: 0 auto;
-    font-family: 'Inter', sans-serif;
-    color: #191919;
-}
-
-.divider[b-hxiygxa1uw] {
-    height: 4px;
-    width: 80px;
-    background-color: #191919;
-    margin: 0 auto;
-    margin-bottom: 2.5em;
-}
-
-
-/* Start About Section */
-.about-section[b-hxiygxa1uw] {
-    margin-top: 4.5em;
-    margin-bottom: 60px;
-}
-
-.about-title[b-hxiygxa1uw] {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 700;
-    font-size: 2.5em;
-    letter-spacing: 1px;
-    text-align: center;
-    color: #191919;
-    margin-bottom: .5rem;
-}
-
-.about-text p[b-hxiygxa1uw] {
-    color: #333;
-    font-size: 1em;
-    line-height: 1.7;
-    margin-bottom: 20px;
-    text-align: justify;
-}
-/* End About Section */
-
-
-/* Start Story Section */
-.story-section[b-hxiygxa1uw]{
-    margin-top: 4.5em;
-}
-
-.story-title[b-hxiygxa1uw]{
-    font-family: "Bebas Neue", sans-serif;
-    color: #191919;
-    letter-spacing: 0.5px;
-    font-size: 2.5em;
-    text-align: center;
-    margin-bottom: .5rem;
-}
-
-.story-subtitle[b-hxiygxa1uw]{
-    font-family: "Bebas Neue", sans-serif;
-    color: #191919;
-    margin-bottom: 0.5em;
-    letter-spacing: 0.5px;
-    font-size: 25px;
-}
-
-.story-section p[b-hxiygxa1uw]{
-    font-size: 1em;
-    margin-bottom: 1.5em;
-}
-
-.stage-1[b-hxiygxa1uw]{
-    margin-left: 0%;
-}
-
-.stage-2[b-hxiygxa1uw]{
-    margin-left: 25%;
-}
-
-.stage-3[b-hxiygxa1uw]{
-    margin-left: 50%;
-}
-
-.stage-4[b-hxiygxa1uw]{
-    margin-left: 75%;
-}
-/* End Story Section */
-
-
-/* Start Reviews Section */
-.reviews-section[b-hxiygxa1uw] {
-    margin-top: 4.5em;
-    margin-bottom: 4.5em;
-}
-.reviews-title[b-hxiygxa1uw] {
-    color: #191919;
-    font-size: 2.5em;
-    text-align: center;
-    font-family: "Bebas Neue", sans-serif;
-    letter-spacing: 0.5px;
-    margin-bottom: .5rem;
-}
-#first-review-section-p[b-hxiygxa1uw]{
-    text-align: center;
-    font-size: 1em;
-}
-
-.reviews-container[b-hxiygxa1uw] {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    margin-top: 30px;
-}
-
-.review-card[b-hxiygxa1uw] {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 16px rgba(128, 0, 32, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease;
-    border-left: 4px solid #191919;
-}
-
-.review-card:hover[b-hxiygxa1uw] {
-    transform: translateY(-5px);
-}
-
-.review-content[b-hxiygxa1uw] {
-    padding: 30px;
-    position: relative;
-}
-
-.review-content p[b-hxiygxa1uw] {
-    font-style: italic;
-    color: #444;
-    font-size: 1em;
-    line-height: 1.6;
-    margin-bottom: 15px;
-    position: relative;
-    z-index: 1;
-    padding-left: 0.5em;
-}
-
-.review-source[b-hxiygxa1uw] {
-    text-align: right;
-    color: #191919;
-    font-size: 15px;
-}
-/* End Reviews Section */
-
-
-@media (max-width: 768px) {
-    .section-storia > div[b-hxiygxa1uw] {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .stage-1[b-hxiygxa1uw], .stage-2[b-hxiygxa1uw], .stage-3[b-hxiygxa1uw], .stage-4[b-hxiygxa1uw] {
-        width: 100%;
-        max-width: 300px;
-    }
-
-    .reviews-container[b-hxiygxa1uw] {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* _content/CinemaApp/Components/Pages/Ok/AccessDenied.razor.rz.scp.css */
-.login-container[b-b0zz082dyh] {
-    max-width: 1100px;
-    margin: 40px auto;
-    padding: 0;
-}
-
-.login-card[b-b0zz082dyh] {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 16px rgba(62, 62, 62, 0.1);
-    border-top: 5px solid #171717FF;
-    border-bottom: 5px solid #ffffff;
-    padding: 40px;
-    width: 100%;
-    max-width: 450px;
-    margin: 270px auto;
-    text-align: center;
-}
-
-.login-header[b-b0zz082dyh] {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.login-title[b-b0zz082dyh] {
-    color: #171717FF;
-    font-size: 25px;
-    font-weight: 700;
-    margin-bottom: 8px;
-}
-
-.login-subtitle[b-b0zz082dyh] {
-    color: #666;
-    font-size: 0.8rem;
-    margin-bottom: 25px;
-}
-
-.logout-icon[b-b0zz082dyh] {
-    font-size: 48px;
-    color: #171717FF;
-    margin-bottom: 20px;
-}
-
-.logout-message[b-b0zz082dyh] {
-    margin-bottom: 30px;
-    color: #444;
-    font-size: 15px;
-    line-height: 1.5;
-}
-
-.action-buttons[b-b0zz082dyh] {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin-top: 20px;
-    width: 100%;
-    max-width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.btn-primary[b-b0zz082dyh] {
-    background-color: #171717FF;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    padding: 12px 16px;
-    font-size: 15px;
-    font-weight: 500;
-    width: 100%;
-    cursor: pointer;
-    transition: background-color 0.2s, transform 0.2s;
-    box-shadow: 0 2px 4px rgba(37, 37, 37, 0.25);
-    text-decoration: none;
-    display: block;
-    text-align: center;
-}
-
-.btn-primary:hover[b-b0zz082dyh] {
-    background-color: #232323;
-    transform: translateY(-1px);
-    box-shadow: 0 3px 6px rgba(58, 58, 58, 0.35);
-}
-
-.btn-outline[b-b0zz082dyh] {
-    background-color: #f8f9fa;
-    color: #444;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 12px 16px;
-    font-size: 16px;
-    font-weight: 500;
-    width: 100%;
-    cursor: pointer;
-    transition: background-color 0.2s;
-    text-decoration: none;
-    display: block;
-    text-align: center;
-}
-
-.btn-outline:hover[b-b0zz082dyh] {
-    background-color: #e9ecef;
-}
-/* _content/CinemaApp/Components/Pages/Ok/ConfirmLogout.razor.rz.scp.css */
-.login-container[b-5myq6tbmuj] {
-    max-width: 1100px;
-    margin: 40px auto;
-    padding: 0;
-}
-
-.login-card[b-5myq6tbmuj] {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 16px rgba(62, 62, 62, 0.1);
-    border-top: 5px solid #171717FF;
-    border-bottom: 5px solid #ffffff;
-    padding: 40px;
-    width: 100%;
-    max-width: 450px;
-    margin: 275px auto;
-    text-align: center;
-}
-
-.login-header[b-5myq6tbmuj] {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.login-title[b-5myq6tbmuj] {
-    color: #171717FF;
-    font-size: 25px;
-    font-weight: 700;
-    margin-bottom: 8px;
-}
-
-.login-subtitle[b-5myq6tbmuj] {
-    color: #666;
-    font-size: 0.8rem;
-    margin-bottom: 25px;
-}
-
-.logout-icon[b-5myq6tbmuj] {
-    font-size: 48px;
-    color: #171717FF;
-    margin-bottom: 20px;
-}
-
-.action-buttons[b-5myq6tbmuj] {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin-top: 20px;
-    width: 100%;
-    max-width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.btn-primary[b-5myq6tbmuj] {
-    background-color: #171717FF;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    padding: 12px 16px;
-    font-size: 15px;
-    font-weight: 500;
-    width: 100%;
-    cursor: pointer;
-    transition: background-color 0.2s, transform 0.2s;
-    box-shadow: 0 2px 4px rgba(37, 37, 37, 0.25);
-    text-decoration: none;
-    display: block;
-    text-align: center;
-}
-
-.btn-primary:hover[b-5myq6tbmuj] {
-    background-color: #232323;
-    transform: translateY(-1px);
-    box-shadow: 0 3px 6px rgba(58, 58, 58, 0.35);
-}
-
-.btn-outline[b-5myq6tbmuj] {
-    background-color: #f8f9fa;
-    color: #444;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 12px 16px;
-    font-size: 16px;
-    font-weight: 500;
-    width: 100%;
-    cursor: pointer;
-    transition: background-color 0.2s;
-    text-decoration: none;
-    display: block;
-    text-align: center;
-}
-
-.btn-outline:hover[b-5myq6tbmuj] {
-    background-color: #e9ecef;
-}
-/* _content/CinemaApp/Components/Pages/Ok/Contacts.razor.rz.scp.css */
-.contacts-container[b-mnl1fkieor] {
-    width: 1100px;
-    margin: 0 auto;
-}
-
-.divider[b-mnl1fkieor] {
-    height: 4px;
-    width: 80px;
-    background-color: #191919;
-    margin: 0 auto 2.5em;
-}
-
-
-/* Start Hours Section */
-.hours-section[b-mnl1fkieor] {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 4.5em;
-    margin-bottom: 60px;
-}
-
-.hours-title[b-mnl1fkieor] {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 700;
-    font-size: 2.5em;
-    letter-spacing: 1px;
-    text-align: center;
-    color: #191919;
-    margin-bottom: .5rem;
-}
-
-.hours-info[b-mnl1fkieor] {
-    text-align: center;
-    font-size: 1em;
-    color: #666;
-}
-
-.hours-schedule[b-mnl1fkieor] {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 10px;
-    list-style-type: none;
-    width: 100%;
-    justify-content: center;
-    overflow-x: auto;
-    padding: 20px 0;
-    margin: 0;
-}
-
-.hours-schedule li[b-mnl1fkieor] {
-    flex: 1;
-    min-width: 130px;
-    border-radius: 8px;
-    border: none;
-    padding: 16px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    transition: all 0.3s ease;
-}
-
-.hours-schedule li:hover[b-mnl1fkieor] {
-    transform: translateY(-5px);
-    box-shadow: 0 5px rgba(0, 0, 0, 0.1);
-}
-
-.current-day[b-mnl1fkieor] {
-    background-color: #000;
-    border-color: #000;
-    border-left: 4px solid #191919;
-    font-weight: bold;
-    color: #ffffff;
-}
-
-.current-day .hours[b-mnl1fkieor] {
-    color: #ffffff;
-}
-
-.day[b-mnl1fkieor] {
-    font-weight: bold;
-    margin-bottom: 5px;
-    font-size: 18px;
-}
-
-.hours[b-mnl1fkieor] {
-    color: #555;
-    font-size: 16px;
-}
-
-/* End Hours Section */
-
-
-/* Start Map Section */
-.map-section[b-mnl1fkieor] {
-    margin-top: 4.5em;
-}
-
-.map-section p[b-mnl1fkieor] {
-    font-size: 1em;
-    margin-bottom: 1em;
-    text-align: center;
-    color: #555;
-}
-
-.map-title[b-mnl1fkieor] {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 700;
-    font-size: 2.5em;
-    letter-spacing: 1px;
-    text-align: center;
-    color: #191919;
-    margin-bottom: .5rem;
-}
-
-.map[b-mnl1fkieor] {
-    height: 500px;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-}
-/* End Map Section */
-
-
-/* Start Contacts Section */
-.contacts-section[b-mnl1fkieor] {
-    margin-top: 4.5em;
-    margin-bottom: 4.5em;
-    display: flex;
-    border-radius: 10px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-}
-
-.contacts-text[b-mnl1fkieor] {
-    width: 50%;
-    padding: 4em;
-    text-align: center;
-    border-radius: 10px 0 0 10px;
-    background-color: rgb(255, 255, 255);
-}
-
-.contacts-text h2[b-mnl1fkieor] {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #191919;
-    font-family: "Bebas Neue", sans-serif;
-}
-
-.contacts-text p[b-mnl1fkieor] {
-    margin-bottom: 10px;
-    color: #555;
-    font-size: 1em;
-}
-
-.contacts-links[b-mnl1fkieor] {
-    width: 50%;
-    padding: 4em 1.5em;
-    border-radius: 0 10px 10px 0;
-    border-left: 4px solid #191919;
-    background: linear-gradient(to left, white, rgb(248, 248, 248));
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 1.5em;
-}
-
-.contacts-links div[b-mnl1fkieor] {
-    display: flex;
-    align-items: center;
-    transition: transform 0.3s ease;
-}
-
-.contacts-links div:hover[b-mnl1fkieor] {
-    transform: translateY(-3px);
-}
-
-.contacts-links a[b-mnl1fkieor] {
-    color: #191919;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 0.5em;
-    transition: color 0.3s;
-}
-
-.contacts-links a:hover[b-mnl1fkieor] {
-    color: #555;
-    text-decoration: underline;
-}
-/* End Contacts Section */
-
-
-@media (max-width: 768px) {
-    .schedule[b-mnl1fkieor] {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    .schedule li[b-mnl1fkieor] {
-        width: 100%;
-        min-width: auto;
-    }
-}
-/* _content/CinemaApp/Components/Pages/Ok/CreateAdmin.razor.rz.scp.css */
-/* Stili per la pagina CreateAdmin.razor */
-.login-container[b-t3bcmmp0km] {
-    max-width: 1100px;
-    margin: 40px auto;
-    padding: 0;
-}
-
-.login-card[b-t3bcmmp0km] {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 16px rgba(62, 62, 62, 0.1);
-    border-top: 5px solid #171717FF;
-    border-bottom: 5px solid #ffffff;
-    padding: 40px;
-    width: 100%;
-    max-width: 450px;
-    margin: 112px auto;
-}
-
-.login-header[b-t3bcmmp0km] {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.login-title[b-t3bcmmp0km] {
-    color: #171717FF;
-    font-size: 25px;
-    font-weight: 700;
-    margin-bottom: 8px;
-}
-
-.login-subtitle[b-t3bcmmp0km] {
-    color: #666;
-    font-size: 0.8rem;
-    margin-bottom: 25px;
-}
-
-.form-group[b-t3bcmmp0km] {
-    margin-bottom: 20px;
-}
-
-.form-label[b-t3bcmmp0km] {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 500;
-    color: #444;
-}
-
-.form-control[b-t3bcmmp0km] {
-    width: 100%;
-    padding: 12px 15px;
-    font-size: 15px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    transition: border-color 0.2s, box-shadow 0.2s;
-}
-
-.form-control:focus[b-t3bcmmp0km] {
-    border-color: #171717FF;
-    box-shadow: 0 0 0 3px rgba(74, 74, 74, 0.15);
-    outline: none;
-}
-
-.validation-message[b-t3bcmmp0km] {
-    color: #d9534f;
-    font-size: 13px;
-    margin-top: 5px;
-}
-
-.error-message[b-t3bcmmp0km] {
-    color: #d9534f;
-    text-align: center;
-    font-size: 14px;
-    margin-bottom: 10px;
-    min-height: 21px;
-}
-
-.btn-login[b-t3bcmmp0km] {
-    background-color: #171717FF;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    padding: 12px 16px;
-    font-size: 15px;
-    font-weight: 500;
-    width: 100%;
-    cursor: pointer;
-    transition: background-color 0.2s, transform 0.2s;
-    box-shadow: 0 2px 4px rgba(37, 37, 37, 0.25);
-}
-
-.btn-login:hover[b-t3bcmmp0km] {
-    background-color: #232323;
-    transform: translateY(-1px);
-    box-shadow: 0 3px 6px rgba(58, 58, 58, 0.35);
-}
-
-/* Effetto specifico per il pulsante di creazione amministratore */
-.btn-login:active[b-t3bcmmp0km] {
-    transform: translateY(1px);
-    box-shadow: 0 1px 2px rgba(37, 37, 37, 0.25);
-}
-
-/* Stile speciale per il titolo admin */
-.login-title[admin][b-t3bcmmp0km] {
-    color: #171717FF;
-    border-bottom: 2px solid #171717FF;
-    display: inline-block;
-    padding-bottom: 5px;
-}
-
-/* Adattamenti responsive */
-@media (max-width: 576px) {
-    .login-card[b-t3bcmmp0km] {
-        margin: 40px auto;
-        padding: 30px;
-    }
-
-    .login-title[b-t3bcmmp0km] {
-        font-size: 22px;
-    }
-}
-/* _content/CinemaApp/Components/Pages/Ok/CreateUser.razor.rz.scp.css */
-.login-container[b-fjwziac7dm] {
-    max-width: 1100px;
-    margin: 40px auto;
-    padding: 0;
-}
-
-.login-card[b-fjwziac7dm] {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 16px rgba(62, 62, 62, 0.1);
-    border-top: 5px solid #171717FF;
-    border-bottom: 5px solid #ffffff;
-    padding: 40px;
-    width: 100%;
-    max-width: 450px;
-    margin: 95px auto;
-}
-
-.login-header[b-fjwziac7dm] {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.login-title[b-fjwziac7dm] {
-    color: #171717FF;
-    font-size: 25px;
-    font-weight: 700;
-    margin-bottom: 8px;
-}
-
-.login-subtitle[b-fjwziac7dm] {
-    color: #666;
-    font-size: 0.8rem;
-    margin-bottom: 25px;
-}
-
-.form-group[b-fjwziac7dm] {
-    margin-bottom: 20px;
-}
-
-.form-label[b-fjwziac7dm] {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 500;
-    color: #444;
-}
-
-.form-control[b-fjwziac7dm] {
-    width: 100%;
-    padding: 12px 15px;
-    font-size: 15px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    transition: border-color 0.2s, box-shadow 0.2s;
-}
-
-.form-control:focus[b-fjwziac7dm] {
-    border-color: #171717FF;
-    box-shadow: 0 0 0 3px rgba(74, 74, 74, 0.15);
-    outline: none;
-}
-
-.validation-message[b-fjwziac7dm] {
-    color: #d9534f;
-    font-size: 13px;
-    margin-top: 5px;
-}
-
-.error-message[b-fjwziac7dm] {
-    color: #d9534f;
-    text-align: center;
-    font-size: 14px;
-    margin-bottom: 10px;
-    min-height: 21px;
-}
-
-.btn-login[b-fjwziac7dm] {
-    background-color: #171717FF;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    padding: 12px 16px;
-    font-size: 15px;
-    font-weight: 500;
-    width: 100%;
-    cursor: pointer;
-    transition: background-color 0.2s, transform 0.2s;
-    box-shadow: 0 2px 4px rgba(37, 37, 37, 0.25);
-}
-
-.btn-login:hover[b-fjwziac7dm] {
-    background-color: #232323;
-    transform: translateY(-1px);
-    box-shadow: 0 3px 6px rgba(58, 58, 58, 0.35);
-}
-
-.register-link[b-fjwziac7dm] {
-    text-align: center;
-    margin-top: 1rem;
-    font-size: 0.8rem;
-}
-
-.register-link a[b-fjwziac7dm] {
-    font-weight: bold;
-    color: #171717FF;
-    text-decoration: none;
-}
-
-.register-link a:hover[b-fjwziac7dm] {
-    text-decoration: underline;
-}
-/* _content/CinemaApp/Components/Pages/Ok/Home.razor.rz.scp.css */
-.wallpaper[b-v9p9w3lmq6] {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 4px;
-}
-/* _content/CinemaApp/Components/Pages/Ok/Login.razor.rz.scp.css */
-.login-container[b-1lfd4qttcd] {
-    max-width: 1100px;
-    margin: 40px auto;
-    padding: 0;
-}
-
-.login-card[b-1lfd4qttcd] {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 16px rgba(62, 62, 62, 0.1);
-    border-top: 5px solid #171717FF;
-    border-bottom: 5px solid #ffffff;
-    padding: 40px;
-    width: 100%;
-    max-width: 450px;
-    margin: 190px auto;
-}
-
-.login-header[b-1lfd4qttcd] {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.login-title[b-1lfd4qttcd] {
-    color: #171717FF;
-    font-size: 25px;
-    font-weight: 700;
-    margin-bottom: 8px;
-}
-
-.login-subtitle[b-1lfd4qttcd] {
-    color: #666;
-    font-size: 0.8rem;
-    margin-bottom: 25px;
-}
-
-.form-group[b-1lfd4qttcd] {
-    margin-bottom: 20px;
-}
-
-.form-label[b-1lfd4qttcd] {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 500;
-    color: #444;
-}
-
-.form-control[b-1lfd4qttcd] {
-    width: 100%;
-    padding: 12px 15px;
-    font-size: 15px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    transition: border-color 0.2s, box-shadow 0.2s;
-}
-
-.form-control:focus[b-1lfd4qttcd] {
-    border-color: #171717FF;
-    box-shadow: 0 0 0 3px rgba(74, 74, 74, 0.15);
-    outline: none;
-}
-
-.validation-message[b-1lfd4qttcd] {
-    color: #d9534f;
-    font-size: 13px;
-    margin-top: 5px;
-}
-
-.error-message[b-1lfd4qttcd] {
-    color: #d9534f;
-    text-align: center;
-    font-size: 14px;
-    margin-bottom: 10px;
-    min-height: 21px;
-}
-
-.btn-login[b-1lfd4qttcd] {
-    background-color: #171717FF;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    padding: 12px 16px;
-    font-size: 15px;
-    font-weight: 500;
-    width: 100%;
-    cursor: pointer;
-    transition: background-color 0.2s, transform 0.2s;
-    box-shadow: 0 2px 4px rgba(37, 37, 37, 0.25);
-}
-
-.btn-login:hover[b-1lfd4qttcd] {
-    background-color: #232323;
-    transform: translateY(-1px);
-    box-shadow: 0 3px 6px rgba(58, 58, 58, 0.35);
-}
-
-.register-link[b-1lfd4qttcd] {
-    text-align: center;
-    margin-top: 1rem;
-    font-size: 0.8rem;
-}
-
-.register-link a[b-1lfd4qttcd] {
-    font-weight: bold;
-    color: #171717FF;
-    text-decoration: none;
-}
-
-.register-link a:hover[b-1lfd4qttcd] {
-    text-decoration: underline;
-}
-/* _content/CinemaApp/Components/Pages/Ok/Logout.razor.rz.scp.css */
-.login-container[b-j1c25n7rc5] {
-    max-width: 1100px;
-    margin: 40px auto;
-    padding: 0;
-}
-
-.login-card[b-j1c25n7rc5] {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 16px rgba(62, 62, 62, 0.1);
-    border-top: 5px solid #171717FF;
-    border-bottom: 5px solid #ffffff;
-    padding: 40px;
-    width: 100%;
-    max-width: 450px;
-    margin: 245px auto;
-    text-align: center;
-}
-
-.login-header[b-j1c25n7rc5] {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.login-title[b-j1c25n7rc5] {
-    color: #171717FF;
-    font-size: 25px;
-    font-weight: 700;
-    margin-bottom: 8px;
-}
-
-.login-subtitle[b-j1c25n7rc5] {
-    color: #666;
-    font-size: 0.8rem;
-    margin-bottom: 25px;
-}
-
-.action-buttons[b-j1c25n7rc5] {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin-top: 20px;
-    width: 100%;
-    max-width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.btn-primary[b-j1c25n7rc5] {
-    background-color: #171717FF;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    padding: 12px 16px;
-    font-size: 15px;
-    font-weight: 500;
-    width: 100%;
-    cursor: pointer;
-    transition: background-color 0.2s, transform 0.2s;
-    box-shadow: 0 2px 4px rgba(37, 37, 37, 0.25);
-    text-decoration: none;
-    display: block;
-    text-align: center;
-}
-
-.btn-primary:hover[b-j1c25n7rc5] {
-    background-color: #232323;
-    transform: translateY(-1px);
-    box-shadow: 0 3px 6px rgba(58, 58, 58, 0.35);
-}
-
-.btn-outline[b-j1c25n7rc5] {
-    background-color: #f8f9fa;
-    color: #444;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 12px 16px;
-    font-size: 15px;
-    font-weight: 500;
-    width: 100%;
-    cursor: pointer;
-    transition: background-color 0.2s;
-    text-decoration: none;
-    display: block;
-    text-align: center;
-}
-
-.btn-outline:hover[b-j1c25n7rc5] {
-    background-color: #e9ecef;
-}
-/* _content/CinemaApp/Components/Pages/Ok/ManageAccounts.razor.rz.scp.css */
-html[b-d4v23ubc47], body[b-d4v23ubc47] {
+/* _content/CinemaApp/Components/Pages/ManageAccounts.razor.rz.scp.css */
+html[b-4gfuyuq8j2], body[b-4gfuyuq8j2] {
     height: 100%;
     margin: 0;
     font-family: 'Inter', sans-serif;
@@ -1333,60 +319,60 @@ html[b-d4v23ubc47], body[b-d4v23ubc47] {
     line-height: 1.6;
 }
 
-.layout-wrapper[b-d4v23ubc47] {
+.layout-wrapper[b-4gfuyuq8j2] {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-.container[b-d4v23ubc47] {
+.container[b-4gfuyuq8j2] {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.content[b-d4v23ubc47] {
+.content[b-4gfuyuq8j2] {
     flex: 1;
     padding-top: 5vh;
     padding-bottom: 5vh;
 }
 
 /* Header */
-.header[b-d4v23ubc47] {
+.header[b-4gfuyuq8j2] {
     margin-bottom: 2rem;
 }
 
-.header h1[b-d4v23ubc47] {
+.header h1[b-4gfuyuq8j2] {
     font-weight: 600;
     font-size: 1.75rem;
     color: #111;
     margin-bottom: 0.5rem;
 }
 
-.header p[b-d4v23ubc47] {
+.header p[b-4gfuyuq8j2] {
     font-weight: 400;
     color: #555;
 }
 
 /* Tabella */
-.table-wrapper[b-d4v23ubc47] {
+.table-wrapper[b-4gfuyuq8j2] {
     width: 100%;
     overflow-x: auto;
 }
 
-table[b-d4v23ubc47] {
+table[b-4gfuyuq8j2] {
     width: 100%;
     border-collapse: collapse;
     text-align: left;
     font-size: 0.95rem;
 }
 
-thead[b-d4v23ubc47] {
+thead[b-4gfuyuq8j2] {
     background-color: #f3f3f3;
     position: sticky;
     top: 0;
 }
 
-th[b-d4v23ubc47] {
+th[b-4gfuyuq8j2] {
     padding: 1rem 1.5rem;
     font-weight: 600;
     color: #333;
@@ -1396,26 +382,26 @@ th[b-d4v23ubc47] {
     letter-spacing: 0.05em;
 }
 
-tbody tr[b-d4v23ubc47] {
+tbody tr[b-4gfuyuq8j2] {
     border-bottom: 1px solid #eee;
     transition: background-color 0.2s;
 }
 
-tbody tr:hover[b-d4v23ubc47] {
+tbody tr:hover[b-4gfuyuq8j2] {
     background-color: #f9f9f9;
 }
 
-td[b-d4v23ubc47] {
+td[b-4gfuyuq8j2] {
     padding: 1rem 1.5rem;
     color: #444;
 }
 
-.user-name[b-d4v23ubc47] {
+.user-name[b-4gfuyuq8j2] {
     font-weight: 500;
     color: #222;
 }
 
-.badge[b-d4v23ubc47] {
+.badge[b-4gfuyuq8j2] {
     display: inline-block;
     padding: 0.2rem 0.75rem;
     border-radius: 20px;
@@ -1425,12 +411,12 @@ td[b-d4v23ubc47] {
     letter-spacing: 0.03em;
 }
 
-.badge-admin[b-d4v23ubc47] {
+.badge-admin[b-4gfuyuq8j2] {
     background-color: #000;
     color: #fff;
 }
 
-.btn[b-d4v23ubc47] {
+.btn[b-4gfuyuq8j2] {
     padding: 0.5rem 1rem;
     border-radius: 4px;
     font-family: 'Inter', sans-serif;
@@ -1441,13 +427,13 @@ td[b-d4v23ubc47] {
     border: none;
 }
 
-.btn-delete[b-d4v23ubc47] {
+.btn-delete[b-4gfuyuq8j2] {
     background-color: transparent;
     border: 1px solid #ddd;
     color: #555;
 }
 
-.btn-delete:hover[b-d4v23ubc47] {
+.btn-delete:hover[b-4gfuyuq8j2] {
     background-color: #ffe6e6;
     border-color: #ffb3b3;
     color: #cc0000;
@@ -1455,39 +441,39 @@ td[b-d4v23ubc47] {
 
 /* Responsive */
 @media (max-width: 768px) {
-    .header h1[b-d4v23ubc47] {
+    .header h1[b-4gfuyuq8j2] {
         font-size: 1.5rem;
     }
 
-    th[b-d4v23ubc47], td[b-d4v23ubc47] {
+    th[b-4gfuyuq8j2], td[b-4gfuyuq8j2] {
         padding: 0.75rem 1rem;
     }
 }
-/* _content/CinemaApp/Components/Pages/Ok/MovieCatalog.razor.rz.scp.css */
-h2[b-eiemke0xyx] {
+/* _content/CinemaApp/Components/Pages/MovieCatalog.razor.rz.scp.css */
+h2[b-v75e20xa37] {
     font-family: "Inter", sans-serif;
     font-weight: 600;
     color: #191919;
     font-size: 1.5em;
 }
 
-p[b-eiemke0xyx] {
+p[b-v75e20xa37] {
     font-family: "Inter", sans-serif;
     font-weight: 400;
     color: #191919;
     font-size: 1em;
 }
 
-a[b-eiemke0xyx] {
+a[b-v75e20xa37] {
     font-weight: bold;
     color: #070707;
 }
 
-a:hover[b-eiemke0xyx] {
+a:hover[b-v75e20xa37] {
     text-decoration: underline;
 }
 
-.error-container[b-eiemke0xyx] {
+.error-container[b-v75e20xa37] {
     margin-top: 359px;
     margin-bottom: 359px;
     display: flex;
@@ -1496,19 +482,19 @@ a:hover[b-eiemke0xyx] {
     justify-content: center;
 }
 
-.error-container p[b-eiemke0xyx] {
+.error-container p[b-v75e20xa37] {
     margin-bottom: 10px;
     font-size: 1.1em;
     color: #666;
 }
 
-.films-container[b-eiemke0xyx] {
+.films-container[b-v75e20xa37] {
     max-width: 1400px;
     margin: 0 auto;
     padding: 20px;
 }
 
-.film-introduction-text[b-eiemke0xyx] {
+.film-introduction-text[b-v75e20xa37] {
     color: #666;
     font-size: 15px;
     margin-bottom: 3em;
@@ -1516,7 +502,7 @@ a:hover[b-eiemke0xyx] {
     text-align: center;
 }
 
-.loading-container[b-eiemke0xyx] {
+.loading-container[b-v75e20xa37] {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1525,32 +511,32 @@ a:hover[b-eiemke0xyx] {
     width: 100%;
 }
 
-.loading-text[b-eiemke0xyx] {
+.loading-text[b-v75e20xa37] {
     margin-top: 15px;
     font-size: 1.1rem;
     color: #555;
 }
 
-.no-films[b-eiemke0xyx] {
+.no-films[b-v75e20xa37] {
     text-align: center;
     padding: 40px 20px;
     margin-top: 250px;
     margin-bottom: 300px;
 }
 
-.no-films p[b-eiemke0xyx] {
+.no-films p[b-v75e20xa37] {
     color: #666;
     font-size: 1.5em;
 }
 
-.films-grid[b-eiemke0xyx] {
+.films-grid[b-v75e20xa37] {
     padding-top: 20px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 30px;
 }
 
-.film-card[b-eiemke0xyx] {
+.film-card[b-v75e20xa37] {
     background-color: white;
     border-radius: 12px;
     overflow: hidden;
@@ -1561,18 +547,18 @@ a:hover[b-eiemke0xyx] {
     flex-direction: column;
 }
 
-.film-card:hover[b-eiemke0xyx] {
+.film-card:hover[b-v75e20xa37] {
     transform: translateY(-5px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
-.film-poster[b-eiemke0xyx] {
+.film-poster[b-v75e20xa37] {
     position: relative;
     overflow: hidden;
     padding-top: 150%;
 }
 
-.film-poster img[b-eiemke0xyx] {
+.film-poster img[b-v75e20xa37] {
     position: absolute;
     top: 0;
     left: 0;
@@ -1581,25 +567,25 @@ a:hover[b-eiemke0xyx] {
     object-fit: cover;
 }
 
-.film-card:hover .film-poster img[b-eiemke0xyx] {
+.film-card:hover .film-poster img[b-v75e20xa37] {
     transform: none;
 }
 
-.film-content[b-eiemke0xyx] {
+.film-content[b-v75e20xa37] {
     padding: 20px;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
 }
 
-.film-title[b-eiemke0xyx] {
+.film-title[b-v75e20xa37] {
     font-size: 1.3rem;
     font-weight: 700;
     margin-bottom: 10px;
     line-height: 1.3;
 }
 
-.film-meta[b-eiemke0xyx] {
+.film-meta[b-v75e20xa37] {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -1607,23 +593,23 @@ a:hover[b-eiemke0xyx] {
     flex-grow: 1;
 }
 
-.film-meta-item[b-eiemke0xyx] {
+.film-meta-item[b-v75e20xa37] {
     display: flex;
     align-items: baseline;
     font-size: 0.95rem;
 }
 
-.film-meta-label[b-eiemke0xyx] {
+.film-meta-label[b-v75e20xa37] {
     font-weight: 600;
     min-width: 70px;
     color: #555;
 }
 
-.film-meta-value[b-eiemke0xyx] {
+.film-meta-value[b-v75e20xa37] {
     color: #333;
 }
 
-.film-release[b-eiemke0xyx] {
+.film-release[b-v75e20xa37] {
     font-style: italic;
     color: #666;
     font-size: 0.9rem;
@@ -1631,7 +617,7 @@ a:hover[b-eiemke0xyx] {
     margin-bottom: 15px;
 }
 
-.film-actions[b-eiemke0xyx] {
+.film-actions[b-v75e20xa37] {
     display: flex;
     justify-content: center; 
     gap: 20px; 
@@ -1639,7 +625,7 @@ a:hover[b-eiemke0xyx] {
     padding: 0 15px; 
 }
 
-.card-button[b-eiemke0xyx] {
+.card-button[b-v75e20xa37] {
     background-color: #FFFFFF;
     border: 0;
     border-radius: .5rem;
@@ -1662,64 +648,64 @@ a:hover[b-eiemke0xyx] {
     touch-action: manipulation;
     box-sizing: border-box;
 }
-.card-button:hover[b-eiemke0xyx] {
+.card-button:hover[b-v75e20xa37] {
     background-color: rgb(249,250,251);
     color: #800020;
 }
-.card-button:focus[b-eiemke0xyx] {
+.card-button:focus[b-v75e20xa37] {
     outline: 2px solid transparent;
     outline-offset: 2px;
 }
-.card-button:focus-visible[b-eiemke0xyx] {
+.card-button:focus-visible[b-v75e20xa37] {
     box-shadow: none;
 }
 
 @media (max-width: 768px) {
-    .films-grid[b-eiemke0xyx] {
+    .films-grid[b-v75e20xa37] {
         grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
         gap: 20px;
     }
 
-    .film-title[b-eiemke0xyx] {
+    .film-title[b-v75e20xa37] {
         font-size: 1.1rem;
     }
 }
 
 @media (max-width: 480px) {
-    .films-grid[b-eiemke0xyx] {
+    .films-grid[b-v75e20xa37] {
         grid-template-columns: 1fr;
         max-width: 320px;
         margin: 0 auto;
     }
 }
-/* _content/CinemaApp/Components/Pages/Ok/MovieDetails.razor.rz.scp.css */
-body[b-tmr8dlevks] {
+/* _content/CinemaApp/Components/Pages/MovieDetails.razor.rz.scp.css */
+body[b-ijswyim1ae] {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f5f5f5;
 }
 
-.container[b-tmr8dlevks] {
+.container[b-ijswyim1ae] {
     max-width: 1400px;
     margin: 50px auto;
     padding: 0 20px;
 }
 
-.error-container[b-tmr8dlevks] {
+.error-container[b-ijswyim1ae] {
     margin: 359px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.error-container p[b-tmr8dlevks] {
+.error-container p[b-ijswyim1ae] {
     margin-bottom: 10px;
     font-size: 1.1em;
     color: #666;
 }
 
-.movie-card[b-tmr8dlevks] {
+.movie-card[b-ijswyim1ae] {
     background-color: #fff;
     border-radius: 12px;
     overflow: hidden;
@@ -1730,7 +716,7 @@ body[b-tmr8dlevks] {
     position: relative;
 }
 
-.movie-header[b-tmr8dlevks] {
+.movie-header[b-ijswyim1ae] {
     position: relative;
     height: 30vh; 
     min-height: 250px;
@@ -1738,7 +724,7 @@ body[b-tmr8dlevks] {
     background-color: #171717FF;
 }
 
-.movie-title[b-tmr8dlevks] {
+.movie-title[b-ijswyim1ae] {
     font-size: 3rem;
     font-weight: 700;
     color: #fff;
@@ -1748,13 +734,13 @@ body[b-tmr8dlevks] {
     margin: 0;
 }
 
-.movie-content[b-tmr8dlevks] {
+.movie-content[b-ijswyim1ae] {
     display: flex;
     position: relative;
     min-height: 500px; 
 }
 
-.movie-poster[b-tmr8dlevks] {
+.movie-poster[b-ijswyim1ae] {
     flex: 0 0 350px;
     position: relative;
     margin-top: -100px; 
@@ -1765,13 +751,13 @@ body[b-tmr8dlevks] {
     gap: 20px;
 }
 
-.poster-container[b-tmr8dlevks] {
+.poster-container[b-ijswyim1ae] {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
 }
 
-.movie-details[b-tmr8dlevks] {
+.movie-details[b-ijswyim1ae] {
     flex: 1;
     padding-top: 25px;    
     display: flex;
@@ -1779,7 +765,7 @@ body[b-tmr8dlevks] {
     min-height: 400px; 
 }
 
-.movie-meta[b-tmr8dlevks] {
+.movie-meta[b-ijswyim1ae] {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -1787,11 +773,11 @@ body[b-tmr8dlevks] {
     margin-left: 8%;
 }
 
-.meta-item[b-tmr8dlevks] {
+.meta-item[b-ijswyim1ae] {
     margin-bottom: 15px;
 }
 
-.meta-label[b-tmr8dlevks] {
+.meta-label[b-ijswyim1ae] {
     font-size: 0.9rem;
     color: #777;
     margin-bottom: 5px;
@@ -1799,23 +785,23 @@ body[b-tmr8dlevks] {
     letter-spacing: 1px;
 }
 
-.meta-value[b-tmr8dlevks] {
+.meta-value[b-ijswyim1ae] {
     font-size: 1.1rem;
     font-weight: 600;
 }
 
-.rating[b-tmr8dlevks] {
+.rating[b-ijswyim1ae] {
     margin-bottom: 25px;
 }
 
-.plot-section[b-tmr8dlevks] {
+.plot-section[b-ijswyim1ae] {
     margin-bottom: 30px;
     flex-grow: 1; 
     display: flex;
     flex-direction: column;
 }
 
-.section-title[b-tmr8dlevks] {
+.section-title[b-ijswyim1ae] {
     font-size: 1.3rem;
     font-weight: 600;
     color: #333;
@@ -1824,7 +810,7 @@ body[b-tmr8dlevks] {
     margin: 1em 8% 0;
 }
 
-.plot-content[b-tmr8dlevks] {
+.plot-content[b-ijswyim1ae] {
     font-size: 1.1rem;
     line-height: 1.7;
     color: #444;
@@ -1832,7 +818,7 @@ body[b-tmr8dlevks] {
     flex-grow: 1; 
 }
 
-.action-buttons[b-tmr8dlevks] {
+.action-buttons[b-ijswyim1ae] {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -1840,7 +826,7 @@ body[b-tmr8dlevks] {
     margin-top: 20px;
 }
 
-.btn[b-tmr8dlevks] {
+.btn[b-ijswyim1ae] {
     width: 100%;
     padding: 12px 24px;
     border-radius: 8px;
@@ -1853,66 +839,1078 @@ body[b-tmr8dlevks] {
     justify-content: center;
 }
 
-.btn-primary:hover[b-tmr8dlevks], .btn-secondary:hover[b-tmr8dlevks] {
+.btn-primary:hover[b-ijswyim1ae], .btn-secondary:hover[b-ijswyim1ae] {
     transform: translateY(-2px);
 }
 
 @media (max-width: 900px) {
-    .movie-content[b-tmr8dlevks] {
+    .movie-content[b-ijswyim1ae] {
         flex-direction: column;
     }
 
-    .movie-poster[b-tmr8dlevks] {
+    .movie-poster[b-ijswyim1ae] {
         flex: 0 0 auto;
         margin: -80px auto 20px;
         padding: 0 20px 30px;
         max-width: 350px;
     }
 
-    .movie-title[b-tmr8dlevks] {
+    .movie-title[b-ijswyim1ae] {
         font-size: 2.2rem;
         left: 0;
         width: 100%;
         text-align: center;
     }
 
-    .action-buttons[b-tmr8dlevks] {
+    .action-buttons[b-ijswyim1ae] {
         margin-bottom: 20px;
     }
 }
 
 @media (max-width: 768px) {
-    .action-buttons[b-tmr8dlevks] {
+    .action-buttons[b-ijswyim1ae] {
         width: 100%;
         align-items: center;
     }
 
-    .btn[b-tmr8dlevks] {
+    .btn[b-ijswyim1ae] {
         max-width: 300px;
     }
 
-    .movie-header[b-tmr8dlevks] {
+    .movie-header[b-ijswyim1ae] {
         min-height: 200px;
     }
 }
 
 @media (max-width: 600px) {
-    .movie-meta[b-tmr8dlevks] {
+    .movie-meta[b-ijswyim1ae] {
         grid-template-columns: 1fr;
         gap: 10px;
     }
 
-    .movie-header[b-tmr8dlevks] {
+    .movie-header[b-ijswyim1ae] {
         min-height: 180px;
     }
 }
-/* _content/CinemaApp/Components/Pages/Ok/Programming.razor.rz.scp.css */
-/* _content/CinemaApp/Components/Pages/Ok/Tickets.razor.rz.scp.css */
-section[b-ychvu0b9y2]{
+/* _content/CinemaApp/Components/Pages/No More/About.razor.rz.scp.css */
+.about-container[b-jd43j7v86g] {
+    max-width: 1100px;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    color: #191919;
+}
+
+.divider[b-jd43j7v86g] {
+    height: 4px;
+    width: 80px;
+    background-color: #191919;
+    margin: 0 auto;
+    margin-bottom: 2.5em;
+}
+
+
+/* Start About Section */
+.about-section[b-jd43j7v86g] {
+    margin-top: 4.5em;
+    margin-bottom: 60px;
+}
+
+.about-title[b-jd43j7v86g] {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #191919;
+    margin-bottom: .5rem;
+}
+
+.about-text p[b-jd43j7v86g] {
+    color: #333;
+    font-size: 1em;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+/* End About Section */
+
+
+/* Start Story Section */
+.story-section[b-jd43j7v86g]{
+    margin-top: 4.5em;
+}
+
+.story-title[b-jd43j7v86g]{
+    font-family: "Bebas Neue", sans-serif;
+    color: #191919;
+    letter-spacing: 0.5px;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+.story-subtitle[b-jd43j7v86g]{
+    font-family: "Bebas Neue", sans-serif;
+    color: #191919;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.5px;
+    font-size: 25px;
+}
+
+.story-section p[b-jd43j7v86g]{
+    font-size: 1em;
+    margin-bottom: 1.5em;
+}
+
+.stage-1[b-jd43j7v86g]{
+    margin-left: 0%;
+}
+
+.stage-2[b-jd43j7v86g]{
+    margin-left: 25%;
+}
+
+.stage-3[b-jd43j7v86g]{
+    margin-left: 50%;
+}
+
+.stage-4[b-jd43j7v86g]{
+    margin-left: 75%;
+}
+/* End Story Section */
+
+
+/* Start Reviews Section */
+.reviews-section[b-jd43j7v86g] {
+    margin-top: 4.5em;
+    margin-bottom: 4.5em;
+}
+.reviews-title[b-jd43j7v86g] {
+    color: #191919;
+    font-size: 2.5em;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 0.5px;
+    margin-bottom: .5rem;
+}
+#first-review-section-p[b-jd43j7v86g]{
+    text-align: center;
+    font-size: 1em;
+}
+
+.reviews-container[b-jd43j7v86g] {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.review-card[b-jd43j7v86g] {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(128, 0, 32, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    border-left: 4px solid #191919;
+}
+
+.review-card:hover[b-jd43j7v86g] {
+    transform: translateY(-5px);
+}
+
+.review-content[b-jd43j7v86g] {
+    padding: 30px;
+    position: relative;
+}
+
+.review-content p[b-jd43j7v86g] {
+    font-style: italic;
+    color: #444;
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 1;
+    padding-left: 0.5em;
+}
+
+.review-source[b-jd43j7v86g] {
+    text-align: right;
+    color: #191919;
+    font-size: 15px;
+}
+/* End Reviews Section */
+
+
+@media (max-width: 768px) {
+    .section-storia > div[b-jd43j7v86g] {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stage-1[b-jd43j7v86g], .stage-2[b-jd43j7v86g], .stage-3[b-jd43j7v86g], .stage-4[b-jd43j7v86g] {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .reviews-container[b-jd43j7v86g] {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* _content/CinemaApp/Components/Pages/No More/AccessDenied.razor.rz.scp.css */
+.login-container[b-d9xh2exdx0] {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0;
+}
+
+.login-card[b-d9xh2exdx0] {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(62, 62, 62, 0.1);
+    border-top: 5px solid #171717FF;
+    border-bottom: 5px solid #ffffff;
+    padding: 40px;
+    width: 100%;
+    max-width: 450px;
+    margin: 270px auto;
+    text-align: center;
+}
+
+.login-header[b-d9xh2exdx0] {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-title[b-d9xh2exdx0] {
+    color: #171717FF;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.login-subtitle[b-d9xh2exdx0] {
+    color: #666;
+    font-size: 0.8rem;
+    margin-bottom: 25px;
+}
+
+.logout-icon[b-d9xh2exdx0] {
+    font-size: 48px;
+    color: #171717FF;
+    margin-bottom: 20px;
+}
+
+.logout-message[b-d9xh2exdx0] {
+    margin-bottom: 30px;
+    color: #444;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.action-buttons[b-d9xh2exdx0] {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-primary[b-d9xh2exdx0] {
+    background-color: #171717FF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 16px;
+    font-size: 15px;
+    font-weight: 500;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+    box-shadow: 0 2px 4px rgba(37, 37, 37, 0.25);
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.btn-primary:hover[b-d9xh2exdx0] {
+    background-color: #232323;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 6px rgba(58, 58, 58, 0.35);
+}
+
+.btn-outline[b-d9xh2exdx0] {
+    background-color: #f8f9fa;
+    color: #444;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 12px 16px;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.btn-outline:hover[b-d9xh2exdx0] {
+    background-color: #e9ecef;
+}
+/* _content/CinemaApp/Components/Pages/No More/ConfirmLogout.razor.rz.scp.css */
+.login-container[b-fly9jqsncv] {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0;
+}
+
+.login-card[b-fly9jqsncv] {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(62, 62, 62, 0.1);
+    border-top: 5px solid #171717FF;
+    border-bottom: 5px solid #ffffff;
+    padding: 40px;
+    width: 100%;
+    max-width: 450px;
+    margin: 275px auto;
+    text-align: center;
+}
+
+.login-header[b-fly9jqsncv] {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-title[b-fly9jqsncv] {
+    color: #171717FF;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.login-subtitle[b-fly9jqsncv] {
+    color: #666;
+    font-size: 0.8rem;
+    margin-bottom: 25px;
+}
+
+.logout-icon[b-fly9jqsncv] {
+    font-size: 48px;
+    color: #171717FF;
+    margin-bottom: 20px;
+}
+
+.action-buttons[b-fly9jqsncv] {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-primary[b-fly9jqsncv] {
+    background-color: #171717FF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 16px;
+    font-size: 15px;
+    font-weight: 500;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+    box-shadow: 0 2px 4px rgba(37, 37, 37, 0.25);
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.btn-primary:hover[b-fly9jqsncv] {
+    background-color: #232323;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 6px rgba(58, 58, 58, 0.35);
+}
+
+.btn-outline[b-fly9jqsncv] {
+    background-color: #f8f9fa;
+    color: #444;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 12px 16px;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.btn-outline:hover[b-fly9jqsncv] {
+    background-color: #e9ecef;
+}
+/* _content/CinemaApp/Components/Pages/No More/Contacts.razor.rz.scp.css */
+.contacts-container[b-es7swrauz7] {
     width: 1100px;
     margin: 0 auto;
 }
-section h1[b-ychvu0b9y2] {
+
+.divider[b-es7swrauz7] {
+    height: 4px;
+    width: 80px;
+    background-color: #191919;
+    margin: 0 auto 2.5em;
+}
+
+
+/* Start Hours Section */
+.hours-section[b-es7swrauz7] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4.5em;
+    margin-bottom: 60px;
+}
+
+.hours-title[b-es7swrauz7] {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #191919;
+    margin-bottom: .5rem;
+}
+
+.hours-info[b-es7swrauz7] {
+    text-align: center;
+    font-size: 1em;
+    color: #666;
+}
+
+.hours-schedule[b-es7swrauz7] {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    list-style-type: none;
+    width: 100%;
+    justify-content: center;
+    overflow-x: auto;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.hours-schedule li[b-es7swrauz7] {
+    flex: 1;
+    min-width: 130px;
+    border-radius: 8px;
+    border: none;
+    padding: 16px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.hours-schedule li:hover[b-es7swrauz7] {
+    transform: translateY(-5px);
+    box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.current-day[b-es7swrauz7] {
+    background-color: #000;
+    border-color: #000;
+    border-left: 4px solid #191919;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.current-day .hours[b-es7swrauz7] {
+    color: #ffffff;
+}
+
+.day[b-es7swrauz7] {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.hours[b-es7swrauz7] {
+    color: #555;
+    font-size: 16px;
+}
+
+/* End Hours Section */
+
+
+/* Start Map Section */
+.map-section[b-es7swrauz7] {
+    margin-top: 4.5em;
+}
+
+.map-section p[b-es7swrauz7] {
+    font-size: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+    color: #555;
+}
+
+.map-title[b-es7swrauz7] {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #191919;
+    margin-bottom: .5rem;
+}
+
+.map[b-es7swrauz7] {
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+/* End Map Section */
+
+
+/* Start Contacts Section */
+.contacts-section[b-es7swrauz7] {
+    margin-top: 4.5em;
+    margin-bottom: 4.5em;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.contacts-text[b-es7swrauz7] {
+    width: 50%;
+    padding: 4em;
+    text-align: center;
+    border-radius: 10px 0 0 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.contacts-text h2[b-es7swrauz7] {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #191919;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.contacts-text p[b-es7swrauz7] {
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 1em;
+}
+
+.contacts-links[b-es7swrauz7] {
+    width: 50%;
+    padding: 4em 1.5em;
+    border-radius: 0 10px 10px 0;
+    border-left: 4px solid #191919;
+    background: linear-gradient(to left, white, rgb(248, 248, 248));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.contacts-links div[b-es7swrauz7] {
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.contacts-links div:hover[b-es7swrauz7] {
+    transform: translateY(-3px);
+}
+
+.contacts-links a[b-es7swrauz7] {
+    color: #191919;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 0.5em;
+    transition: color 0.3s;
+}
+
+.contacts-links a:hover[b-es7swrauz7] {
+    color: #555;
+    text-decoration: underline;
+}
+/* End Contacts Section */
+
+
+@media (max-width: 768px) {
+    .schedule[b-es7swrauz7] {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .schedule li[b-es7swrauz7] {
+        width: 100%;
+        min-width: auto;
+    }
+}
+/* _content/CinemaApp/Components/Pages/No More/CreateAdmin.razor.rz.scp.css */
+/* Stili per la pagina CreateAdmin.razor */
+.login-container[b-qhnxl5pouq] {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0;
+}
+
+.login-card[b-qhnxl5pouq] {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(62, 62, 62, 0.1);
+    border-top: 5px solid #171717FF;
+    border-bottom: 5px solid #ffffff;
+    padding: 40px;
+    width: 100%;
+    max-width: 450px;
+    margin: 112px auto;
+}
+
+.login-header[b-qhnxl5pouq] {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-title[b-qhnxl5pouq] {
+    color: #171717FF;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.login-subtitle[b-qhnxl5pouq] {
+    color: #666;
+    font-size: 0.8rem;
+    margin-bottom: 25px;
+}
+
+.form-group[b-qhnxl5pouq] {
+    margin-bottom: 20px;
+}
+
+.form-label[b-qhnxl5pouq] {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #444;
+}
+
+.form-control[b-qhnxl5pouq] {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-control:focus[b-qhnxl5pouq] {
+    border-color: #171717FF;
+    box-shadow: 0 0 0 3px rgba(74, 74, 74, 0.15);
+    outline: none;
+}
+
+.validation-message[b-qhnxl5pouq] {
+    color: #d9534f;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.error-message[b-qhnxl5pouq] {
+    color: #d9534f;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+    min-height: 21px;
+}
+
+.btn-login[b-qhnxl5pouq] {
+    background-color: #171717FF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 16px;
+    font-size: 15px;
+    font-weight: 500;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+    box-shadow: 0 2px 4px rgba(37, 37, 37, 0.25);
+}
+
+.btn-login:hover[b-qhnxl5pouq] {
+    background-color: #232323;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 6px rgba(58, 58, 58, 0.35);
+}
+
+/* Effetto specifico per il pulsante di creazione amministratore */
+.btn-login:active[b-qhnxl5pouq] {
+    transform: translateY(1px);
+    box-shadow: 0 1px 2px rgba(37, 37, 37, 0.25);
+}
+
+/* Stile speciale per il titolo admin */
+.login-title[admin][b-qhnxl5pouq] {
+    color: #171717FF;
+    border-bottom: 2px solid #171717FF;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Adattamenti responsive */
+@media (max-width: 576px) {
+    .login-card[b-qhnxl5pouq] {
+        margin: 40px auto;
+        padding: 30px;
+    }
+
+    .login-title[b-qhnxl5pouq] {
+        font-size: 22px;
+    }
+}
+/* _content/CinemaApp/Components/Pages/No More/CreateUser.razor.rz.scp.css */
+.login-container[b-synxj8smzx] {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0;
+}
+
+.login-card[b-synxj8smzx] {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(62, 62, 62, 0.1);
+    border-top: 5px solid #171717FF;
+    border-bottom: 5px solid #ffffff;
+    padding: 40px;
+    width: 100%;
+    max-width: 450px;
+    margin: 95px auto;
+}
+
+.login-header[b-synxj8smzx] {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-title[b-synxj8smzx] {
+    color: #171717FF;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.login-subtitle[b-synxj8smzx] {
+    color: #666;
+    font-size: 0.8rem;
+    margin-bottom: 25px;
+}
+
+.form-group[b-synxj8smzx] {
+    margin-bottom: 20px;
+}
+
+.form-label[b-synxj8smzx] {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #444;
+}
+
+.form-control[b-synxj8smzx] {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-control:focus[b-synxj8smzx] {
+    border-color: #171717FF;
+    box-shadow: 0 0 0 3px rgba(74, 74, 74, 0.15);
+    outline: none;
+}
+
+.validation-message[b-synxj8smzx] {
+    color: #d9534f;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.error-message[b-synxj8smzx] {
+    color: #d9534f;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+    min-height: 21px;
+}
+
+.btn-login[b-synxj8smzx] {
+    background-color: #171717FF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 16px;
+    font-size: 15px;
+    font-weight: 500;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+    box-shadow: 0 2px 4px rgba(37, 37, 37, 0.25);
+}
+
+.btn-login:hover[b-synxj8smzx] {
+    background-color: #232323;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 6px rgba(58, 58, 58, 0.35);
+}
+
+.register-link[b-synxj8smzx] {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+}
+
+.register-link a[b-synxj8smzx] {
+    font-weight: bold;
+    color: #171717FF;
+    text-decoration: none;
+}
+
+.register-link a:hover[b-synxj8smzx] {
+    text-decoration: underline;
+}
+/* _content/CinemaApp/Components/Pages/No More/Login.razor.rz.scp.css */
+.login-container[b-5gqb28h9a6] {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0;
+}
+
+.login-card[b-5gqb28h9a6] {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(62, 62, 62, 0.1);
+    border-top: 5px solid #171717FF;
+    border-bottom: 5px solid #ffffff;
+    padding: 40px;
+    width: 100%;
+    max-width: 450px;
+    margin: 190px auto;
+}
+
+.login-header[b-5gqb28h9a6] {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-title[b-5gqb28h9a6] {
+    color: #171717FF;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.login-subtitle[b-5gqb28h9a6] {
+    color: #666;
+    font-size: 0.8rem;
+    margin-bottom: 25px;
+}
+
+.form-group[b-5gqb28h9a6] {
+    margin-bottom: 20px;
+}
+
+.form-label[b-5gqb28h9a6] {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #444;
+}
+
+.form-control[b-5gqb28h9a6] {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-control:focus[b-5gqb28h9a6] {
+    border-color: #171717FF;
+    box-shadow: 0 0 0 3px rgba(74, 74, 74, 0.15);
+    outline: none;
+}
+
+.validation-message[b-5gqb28h9a6] {
+    color: #d9534f;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.error-message[b-5gqb28h9a6] {
+    color: #d9534f;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+    min-height: 21px;
+}
+
+.btn-login[b-5gqb28h9a6] {
+    background-color: #171717FF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 16px;
+    font-size: 15px;
+    font-weight: 500;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+    box-shadow: 0 2px 4px rgba(37, 37, 37, 0.25);
+}
+
+.btn-login:hover[b-5gqb28h9a6] {
+    background-color: #232323;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 6px rgba(58, 58, 58, 0.35);
+}
+
+.register-link[b-5gqb28h9a6] {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+}
+
+.register-link a[b-5gqb28h9a6] {
+    font-weight: bold;
+    color: #171717FF;
+    text-decoration: none;
+}
+
+.register-link a:hover[b-5gqb28h9a6] {
+    text-decoration: underline;
+}
+/* _content/CinemaApp/Components/Pages/No More/Logout.razor.rz.scp.css */
+.login-container[b-0jv6rd3fho] {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0;
+}
+
+.login-card[b-0jv6rd3fho] {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(62, 62, 62, 0.1);
+    border-top: 5px solid #171717FF;
+    border-bottom: 5px solid #ffffff;
+    padding: 40px;
+    width: 100%;
+    max-width: 450px;
+    margin: 245px auto;
+    text-align: center;
+}
+
+.login-header[b-0jv6rd3fho] {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-title[b-0jv6rd3fho] {
+    color: #171717FF;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.login-subtitle[b-0jv6rd3fho] {
+    color: #666;
+    font-size: 0.8rem;
+    margin-bottom: 25px;
+}
+
+.action-buttons[b-0jv6rd3fho] {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-primary[b-0jv6rd3fho] {
+    background-color: #171717FF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 16px;
+    font-size: 15px;
+    font-weight: 500;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+    box-shadow: 0 2px 4px rgba(37, 37, 37, 0.25);
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.btn-primary:hover[b-0jv6rd3fho] {
+    background-color: #232323;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 6px rgba(58, 58, 58, 0.35);
+}
+
+.btn-outline[b-0jv6rd3fho] {
+    background-color: #f8f9fa;
+    color: #444;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 12px 16px;
+    font-size: 15px;
+    font-weight: 500;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.btn-outline:hover[b-0jv6rd3fho] {
+    background-color: #e9ecef;
+}
+/* _content/CinemaApp/Components/Pages/No More/Tickets.razor.rz.scp.css */
+section[b-zdrn9am5ci]{
+    width: 1100px;
+    margin: 0 auto;
+}
+section h1[b-zdrn9am5ci] {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 700;
     font-size: 2.5em;
@@ -1921,7 +1919,7 @@ section h1[b-ychvu0b9y2] {
     color: #171717FF;
     margin-bottom: .5rem;
 }
-section p[b-ychvu0b9y2] {
+section p[b-zdrn9am5ci] {
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 1em;
@@ -1929,13 +1927,13 @@ section p[b-ychvu0b9y2] {
     text-align: center;
     color: #666;
 }
-section p a[b-ychvu0b9y2] {
+section p a[b-zdrn9am5ci] {
     font-weight: bold;
     text-decoration: none;
     transition: color 0.3s ease;
     color: #171717FF;
 }
-.divider[b-ychvu0b9y2] {
+.divider[b-zdrn9am5ci] {
     height: 4px;
     width: 80px;
     background-color: #171717FF;
@@ -1945,32 +1943,32 @@ section p a[b-ychvu0b9y2] {
 
 
 
-.title-section[b-ychvu0b9y2] {
+.title-section[b-zdrn9am5ci] {
     margin-top: 4.5em;
     margin-bottom: 4.5em;
     text-align: center;
 }
-.title-section p[b-ychvu0b9y2] {
+.title-section p[b-zdrn9am5ci] {
     margin-top: 1em;
 }
 
 
 
 
-.prices-section[b-ychvu0b9y2]{
+.prices-section[b-zdrn9am5ci]{
     margin-top: 4.5em;
     margin-bottom: 4.5em;
     text-align: center;
 }
-.table-container[b-ychvu0b9y2] {
+.table-container[b-zdrn9am5ci] {
     margin-top: 1em;
 }
-.price-table[b-ychvu0b9y2] {
+.price-table[b-zdrn9am5ci] {
     width: 100%;
     border-collapse: collapse;
     border-radius: 8px;
 }
-.price-table th[b-ychvu0b9y2] {
+.price-table th[b-zdrn9am5ci] {
     background-color: #171717FF;
     color: white;
     font-family: "Inter", sans-serif;
@@ -1978,7 +1976,7 @@ section p a[b-ychvu0b9y2] {
     text-align: left;
     padding: 12px 16px;
 }
-.price-table td[b-ychvu0b9y2] {
+.price-table td[b-zdrn9am5ci] {
     padding: 12px 16px;
     border-bottom: 1px solid #e0e0e0;
     font-family: "Inter", sans-serif;
@@ -1990,37 +1988,38 @@ section p a[b-ychvu0b9y2] {
 
 
 
-.information-section[b-ychvu0b9y2]{
+.information-section[b-zdrn9am5ci]{
     margin-top: 4.5em;
     margin-bottom: 4.5em;
     text-align: center;
 }
-.information-section p :first-of-type[b-ychvu0b9y2]{
+.information-section p :first-of-type[b-zdrn9am5ci]{
     color: #171717FF;
     font-size: 1.1em;
     letter-spacing: 0;
 }
-.info-container[b-ychvu0b9y2] {
+.info-container[b-zdrn9am5ci] {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
     margin-top: 30px;
 }
-.info-card[b-ychvu0b9y2] {
+.info-card[b-zdrn9am5ci] {
     border-radius: 8px;
     box-shadow: 0 4px 16px rgba(128, 0, 32, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease;
 }
-.info-card:hover[b-ychvu0b9y2] {
+.info-card:hover[b-zdrn9am5ci] {
     transform: translateY(-5px);
 }
-.info-content[b-ychvu0b9y2] {
+.info-content[b-zdrn9am5ci] {
     padding: 30px;
     position: relative;
 }
-.info-content p[b-ychvu0b9y2] {
+.info-content p[b-zdrn9am5ci] {
     margin-bottom: 15px;
     position: relative;
     z-index: 1;
 }
+/* _content/CinemaApp/Components/Pages/Programming.razor.rz.scp.css */
