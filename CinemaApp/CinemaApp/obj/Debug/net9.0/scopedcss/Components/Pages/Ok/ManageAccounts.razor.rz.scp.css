@@ -1,0 +1,139 @@
+html[b-d4v23ubc47], body[b-d4v23ubc47] {
+    height: 100%;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+.layout-wrapper[b-d4v23ubc47] {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container[b-d4v23ubc47] {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content[b-d4v23ubc47] {
+    flex: 1;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+/* Header */
+.header[b-d4v23ubc47] {
+    margin-bottom: 2rem;
+}
+
+.header h1[b-d4v23ubc47] {
+    font-weight: 600;
+    font-size: 1.75rem;
+    color: #111;
+    margin-bottom: 0.5rem;
+}
+
+.header p[b-d4v23ubc47] {
+    font-weight: 400;
+    color: #555;
+}
+
+/* Tabella */
+.table-wrapper[b-d4v23ubc47] {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table[b-d4v23ubc47] {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+thead[b-d4v23ubc47] {
+    background-color: #f3f3f3;
+    position: sticky;
+    top: 0;
+}
+
+th[b-d4v23ubc47] {
+    padding: 1rem 1.5rem;
+    font-weight: 600;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+}
+
+tbody tr[b-d4v23ubc47] {
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.2s;
+}
+
+tbody tr:hover[b-d4v23ubc47] {
+    background-color: #f9f9f9;
+}
+
+td[b-d4v23ubc47] {
+    padding: 1rem 1.5rem;
+    color: #444;
+}
+
+.user-name[b-d4v23ubc47] {
+    font-weight: 500;
+    color: #222;
+}
+
+.badge[b-d4v23ubc47] {
+    display: inline-block;
+    padding: 0.2rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.badge-admin[b-d4v23ubc47] {
+    background-color: #000;
+    color: #fff;
+}
+
+.btn[b-d4v23ubc47] {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
+}
+
+.btn-delete[b-d4v23ubc47] {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    color: #555;
+}
+
+.btn-delete:hover[b-d4v23ubc47] {
+    background-color: #ffe6e6;
+    border-color: #ffb3b3;
+    color: #cc0000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header h1[b-d4v23ubc47] {
+        font-size: 1.5rem;
+    }
+
+    th[b-d4v23ubc47], td[b-d4v23ubc47] {
+        padding: 0.75rem 1rem;
+    }
+}

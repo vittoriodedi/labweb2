@@ -7,20 +7,20 @@
     <ul class="navbar-right">
         <AuthorizeView Roles="User">
             <Authorized>
-                <li><NavLink href="programma" class="navlink-right">Programma</NavLink></li>
-                <li><NavLink href="film-catalogo" class="navlink-right">Film</NavLink></li>
-                <li><NavLink href="biglietti" class="navlink-right">Biglietti</NavLink></li>
+                <li><NavLink href="programming" class="navlink-right">Programma</NavLink></li>
+                <li><NavLink href="movie-catalog" class="navlink-right">Film</NavLink></li>
+                <li><NavLink href="tickets" class="navlink-right">Biglietti</NavLink></li>
                 <li><NavLink href="about" class="navlink-right">About</NavLink></li>
-                <li><NavLink href="contatti" class="navlink-right">Contatti</NavLink></li>
+                <li><NavLink href="contacts" class="navlink-right">Contatti</NavLink></li>
             </Authorized>
         </AuthorizeView>
         <AuthorizeView>
             <NotAuthorized>
-                <li><NavLink href="programma" class="navlink-right">Programma</NavLink></li>
-                <li><NavLink href="film-catalogo" class="navlink-right">Film</NavLink></li>
-                <li><NavLink href="biglietti" class="navlink-right">Biglietti</NavLink></li>
+                <li><NavLink href="programming" class="navlink-right">Programma</NavLink></li>
+                <li><NavLink href="movie-catalog" class="navlink-right">Film</NavLink></li>
+                <li><NavLink href="tickets" class="navlink-right">Biglietti</NavLink></li>
                 <li><NavLink href="about" class="navlink-right">About</NavLink></li>
-                <li><NavLink href="contatti" class="navlink-right">Contatti</NavLink></li>
+                <li><NavLink href="contacts" class="navlink-right">Contatti</NavLink></li>
             </NotAuthorized>
         </AuthorizeView>
         <AuthorizeView>
@@ -31,11 +31,9 @@
         <AuthorizeView Roles="Administrator">
             <Authorized>
                 <li><NavLink href="create-admin" class="navlink-right">Create Admin</NavLink></li>
-                <li><NavLink href="manage-accounts" class="navlink-right">Edit Utenti</NavLink></li>
-                <li><NavLink href="manage-films" class="navlink-right">Gestione Film</NavLink></li>
-                @* <li><NavLink href="manage-films" class="navlink-right">Edit Film</NavLink></li> *@
-                @* <li><NavLink href="" class="navlink-right"></NavLink></li> *@
-                @* <li><NavLink href="" class="navlink-right">Film </NavLink></li> *@
+                <li><NavLink href="manage-accounts" class="navlink-right">Gestisci Utenti</NavLink></li>
+                <li><NavLink href="insert-movie-search" class="navlink-right">Inserisci Film</NavLink></li>
+                @* <li><NavLink href="" class="navlink-right">Gestisci Film (...)</NavLink></li> *@
             </Authorized>
         </AuthorizeView>
         <AuthorizeView>

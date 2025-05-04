@@ -1,0 +1,90 @@
+﻿@page "/movie-catalog"
+@rendermode InteractiveServer
+@using CinemaApp.Models
+@using CinemaApp.Models.Entities
+@using Microsoft.EntityFrameworkCore
+@inject CinemaDbContext DbContext
+@inject NavigationManager Navigation
+
+<PageTitle>Film in Sala - CinemaNova</PageTitle>
+
+
+    
+    @if (films == null || films.Count == 0)
+    {
+        <div class="error-container">
+            <p>Nessun film disponibile al momento</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"/>
+            </svg>
+        </div>
+        
+    }
+    else
+    {
+        <div class="films-container">
+    
+            <p class="film-introduction-text">Questi sono i film disponibili in sala, per saperne di piu consulta la pagina della <a href="programma">Programmazione</a></p>
+
+            <div class="films-grid">
+            @foreach (var film in films)
+            {
+                <div class="film-card">
+                    <div class="film-poster">
+                        <img src="@($"https://image.tmdb.org/t/p/w500/{film.LocandinaUrl}")" alt="@film.Titolo" />
+                    </div>
+                    <div class="film-content">
+                        <h3 class="film-title">@film.Titolo</h3>
+                        <div class="film-meta">
+                            <div class="film-meta-item">
+                                <span class="film-meta-label">Regista:</span>
+                                <span class="film-meta-value">@film.Regista</span>
+                            </div>
+                            <div class="film-meta-item">
+                                <span class="film-meta-label">Genere:</span>
+                                <span class="film-meta-value">@film.Genere</span>
+                            </div>
+                            <div class="film-meta-item">
+                                <span class="film-meta-label">Durata:</span>
+                                <span class="film-meta-value">@film.DurataMinuti min</span>
+                            </div>
+                        </div>
+                        <div class="film-release">
+                            Dal @film.DataUscita.ToString("dd/MM/yyyy")
+                        </div>
+                        <div class="film-actions">
+                            <button class="card-button" role="button" @onclick="() => GoToDetails(film.Id)">Info</button>
+                            <button class="card-button" role="button" @onclick="() => GoToTickets(film.Id)">Biglietti</button>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+    }
+
+
+<MudScrollToTop>
+    <MudFab Color="Color.Error" StartIcon="@Icons.Material.Filled.ArrowCircleUp" />
+</MudScrollToTop>
+
+@code {
+    private List<Film>? films;
+
+    private void GoToDetails(int filmId)
+    {
+        Navigation.NavigateTo($"/movie-details/{filmId}");
+    }
+    
+    private void GoToTickets(int filmId)
+    {
+        // Navigation.NavigateTo($"/prenotazione/{filmId}");
+        // Navigation.NavigateTo($"/prenotazione");
+    }
+    
+    protected override async Task OnInitializedAsync()
+    {
+        films = await DbContext.Films.ToListAsync();
+    }
+}

@@ -1,0 +1,82 @@
+@page "/login"
+@using System.Security.Claims
+@using CinemaApp.Models
+@using CinemaApp.Models.ViewModels
+@using Microsoft.AspNetCore.Authentication
+@using Microsoft.AspNetCore.Authentication.Cookies
+@inject CinemaDbContext DbContext
+@inject NavigationManager NavigationManager
+
+<PageTitle>Login - CinemaNova</PageTitle>
+
+
+<div class="login-container">
+    <div class="login-card">
+        <div class="login-header">
+            <h1 class="login-title">Login</h1>
+            <p class="login-subtitle">Inserisci le tue credenziali per accedere</p>
+        </div>
+        
+        <EditForm Model="@Model" OnValidSubmit="Authenticate" FormName="LoginForm">
+            <DataAnnotationsValidator />
+            
+            <div class="form-group">
+                <label class="form-label">Nome Utente</label>
+                <InputText @bind-Value="Model.UserName" class="form-control" placeholder="Inserisci il tuo nome utente" />
+                <div class="validation-message">
+                    <ValidationMessage For="() => Model.UserName" />
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">Password</label>
+                <InputText @bind-Value="Model.Password" class="form-control" type="password" placeholder="Inserisci la tua password" />
+                <div class="validation-message">
+                    <ValidationMessage For="() => Model.Password" />
+                </div>
+            </div>
+            
+            <div class="error-message">
+                @errorMessage
+            </div>
+            
+            <button type="submit" class="btn-login">Accedi</button>
+
+            <div class="register-link">
+                Non hai un account? <a href="/create-user"><strong>Registrati qui</strong></a>
+            </div>
+
+            
+        </EditForm>
+    </div>
+</div>
+
+@code {
+    [CascadingParameter]
+    public HttpContext? HttpContext { get; set; }
+    
+    [SupplyParameterFromForm] 
+    public LoginViewModel Model { get; set; } = new();
+
+    private string? errorMessage;
+    
+    private async Task Authenticate()
+    {
+        var userAccount = DbContext.UserAccounts.Where(x => x.UserName == Model.UserName).FirstOrDefault();
+        if (userAccount is null || userAccount.Password != Model.Password)
+        {
+            errorMessage = "Nome utente o password non validi";
+            return;
+        }
+
+        var claims = new List<Claim>
+        {
+            new Claim(ClaimTypes.Name, Model.UserName),
+            new Claim(ClaimTypes.Role, userAccount.Role)
+        };
+        var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+        var principal = new ClaimsPrincipal(identity);
+        await HttpContext.SignInAsync(principal);
+        NavigationManager.NavigateTo("/");
+    }
+}

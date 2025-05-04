@@ -1,0 +1,207 @@
+.contacts-container[b-mnl1fkieor] {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.divider[b-mnl1fkieor] {
+    height: 4px;
+    width: 80px;
+    background-color: #191919;
+    margin: 0 auto 2.5em;
+}
+
+
+/* Start Hours Section */
+.hours-section[b-mnl1fkieor] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4.5em;
+    margin-bottom: 60px;
+}
+
+.hours-title[b-mnl1fkieor] {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #191919;
+    margin-bottom: .5rem;
+}
+
+.hours-info[b-mnl1fkieor] {
+    text-align: center;
+    font-size: 1em;
+    color: #666;
+}
+
+.hours-schedule[b-mnl1fkieor] {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    list-style-type: none;
+    width: 100%;
+    justify-content: center;
+    overflow-x: auto;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.hours-schedule li[b-mnl1fkieor] {
+    flex: 1;
+    min-width: 130px;
+    border-radius: 8px;
+    border: none;
+    padding: 16px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.hours-schedule li:hover[b-mnl1fkieor] {
+    transform: translateY(-5px);
+    box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.current-day[b-mnl1fkieor] {
+    background-color: #000;
+    border-color: #000;
+    border-left: 4px solid #191919;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.current-day .hours[b-mnl1fkieor] {
+    color: #ffffff;
+}
+
+.day[b-mnl1fkieor] {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.hours[b-mnl1fkieor] {
+    color: #555;
+    font-size: 16px;
+}
+
+/* End Hours Section */
+
+
+/* Start Map Section */
+.map-section[b-mnl1fkieor] {
+    margin-top: 4.5em;
+}
+
+.map-section p[b-mnl1fkieor] {
+    font-size: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+    color: #555;
+}
+
+.map-title[b-mnl1fkieor] {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #191919;
+    margin-bottom: .5rem;
+}
+
+.map[b-mnl1fkieor] {
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+/* End Map Section */
+
+
+/* Start Contacts Section */
+.contacts-section[b-mnl1fkieor] {
+    margin-top: 4.5em;
+    margin-bottom: 4.5em;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.contacts-text[b-mnl1fkieor] {
+    width: 50%;
+    padding: 4em;
+    text-align: center;
+    border-radius: 10px 0 0 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.contacts-text h2[b-mnl1fkieor] {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #191919;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.contacts-text p[b-mnl1fkieor] {
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 1em;
+}
+
+.contacts-links[b-mnl1fkieor] {
+    width: 50%;
+    padding: 4em 1.5em;
+    border-radius: 0 10px 10px 0;
+    border-left: 4px solid #191919;
+    background: linear-gradient(to left, white, rgb(248, 248, 248));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.contacts-links div[b-mnl1fkieor] {
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.contacts-links div:hover[b-mnl1fkieor] {
+    transform: translateY(-3px);
+}
+
+.contacts-links a[b-mnl1fkieor] {
+    color: #191919;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 0.5em;
+    transition: color 0.3s;
+}
+
+.contacts-links a:hover[b-mnl1fkieor] {
+    color: #555;
+    text-decoration: underline;
+}
+/* End Contacts Section */
+
+
+@media (max-width: 768px) {
+    .schedule[b-mnl1fkieor] {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .schedule li[b-mnl1fkieor] {
+        width: 100%;
+        min-width: auto;
+    }
+}

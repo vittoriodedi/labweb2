@@ -1,0 +1,122 @@
+/* Stili per la pagina CreateAdmin.razor */
+.login-container[b-t3bcmmp0km] {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0;
+}
+
+.login-card[b-t3bcmmp0km] {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(62, 62, 62, 0.1);
+    border-top: 5px solid #171717FF;
+    border-bottom: 5px solid #ffffff;
+    padding: 40px;
+    width: 100%;
+    max-width: 450px;
+    margin: 112px auto;
+}
+
+.login-header[b-t3bcmmp0km] {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-title[b-t3bcmmp0km] {
+    color: #171717FF;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.login-subtitle[b-t3bcmmp0km] {
+    color: #666;
+    font-size: 0.8rem;
+    margin-bottom: 25px;
+}
+
+.form-group[b-t3bcmmp0km] {
+    margin-bottom: 20px;
+}
+
+.form-label[b-t3bcmmp0km] {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #444;
+}
+
+.form-control[b-t3bcmmp0km] {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-control:focus[b-t3bcmmp0km] {
+    border-color: #171717FF;
+    box-shadow: 0 0 0 3px rgba(74, 74, 74, 0.15);
+    outline: none;
+}
+
+.validation-message[b-t3bcmmp0km] {
+    color: #d9534f;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.error-message[b-t3bcmmp0km] {
+    color: #d9534f;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+    min-height: 21px;
+}
+
+.btn-login[b-t3bcmmp0km] {
+    background-color: #171717FF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 16px;
+    font-size: 15px;
+    font-weight: 500;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+    box-shadow: 0 2px 4px rgba(37, 37, 37, 0.25);
+}
+
+.btn-login:hover[b-t3bcmmp0km] {
+    background-color: #232323;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 6px rgba(58, 58, 58, 0.35);
+}
+
+/* Effetto specifico per il pulsante di creazione amministratore */
+.btn-login:active[b-t3bcmmp0km] {
+    transform: translateY(1px);
+    box-shadow: 0 1px 2px rgba(37, 37, 37, 0.25);
+}
+
+/* Stile speciale per il titolo admin */
+.login-title[admin][b-t3bcmmp0km] {
+    color: #171717FF;
+    border-bottom: 2px solid #171717FF;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Adattamenti responsive */
+@media (max-width: 576px) {
+    .login-card[b-t3bcmmp0km] {
+        margin: 40px auto;
+        padding: 30px;
+    }
+
+    .login-title[b-t3bcmmp0km] {
+        font-size: 22px;
+    }
+}

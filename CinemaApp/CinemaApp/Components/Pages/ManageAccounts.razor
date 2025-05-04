@@ -3,52 +3,50 @@
 @using CinemaApp.Models.Entities
 @using Microsoft.EntityFrameworkCore
 @rendermode InteractiveServer
+@attribute [Authorize(Roles = "Administrator")]
 
-@if (users == null || users.Count == 0)
-{
-    <MudText Typo="Typo.h5" Class="mb-4">Lista Utenti non presente</MudText>
-}
-else
-{
-    <div class="container">
-        <div class="header">
-            <h1>Gestione Account</h1>
-            <p>Visualizza e gestisci tutti gli account utente nel database</p>
-        </div>
-        <div class="table-wrapper">
-            <table>
-                <thead>
-                <tr>
-                    <th>Username</th>
-                    <th>Email</th>
-                    <th>Ruolo</th>
-                    <th>Azioni</th>
-                </tr>
-                </thead>
-                <tbody>
-                @foreach (var user in users)
-                {
+<PageTitle>Gestisci Account - CinemaNova</PageTitle>
+
+
+<div class="layout-wrapper">
+    @if (users == null || users.Count == 0)
+    {
+        <MudText Typo="Typo.h5" Class="mb-4">Lista Utenti non presente</MudText>
+    }
+    else
+    {
+        <div class="container content">
+            <div class="header">
+                <h1>Gestione Account</h1>
+                <p>Visualizza e gestisci tutti gli account utente nel database</p>
+            </div>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
                     <tr>
-                        <td><span class="user-name">@user.UserName</span></td>
-                        <td>@user.Email</td>
-                        <td><span class="badge badge-admin">@user.Role</span></td>
-                        <td><button class="btn btn-delete" @onclick="() => DeleteUser(user)">Elimina</button></td>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Ruolo</th>
+                        <th>Azioni</th>
                     </tr>
-                }
-                </tbody>
-            </table>
-        </div>
-        <div class="pagination">
-            <div class="page-info">
-                Visualizzando 1-@users.Count di @users.Count account
+                    </thead>
+                    <tbody>
+                    @foreach (var user in users)
+                    {
+                        <tr>
+                            <td><span class="user-name">@user.UserName</span></td>
+                            <td>@user.Email</td>
+                            <td><span class="badge badge-admin">@user.Role</span></td>
+                            <td><button class="btn btn-delete" @onclick="() => DeleteUser(user)">Elimina</button></td>
+                        </tr>
+                    }
+                    </tbody>
+                </table>
             </div>
-            <div class="page-buttons">
-                <button class="btn btn-outline" disabled>Precedente</button>
-                <button class="btn btn-outline" disabled>Successivo</button>
-            </div>
         </div>
-    </div>
-}
+    }
+</div>
+
 
 @inject CinemaDbContext dbContext
 @code {
