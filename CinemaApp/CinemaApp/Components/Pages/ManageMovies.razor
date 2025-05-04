@@ -1,0 +1,171 @@
+@page "/manage-movies"
+@using CinemaApp.Models
+@using CinemaApp.Models.Entities
+@using Microsoft.EntityFrameworkCore
+@rendermode InteractiveServer
+@attribute [Authorize(Roles = "Administrator")]
+
+<PageTitle>Gestisci Account - CinemaNova</PageTitle>
+
+
+<div class="layout-wrapper">
+    @if (films == null || films.Count == 0)
+    {
+        <MudText Typo="Typo.h5" Class="mb-4">Nessun Film Disponibile</MudText>
+    }
+    else
+    {
+        <div class="container content">
+            <div class="header">
+                <h1>Gestione Film</h1>
+                <p>Visualizza e gestisci tutti i film presenti nel database</p>
+            </div>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Titolo</th>
+                        <th>Data di Uscita</th>
+                        <th>Genere</th>
+                        <th>Regista</th>
+                        <th>Durata</th>
+                        <th>Adulti</th>
+                        <th>Valutazione</th>
+                        <th>Azioni</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    @foreach (var film in films)
+                    {
+                        <tr>
+                            <td><span class="user-name">@film.Titolo</span></td>
+                            <td>@film.DataUscita</td>
+                            <td><span class="badge badge-admin">@film.Genere</span></td>
+                            <td>@film.Regista</td>
+                            <td>@film.DurataMinuti min</td>
+                            <td>@(film.Adulti ? "Si" : "No")</td>
+                            <td><MudRating ReadOnly="true" SelectedValue="@film.Valutazione"/></td>
+                            <td><button class="btn btn-delete" @onclick="() => ModifyFilm(film)">Modifica</button>
+                                <button class="btn btn-delete" @onclick="() => DeleteFilm(film)">Elimina</button></td>
+                        </tr>
+                    }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    }
+</div>
+
+@if (editDialogVisible && filmToEdit != null)
+{
+    <div class="dialog-overlay">
+        <div class="edit-dialog">
+            <h2>Modifica Film</h2>
+            
+            <div class="form-group">
+                <label for="titolo">Titolo:</label>
+                <input type="text" id="titolo" @bind="filmToEdit.Titolo" required />
+            </div>
+            
+            <div class="form-group">
+                <label for="dataUscita">Data di Uscita:</label>
+                <input type="date" id="dataUscita" @bind="filmToEdit.DataUscita" required />
+            </div>
+            
+            <div class="form-group">
+                <label for="genere">Genere:</label>
+                <input type="text" id="genere" @bind="filmToEdit.Genere" required />
+            </div>
+            
+            <div class="form-group">
+                <label for="regista">Regista:</label>
+                <input type="text" id="regista" @bind="filmToEdit.Regista" required />
+            </div>
+            
+            <div class="form-group">
+                <label for="durata">Durata (minuti):</label>
+                <input type="number" id="durata" @bind="filmToEdit.DurataMinuti" required />
+            </div>
+            
+            <div class="form-group">
+                <label for="trama">Trama:</label>
+                <textarea id="trama" @bind="filmToEdit.Trama" rows="4" required></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="locandina">URL Locandina:</label>
+                <input type="text" id="locandina" @bind="filmToEdit.LocandinaUrl" required />
+            </div>
+            
+            <div class="form-group">
+                <label for="adulti">Contenuto per Adulti:</label>
+                <input type="checkbox" id="adulti" @bind="filmToEdit.Adulti" />
+            </div>
+            
+            <div class="form-group">
+                <label for="valutazione">Valutazione:</label>
+                <MudRating @bind-SelectedValue="filmToEdit.Valutazione" MaxValue="5" />
+            </div>
+            
+            <div class="button-group">
+                <button class="btn btn-primary" @onclick="SaveChanges">Salva</button>
+                <button class="btn btn-secondary" @onclick="CancelEdit">Annulla</button>
+            </div>
+        </div>
+    </div>
+}
+
+
+@inject CinemaDbContext dbContext
+@code {
+    private List<Film> films = new();
+    
+    private Film filmToEdit;
+    private bool editDialogVisible = false;
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadFilms();
+    }
+
+    private async Task LoadFilms()
+    {
+        films = await dbContext.Films.ToListAsync();
+    }
+
+    private async Task DeleteFilm(Film film)
+    {
+        dbContext.Films.Remove(film);
+        await dbContext.SaveChangesAsync();
+        await LoadFilms();
+    }
+    
+    
+    
+    
+    
+    private async Task ModifyFilm(Film film)
+    {
+        filmToEdit = film;
+        editDialogVisible = true;
+        StateHasChanged();
+    }
+    private async Task SaveChanges()
+    {
+        if (filmToEdit != null)
+        {
+            dbContext.Films.Update(filmToEdit);
+            await dbContext.SaveChangesAsync();
+            await LoadFilms();
+            editDialogVisible = false;
+        }
+    }
+    private void CancelEdit()
+    {
+        editDialogVisible = false;
+    }
+
+
+    
+}

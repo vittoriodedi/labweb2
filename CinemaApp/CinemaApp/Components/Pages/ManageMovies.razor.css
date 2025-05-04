@@ -1,0 +1,267 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+.layout-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content {
+    flex: 1;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.header {
+    margin-bottom: 2rem;
+}
+
+.header h1 {
+    font-weight: 600;
+    font-size: 1.75rem;
+    color: #111;
+    margin-bottom: 0.5rem;
+}
+
+.header p {
+    font-weight: 400;
+    color: #555;
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+thead {
+    background-color: #f3f3f3;
+    position: sticky;
+    top: 0;
+}
+
+th {
+    padding: 1rem 1.5rem;
+    font-weight: 600;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+}
+
+tbody tr {
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.2s;
+}
+
+tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+td {
+    padding: 1rem 1.5rem;
+    color: #444;
+}
+
+.user-name {
+    font-weight: 500;
+    color: #222;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.2rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.badge-admin {
+    background-color: #000;
+    color: #fff;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
+}
+
+.btn-delete {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    color: #555;
+}
+
+.btn-delete:hover {
+    background-color: #ffe6e6;
+    border-color: #ffb3b3;
+    color: #cc0000;
+}
+
+.dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    font-family: 'Inter', sans-serif;
+}
+
+.edit-dialog {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 600px;
+    max-width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.edit-dialog h2 {
+    font-weight: 600;
+    font-size: 1.75rem;
+    color: #111;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group input[type="number"],
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    color: #444;
+    transition: border-color 0.2s;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="date"]:focus,
+.form-group input[type="number"]:focus,
+.form-group textarea:focus {
+    border-color: #aaa;
+    outline: none;
+}
+
+.form-group input[type="checkbox"] {
+    margin-right: 0.5rem;
+    transform: scale(1.2);
+}
+
+.button-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 2rem;
+}
+
+.button-group .btn {
+    padding: 0.5rem 1.25rem;
+    border-radius: 4px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
+}
+
+.button-group .btn-primary {
+    background-color: #000;
+    color: #fff;
+}
+
+.button-group .btn-primary:hover {
+    background-color: #333;
+}
+
+.button-group .btn-secondary {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    color: #555;
+}
+
+.button-group .btn-secondary:hover {
+    background-color: #f3f3f3;
+    border-color: #ccc;
+}
+
+@media (max-width: 768px) {
+    .edit-dialog {
+        padding: 1.5rem;
+    }
+
+    .edit-dialog h2 {
+        font-size: 1.5rem;
+    }
+
+    .form-group label {
+        font-size: 0.9rem;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="date"],
+    .form-group input[type="number"],
+    .form-group textarea {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    th, td {
+        padding: 0.75rem 1rem;
+    }
+}
