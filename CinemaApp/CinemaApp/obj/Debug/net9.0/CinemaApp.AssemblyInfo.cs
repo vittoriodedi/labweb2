@@ -10,10 +10,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("1cdf62bd-f08e-4636-91dc-ab4506c787f1")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("CinemaApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4b365b423ef86e183f1ce291d96e58810ef48e38")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+543c63a9674046db6c5c518013946391f5db04df")]
 [assembly: System.Reflection.AssemblyProductAttribute("CinemaApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CinemaApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
