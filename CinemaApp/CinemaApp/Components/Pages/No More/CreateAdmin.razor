@@ -68,7 +68,6 @@
     
     private async Task CreateAdminAccount()
     {
-        // Verifica se l'utente esiste già
         var existingUser = DbContext.UserAccounts.FirstOrDefault(x => x.UserName == Model.UserName);
         if (existingUser != null)
         {
@@ -76,26 +75,23 @@
             return;
         }
 
-        // Verifica se le password corrispondono
         if (Model.Password != Model.ConfirmPassword)
         {
             errorMessage = "Le password non corrispondono";
             return;
         }
 
-        // Creazione del nuovo account amministratore
         var newAdmin = new UserAccount
         {
             UserName = Model.UserName,
             Password = Model.Password,
             Email = Model.Email,
-            Role = "Administrator" // Ruolo amministratore
+            Role = "Administrator" 
         };
 
         DbContext.UserAccounts.Add(newAdmin);
         await DbContext.SaveChangesAsync();
         
-        // Reset del form
         Model = new RegisterAdminViewModel();
         errorMessage = null;
         StateHasChanged();

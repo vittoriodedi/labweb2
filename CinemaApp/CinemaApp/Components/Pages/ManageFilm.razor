@@ -1,7 +1,8 @@
-@page "/manage-movies"
+@page "/manage-films"
 @using CinemaApp.Models
 @using CinemaApp.Models.Entities
 @using Microsoft.EntityFrameworkCore
+@inject CinemaDbContext dbContext
 @rendermode InteractiveServer
 @attribute [Authorize(Roles = "Administrator")]
 
@@ -116,7 +117,6 @@
 }
 
 
-@inject CinemaDbContext dbContext
 @code {
     private List<Film> films = new();
     
@@ -140,10 +140,6 @@
         await dbContext.SaveChangesAsync();
         await LoadFilms();
     }
-    
-    
-    
-    
     
     private async Task ModifyFilm(Film film)
     {

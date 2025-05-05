@@ -11,7 +11,6 @@
 }
 
 
-/* Start Hours Section */
 .hours-section {
     display: flex;
     flex-direction: column;
@@ -90,10 +89,6 @@
     font-size: 16px;
 }
 
-/* End Hours Section */
-
-
-/* Start Map Section */
 .map-section {
     margin-top: 4.5em;
 }
@@ -121,10 +116,6 @@
     overflow: hidden;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
-/* End Map Section */
-
-
-/* Start Contacts Section */
 .contacts-section {
     margin-top: 4.5em;
     margin-bottom: 4.5em;
@@ -190,8 +181,6 @@
     color: #555;
     text-decoration: underline;
 }
-/* End Contacts Section */
-
 
 @media (max-width: 768px) {
     .schedule {

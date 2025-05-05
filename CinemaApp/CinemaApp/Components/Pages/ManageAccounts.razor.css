@@ -24,7 +24,6 @@ html, body {
     padding-bottom: 5vh;
 }
 
-/* Header */
 .header {
     margin-bottom: 2rem;
 }
@@ -41,7 +40,6 @@ html, body {
     color: #555;
 }
 
-/* Tabella */
 .table-wrapper {
     width: 100%;
     overflow-x: auto;
@@ -127,7 +125,6 @@ td {
     color: #cc0000;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .header h1 {
         font-size: 1.5rem;

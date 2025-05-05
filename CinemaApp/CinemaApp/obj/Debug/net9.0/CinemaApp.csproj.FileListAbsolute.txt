@@ -136,7 +136,6 @@
 /Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/obj/Debug/net9.0/CinemaApp.MvcApplicationPartsAssemblyInfo.cache
 /Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/obj/Debug/net9.0/CinemaApp.sourcelink.json
 /Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/obj/Debug/net9.0/scopedcss/Components/Layout/MainLayout.razor.rz.scp.css
-/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/obj/Debug/net9.0/scopedcss/Components/Layout/NavMenu.razor.rz.scp.css
 /Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/obj/Debug/net9.0/scopedcss/bundle/CinemaApp.styles.css
 /Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/obj/Debug/net9.0/scopedcss/projectbundle/CinemaApp.bundle.scp.css
 /Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/obj/Debug/net9.0/compressed/f7r7dgan13-w7mf952350.gz
@@ -184,8 +183,6 @@
 /Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/obj/Debug/net9.0/compressed/jxudiy0mgy-h1s4sie4z3.gz
 /Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/obj/Debug/net9.0/compressed/u8ea1g2t9r-63fj8s7r0e.gz
 /Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/obj/Debug/net9.0/compressed/5ssff0m2p0-0j3bgjxly4.gz
-/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/obj/Debug/net9.0/compressed/cdau1ibg9m-9d6xrndm25.gz
-/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/obj/Debug/net9.0/compressed/s8dcfm6vs9-9d6xrndm25.gz
 /Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/obj/Debug/net9.0/staticwebassets.build.json
 /Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/obj/Debug/net9.0/staticwebassets.development.json
 /Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/obj/Debug/net9.0/staticwebassets.build.endpoints.json
@@ -437,3 +434,38 @@
 /Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/scopedcss/Components/Pages/ManageMovies.razor.rz.scp.css
 /Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/compressed/cdau1ibg9m-ci1ankp4y6.gz
 /Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/Debug/net9.0/compressed/s8dcfm6vs9-ci1ankp4y6.gz
+/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/bin/Debug/net9.0/Microsoft.AspNetCore.Authorization.dll
+/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/bin/Debug/net9.0/Microsoft.AspNetCore.Components.dll
+/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/bin/Debug/net9.0/Microsoft.AspNetCore.Components.Forms.dll
+/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/bin/Debug/net9.0/Microsoft.AspNetCore.Components.Web.dll
+/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/bin/Debug/net9.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/bin/Debug/net9.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/bin/Debug/net9.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/bin/Debug/net9.0/Microsoft.AspNetCore.Metadata.dll
+/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/bin/Debug/net9.0/Microsoft.Extensions.Identity.Core.dll
+/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/bin/Debug/net9.0/Microsoft.Extensions.Identity.Stores.dll
+/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/bin/Debug/net9.0/Microsoft.Extensions.Localization.dll
+/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/bin/Debug/net9.0/Microsoft.Extensions.Localization.Abstractions.dll
+/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/bin/Debug/net9.0/Microsoft.JSInterop.dll
+/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/bin/Debug/net9.0/MudBlazor.dll
+/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/obj/Debug/net9.0/scopedcss/Components/App.razor.rz.scp.css
+/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/obj/Debug/net9.0/scopedcss/Components/Pages/Home.razor.rz.scp.css
+/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/obj/Debug/net9.0/scopedcss/Components/Pages/ManageAccounts.razor.rz.scp.css
+/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/obj/Debug/net9.0/scopedcss/Components/Pages/No More/About.razor.rz.scp.css
+/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/obj/Debug/net9.0/scopedcss/Components/Pages/No More/AccessDenied.razor.rz.scp.css
+/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/obj/Debug/net9.0/scopedcss/Components/Pages/No More/ConfirmLogout.razor.rz.scp.css
+/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/obj/Debug/net9.0/scopedcss/Components/Pages/No More/Contacts.razor.rz.scp.css
+/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/obj/Debug/net9.0/scopedcss/Components/Pages/No More/CreateAdmin.razor.rz.scp.css
+/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/obj/Debug/net9.0/scopedcss/Components/Pages/No More/CreateUser.razor.rz.scp.css
+/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/obj/Debug/net9.0/scopedcss/Components/Pages/No More/Login.razor.rz.scp.css
+/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/obj/Debug/net9.0/scopedcss/Components/Pages/No More/Logout.razor.rz.scp.css
+/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/obj/Debug/net9.0/scopedcss/Components/Pages/No More/Tickets.razor.rz.scp.css
+/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/obj/Debug/net9.0/scopedcss/Components/Pages/Programming.razor.rz.scp.css
+/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/obj/Debug/net9.0/compressed/tzxjg6is5z-qmvjbof2tn.gz
+/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/obj/Debug/net9.0/compressed/0wz98yz2xy-jrqzp895hu.gz
+/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/obj/Debug/net9.0/scopedcss/Components/Pages/FilmCatalog.razor.rz.scp.css
+/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/obj/Debug/net9.0/scopedcss/Components/Pages/FilmDetails.razor.rz.scp.css
+/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/obj/Debug/net9.0/scopedcss/Components/Pages/InsertFilmFinal.razor.rz.scp.css
+/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/obj/Debug/net9.0/scopedcss/Components/Pages/ManageFilm.razor.rz.scp.css
+/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/obj/Debug/net9.0/compressed/cdau1ibg9m-ibaoukqogc.gz
+/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/obj/Debug/net9.0/compressed/s8dcfm6vs9-ibaoukqogc.gz

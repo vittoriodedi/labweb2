@@ -3,8 +3,6 @@ using CinemaApp.Models;
 using MudBlazor.Services;
 using Microsoft.AspNetCore.Authentication.Cookies;
 
-
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -17,7 +15,6 @@ builder.Services.AddMudServices();
 
 builder.Services.AddHttpClient();
 
-//guida autenticazione
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options =>
     {
@@ -28,7 +25,6 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
     });
 builder.Services.AddAuthorization();
 builder.Services.AddCascadingAuthenticationState();
-//fine guida autenticazione
 
 var app = builder.Build();
 
@@ -43,10 +39,8 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseAntiforgery();
 
-//guida autenticazione
 app.UseAuthentication();
 app.UseAuthorization();
-//fine guida autenticazione
 
 app.MapStaticAssets();
 app.MapRazorComponents<App>()

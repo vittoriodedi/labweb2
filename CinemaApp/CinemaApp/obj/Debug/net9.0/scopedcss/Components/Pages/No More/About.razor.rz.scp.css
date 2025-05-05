@@ -14,7 +14,6 @@
 }
 
 
-/* Start About Section */
 .about-section[b-jd43j7v86g] {
     margin-top: 4.5em;
     margin-bottom: 60px;
@@ -37,10 +36,6 @@
     margin-bottom: 20px;
     text-align: justify;
 }
-/* End About Section */
-
-
-/* Start Story Section */
 .story-section[b-jd43j7v86g]{
     margin-top: 4.5em;
 }
@@ -82,10 +77,6 @@
 .stage-4[b-jd43j7v86g]{
     margin-left: 75%;
 }
-/* End Story Section */
-
-
-/* Start Reviews Section */
 .reviews-section[b-jd43j7v86g] {
     margin-top: 4.5em;
     margin-bottom: 4.5em;
@@ -144,8 +135,6 @@
     color: #191919;
     font-size: 15px;
 }
-/* End Reviews Section */
-
 
 @media (max-width: 768px) {
     .section-storia > div[b-jd43j7v86g] {

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/CinemaApp.csproj": {}
+    "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/CinemaApp.csproj": {}
   },
   "projects": {
-    "/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/CinemaApp.csproj": {
+    "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/CinemaApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/CinemaApp.csproj",
+        "projectUniqueName": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/CinemaApp.csproj",
         "projectName": "CinemaApp",
-        "projectPath": "/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/CinemaApp.csproj",
+        "projectPath": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/CinemaApp.csproj",
         "packagesPath": "/Users/vittoriodedi/.nuget/packages/",
-        "outputPath": "/Users/vittoriodedi/Documents/GitHub/labweb222/CinemaApp/CinemaApp/obj/",
+        "outputPath": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/vittoriodedi/.nuget/NuGet/NuGet.Config"

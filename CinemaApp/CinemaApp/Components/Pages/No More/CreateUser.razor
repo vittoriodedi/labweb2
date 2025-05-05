@@ -71,7 +71,6 @@
     
     private async Task CreateUserAccount()
     {
-        // Verifica se l'utente esiste già
         var existingUser = DbContext.UserAccounts.FirstOrDefault(x => x.UserName == Model.UserName);
         if (existingUser != null)
         {
@@ -79,26 +78,23 @@
             return;
         }
 
-        // Verifica se le password corrispondono
         if (Model.Password != Model.ConfirmPassword)
         {
             errorMessage = "Le password non corrispondono";
             return;
         }
 
-        // Creazione del nuovo account utente
         var newUser = new UserAccount
         {
             UserName = Model.UserName,
             Password = Model.Password,
             Email = Model.Email,
-            Role = "User" // Ruolo predefinito per i nuovi utenti
+            Role = "User" 
         };
 
         DbContext.UserAccounts.Add(newUser);
         await DbContext.SaveChangesAsync();
         
-        // Reindirizza alla pagina di login
         NavigationManager.NavigateTo("/login");
     }
 }

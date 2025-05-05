@@ -1,4 +1,4 @@
-﻿@page "/movie-catalog"
+﻿@page "/film-catalog"
 @rendermode InteractiveServer
 @using CinemaApp.Models
 @using CinemaApp.Models.Entities
@@ -74,13 +74,13 @@
 
     private void GoToDetails(int filmId)
     {
-        Navigation.NavigateTo($"/movie-details/{filmId}");
+        Navigation.NavigateTo($"/film-details/{filmId}");
     }
     
     private void GoToTickets(int filmId)
     {
-        // Navigation.NavigateTo($"/prenotazione/{filmId}");
-        // Navigation.NavigateTo($"/prenotazione");
+        // Navigation.NavigateTo($"/prenotazione/{filmId}"); ?????
+        // Navigation.NavigateTo($"/prenotazione"); ?????
     }
     
     protected override async Task OnInitializedAsync()
