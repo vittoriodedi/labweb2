@@ -1,6 +1,4 @@
 ﻿@inherits LayoutComponentBase
-
-@* swal js *@
 <nav class="navbar">
     <ul class="navbar-left">
         <li><NavLink href="" Match="NavLinkMatch.All" class="navlink-left">Cinemanova</NavLink></li>
@@ -8,7 +6,7 @@
     <ul class="navbar-right">
         <AuthorizeView Roles="User">
             <Authorized>
-                <li><NavLink href="programming" class="navlink-right">Programma</NavLink></li>
+                <li><NavLink href="programmazione" class="navlink-right">Programma</NavLink></li>
                 <li><NavLink href="film-catalog" class="navlink-right">Film</NavLink></li>
                 <li><NavLink href="tickets" class="navlink-right">Biglietti</NavLink></li>
                 <li><NavLink href="about" class="navlink-right">About</NavLink></li>
@@ -17,7 +15,7 @@
         </AuthorizeView>
         <AuthorizeView>
             <NotAuthorized>
-                <li><NavLink href="programming" class="navlink-right">Programma</NavLink></li>
+                <li><NavLink href="programmazione" class="navlink-right">Programma</NavLink></li>
                 <li><NavLink href="film-catalog" class="navlink-right">Film</NavLink></li>
                 <li><NavLink href="tickets" class="navlink-right">Biglietti</NavLink></li>
                 <li><NavLink href="about" class="navlink-right">About</NavLink></li>
@@ -33,7 +31,7 @@
             <Authorized>
                 <li><NavLink href="create-admin" class="navlink-right">Create Admin</NavLink></li>
                 <li><NavLink href="manage-accounts" class="navlink-right">Gestisci Utenti</NavLink></li>
-                <li><NavLink href="insert-film-search" class="navlink-right">Inserisci Film</NavLink></li>
+                <li><NavLink href="insert-film" class="navlink-right">Inserisci Film</NavLink></li>
                 <li><NavLink href="manage-films" class="navlink-right">Gestisci Film</NavLink></li>
             </Authorized>
         </AuthorizeView>

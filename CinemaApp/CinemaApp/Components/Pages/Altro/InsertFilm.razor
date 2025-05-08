@@ -1,7 +1,8 @@
-﻿@page "/insert-film-search"
+﻿@page "/insert-film"
 @using CinemaApp.Models
 @using CinemaApp.Models.Entities
 @rendermode InteractiveServer
+@inject IConfiguration Configuration
 @inject HttpClient Http
 @inject CinemaDbContext dbContext
 
@@ -137,7 +138,7 @@
         savedTitle = filmTitle;
         filmTitle = string.Empty;
 
-        var apiKey = "5231f6dfdae8de15cba5211efb76142c";
+        var apiKey = Configuration["TMDb:ApiKey"];
         var language = "it-IT";
         var url = $"https://api.themoviedb.org/3/search/movie?api_key={apiKey}&language={language}&query={Uri.EscapeDataString(savedTitle)}";
 

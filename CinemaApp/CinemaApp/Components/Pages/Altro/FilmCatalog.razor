@@ -77,14 +77,28 @@
         Navigation.NavigateTo($"/film-details/{filmId}");
     }
     
-    private void GoToTickets(int filmId)
-    {
-        // Navigation.NavigateTo($"/prenotazione/{filmId}"); ?????
-        // Navigation.NavigateTo($"/prenotazione"); ?????
-    }
-    
     protected override async Task OnInitializedAsync()
     {
         films = await DbContext.Films.ToListAsync();
     }
+    private async Task GoToTickets(int filmId)
+    {
+        // Trova la prossima proiezione disponibile per questo film
+        var proiezione = await DbContext.Proiezioni
+            .Where(p => p.FilmId == filmId && p.DataOra > DateTime.Now && p.Attiva)
+            .OrderBy(p => p.DataOra)
+            .FirstOrDefaultAsync();
+        
+        if (proiezione != null)
+        {
+            // Se esiste una proiezione futura, vai direttamente alla pagina di prenotazione
+            Navigation.NavigateTo($"/prenota-biglietti/{proiezione.Id}");
+        }
+        else
+        {
+            // Altrimenti vai alla programmazione generale
+            Navigation.NavigateTo("/programmazione");
+        }
+    }
+
 }
