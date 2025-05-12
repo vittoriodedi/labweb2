@@ -1,0 +1,190 @@
+﻿@page "/prenota-biglietti/{ProiezioneId:int}"
+@rendermode InteractiveServer
+@using CinemaApp.Models
+@using CinemaApp.Models.Entities
+@using Microsoft.EntityFrameworkCore
+@inject CinemaDbContext DbContext
+@inject NavigationManager Navigation
+
+<PageTitle>Acquista Biglietti - CinemaNova</PageTitle>
+
+<div class="container">
+    @if (proiezione == null)
+    {
+        <div class="loading-spinner">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-repeat spin" viewBox="0 0 16 16">
+                <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"/>
+                <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"/>
+            </svg>
+            <span>Caricamento in corso...</span>
+        </div>
+    }
+    else
+    {
+        <div class="booking-header">
+            <h1>@proiezione.Film.Titolo</h1>
+        </div>
+
+        <div class="booking-container">
+            <div class="seats-container">
+                <div class="screen-container">
+                    <div class="screen">Schermo</div>
+                </div>
+
+                <div class="seats-grid">
+                    @foreach (var filaGruppo in postiSala.GroupBy(p => p.Fila).OrderBy(g => g.Key))
+                    {
+                        <div class="seat-row">
+                            <span class="row-label">@filaGruppo.Key</span>
+                            @foreach (var posto in filaGruppo.OrderBy(p => p.Numero))
+                            {
+                                bool isOccupato = postiOccupati.Contains(posto.Id);
+                                bool isSelezionato = postiSelezionati.Contains(posto.Id);
+                                
+                                <div class="seat @(isOccupato ? "occupied" : "") @(isSelezionato ? "selected" : "")"
+                                     @onclick="() => SelezionaPosto(posto.Id, isOccupato)">
+                                    @posto.Numero
+                                </div>
+                            }
+                        </div>
+                    }
+                </div>
+
+                <div class="seats-legend">
+                    <div class="legend-item">
+                        <span class="legend-indicator available"></span>
+                        <span>Disponibile</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-indicator selected"></span>
+                        <span>Selezionato</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-indicator occupied"></span>
+                        <span>Occupato</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="booking-summary">
+                <h2>Riepilogo</h2>
+                
+                <div class="summary-item">
+                    <span class="label">Film:</span>
+                    <span class="value">@proiezione.Film.Titolo</span>
+                </div>
+                <div class="summary-item">
+                    <span class="label">Data e ora:</span>
+                    <span class="value">@proiezione.DataOra.ToString("dd/MM/yyyy HH:mm")</span>
+                </div>
+                <div class="summary-item">
+                    <span class="label">Sala:</span>
+                    <span class="value">@proiezione.Sala.Nome</span>
+                </div>
+                <div class="summary-item">
+                    <span class="label">Posti selezionati:</span>
+                    <span class="value">@postiSelezionati.Count</span>
+                </div>
+                <div class="summary-item total">
+                    <span class="label">Totale:</span>
+                    <span class="value">€@(postiSelezionati.Count * proiezione.PrezzoBase)</span>
+                </div>
+
+                @if (postiSelezionati.Count > 0)
+                {
+                    <div class="form-group">
+                        <label for="email">Email (per ricevere i biglietti)</label>
+                        <input id="email" type="email" @bind="emailUtente" class="form-control" required />
+                    </div>
+
+                    <button class="checkout-button" @onclick="CompletaAcquisto" disabled="@(string.IsNullOrEmpty(emailUtente))">
+                        Procedi all'acquisto
+                    </button>
+                }
+            </div>
+        </div>
+    }
+</div>
+
+@code {
+    [Parameter]
+    public int ProiezioneId { get; set; }
+
+    private Proiezione? proiezione;
+    private List<Posto> postiSala = new List<Posto>();
+    private HashSet<int> postiOccupati = new HashSet<int>();
+    private HashSet<int> postiSelezionati = new HashSet<int>();
+    private string emailUtente = string.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await CaricaDati();
+    }
+
+    private async Task CaricaDati()
+    {
+        proiezione = await DbContext.Proiezioni
+            .Include(p => p.Film)
+            .Include(p => p.Sala)
+            .FirstOrDefaultAsync(p => p.Id == ProiezioneId);
+
+        if (proiezione != null)
+        {
+            postiSala = await DbContext.Posti
+                .Where(p => p.SalaId == proiezione.SalaId)
+                .ToListAsync();
+
+            var biglietti = await DbContext.Biglietti
+                .Where(b => b.ProiezioneId == ProiezioneId && b.PostoId != null)
+                .ToListAsync();
+
+            postiOccupati = biglietti
+                .Select(b => b.PostoId!.Value)
+                .ToHashSet();
+        }
+    }
+
+    private void SelezionaPosto(int postoId, bool isOccupato)
+    {
+        if (isOccupato)
+            return;
+
+        if (postiSelezionati.Contains(postoId))
+            postiSelezionati.Remove(postoId);
+        else
+            postiSelezionati.Add(postoId);
+    }
+
+    private async Task CompletaAcquisto()
+    {
+        if (proiezione == null || postiSelezionati.Count == 0 || string.IsNullOrEmpty(emailUtente))
+            return;
+
+        var nuoviBiglietti = new List<Biglietto>();
+
+        foreach (var postoId in postiSelezionati)
+        {
+            var codiceBiglietto = GeneraCodiceBiglietto();
+            
+            nuoviBiglietti.Add(new Biglietto
+            {
+                ProiezioneId = ProiezioneId,
+                PostoId = postoId,
+                PrezzoFinale = proiezione.PrezzoBase,
+                EmailCliente = emailUtente,
+                DataAcquisto = DateTime.Now,
+                CodicePrenotazione = codiceBiglietto
+            });
+        }
+
+        DbContext.Biglietti.AddRange(nuoviBiglietti);
+        await DbContext.SaveChangesAsync();
+
+        Navigation.NavigateTo($"/conferma-acquisto/{string.Join(",", nuoviBiglietti.Select(b => b.Id))}");
+    }
+
+    private string GeneraCodiceBiglietto()
+    {
+        return Guid.NewGuid().ToString("N").Substring(0, 8).ToUpper();
+    }
+}

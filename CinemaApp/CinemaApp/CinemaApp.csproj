@@ -17,4 +17,10 @@
       <PackageReference Include="MudBlazor" Version="8.6.0" />
     </ItemGroup>
 
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Components\Pages\Default\Counter.razor" />
+      <_ContentIncludedByDefault Remove="Components\Pages\Default\Error.razor" />
+      <_ContentIncludedByDefault Remove="Components\Pages\Default\Home.razor" />
+    </ItemGroup>
+
 </Project>

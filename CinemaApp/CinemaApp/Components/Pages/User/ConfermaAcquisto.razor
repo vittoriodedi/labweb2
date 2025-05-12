@@ -1,0 +1,130 @@
+﻿@page "/conferma-acquisto/{BigliettiIds}"
+@rendermode InteractiveServer
+@using CinemaApp.Models
+@using CinemaApp.Models.Entities
+@using Microsoft.EntityFrameworkCore
+@inject CinemaDbContext DbContext
+@inject IJSRuntime JSRuntime
+
+
+<PageTitle>Conferma Acquisto - CinemaNova</PageTitle>
+
+<div class="container">
+    <div class="confirmation-wrapper">
+        <div class="confirmation-header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+            </svg>
+            <h1>Acquisto completato con successo!</h1>
+        </div>
+
+        @if (biglietti == null || !biglietti.Any())
+        {
+            <div class="error-message">
+                <p>Nessun biglietto trovato. Controlla la tua email per i dettagli dei biglietti.</p>
+            </div>
+        }
+        else
+        {
+            <div class="ticket-summary">
+                <p class="email-sent">I tuoi biglietti sono stati inviati all'indirizzo <strong>@biglietti[0].EmailCliente</strong></p>
+
+                <div class="film-info">
+                    <h2>@biglietti[0].Proiezione.Film.Titolo</h2>
+                    <div class="screening-details">
+                        <span class="date">@biglietti[0].Proiezione.DataOra.ToString("dddd d MMMM yyyy")</span>
+                        <span class="time">@biglietti[0].Proiezione.DataOra.ToString("HH:mm")</span>
+                        <span class="room">Sala @biglietti[0].Proiezione.Sala.Nome</span>
+                    </div>
+                </div>
+
+                <div class="tickets-list">
+                    <h3>I tuoi biglietti</h3>
+                    <table class="tickets-table">
+                        <thead>
+                            <tr>
+                                <th>Posto</th>
+                                <th>Codice Prenotazione</th>
+                                <th>Prezzo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var biglietto in biglietti)
+                            {
+                                <tr>
+                                    <td>Fila @biglietto.Posto!.Fila - Posto @biglietto.Posto.Numero</td>
+                                    <td>@biglietto.CodicePrenotazione</td>
+                                    <td>€@biglietto.PrezzoFinale</td>
+                                </tr>
+                            }
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2" class="total-label">Totale</td>
+                                <td class="total-amount">€@biglietti.Sum(b => b.PrezzoFinale)</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+
+            <div class="actions">
+                <a href="/programmazione" class="action-button secondary">Torna alla programmazione</a>
+                <button class="download-ticket-button" @onclick="ScaricaBiglietti">
+                    Scarica Biglietti PDF
+                </button>
+            </div>
+        }
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string BigliettiIds { get; set; } = "";
+
+    private List<Biglietto>? biglietti;
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (!string.IsNullOrEmpty(BigliettiIds))
+        {
+            var ids = BigliettiIds.Split(',').Select(id => int.Parse(id)).ToList();
+
+            biglietti = await DbContext.Biglietti
+                .Where(b => ids.Contains(b.Id))
+                .Include(b => b.Proiezione)
+                .Include(b => b.Proiezione.Film)
+                .Include(b => b.Proiezione.Sala)
+                .Include(b => b.Posto)
+                .ToListAsync();
+        }
+    }
+
+    private async Task ScaricaBiglietti()
+    {
+        if (biglietti == null || !biglietti.Any())
+            return;
+
+        var proiezione = biglietti[0].Proiezione;
+        
+        var bigliettiData = new
+        {
+            film = proiezione.Film.Titolo,
+            data = proiezione.DataOra.ToString("dddd d MMMM yyyy"),
+            orario = proiezione.DataOra.ToString("HH:mm"),
+            sala = proiezione.Sala.Nome,
+            email = biglietti[0].EmailCliente,
+            biglietti = biglietti.Select(b => new
+            {
+                fila = b.Posto!.Fila,
+                numero = b.Posto.Numero,
+                codice = b.CodicePrenotazione,
+                prezzo = b.PrezzoFinale.ToString("0.00")
+            }).ToList()
+        };
+
+        await JSRuntime.InvokeVoidAsync("ticketGenerator.generateTicketPDF", bigliettiData);
+    }
+
+}

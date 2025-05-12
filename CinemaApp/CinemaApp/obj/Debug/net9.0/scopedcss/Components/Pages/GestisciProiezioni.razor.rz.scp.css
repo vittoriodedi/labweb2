@@ -1,0 +1,306 @@
+.container[b-irktoqhw8b] {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    min-height: 90vh;
+}
+
+.header[b-irktoqhw8b] {
+    margin-bottom: 35px;
+}
+
+.header h1[b-irktoqhw8b] {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+    letter-spacing: -0.5px;
+}
+
+.header p[b-irktoqhw8b] {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.action-bar[b-irktoqhw8b] {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 25px;
+}
+
+.btn[b-irktoqhw8b] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-primary[b-irktoqhw8b] {
+    background-color: #212529;
+    color: white;
+    border: none;
+    box-shadow: 0 4px 12px rgba(33, 37, 41, 0.15);
+}
+
+.btn-primary:hover[b-irktoqhw8b] {
+    background-color: #343a40;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(33, 37, 41, 0.2);
+}
+
+.btn i[b-irktoqhw8b] {
+    margin-right: 8px;
+}
+
+.table-wrapper[b-irktoqhw8b] {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+table[b-irktoqhw8b] {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead[b-irktoqhw8b] {
+    background-color: #f8f9fa;
+    position: sticky;
+    top: 0;
+}
+
+th[b-irktoqhw8b] {
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+    color: #495057;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+tbody tr[b-irktoqhw8b] {
+    border-bottom: 1px solid #f1f3f5;
+    transition: background-color 0.2s;
+}
+
+tbody tr:hover[b-irktoqhw8b] {
+    background-color: #f8f9fa;
+}
+
+td[b-irktoqhw8b] {
+    padding: 15px;
+    color: #495057;
+    vertical-align: middle;
+}
+
+.badge[b-irktoqhw8b] {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.badge-active[b-irktoqhw8b] {
+    background-color: rgba(64, 192, 87, 0.1);
+    color: #40c057;
+}
+
+.badge-inactive[b-irktoqhw8b] {
+    background-color: rgba(173, 181, 189, 0.1);
+    color: #adb5bd;
+}
+
+.btn-edit[b-irktoqhw8b], .btn-deactivate[b-irktoqhw8b], .btn-activate[b-irktoqhw8b] {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    margin-right: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-edit[b-irktoqhw8b] {
+    background-color: rgba(33, 37, 41, 0.05);
+    color: #495057;
+}
+
+.btn-edit:hover[b-irktoqhw8b] {
+    background-color: rgba(33, 37, 41, 0.1);
+    color: #212529;
+}
+
+.btn-deactivate[b-irktoqhw8b] {
+    background-color: rgba(250, 82, 82, 0.05);
+    color: #fa5252;
+}
+
+.btn-deactivate:hover[b-irktoqhw8b] {
+    background-color: rgba(250, 82, 82, 0.1);
+    color: #e03131;
+}
+
+.btn-activate[b-irktoqhw8b] {
+    background-color: rgba(64, 192, 87, 0.05);
+    color: #40c057;
+}
+
+.btn-activate:hover[b-irktoqhw8b] {
+    background-color: rgba(64, 192, 87, 0.1);
+}/* Stili per la pagina proiezioni */
+.badge-active[b-irktoqhw8b] {
+    background-color: #28a745;
+    color: white;
+}
+
+.badge-inactive[b-irktoqhw8b] {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-activate[b-irktoqhw8b] {
+    color: #28a745;
+}
+
+.btn-deactivate[b-irktoqhw8b] {
+    color: #dc3545;
+}
+
+/* Stili per il popup e form */
+.dialog-overlay[b-irktoqhw8b] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.edit-dialog[b-irktoqhw8b] {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 600px;
+    max-width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.edit-dialog h2[b-irktoqhw8b] {
+    font-weight: 600;
+    font-size: 1.75rem;
+    color: #111;
+    margin-bottom: 1.5rem;
+}
+
+.form-group[b-irktoqhw8b] {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label[b-irktoqhw8b] {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.form-control[b-irktoqhw8b] {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    color: #444;
+    transition: border-color 0.2s;
+}
+
+.form-control:focus[b-irktoqhw8b] {
+    border-color: #aaa;
+    outline: none;
+}
+
+.button-group[b-irktoqhw8b] {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 2rem;
+}
+
+.alert[b-irktoqhw8b] {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+.alert-danger[b-irktoqhw8b] {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+/* Stili per pulsanti */
+.btn[b-irktoqhw8b] {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
+}
+
+.btn-primary[b-irktoqhw8b] {
+    background-color: #000;
+    color: #fff;
+}
+
+.btn-primary:hover[b-irktoqhw8b] {
+    background-color: #333;
+}
+
+.btn-secondary[b-irktoqhw8b] {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    color: #555;
+}
+
+.btn-secondary:hover[b-irktoqhw8b] {
+    background-color: #f3f3f3;
+    border-color: #ccc;
+}
+
+/* Responsività */
+@media (max-width: 768px) {
+    .edit-dialog[b-irktoqhw8b] {
+        padding: 1.5rem;
+        width: 95%;
+    }
+
+    .edit-dialog h2[b-irktoqhw8b] {
+        font-size: 1.5rem;
+    }
+}

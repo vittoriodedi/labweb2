@@ -1,0 +1,111 @@
+﻿@page "/programmazione"
+@rendermode InteractiveServer
+@using CinemaApp.Models
+@using CinemaApp.Models.Entities
+@using Microsoft.EntityFrameworkCore
+@inject CinemaDbContext DbContext
+@inject NavigationManager Navigation
+
+<PageTitle>Programmazione - CinemaNova</PageTitle>
+
+<div class="container">
+    <div class="header">
+        <h1>Programmazione Film</h1>
+        <p>Visualizza gli orari delle proiezioni e acquista i tuoi biglietti</p>
+    </div>
+
+    <div class="date-selector">
+        <button class="date-nav-button" @onclick="() => CambiaGiorno(-1)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5"/>
+            </svg>        
+        </button>
+        <span class="selected-date">@dataSelezionata.ToString("dddd d MMMM yyyy")</span>
+        <button class="date-nav-button" @onclick="() => CambiaGiorno(1)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+            </svg>
+        </button>
+    </div>
+
+    @if (proiezioniGiornaliere == null || !proiezioniGiornaliere.Any())
+    {
+        <div class="empty-state">
+            <p>Nessuna proiezione programmata per questa data</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-calendar-x" viewBox="0 0 16 16">
+                <path d="M6.146 7.146a.5.5 0 0 1 .708 0L8 8.293l1.146-1.147a.5.5 0 1 1 .708.708L8.707 9l1.147 1.146a.5.5 0 0 1-.708.708L8 9.707l-1.146 1.147a.5.5 0 0 1-.708-.708L7.293 9 6.146 7.854a.5.5 0 0 1 0-.708z"/>
+                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+            </svg>
+        </div>
+    }
+    else
+    {
+        <div class="programming-grid">
+            @foreach (var filmGroup in proiezioniGiornaliere.GroupBy(p => p.Film))
+            {
+                <div class="film-schedule-card">
+                    <div class="film-header">
+                        <div class="film-poster">
+                            <img src="@($"https://image.tmdb.org/t/p/w500/{filmGroup.Key.LocandinaUrl}")" alt="@filmGroup.Key.Titolo" />
+                        </div>
+                        <div class="film-info">
+                            <h2 class="film-title">@filmGroup.Key.Titolo</h2>
+                            <div class="film-metadata">
+                                <span class="film-metatags">@filmGroup.Key.DurataMinuti Minuti</span>
+                                <span class="film-metatags">@filmGroup.Key.Genere</span>
+                                @if (filmGroup.Key.Adulti)
+                                {
+                                    <span class="film-info">Adulti</span>
+                                }                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="film-schedule-times">
+                        @foreach (var proiezione in filmGroup.OrderBy(p => p.DataOra))
+                        {
+                            <button class="showtime-button" @onclick="() => GoToPrenotazione(proiezione.Id)">
+                                <span class="time">@proiezione.DataOra.ToString("HH:mm")</span>
+                                <span class="room">@proiezione.Sala.Nome</span>
+                            </button>
+                        }
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>
+
+@code {
+    private DateTime dataSelezionata = DateTime.Today;
+    private List<Proiezione>? proiezioniGiornaliere;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await CaricaProiezioni();
+    }
+
+    private async Task CaricaProiezioni()
+    {
+        var inizio = dataSelezionata.Date;
+        var fine = inizio.AddDays(1).AddSeconds(-1);
+
+        proiezioniGiornaliere = await DbContext.Proiezioni
+            .Where(p => p.DataOra >= inizio && p.DataOra <= fine )
+            .Where(p => p.DataOra >= inizio && p.DataOra <= fine && p.Attiva)
+            .Include(p => p.Film)
+            .Include(p => p.Sala)
+            .OrderBy(p => p.DataOra)
+            .ToListAsync();
+    }
+
+    private async Task CambiaGiorno(int offset)
+    {
+        dataSelezionata = dataSelezionata.AddDays(offset);
+        await CaricaProiezioni();
+    }
+
+    private void GoToPrenotazione(int proiezioneId)
+    {
+        Navigation.NavigateTo($"/prenota-biglietti/{proiezioneId}");
+    }
+}

@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/obj/Debug/net9.0/scopedcss/projectbundle/CinemaApp.bundle.scp.css",
-      "PackagePath": "staticwebassets/CinemaApp.qjjsheoa2z.bundle.scp.css"
+      "PackagePath": "staticwebassets/CinemaApp.kh78uxyzap.bundle.scp.css"
     },
     {
       "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/wwwroot/app.css",
@@ -43,6 +43,10 @@
     {
       "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/wwwroot/images/tomato.png",
       "PackagePath": "staticwebassets/images/tomato.png"
+    },
+    {
+      "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/wwwroot/js/ticket-generator.js",
+      "PackagePath": "staticwebassets/js/ticket-generator.js"
     },
     {
       "Id": "/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
