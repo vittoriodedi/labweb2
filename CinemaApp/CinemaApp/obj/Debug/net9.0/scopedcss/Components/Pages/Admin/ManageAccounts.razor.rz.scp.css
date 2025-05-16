@@ -1,4 +1,4 @@
-html[b-4gfuyuq8j2], body[b-4gfuyuq8j2] {
+html[b-8o10zkhpgs], body[b-8o10zkhpgs] {
     height: 100%;
     margin: 0;
     font-family: 'Inter', sans-serif;
@@ -7,58 +7,58 @@ html[b-4gfuyuq8j2], body[b-4gfuyuq8j2] {
     line-height: 1.6;
 }
 
-.layout-wrapper[b-4gfuyuq8j2] {
+.layout-wrapper[b-8o10zkhpgs] {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-.container[b-4gfuyuq8j2] {
+.container[b-8o10zkhpgs] {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.content[b-4gfuyuq8j2] {
+.content[b-8o10zkhpgs] {
     flex: 1;
     padding-top: 5vh;
     padding-bottom: 5vh;
 }
 
-.header[b-4gfuyuq8j2] {
+.header[b-8o10zkhpgs] {
     margin-bottom: 2rem;
 }
 
-.header h1[b-4gfuyuq8j2] {
+.header h1[b-8o10zkhpgs] {
     font-weight: 600;
     font-size: 1.75rem;
     color: #111;
     margin-bottom: 0.5rem;
 }
 
-.header p[b-4gfuyuq8j2] {
+.header p[b-8o10zkhpgs] {
     font-weight: 400;
     color: #555;
 }
 
-.table-wrapper[b-4gfuyuq8j2] {
+.table-wrapper[b-8o10zkhpgs] {
     width: 100%;
     overflow-x: auto;
 }
 
-table[b-4gfuyuq8j2] {
+table[b-8o10zkhpgs] {
     width: 100%;
     border-collapse: collapse;
     text-align: left;
     font-size: 0.95rem;
 }
 
-thead[b-4gfuyuq8j2] {
+thead[b-8o10zkhpgs] {
     background-color: #f3f3f3;
     position: sticky;
     top: 0;
 }
 
-th[b-4gfuyuq8j2] {
+th[b-8o10zkhpgs] {
     padding: 1rem 1.5rem;
     font-weight: 600;
     color: #333;
@@ -68,26 +68,26 @@ th[b-4gfuyuq8j2] {
     letter-spacing: 0.05em;
 }
 
-tbody tr[b-4gfuyuq8j2] {
+tbody tr[b-8o10zkhpgs] {
     border-bottom: 1px solid #eee;
     transition: background-color 0.2s;
 }
 
-tbody tr:hover[b-4gfuyuq8j2] {
+tbody tr:hover[b-8o10zkhpgs] {
     background-color: #f9f9f9;
 }
 
-td[b-4gfuyuq8j2] {
+td[b-8o10zkhpgs] {
     padding: 1rem 1.5rem;
     color: #444;
 }
 
-.user-name[b-4gfuyuq8j2] {
+.user-name[b-8o10zkhpgs] {
     font-weight: 500;
     color: #222;
 }
 
-.badge[b-4gfuyuq8j2] {
+.badge[b-8o10zkhpgs] {
     display: inline-block;
     padding: 0.2rem 0.75rem;
     border-radius: 20px;
@@ -97,12 +97,12 @@ td[b-4gfuyuq8j2] {
     letter-spacing: 0.03em;
 }
 
-.badge-admin[b-4gfuyuq8j2] {
+.badge-admin[b-8o10zkhpgs] {
     background-color: #000;
     color: #fff;
 }
 
-.btn[b-4gfuyuq8j2] {
+.btn[b-8o10zkhpgs] {
     padding: 0.5rem 1rem;
     border-radius: 4px;
     font-family: 'Inter', sans-serif;
@@ -113,24 +113,24 @@ td[b-4gfuyuq8j2] {
     border: none;
 }
 
-.btn-delete[b-4gfuyuq8j2] {
+.btn-delete[b-8o10zkhpgs] {
     background-color: transparent;
     border: 1px solid #ddd;
     color: #555;
 }
 
-.btn-delete:hover[b-4gfuyuq8j2] {
+.btn-delete:hover[b-8o10zkhpgs] {
     background-color: #ffe6e6;
     border-color: #ffb3b3;
     color: #cc0000;
 }
 
 @media (max-width: 768px) {
-    .header h1[b-4gfuyuq8j2] {
+    .header h1[b-8o10zkhpgs] {
         font-size: 1.5rem;
     }
 
-    th[b-4gfuyuq8j2], td[b-4gfuyuq8j2] {
+    th[b-8o10zkhpgs], td[b-8o10zkhpgs] {
         padding: 0.75rem 1rem;
     }
 }

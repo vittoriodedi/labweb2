@@ -1,11 +1,16 @@
-.container[b-lyjgk11yy2] {
+.container {
+    min-height: 90vh;
     max-width: 1200px;
     margin: 0 auto;
     padding: 30px 20px;
     font-family: 'Inter', 'Segoe UI', sans-serif;
 }
 
-.loading-spinner[b-lyjgk11yy2] {
+.booking-container{
+    margin-top: 3em;
+    
+}
+.loading-spinner {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,30 +19,31 @@
     gap: 20px;
 }
 
-.loading-spinner svg[b-lyjgk11yy2] {
+.loading-spinner svg {
     color: #6c757d;
 }
 
-.loading-spinner span[b-lyjgk11yy2] {
+.loading-spinner span {
     font-size: 1.1rem;
     color: #6c757d;
 }
 
-.spin[b-lyjgk11yy2] {
-    animation: spin-b-lyjgk11yy2 1.5s linear infinite;
+.spin {
+    animation: spin 1.5s linear infinite;
 }
 
-@keyframes spin-b-lyjgk11yy2 {
+@keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
 
-.booking-header[b-lyjgk11yy2] {
+.booking-header {
+    margin-top: 2em;
     text-align: center;
     margin-bottom: 35px;
 }
 
-.booking-header h1[b-lyjgk11yy2] {
+.booking-header h1 {
     font-size: 2.2rem;
     font-weight: 700;
     color: #1a1a1a;
@@ -45,14 +51,14 @@
     letter-spacing: -0.5px;
 }
 
-.booking-details[b-lyjgk11yy2] {
+.booking-details {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
 }
 
-.booking-details span[b-lyjgk11yy2] {
+.booking-details span {
     background-color: #f8f9fa;
     padding: 8px 16px;
     border-radius: 50px;
@@ -62,45 +68,47 @@
     align-items: center;
 }
 
-.date[b-lyjgk11yy2]::before {
+.date::before {
     content: "📅";
     margin-right: 8px;
 }
 
-.time[b-lyjgk11yy2]::before {
+.time::before {
     content: "⏰";
     margin-right: 8px;
 }
 
-.room[b-lyjgk11yy2]::before {
+.room::before {
     content: "🎦";
     margin-right: 8px;
 }
 
-.booking-container[b-lyjgk11yy2] {
+.booking-container {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-.seats-container[b-lyjgk11yy2] {
+.seats-container {
+    height: 597px;
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
     border-radius: 15px;
     padding: 30px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
 
-.screen-container[b-lyjgk11yy2] {
+.screen-container {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
 }
 
-.screen[b-lyjgk11yy2] {
+.screen {
+    margin-top: 8em;
     width: 80%;
-    height: 30px;
+    height: 40px;
     background: linear-gradient(to bottom, #ced4da, #dee2e6);
-    border-radius: 5px;
+    border-radius: 6px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -113,7 +121,7 @@
     position: relative;
 }
 
-.screen[b-lyjgk11yy2]::after {
+.screen::after {
     content: "";
     position: absolute;
     width: 110%;
@@ -126,7 +134,7 @@
     filter: blur(2px);
 }
 
-.seats-grid[b-lyjgk11yy2] {
+.seats-grid {
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -136,14 +144,14 @@
     margin-right: auto;
 }
 
-.seat-row[b-lyjgk11yy2] {
+.seat-row {
     display: flex;
     align-items: center;
     gap: 10px;
     justify-content: center;
 }
 
-.row-label[b-lyjgk11yy2] {
+.row-label {
     width: 30px;
     text-align: center;
     font-weight: 600;
@@ -151,7 +159,7 @@
     font-size: 0.9rem;
 }
 
-.seat[b-lyjgk11yy2] {
+.seat {
     width: 40px;
     height: 40px;
     display: flex;
@@ -169,7 +177,7 @@
     overflow: hidden;
 }
 
-.seat[b-lyjgk11yy2]::after {
+.seat::after {
     content: "";
     position: absolute;
     top: 80%;
@@ -180,14 +188,14 @@
     border-radius: 50%;
 }
 
-.seat:hover:not(.occupied)[b-lyjgk11yy2] {
+.seat:hover:not(.occupied) {
     background-color: #f8f9fa;
     transform: translateY(-3px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
     color: #212529;
 }
 
-.seat.selected[b-lyjgk11yy2] {
+.seat.selected {
     background-color: #212529;
     color: white;
     border-color: #212529;
@@ -195,21 +203,21 @@
     box-shadow: 0 5px 10px rgba(33, 37, 41, 0.2);
 }
 
-.seat.occupied[b-lyjgk11yy2] {
+.seat.occupied {
     background-color: #e9ecef;
     color: #adb5bd;
     cursor: not-allowed;
     border-color: #dee2e6;
 }
 
-.seats-legend[b-lyjgk11yy2] {
+.seats-legend {
     display: flex;
     justify-content: center;
     gap: 25px;
     margin-top: 30px;
 }
 
-.legend-item[b-lyjgk11yy2] {
+.legend-item {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -217,7 +225,7 @@
     color: #6c757d;
 }
 
-.legend-indicator[b-lyjgk11yy2] {
+.legend-indicator {
     width: 18px;
     height: 18px;
     border-radius: 4px;
@@ -225,7 +233,7 @@
     overflow: hidden;
 }
 
-.legend-indicator[b-lyjgk11yy2]::after {
+.legend-indicator::after {
     content: "";
     position: absolute;
     top: 80%;
@@ -236,28 +244,28 @@
     border-radius: 50%;
 }
 
-.legend-indicator.available[b-lyjgk11yy2] {
+.legend-indicator.available {
     background-color: white;
     border: 1px solid #dee2e6;
 }
 
-.legend-indicator.selected[b-lyjgk11yy2] {
+.legend-indicator.selected {
     background-color: #212529;
 }
 
-.legend-indicator.occupied[b-lyjgk11yy2] {
+.legend-indicator.occupied {
     background-color: #e9ecef;
     border: 1px solid #dee2e6;
 }
 
-.booking-summary[b-lyjgk11yy2] {
+.booking-summary {
     background-color: white;
     border-radius: 15px;
     padding: 30px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
 
-.booking-summary h2[b-lyjgk11yy2] {
+.booking-summary h2 {
     font-size: 1.5rem;
     font-weight: 700;
     color: #212529;
@@ -267,7 +275,7 @@
     position: relative;
 }
 
-.booking-summary h2[b-lyjgk11yy2]::after {
+.booking-summary h2::after {
     content: "";
     display: block;
     width: 50px;
@@ -277,35 +285,35 @@
     border-radius: 3px;
 }
 
-.summary-item[b-lyjgk11yy2] {
+.summary-item {
     display: flex;
     justify-content: space-between;
     padding: 15px 0;
     border-bottom: 1px solid #f1f3f5;
 }
 
-.summary-item .label[b-lyjgk11yy2] {
+.summary-item .label {
     color: #6c757d;
 }
 
-.summary-item .value[b-lyjgk11yy2] {
+.summary-item .value {
     font-weight: 600;
     color: #212529;
 }
 
-.summary-item.total[b-lyjgk11yy2] {
+.summary-item.total {
     margin-top: 15px;
     padding-top: 20px;
     border-top: 2px solid #f1f3f5;
     font-size: 1.2rem;
 }
 
-.form-group[b-lyjgk11yy2] {
+.form-group {
     margin-top: 30px;
     margin-bottom: 25px;
 }
 
-.form-group label[b-lyjgk11yy2] {
+.form-group label {
     display: block;
     margin-bottom: 10px;
     font-weight: 600;
@@ -313,7 +321,7 @@
     font-size: 0.95rem;
 }
 
-.form-control[b-lyjgk11yy2] {
+.form-control {
     width: 100%;
     padding: 12px 15px;
     border: 1px solid #ced4da;
@@ -323,13 +331,13 @@
     transition: border-color 0.2s ease;
 }
 
-.form-control:focus[b-lyjgk11yy2] {
+.form-control:focus {
     outline: none;
     border-color: #adb5bd;
     box-shadow: 0 0 0 3px rgba(173, 181, 189, 0.1);
 }
 
-.checkout-button[b-lyjgk11yy2] {
+.checkout-button {
     width: 100%;
     padding: 15px;
     background-color: #212529;
@@ -343,13 +351,13 @@
     box-shadow: 0 4px 12px rgba(33, 37, 41, 0.15);
 }
 
-.checkout-button:hover[b-lyjgk11yy2] {
+.checkout-button:hover {
     background-color: #343a40;
     transform: translateY(-2px);
     box-shadow: 0 6px 15px rgba(33, 37, 41, 0.2);
 }
 
-.checkout-button:disabled[b-lyjgk11yy2] {
+.checkout-button:disabled {
     background-color: #adb5bd;
     cursor: not-allowed;
     transform: none;
@@ -357,15 +365,15 @@
 }
 
 @media (min-width: 992px) {
-    .booking-container[b-lyjgk11yy2] {
+    .booking-container {
         flex-direction: row;
     }
 
-    .seats-container[b-lyjgk11yy2] {
+    .seats-container {
         flex: 3;
     }
 
-    .booking-summary[b-lyjgk11yy2] {
+    .booking-summary {
         flex: 2;
         align-self: flex-start;
         position: sticky;
@@ -374,15 +382,15 @@
 }
 
 @media (max-width: 768px) {
-    .booking-header h1[b-lyjgk11yy2] {
+    .booking-header h1 {
         font-size: 1.8rem;
     }
 
-    .seats-grid[b-lyjgk11yy2] {
+    .seats-grid {
         gap: 8px;
     }
 
-    .seat[b-lyjgk11yy2] {
+    .seat {
         width: 35px;
         height: 35px;
         font-size: 0.8rem;

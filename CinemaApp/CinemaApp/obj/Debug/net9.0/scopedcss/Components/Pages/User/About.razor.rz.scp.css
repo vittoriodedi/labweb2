@@ -1,25 +1,23 @@
-.about-container[b-7mr9w84b6n] {
+.about-container[b-25uowgvblz] {
     max-width: 1100px;
     margin: 0 auto;
     font-family: 'Inter', sans-serif;
     color: #191919;
 }
 
-.divider[b-7mr9w84b6n] {
+.divider[b-25uowgvblz] {
     height: 4px;
     width: 80px;
     background-color: #191919;
-    margin: 0 auto;
-    margin-bottom: 2.5em;
+    margin: 0 auto 2.5em auto;
 }
 
-
-.about-section[b-7mr9w84b6n] {
+.about-section[b-25uowgvblz] {
     margin-top: 4.5em;
     margin-bottom: 60px;
 }
 
-.about-title[b-7mr9w84b6n] {
+.about-title[b-25uowgvblz] {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 700;
     font-size: 2.5em;
@@ -29,79 +27,83 @@
     margin-bottom: .5rem;
 }
 
-.about-text p[b-7mr9w84b6n] {
+.about-text p[b-25uowgvblz] {
     color: #333;
     font-size: 1em;
     line-height: 1.7;
     margin-bottom: 20px;
     text-align: justify;
 }
-.story-section[b-7mr9w84b6n]{
+
+.story-section[b-25uowgvblz]{
     margin-top: 4.5em;
 }
 
-.story-title[b-7mr9w84b6n]{
+.story-title[b-25uowgvblz]{
     font-family: "Bebas Neue", sans-serif;
     color: #191919;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.05em;
     font-size: 2.5em;
     text-align: center;
     margin-bottom: .5rem;
 }
 
-.story-subtitle[b-7mr9w84b6n]{
+.story-subtitle[b-25uowgvblz]{
     font-family: "Bebas Neue", sans-serif;
     color: #191919;
     margin-bottom: 0.5em;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.05em;
     font-size: 25px;
 }
 
-.story-section p[b-7mr9w84b6n]{
+.story-section p[b-25uowgvblz]{
     font-size: 1em;
     margin-bottom: 1.5em;
 }
 
-.stage-1[b-7mr9w84b6n]{
+.stage-1[b-25uowgvblz]{
     margin-left: 0%;
 }
 
-.stage-2[b-7mr9w84b6n]{
+.stage-2[b-25uowgvblz]{
     margin-left: 25%;
 }
 
-.stage-3[b-7mr9w84b6n]{
+.stage-3[b-25uowgvblz]{
     margin-left: 50%;
 }
 
-.stage-4[b-7mr9w84b6n]{
+.stage-4[b-25uowgvblz]{
     margin-left: 75%;
 }
-.reviews-section[b-7mr9w84b6n] {
+
+.reviews-section[b-25uowgvblz] {
     margin-top: 4.5em;
     margin-bottom: 4.5em;
 }
-.reviews-title[b-7mr9w84b6n] {
+
+.reviews-title[b-25uowgvblz] {
     color: #191919;
     font-size: 2.5em;
     text-align: center;
     font-family: "Bebas Neue", sans-serif;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.05em;
     margin-bottom: .5rem;
 }
-#first-review-section-p[b-7mr9w84b6n]{
+
+#first-review-section-p[b-25uowgvblz]{
     text-align: center;
     font-size: 1em;
 }
 
-.reviews-container[b-7mr9w84b6n] {
+.reviews-container[b-25uowgvblz] {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
     margin-top: 30px;
 }
 
-.review-card[b-7mr9w84b6n] {
+.review-card[b-25uowgvblz] {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 16px rgba(128, 0, 32, 0.1);
@@ -110,16 +112,16 @@
     border-left: 4px solid #191919;
 }
 
-.review-card:hover[b-7mr9w84b6n] {
+.review-card:hover[b-25uowgvblz] {
     transform: translateY(-5px);
 }
 
-.review-content[b-7mr9w84b6n] {
+.review-content[b-25uowgvblz] {
     padding: 30px;
     position: relative;
 }
 
-.review-content p[b-7mr9w84b6n] {
+.review-content p[b-25uowgvblz] {
     font-style: italic;
     color: #444;
     font-size: 1em;
@@ -130,25 +132,10 @@
     padding-left: 0.5em;
 }
 
-.review-source[b-7mr9w84b6n] {
+.review-source[b-25uowgvblz] {
     text-align: right;
     color: #191919;
     font-size: 15px;
 }
 
-@media (max-width: 768px) {
-    .section-storia > div[b-7mr9w84b6n] {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .stage-1[b-7mr9w84b6n], .stage-2[b-7mr9w84b6n], .stage-3[b-7mr9w84b6n], .stage-4[b-7mr9w84b6n] {
-        width: 100%;
-        max-width: 300px;
-    }
-
-    .reviews-container[b-7mr9w84b6n] {
-        grid-template-columns: 1fr;
-    }
-}
 

@@ -54,7 +54,7 @@
                         </div>
                         <div class="film-actions">
                             <button class="card-button" role="button" @onclick="() => GoToDetails(film.Id)">Info</button>
-                            <button class="card-button" role="button" @onclick="() => GoToTickets(film.Id)">Biglietti</button>
+                            <button class="card-button" role="button" @onclick="() => GoToTickets()">Biglietti</button>
                         </div>
                     </div>
                 </div>
@@ -71,32 +71,19 @@
 
 @code {
     private List<Film>? films;
+    
+    protected override async Task OnInitializedAsync()
+    {
+        films = await DbContext.Films.ToListAsync();
+    }
 
     private void GoToDetails(int filmId)
     {
         Navigation.NavigateTo($"/film-details/{filmId}");
     }
     
-    protected override async Task OnInitializedAsync()
+    private void GoToTickets()
     {
-        films = await DbContext.Films.ToListAsync();
-    }
-    private async Task GoToTickets(int filmId)
-    {
-        // Trova la prossima proiezione disponibile per questo film
-        var proiezione = await DbContext.Proiezioni
-            .Where(p => p.FilmId == filmId && p.DataOra > DateTime.Now && p.Attiva)
-            .OrderBy(p => p.DataOra)
-            .FirstOrDefaultAsync();
-        
-        if (proiezione != null)
-        {
-            // Se esiste una proiezione futura, vai direttamente alla pagina di prenotazione
-            Navigation.NavigateTo($"/prenota-biglietti/{proiezione.Id}");
-        }
-        else
-        {
-            // Altrimenti vai alla programmazione generale
             Navigation.NavigateTo("/programmazione");
         }
     }
