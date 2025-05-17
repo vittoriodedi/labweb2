@@ -17,7 +17,6 @@ public class CinemaDbContext : DbContext
     }
     public DbSet<UserAccount> UserAccounts { get; set; }
     public DbSet<Film> Films { get; set; }
-    
     public DbSet<Proiezione> Proiezioni { get; set; } = null!;
     public DbSet<Sala> Sale { get; set; } = null!;
     public DbSet<Posto> Posti { get; set; } = null!;

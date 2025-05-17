@@ -1,40 +1,34 @@
-﻿@page "/admin/proiezioni"
+﻿@page "/admin/manage-projections"
 @rendermode InteractiveServer
-@using CinemaApp.Models
-@using CinemaApp.Models.Entities
-@using Microsoft.EntityFrameworkCore
 @inject CinemaDbContext DbContext
+@* @attribute [Authorize(Roles = "Administrator")] *@
 
 <PageTitle>Gestione Proiezioni - CinemaNova Admin</PageTitle>
-
-<div class="container">
-    <div class="header">
-        <h1>Gestione Proiezioni</h1>
-        <p>Crea e gestisci le proiezioni dei film nelle sale</p>
-    </div>
-
-    <div class="action-bar">
-        <button class="btn btn-primary" @onclick="MostraFormCreazione">
-            <i class="bi bi-plus-circle-fill"></i> Nuova Proiezione
-        </button>
-    </div>
-
-    <div class="table-wrapper">
-        <table>
-            <thead>
-                <tr>
-                    <th>Film</th>
-                    <th>Sala</th>
-                    <th>Data e Ora</th>
-                    <th>Prezzo Base</th>
-                    <th>Biglietti Venduti</th>
-                    <th>Stato</th>
-                    <th>Azioni</th>
-                </tr>
-            </thead>
-            <tbody>
-                @if (proiezioni != null)
-                {
+<div class="layout-wrapper">
+    <div class="container content">
+        <div class="header">
+            <h1>Gestione Proiezioni</h1>
+            <p>Crea e gestisci le proiezioni dei film nelle sale</p>
+        </div>
+        <div class="action-bar">
+            <button class="btn btn-primary" @onclick="MostraFormCreazione">Nuova Proiezione</button>
+        </div>
+        <div class="table-wrapper @(proiezioni == null || !proiezioni.Any() ? "no-shadow" : "")">
+            @if (proiezioni != null && proiezioni.Any())
+            {
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Film</th>
+                            <th>Sala</th>
+                            <th>Data e Ora</th>
+                            <th>Prezzo Base</th>
+                            <th>Biglietti Venduti</th>
+                            <th>Stato</th>
+                            <th>Azioni</th>
+                        </tr>
+                    </thead>
+                    <tbody>
                     @foreach (var proiezione in proiezioni.OrderBy(p => p.DataOra))
                     {
                         <tr>
@@ -54,37 +48,48 @@
                                 }
                             </td>
                             <td>
-                                <button class="btn btn-edit" @onclick="() => ModificaProiezione(proiezione.Id)" title="Modifica">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-                                        <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-                                        <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
-                                    </svg>                                
-                                </button>
-                                <button class="btn @(proiezione.Attiva ? "btn-deactivate" : "btn-activate")" 
-                                        @onclick="() => ToggleStatoProiezione(proiezione)" 
-                                        title="@(proiezione.Attiva ? "Disattiva" : "Attiva")">
-                                    @if (proiezione.Attiva)
-                                    {
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-toggle-on" viewBox="0 0 16 16">
-                                            <path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8"/>
+                                <div style="display: flex; gap: 8px;">
+                                    <button class="btn btn-edit" @onclick="() => ModificaProiezione(proiezione.Id)" title="Modifica">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 24 24">
+                                            <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" transform="scale(1.5)"/>
+                                            <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z" transform="scale(1.5)"/>
                                         </svg>
-                                    }
-                                    else
-                                    {
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-toggle-off" viewBox="0 0 16 16">
-                                            <path d="M11 4a4 4 0 0 1 0 8H8a5 5 0 0 0 2-4 5 5 0 0 0-2-4zm-6 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8M0 8a5 5 0 0 0 5 5h6a5 5 0 0 0 0-10H5a5 5 0 0 0-5 5"/>
-                                        </svg>
-                                    }
-                                </button>
+                                    </button>
+                                    <button class="btn @(proiezione.Attiva ? "btn-deactivate" : "btn-activate")"
+                                            @onclick="() => ToggleStatoProiezione(proiezione)"
+                                            title="@(proiezione.Attiva ? "Disattiva" : "Attiva")">
+                                        @if (proiezione.Attiva)
+                                        {
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-toggle-on" viewBox="0 0 16 16">
+                                                <path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8"/>
+                                            </svg>
+                                        }
+                                        else
+                                        {
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-toggle-off" viewBox="0 0 16 16">
+                                                <path d="M11 4a4 4 0 0 1 0 8H8a5 5 0 0 0 2-4 5 5 0 0 0-2-4zm-6 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8M0 8a5 5 0 0 0 5 5h6a5 5 0 0 0 0-10H5a5 5 0 0 0-5 5"/>
+                                            </svg>
+                                        }
+                                    </button>
+                                </div>
                             </td>
                         </tr>
                     }
-                }
-            </tbody>
-        </table>
+                    </tbody>
+                </table>
+            }
+            else
+            {
+                <div class="error-container">
+                    <p>Nessuna proiezione disponibile al momento</p><br/>
+                    <p>Aggiungine una!</p>
+                </div>
+            }
+        </div>
     </div>
+</div>
 
-    @if (showDialog)
+@if (showInsertDialog)
     {
         <div class="dialog-overlay" @onclick="ChiudiDialog">
             <div class="edit-dialog" @onclick:stopPropagation="true">
@@ -149,19 +154,20 @@
             </div>
         </div>
     }
-</div>
 
 @code {
     private List<Proiezione>? proiezioni;
     private List<Film>? films;
     private List<Sala>? sale;
-    private bool showDialog = false;
+    private dynamic elementToDelete; 
+    private bool showInsertDialog = false;
     private string? errorMessage = null;
-    private Proiezione proiezioneSelezionata = new Proiezione 
-    { 
-        DataOra = DateTime.Now.AddHours(1).Date.AddHours(20), 
-        PrezzoBase = 9.00m, 
-        Attiva = true 
+    private Proiezione proiezioneSelezionata = new Proiezione
+    
+    {
+        DataOra = DateTime.Now.AddHours(1).Date.AddHours(20),
+        PrezzoBase = 9.00m,
+        Attiva = true
     };
 
     protected override async Task OnInitializedAsync()
@@ -198,7 +204,7 @@
             Attiva = true
         };
         errorMessage = null;
-        showDialog = true;
+        showInsertDialog = true;
     }
 
     private async Task ModificaProiezione(int id)
@@ -210,7 +216,7 @@
             {
                 proiezioneSelezionata = proiezione;
                 errorMessage = null;
-                showDialog = true;
+                showInsertDialog = true;
             }
         }
         catch (Exception ex)
@@ -235,14 +241,14 @@
 
     private void ChiudiDialog()
     {
-        showDialog = false;
+        showInsertDialog = false;
         errorMessage = null;
     }
 
     private async Task SalvaProiezione()
     {
         errorMessage = null;
-        
+
         try
         {
             if (proiezioneSelezionata.FilmId <= 0)
@@ -250,19 +256,19 @@
                 errorMessage = "Seleziona un film per la proiezione";
                 return;
             }
-            
+
             if (proiezioneSelezionata.SalaId <= 0)
             {
                 errorMessage = "Seleziona una sala per la proiezione";
                 return;
             }
-            
+
             if (proiezioneSelezionata.DataOra < DateTime.Now)
             {
                 errorMessage = "Non è possibile creare proiezioni nel passato";
                 return;
             }
-            
+
             if (proiezioneSelezionata.PrezzoBase <= 0)
             {
                 errorMessage = "Il prezzo base deve essere maggiore di zero";
@@ -284,7 +290,7 @@
 
             var sovrapposizioni = await DbContext.Proiezioni
                 .Where(p => p.Id != proiezioneSelezionata.Id && p.SalaId == proiezioneSelezionata.SalaId)
-                .Where(p => 
+                .Where(p =>
                     (p.DataOra <= proiezioneSelezionata.DataOra && p.DataOra.AddMinutes(p.Film.DurataMinuti) > proiezioneSelezionata.DataOra) ||
                     (p.DataOra >= proiezioneSelezionata.DataOra && p.DataOra < dataFineProiezione)
                 )
@@ -309,7 +315,7 @@
 
             await DbContext.SaveChangesAsync();
             await CaricaDati();
-            showDialog = false;
+            showInsertDialog = false;
         }
         catch (Exception ex)
         {
@@ -317,4 +323,3 @@
         }
     }
 }
-

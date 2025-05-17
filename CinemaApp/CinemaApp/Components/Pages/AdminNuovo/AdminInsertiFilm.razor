@@ -1,10 +1,10 @@
-﻿@page "/insert-film"
-@using CinemaApp.Models
-@using CinemaApp.Models.Entities
+﻿@page "/admin/manage-films/insert-film"
 @rendermode InteractiveServer
 @inject IConfiguration Configuration
 @inject HttpClient Http
+@inject NavigationManager Navigation
 @inject CinemaDbContext dbContext
+@* @attribute [Authorize(Roles = "Administrator")] *@
 
 <PageTitle>Gestione Films</PageTitle>
 
@@ -245,6 +245,7 @@
             dbContext.Films.Add(filmToEdit);
             await dbContext.SaveChangesAsync();
             editDialogVisible = false;
+            Navigation.NavigateTo("/manage-films");
         }
     }
 

@@ -1,30 +1,30 @@
-body {
+body[b-ekpttd1ek9] {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f5f5f5;
 }
 
-.container {
+.container[b-ekpttd1ek9] {
     max-width: 1400px;
     margin: 50px auto;
     padding: 0 20px;
 }
 
-.error-container {
+.error-container[b-ekpttd1ek9] {
     margin: 359px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.error-container p {
+.error-container p[b-ekpttd1ek9] {
     margin-bottom: 10px;
     font-size: 1.1em;
     color: #666;
 }
 
-.movie-card {
+.movie-card[b-ekpttd1ek9] {
     background-color: #fff;
     border-radius: 12px;
     overflow: hidden;
@@ -35,31 +35,31 @@ body {
     position: relative;
 }
 
-.movie-header {
+.movie-header[b-ekpttd1ek9] {
     position: relative;
     height: 30vh; 
     min-height: 250px;
     overflow: hidden;
-    background-color: #171717FF;
+    background-color: #EDEDED;
 }
 
-.movie-title {
+.movie-title[b-ekpttd1ek9] {
     font-size: 3rem;
     font-weight: 700;
-    color: #fff;
+    color: #171717;
     position: absolute;
     bottom: 20px;
     left: 32%;
     margin: 0;
 }
 
-.movie-content {
+.movie-content[b-ekpttd1ek9] {
     display: flex;
     position: relative;
     min-height: 500px; 
 }
 
-.movie-poster {
+.movie-poster[b-ekpttd1ek9] {
     flex: 0 0 350px;
     position: relative;
     margin-top: -100px; 
@@ -70,13 +70,13 @@ body {
     gap: 20px;
 }
 
-.poster-container {
+.poster-container[b-ekpttd1ek9] {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
 }
 
-.movie-details {
+.movie-details[b-ekpttd1ek9] {
     flex: 1;
     padding-top: 25px;    
     display: flex;
@@ -84,7 +84,7 @@ body {
     min-height: 400px; 
 }
 
-.movie-meta {
+.movie-meta[b-ekpttd1ek9] {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -92,11 +92,11 @@ body {
     margin-left: 8%;
 }
 
-.meta-item {
+.meta-item[b-ekpttd1ek9] {
     margin-bottom: 15px;
 }
 
-.meta-label {
+.meta-label[b-ekpttd1ek9] {
     font-size: 0.9rem;
     color: #777;
     margin-bottom: 5px;
@@ -104,23 +104,23 @@ body {
     letter-spacing: 1px;
 }
 
-.meta-value {
+.meta-value[b-ekpttd1ek9] {
     font-size: 1.1rem;
     font-weight: 600;
 }
 
-.rating {
+.rating[b-ekpttd1ek9] {
     margin-bottom: 25px;
 }
 
-.plot-section {
+.plot-section[b-ekpttd1ek9] {
     margin-bottom: 30px;
     flex-grow: 1; 
     display: flex;
     flex-direction: column;
 }
 
-.section-title {
+.section-title[b-ekpttd1ek9] {
     font-size: 1.3rem;
     font-weight: 600;
     color: #333;
@@ -129,7 +129,7 @@ body {
     margin: 1em 8% 0;
 }
 
-.plot-content {
+.plot-content[b-ekpttd1ek9] {
     font-size: 1.1rem;
     line-height: 1.7;
     color: #444;
@@ -137,7 +137,7 @@ body {
     flex-grow: 1; 
 }
 
-.action-buttons {
+.action-buttons[b-ekpttd1ek9] {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -145,7 +145,7 @@ body {
     margin-top: 20px;
 }
 
-.btn {
+.btn[b-ekpttd1ek9] {
     width: 100%;
     padding: 12px 24px;
     border-radius: 8px;
@@ -158,56 +158,56 @@ body {
     justify-content: center;
 }
 
-.btn-primary:hover, .btn-secondary:hover {
+.btn-primary:hover[b-ekpttd1ek9], .btn-secondary:hover[b-ekpttd1ek9] {
     transform: translateY(-2px);
 }
 
 @media (max-width: 900px) {
-    .movie-content {
+    .movie-content[b-ekpttd1ek9] {
         flex-direction: column;
     }
 
-    .movie-poster {
+    .movie-poster[b-ekpttd1ek9] {
         flex: 0 0 auto;
         margin: -80px auto 20px;
         padding: 0 20px 30px;
         max-width: 350px;
     }
 
-    .movie-title {
+    .movie-title[b-ekpttd1ek9] {
         font-size: 2.2rem;
         left: 0;
         width: 100%;
         text-align: center;
     }
 
-    .action-buttons {
+    .action-buttons[b-ekpttd1ek9] {
         margin-bottom: 20px;
     }
 }
 
 @media (max-width: 768px) {
-    .action-buttons {
+    .action-buttons[b-ekpttd1ek9] {
         width: 100%;
         align-items: center;
     }
 
-    .btn {
+    .btn[b-ekpttd1ek9] {
         max-width: 300px;
     }
 
-    .movie-header {
+    .movie-header[b-ekpttd1ek9] {
         min-height: 200px;
     }
 }
 
 @media (max-width: 600px) {
-    .movie-meta {
+    .movie-meta[b-ekpttd1ek9] {
         grid-template-columns: 1fr;
         gap: 10px;
     }
 
-    .movie-header {
+    .movie-header[b-ekpttd1ek9] {
         min-height: 180px;
     }
 }

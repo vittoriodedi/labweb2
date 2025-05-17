@@ -1,10 +1,11 @@
-﻿@page "/programmazione"
+﻿@page "/program"
 @rendermode InteractiveServer
 @using CinemaApp.Models
 @using CinemaApp.Models.Entities
 @using Microsoft.EntityFrameworkCore
 @inject CinemaDbContext DbContext
 @inject NavigationManager Navigation
+
 
 <PageTitle>Programmazione - CinemaNova</PageTitle>
 
@@ -90,7 +91,6 @@
         var fine = inizio.AddDays(1).AddSeconds(-1);
 
         proiezioniGiornaliere = await DbContext.Proiezioni
-            .Where(p => p.DataOra >= inizio && p.DataOra <= fine )
             .Where(p => p.DataOra >= inizio && p.DataOra <= fine && p.Attiva)
             .Include(p => p.Film)
             .Include(p => p.Sala)
@@ -106,6 +106,6 @@
 
     private void GoToPrenotazione(int proiezioneId)
     {
-        Navigation.NavigateTo($"/prenota-biglietti/{proiezioneId}");
+        Navigation.NavigateTo($"/reserve-tickets/{proiezioneId}");
     }
 }

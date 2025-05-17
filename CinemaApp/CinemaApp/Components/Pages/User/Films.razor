@@ -1,30 +1,16 @@
-﻿@page "/film-catalog"
+﻿@page "/films"
 @rendermode InteractiveServer
-@using CinemaApp.Models
-@using CinemaApp.Models.Entities
-@using Microsoft.EntityFrameworkCore
+
 @inject CinemaDbContext DbContext
 @inject NavigationManager Navigation
 
 <PageTitle>Film in Sala - CinemaNova</PageTitle>
 
-
-    
-    @if (films == null || films.Count == 0)
-    {
-        <div class="error-container">
-            <p>Nessun film disponibile al momento</p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
-                <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"/>
-            </svg>
-        </div>
-        
-    }
-    else
+    @if (films != null && films.Any())
     {
         <div class="films-container">
     
-            <p class="film-introduction-text">Questi sono i film disponibili in sala, per saperne di piu consulta la pagina della <a href="programma">Programmazione</a></p>
+            <p class="film-introduction-text">Questi sono i film disponibili in sala, per saperne di piu consulta la pagina della <a href="program">Programmazione</a></p>
 
             <div class="films-grid">
             @foreach (var film in films)
@@ -63,6 +49,16 @@
     </div>
 
     }
+    else
+    {
+        <div class="error-container">
+            <p>Nessun film disponibile al momento</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"/>
+            </svg>
+        </div>
+        
+    }
 
 
 <MudScrollToTop>
@@ -84,7 +80,7 @@
     
     private void GoToTickets()
     {
-            Navigation.NavigateTo("/programmazione");
+            Navigation.NavigateTo("/program");
         }
     }
 

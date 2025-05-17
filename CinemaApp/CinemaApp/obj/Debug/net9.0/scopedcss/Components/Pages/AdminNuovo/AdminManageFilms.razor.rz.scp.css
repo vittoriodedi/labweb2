@@ -1,0 +1,316 @@
+html[b-mcdoxdmlcl], body[b-mcdoxdmlcl] {
+    height: 100%;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+.error-container[b-mcdoxdmlcl] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.layout-wrapper[b-mcdoxdmlcl] {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container[b-mcdoxdmlcl] {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.content[b-mcdoxdmlcl] {
+    flex: 1;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.header[b-mcdoxdmlcl] {
+    margin-bottom: 2rem;
+}
+
+.header h1[b-mcdoxdmlcl] {
+    font-weight: 600;
+    font-size: 1.75rem;
+    color: #111;
+    margin-bottom: 0.5rem;
+}
+
+.header p[b-mcdoxdmlcl] {
+    font-weight: 400;
+    color: #555;
+}
+
+.action-bar[b-mcdoxdmlcl] {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 25px;
+}
+
+.btn-primary[b-mcdoxdmlcl] {
+    background-color: #212529;
+    color: white;
+    border: none;
+    box-shadow: 0 4px 12px rgba(33, 37, 41, 0.15);
+}
+
+.btn-primary:hover[b-mcdoxdmlcl] {
+    background-color: #343a40;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(33, 37, 41, 0.2);
+}
+
+.table-wrapper[b-mcdoxdmlcl] {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+table[b-mcdoxdmlcl] {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+thead[b-mcdoxdmlcl] {
+    background-color: #f3f3f3;
+    position: sticky;
+    top: 0;
+}
+
+th[b-mcdoxdmlcl] {
+    padding: 1rem 1.5rem;
+    font-weight: 600;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+}
+
+tbody tr[b-mcdoxdmlcl] {
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.2s;
+}
+
+tbody tr:hover[b-mcdoxdmlcl] {
+    background-color: #f9f9f9;
+}
+
+td[b-mcdoxdmlcl] {
+    padding: 1rem 1.5rem;
+    color: #444;
+}
+
+.user-name[b-mcdoxdmlcl] {
+    font-weight: 500;
+    color: #222;
+}
+
+.badge[b-mcdoxdmlcl] {
+    display: inline-block;
+    padding: 0.2rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.badge-admin[b-mcdoxdmlcl] {
+    background-color: #000;
+    color: #fff;
+}
+
+.btn[b-mcdoxdmlcl] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: none;
+}
+
+.btn-edit[b-mcdoxdmlcl], .btn-delete[b-mcdoxdmlcl] {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    margin-right: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-edit[b-mcdoxdmlcl] {
+    background-color: rgba(33, 37, 41, 0.05);
+    color: #495057;
+}
+
+.btn-edit:hover[b-mcdoxdmlcl] {
+    background-color: rgba(33, 37, 41, 0.1);
+    color: #212529;
+}
+
+.btn-delete[b-mcdoxdmlcl] {
+    background-color: rgba(250, 82, 82, 0.05);
+    color: #dc3545;
+}
+
+.btn-delete:hover[b-mcdoxdmlcl] {
+    background-color: rgba(250, 82, 82, 0.1);
+    color: #e03131;
+}
+
+.btn-edit svg[b-mcdoxdmlcl], .btn-delete svg[b-mcdoxdmlcl], .btn-deactivate svg[b-mcdoxdmlcl], .btn-activate svg[b-mcdoxdmlcl] {
+    width: 24px !important;
+    height: 24px !important;
+}
+.dialog-overlay[b-mcdoxdmlcl] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    font-family: 'Inter', sans-serif;
+}
+
+.edit-dialog[b-mcdoxdmlcl] {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 600px;
+    max-width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.edit-dialog h2[b-mcdoxdmlcl] {
+    font-weight: 600;
+    font-size: 1.75rem;
+    color: #111;
+    margin-bottom: 1.5rem;
+}
+
+.form-group[b-mcdoxdmlcl] {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label[b-mcdoxdmlcl] {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.button-group[b-mcdoxdmlcl] {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 2rem;
+}
+
+.button-group .btn[b-mcdoxdmlcl] {
+    padding: 0.5rem 1.25rem;
+    border-radius: 4px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
+}
+
+.button-group .btn-primary[b-mcdoxdmlcl] {
+    background-color: #000;
+    color: #fff;
+}
+
+.button-group .btn-primary:hover[b-mcdoxdmlcl] {
+    background-color: #333;
+}
+
+.button-group .btn-secondary[b-mcdoxdmlcl] {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    color: #555;
+}
+
+.button-group .btn-secondary:hover[b-mcdoxdmlcl] {
+    background-color: #f3f3f3;
+    border-color: #ccc;
+}
+
+.edit-dialog .btn-delete[b-mcdoxdmlcl] {
+    width: auto;
+    height: auto;
+    background-color: #dc3545;
+    color: white;
+    padding: 0.5rem 1rem;
+}
+
+.edit-dialog .btn-delete:hover[b-mcdoxdmlcl] {
+    background-color: #c82333;
+    color: white;
+}
+
+.edit-dialog .button-group[b-mcdoxdmlcl] {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 2rem;
+}
+
+.edit-dialog .button-group .btn[b-mcdoxdmlcl] {
+    min-width: 100px;
+}
+
+.form-group input[type="text"][b-mcdoxdmlcl],
+.form-group input[type="date"][b-mcdoxdmlcl],
+.form-group input[type="number"][b-mcdoxdmlcl],
+.form-group textarea[b-mcdoxdmlcl] {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    color: #444;
+    transition: border-color 0.2s;
+}
+
+.form-group input[type="text"]:focus[b-mcdoxdmlcl],
+.form-group input[type="date"]:focus[b-mcdoxdmlcl],
+.form-group input[type="number"]:focus[b-mcdoxdmlcl],
+.form-group textarea:focus[b-mcdoxdmlcl] {
+    border-color: #aaa;
+    outline: none;
+}
+
+.form-group input[type="checkbox"][b-mcdoxdmlcl] {
+    margin-right: 0.5rem;
+    transform: scale(1.2);
+}

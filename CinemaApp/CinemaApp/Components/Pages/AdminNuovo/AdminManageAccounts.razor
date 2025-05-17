@@ -1,0 +1,219 @@
+@page "/admin/manage-accounts"
+@rendermode InteractiveServer
+@inject CinemaDbContext dbContext
+@using CinemaApp.Models.ViewModels
+@* @attribute [Authorize(Roles = "Administrator")] *@
+
+<PageTitle>Gestisci Account - CinemaNova</PageTitle>
+
+    @if (users == null || users.Count == 0)
+    {
+        <div class="error-container">
+            <p>Nessun Account presente.</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"/>
+            </svg>
+        </div>
+    }
+    else
+    {
+        <div class="layout-wrapper">
+            <div class="container content">
+                <div class="header">
+                    <h1>Gestione Account</h1>
+                    <p>Visualizza e gestisci tutti gli account Amministratori presenti nel sistema</p>
+                </div>
+                
+                <div class="action-bar">
+                    <button class="btn btn-primary" @onclick="MostraFormCreazione">Nuovo Account</button>
+                </div>
+                
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Username</th>
+                            <th>Email</th>
+                            <th>Azioni</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        @foreach (var user in users)
+                        {
+                            <tr>
+                                <td><span class="user-name">@user.UserName</span></td>
+                                <td>@user.Email</td>
+                                <td>
+                                    <div style="display: flex; gap: 8px;">
+                                        <button class="btn btn-delete" @onclick="() => DeleteUser(user)" title="Elimina">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-trash" viewBox="0 0 24 24">
+                                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z" transform="scale(1.5)"/>
+                                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z" transform="scale(1.5)"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    }
+
+@if (showEditDialog)
+{
+    <div class="dialog-overlay" @onclick="ChiudiDialog">
+        <div class="edit-dialog" @onclick:stopPropagation="true">
+            <h2>Nuovo Amministratore</h2>
+
+            @if (!string.IsNullOrEmpty(errorMessage))
+            {
+                <div class="alert alert-danger">
+                    @errorMessage
+                </div>
+            }
+
+            <EditForm Model="registerModel" OnValidSubmit="SalvaAdmin">
+                <DataAnnotationsValidator />
+
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <InputText id="username" @bind-Value="registerModel.UserName" class="form-control" />
+                    <ValidationMessage For="@(() => registerModel.UserName)" />
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <InputText id="email" @bind-Value="registerModel.Email" class="form-control" />
+                    <ValidationMessage For="@(() => registerModel.Email)" />
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <InputText type="password" id="password" @bind-Value="registerModel.Password" class="form-control" />
+                    <ValidationMessage For="@(() => registerModel.Password)" />
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirmPassword">Conferma Password:</label>
+                    <InputText type="password" id="confirmPassword" @bind-Value="registerModel.ConfirmPassword" class="form-control" />
+                    <ValidationMessage For="@(() => registerModel.ConfirmPassword)" />
+                </div>
+
+                <div class="button-group">
+                    <button type="button" class="btn btn-secondary" @onclick="ChiudiDialog">Annulla</button>
+                    <button type="submit" class="btn btn-primary">Salva</button>
+                </div>
+            </EditForm>
+        </div>
+    </div>
+}
+
+@if (showDeleteDialog)
+{
+    <div class="dialog-overlay" @onclick="ChiudiDialogElimina">
+        <div class="edit-dialog" @onclick:stopPropagation="true">
+            <h2>Conferma Eliminazione</h2>
+            
+            <p>Sei sicuro di voler eliminare questo elemento?</p>
+            <p>Questa azione non può essere annullata.</p>
+            
+            <div class="button-group">
+                <button class="btn btn-secondary" @onclick="ChiudiDialogElimina">Annulla</button>
+                <button class="btn btn-delete" @onclick="ConfermaElimina">Elimina</button>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    private List<UserAccount> users = new();
+    private bool showEditDialog = false;
+    private string? errorMessage = null;
+    private bool showDeleteDialog = false;
+    private UserAccount userToDelete;
+
+    private RegisterAdminViewModel registerModel = new RegisterAdminViewModel();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadUsers();
+    }
+
+    private async Task LoadUsers()
+    {
+        users = await dbContext.UserAccounts.Where(u => u.Role == "Administrator").ToListAsync();
+    }
+    
+    private void MostraFormCreazione()
+    {
+        registerModel = new RegisterAdminViewModel();
+        errorMessage = null;
+        showEditDialog = true;
+    }
+    
+    private void ChiudiDialog()
+    {
+        showEditDialog = false;
+        errorMessage = null;
+    }
+    
+    private async Task SalvaAdmin()
+    {
+        errorMessage = null;
+        
+        try
+        {
+            var existingUser = await dbContext.UserAccounts
+                .FirstOrDefaultAsync(u => u.UserName == registerModel.UserName || u.Email == registerModel.Email);
+                
+            if (existingUser != null)
+            {
+                errorMessage = "Username o email già in uso";
+                return;
+            }
+            
+            var nuovoAdmin = new UserAccount
+            {
+                UserName = registerModel.UserName,
+                Email = registerModel.Email,
+                Password = registerModel.Password,
+                Role = "Administrator"
+            };
+            
+            dbContext.UserAccounts.Add(nuovoAdmin);
+            await dbContext.SaveChangesAsync();
+            await LoadUsers();
+            showEditDialog = false;
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Errore nella creazione dell'account: {ex.Message}";
+        }
+    }
+    
+    private void DeleteUser(UserAccount user)
+    {
+        userToDelete = user;
+        showDeleteDialog = true;
+    }
+
+    private void ChiudiDialogElimina()
+    {
+        showDeleteDialog = false;
+        userToDelete = null;
+    }
+
+    private async Task ConfermaElimina()
+    {
+        if (userToDelete != null)
+        {
+            dbContext.UserAccounts.Remove(userToDelete);
+            await dbContext.SaveChangesAsync();
+            await LoadUsers();
+        }
+        ChiudiDialogElimina();
+    }
+}

@@ -9,31 +9,31 @@
         <h2 class="hours-title">Orari di Apertura</h2>
         <div class="divider"></div>
         <ul class="hours-schedule">
-            <li class="current-day">
+            <li class="@GetDayClass("Lunedì")">
                 <span class="day">Lunedì</span>
                 <span class="hours">16:00 - 23:00</span>
             </li>
-            <li>
+            <li class="@GetDayClass("Martedì")">
                 <span class="day">Martedì</span>
                 <span class="hours">16:00 - 23:00</span>
             </li>
-            <li>
+            <li class="@GetDayClass("Mercoledì")">
                 <span class="day">Mercoledì</span>
                 <span class="hours">16:00 - 23:00</span>
             </li>
-            <li>
+            <li class="@GetDayClass("Giovedì")">
                 <span class="day">Giovedì</span>
                 <span class="hours">16:00 - 23:00</span>
             </li>
-            <li>
+            <li class="@GetDayClass("Venerdì")">
                 <span class="day">Venerdì</span>
                 <span class="hours">16:00 - 23:00</span>
             </li>
-            <li>
+            <li class="@GetDayClass("Sabato")">
                 <span class="day">Sabato</span>
                 <span class="hours">15:00 - 00:00</span>
             </li>
-            <li>
+            <li class="@GetDayClass("Domenica")">
                 <span class="day">Domenica</span>
                 <span class="hours">15:00 - 23:00</span>
             </li>
@@ -81,5 +81,23 @@
     </section>
 </div>
 
+@code {
+    private string GetDayClass(string dayName)
+    {
+        var today = DateTime.Now.DayOfWeek;
+        var isCurrentDay = dayName.ToLower() switch
+        {
+            "lunedì" => today == DayOfWeek.Monday,
+            "martedì" => today == DayOfWeek.Tuesday,
+            "mercoledì" => today == DayOfWeek.Wednesday,
+            "giovedì" => today == DayOfWeek.Thursday,
+            "venerdì" => today == DayOfWeek.Friday,
+            "sabato" => today == DayOfWeek.Saturday,
+            "domenica" => today == DayOfWeek.Sunday,
+            _ => false
+        };
+        return isCurrentDay ? "current-day" : "";
+    }
+}
 
 

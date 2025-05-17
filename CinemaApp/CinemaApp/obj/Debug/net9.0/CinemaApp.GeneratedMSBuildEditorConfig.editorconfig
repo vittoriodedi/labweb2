@@ -47,25 +47,21 @@ build_metadata.AdditionalFiles.CssScope = b-tct2e0kcdh
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvTWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-344ttqj0ko
 
-[/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/Components/Pages/Admin/CreateAdmin.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9BZG1pbi9DcmVhdGVBZG1pbi5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = b-mnjwry7qqh
+[/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/Components/Pages/AdminNuovo/AdminInsertiFilm.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9BZG1pbk51b3ZvL0FkbWluSW5zZXJ0aUZpbG0ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-xegflpgg9g
 
-[/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/Components/Pages/Admin/GestisciProiezioni.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9BZG1pbi9HZXN0aXNjaVByb2llemlvbmkucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-5zqix68nvl
+[/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/Components/Pages/AdminNuovo/AdminManageAccounts.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9BZG1pbk51b3ZvL0FkbWluTWFuYWdlQWNjb3VudHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-vfzeazc1ld
 
-[/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/Components/Pages/Admin/InsertFilm.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9BZG1pbi9JbnNlcnRGaWxtLnJhem9y
-build_metadata.AdditionalFiles.CssScope = b-4a25cx3efy
+[/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/Components/Pages/AdminNuovo/AdminManageFilms.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9BZG1pbk51b3ZvL0FkbWluTWFuYWdlRmlsbXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-mcdoxdmlcl
 
-[/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/Components/Pages/Admin/ManageAccounts.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9BZG1pbi9NYW5hZ2VBY2NvdW50cy5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = b-8o10zkhpgs
-
-[/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/Components/Pages/Admin/ManageFilm.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9BZG1pbi9NYW5hZ2VGaWxtLnJhem9y
-build_metadata.AdditionalFiles.CssScope = b-vn1ri2pqd4
+[/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/Components/Pages/AdminNuovo/AdminManageProjections.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9BZG1pbk51b3ZvL0FkbWluTWFuYWdlUHJvamVjdGlvbnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-arusx4w89v
 
 [/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/Components/Pages/Common/ConfirmLogout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Db21tb24vQ29uZmlybUxvZ291dC5yYXpvcg==
@@ -99,13 +95,17 @@ build_metadata.AdditionalFiles.CssScope = b-w0b7ebofk2
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Vc2VyL0NvbnRhY3RzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-3zod78fxge
 
-[/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/Components/Pages/User/FilmCatalog.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Vc2VyL0ZpbG1DYXRhbG9nLnJhem9y
-build_metadata.AdditionalFiles.CssScope = b-mis62osl4g
+[/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/Components/Pages/User/DefaultHome.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Vc2VyL0RlZmF1bHRIb21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-eiv2o9xh24
 
-[/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/Components/Pages/User/FilmDetails.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Vc2VyL0ZpbG1EZXRhaWxzLnJhem9y
-build_metadata.AdditionalFiles.CssScope = b-l2zms2mzyw
+[/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/Components/Pages/User/Films.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Vc2VyL0ZpbG1zLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-prd2ck930s
+
+[/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/Components/Pages/User/FilmsDetails.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Vc2VyL0ZpbG1zRGV0YWlscy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-ekpttd1ek9
 
 [/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/Components/Pages/User/Program.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Vc2VyL1Byb2dyYW0ucmF6b3I=

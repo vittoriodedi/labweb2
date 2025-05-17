@@ -1,10 +1,12 @@
-﻿@page "/prenota-biglietti/{ProiezioneId:int}"
+﻿@page "/reserve-tickets/{ProiezioneId:int}"
 @rendermode InteractiveServer
-@using CinemaApp.Models
-@using CinemaApp.Models.Entities
-@using Microsoft.EntityFrameworkCore
 @inject CinemaDbContext DbContext
 @inject NavigationManager Navigation
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@attribute [Authorize(Roles = "User")]
+
+
+
 
 <PageTitle>Acquista Biglietti - CinemaNova</PageTitle>
 
@@ -40,7 +42,7 @@
                             {
                                 bool isOccupato = postiOccupati.Contains(posto.Id);
                                 bool isSelezionato = postiSelezionati.Contains(posto.Id);
-                                
+
                                 <div class="seat @(isOccupato ? "occupied" : "") @(isSelezionato ? "selected" : "")"
                                      @onclick="() => SelezionaPosto(posto.Id, isOccupato)">
                                     @posto.Numero
@@ -68,7 +70,7 @@
 
             <div class="booking-summary">
                 <h2>Riepilogo</h2>
-                
+
                 <div class="summary-item">
                     <span class="label">Film:</span>
                     <span class="value">@proiezione.Film.Titolo</span>
@@ -93,11 +95,11 @@
                 @if (postiSelezionati.Count > 0)
                 {
                     <div class="form-group">
-                        <label for="email">Email (per ricevere i biglietti)</label>
-                        <input id="email" type="email" @bind="emailUtente" class="form-control" required />
+                        <label>Email per i biglietti:</label>
+                        <span class="user-email">@emailUtente</span>
                     </div>
 
-                    <button class="checkout-button" @onclick="CompletaAcquisto" disabled="@(string.IsNullOrEmpty(emailUtente))">
+                    <button class="checkout-button" @onclick="CompletaAcquisto">
                         Procedi all'acquisto
                     </button>
                 }
@@ -105,6 +107,8 @@
         </div>
     }
 </div>
+
+
 
 @code {
     [Parameter]
@@ -115,9 +119,23 @@
     private HashSet<int> postiOccupati = new HashSet<int>();
     private HashSet<int> postiSelezionati = new HashSet<int>();
     private string emailUtente = string.Empty;
-
+    
     protected override async Task OnInitializedAsync()
     {
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+        var userName = user.Identity?.Name;
+    
+        emailUtente = await DbContext.UserAccounts
+            .Where(u => u.UserName == userName)
+            .Select(u => u.Email)
+            .FirstOrDefaultAsync() ?? string.Empty;     
+        
+        proiezione = await DbContext.Proiezioni
+        .Include(p => p.Film)
+        .Include(p => p.Sala)
+        .FirstOrDefaultAsync(p => p.Id == ProiezioneId);
+
         proiezione = await DbContext.Proiezioni
             .Include(p => p.Film)
             .Include(p => p.Sala)
@@ -136,7 +154,7 @@
             postiOccupati = biglietti
                 .Select(b => b.PostoId!.Value)
                 .ToHashSet();
-        }    
+        }
     }
 
     private void SelezionaPosto(int postoId, bool isOccupato)
@@ -152,7 +170,7 @@
 
     private async Task CompletaAcquisto()
     {
-        if (proiezione == null || postiSelezionati.Count == 0 || string.IsNullOrEmpty(emailUtente))
+        if (proiezione == null || postiSelezionati.Count == 0)
             return;
 
         var nuoviBiglietti = new List<Biglietto>();
@@ -160,7 +178,7 @@
         foreach (var postoId in postiSelezionati)
         {
             var codiceBiglietto = GeneraCodiceBiglietto();
-            
+
             nuoviBiglietti.Add(new Biglietto
             {
                 ProiezioneId = ProiezioneId,
@@ -175,7 +193,7 @@
         DbContext.Biglietti.AddRange(nuoviBiglietti);
         await DbContext.SaveChangesAsync();
 
-        Navigation.NavigateTo($"/conferma-acquisto/{string.Join(",", nuoviBiglietti.Select(b => b.Id))}");
+        Navigation.NavigateTo($"/purchase-confirm/{string.Join(",", nuoviBiglietti.Select(b => b.Id))}");
     }
 
     private string GeneraCodiceBiglietto()
