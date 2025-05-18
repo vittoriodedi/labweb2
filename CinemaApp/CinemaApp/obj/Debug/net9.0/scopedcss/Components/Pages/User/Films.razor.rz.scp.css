@@ -196,33 +196,17 @@ a:hover[b-prd2ck930s] {
     touch-action: manipulation;
     box-sizing: border-box;
 }
+
 .card-button:hover[b-prd2ck930s] {
     background-color: rgb(249,250,251);
     color: #800020;
 }
+
 .card-button:focus[b-prd2ck930s] {
     outline: 2px solid transparent;
     outline-offset: 2px;
 }
+
 .card-button:focus-visible[b-prd2ck930s] {
     box-shadow: none;
-}
-
-@media (max-width: 768px) {
-    .films-grid[b-prd2ck930s] {
-        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-        gap: 20px;
-    }
-
-    .film-title[b-prd2ck930s] {
-        font-size: 1.1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .films-grid[b-prd2ck930s] {
-        grid-template-columns: 1fr;
-        max-width: 320px;
-        margin: 0 auto;
-    }
 }

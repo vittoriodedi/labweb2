@@ -1,10 +1,10 @@
 ﻿@page "/admin/manage-films/insert-film"
-@rendermode InteractiveServer
-@inject IConfiguration Configuration
 @inject HttpClient Http
+@inject CinemaDbContext DbContext
+@inject IConfiguration Configuration
 @inject NavigationManager Navigation
-@inject CinemaDbContext dbContext
-@* @attribute [Authorize(Roles = "Administrator")] *@
+@rendermode InteractiveServer
+@attribute [Authorize(Roles = "Administrator")]
 
 <PageTitle>Gestione Films</PageTitle>
 
@@ -15,7 +15,7 @@
             <h1>Cerca Film</h1>
             <div class="search-bar">
                 <input type="text" @bind="filmTitle" placeholder="Titolo del film" />
-                <button @onclick="Cerca">Cerca</button>
+                <button @onclick="SearchMovie">Cerca</button>
             </div>
         </div>
 
@@ -126,51 +126,13 @@
 }
 
 @code {
-    private Film filmToEdit;
-    private bool editDialogVisible = false;
-
-
+    private bool editDialogVisible;
     private string filmTitle = string.Empty;
     private string savedTitle = string.Empty;
+    private Film filmToEdit;
     private List<Movie> movies = new();
-    private async Task Cerca()
-    {
-        savedTitle = filmTitle;
-        filmTitle = string.Empty;
-
-        var apiKey = Configuration["TMDb:ApiKey"];
-        var language = "it-IT";
-        var url = $"https://api.themoviedb.org/3/search/movie?api_key={apiKey}&language={language}&query={Uri.EscapeDataString(savedTitle)}";
-
-        try
-        {
-            var response = await Http.GetFromJsonAsync<RootResponse>(url);
-            movies = response?.results ?? new List<Movie>();
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine($"Errore nella chiamata API: {ex.Message}");
-            movies = new List<Movie>();
-        }
-    }
-    public class RootResponse
-    {
-        public List<Movie> results { get; set; }
-    }
-    public class Movie
-    {
-        public bool adult { get; set; }
-        public string original_title { get; set; }
-        public string original_language { get; set; }
-        public string poster_path { get; set; }
-        public string release_date { get; set; }
-        public int[] genre_ids { get; set; }
-        public string overview { get; set; }
-        public string title { get; set; }
-        public double vote_average { get; set; }
-
-    }
-    private static readonly Dictionary<int, string> GenreMap = new Dictionary<int, string>
+    
+    private static readonly Dictionary<int, string> GenreMap = new()
     {
         { 28, "Azione" },
         { 12, "Avventura" },
@@ -192,8 +154,26 @@
         { 10752, "Guerra" },
         { 37, "Western" }
     };
+    
+    public class RootResponse
+    {
+        public List<Movie> results { get; set; }
+    }
+    
+    public class Movie
+    {
+        public bool adult { get; set; }
+        public string original_title { get; set; }
+        public string original_language { get; set; }
+        public string poster_path { get; set; }
+        public string release_date { get; set; }
+        public int[] genre_ids { get; set; }
+        public string overview { get; set; }
+        public string title { get; set; }
+        public double vote_average { get; set; }
 
-
+    }
+    
     private Film ConvertMovieToFilm(Movie selectedMovie)
     {
         string generi = "";
@@ -230,26 +210,46 @@
             Valutazione = valutazione
         };
     }
+    
+    private async Task SearchMovie()
+    {
+        savedTitle = filmTitle;
+        filmTitle = string.Empty;
 
+        var apiKey = Configuration["TMDb:ApiKey"];
+        var language = "it-IT";
+        var url = $"https://api.themoviedb.org/3/search/movie?api_key={apiKey}&language={language}&query={Uri.EscapeDataString(savedTitle)}";
+
+        try
+        {
+            var response = await Http.GetFromJsonAsync<RootResponse>(url);
+            movies = response?.results ?? new List<Movie>();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Errore nella chiamata API: {ex.Message}");
+            movies = new List<Movie>();
+        }
+    }
+    
+    private async Task SaveChanges()
+    {
+        if (filmToEdit != null)
+        {
+            DbContext.Films.Add(filmToEdit);
+            await DbContext.SaveChangesAsync();
+            editDialogVisible = false;
+            Navigation.NavigateTo("/admin/manage-films");
+        }
+    }
+    
     private void OpenEditDialog(Movie selectedMovie)
     {
         filmToEdit = ConvertMovieToFilm(selectedMovie);
         editDialogVisible = true;
         StateHasChanged();
     }
-
-    private async Task SaveChanges()
-    {
-        if (filmToEdit != null)
-        {
-            dbContext.Films.Add(filmToEdit);
-            await dbContext.SaveChangesAsync();
-            editDialogVisible = false;
-            Navigation.NavigateTo("/manage-films");
-        }
-    }
-
-
+    
     private void CancelEdit()
     {
         editDialogVisible = false;

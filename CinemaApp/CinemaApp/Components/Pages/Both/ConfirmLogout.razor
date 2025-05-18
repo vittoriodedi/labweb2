@@ -1,5 +1,5 @@
 @page "/logout/confirm-logout"
-@inject NavigationManager NavigationManager
+@attribute [Authorize(Roles = "Administrator, User")]
 
 <PageTitle>Logout - CinemaNova</PageTitle>
 

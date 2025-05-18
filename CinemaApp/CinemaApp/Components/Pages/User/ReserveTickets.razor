@@ -1,12 +1,9 @@
 ﻿@page "/reserve-tickets/{ProiezioneId:int}"
-@rendermode InteractiveServer
 @inject CinemaDbContext DbContext
 @inject NavigationManager Navigation
 @inject AuthenticationStateProvider AuthenticationStateProvider
+@rendermode InteractiveServer
 @attribute [Authorize(Roles = "User")]
-
-
-
 
 <PageTitle>Acquista Biglietti - CinemaNova</PageTitle>
 
@@ -44,7 +41,7 @@
                                 bool isSelezionato = postiSelezionati.Contains(posto.Id);
 
                                 <div class="seat @(isOccupato ? "occupied" : "") @(isSelezionato ? "selected" : "")"
-                                     @onclick="() => SelezionaPosto(posto.Id, isOccupato)">
+                                     @onclick="() => SelectSeat(posto.Id, isOccupato)">
                                     @posto.Numero
                                 </div>
                             }
@@ -99,7 +96,7 @@
                         <span class="user-email">@emailUtente</span>
                     </div>
 
-                    <button class="checkout-button" @onclick="CompletaAcquisto">
+                    <button class="checkout-button" @onclick="CompletePurchase">
                         Procedi all'acquisto
                     </button>
                 }
@@ -108,17 +105,14 @@
     }
 </div>
 
-
-
 @code {
     [Parameter]
     public int ProiezioneId { get; set; }
-
-    private Proiezione? proiezione;
-    private List<Posto> postiSala = new List<Posto>();
-    private HashSet<int> postiOccupati = new HashSet<int>();
-    private HashSet<int> postiSelezionati = new HashSet<int>();
     private string emailUtente = string.Empty;
+    private HashSet<int> postiOccupati = new();
+    private HashSet<int> postiSelezionati = new();
+    private List<Posto> postiSala = new ();
+    private Proiezione? proiezione;
     
     protected override async Task OnInitializedAsync()
     {
@@ -157,7 +151,7 @@
         }
     }
 
-    private void SelezionaPosto(int postoId, bool isOccupato)
+    private void SelectSeat(int postoId, bool isOccupato)
     {
         if (isOccupato)
             return;
@@ -168,7 +162,7 @@
             postiSelezionati.Add(postoId);
     }
 
-    private async Task CompletaAcquisto()
+    private async Task CompletePurchase()
     {
         if (proiezione == null || postiSelezionati.Count == 0)
             return;
@@ -177,7 +171,7 @@
 
         foreach (var postoId in postiSelezionati)
         {
-            var codiceBiglietto = GeneraCodiceBiglietto();
+            var codiceBiglietto = GenerateTicketCode();
 
             nuoviBiglietti.Add(new Biglietto
             {
@@ -196,7 +190,7 @@
         Navigation.NavigateTo($"/purchase-confirm/{string.Join(",", nuoviBiglietti.Select(b => b.Id))}");
     }
 
-    private string GeneraCodiceBiglietto()
+    private string GenerateTicketCode()
     {
         return Guid.NewGuid().ToString("N").Substring(0, 8).ToUpper();
     }

@@ -1,8 +1,6 @@
 ﻿@page "/film-details/{Id:int}"
 @rendermode InteractiveServer
-@using CinemaApp.Models.Entities
-@using Microsoft.EntityFrameworkCore
-@inject Models.CinemaDbContext DbContext
+@inject CinemaDbContext DbContext
 
 <PageTitle>@(film?.Titolo ?? "Dettaglio Film") - CinemaNova</PageTitle>
 
@@ -77,8 +75,6 @@ else
         </div>
     </div>
 }
-
-
 
 @code {
     [Parameter]

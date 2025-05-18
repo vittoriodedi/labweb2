@@ -2,6 +2,7 @@ section[b-99v7aw0qvu]{
     width: 1100px;
     margin: 0 auto;
 }
+
 section h1[b-99v7aw0qvu] {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 700;
@@ -11,6 +12,7 @@ section h1[b-99v7aw0qvu] {
     color: #171717FF;
     margin-bottom: .5rem;
 }
+
 section p[b-99v7aw0qvu] {
     font-family: "Inter", sans-serif;
     font-weight: 400;
@@ -19,12 +21,14 @@ section p[b-99v7aw0qvu] {
     text-align: center;
     color: #666;
 }
+
 section p a[b-99v7aw0qvu] {
     font-weight: bold;
     text-decoration: none;
     transition: color 0.3s ease;
     color: #171717FF;
 }
+
 .divider[b-99v7aw0qvu] {
     height: 4px;
     width: 80px;
@@ -32,34 +36,32 @@ section p a[b-99v7aw0qvu] {
     margin: 0 auto;
 }
 
-
-
-
 .title-section[b-99v7aw0qvu] {
-    margin-top: 4.5em;
+    margin-top: 30px;
     margin-bottom: 4.5em;
     text-align: center;
 }
+
 .title-section p[b-99v7aw0qvu] {
     margin-top: 1em;
 }
-
-
-
 
 .prices-section[b-99v7aw0qvu]{
     margin-top: 4.5em;
     margin-bottom: 4.5em;
     text-align: center;
 }
+
 .table-container[b-99v7aw0qvu] {
     margin-top: 1em;
 }
+
 .price-table[b-99v7aw0qvu] {
     width: 100%;
     border-collapse: collapse;
     border-radius: 8px;
 }
+
 .price-table th[b-99v7aw0qvu] {
     background-color: #171717FF;
     color: white;
@@ -68,6 +70,7 @@ section p a[b-99v7aw0qvu] {
     text-align: left;
     padding: 12px 16px;
 }
+
 .price-table td[b-99v7aw0qvu] {
     padding: 12px 16px;
     border-bottom: 1px solid #e0e0e0;
@@ -77,38 +80,41 @@ section p a[b-99v7aw0qvu] {
     font-size: 1em;
 }
 
-
-
-
 .information-section[b-99v7aw0qvu]{
     margin-top: 4.5em;
     margin-bottom: 4.5em;
     text-align: center;
 }
+
 .information-section p :first-of-type[b-99v7aw0qvu]{
     color: #171717FF;
     font-size: 1.1em;
     letter-spacing: 0;
 }
+
 .info-container[b-99v7aw0qvu] {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
     margin-top: 30px;
 }
+
 .info-card[b-99v7aw0qvu] {
     border-radius: 8px;
     box-shadow: 0 4px 16px rgba(128, 0, 32, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease;
 }
+
 .info-card:hover[b-99v7aw0qvu] {
     transform: translateY(-5px);
 }
+
 .info-content[b-99v7aw0qvu] {
     padding: 30px;
     position: relative;
 }
+
 .info-content p[b-99v7aw0qvu] {
     margin-bottom: 15px;
     position: relative;

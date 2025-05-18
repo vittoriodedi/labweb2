@@ -1,38 +1,38 @@
 @page "/admin/manage-films"
-@inject CinemaDbContext dbContext
-@rendermode InteractiveServer
+@inject CinemaDbContext DbContext
 @inject NavigationManager Navigation
-@* @attribute [Authorize(Roles = "Administrator")] *@
+@rendermode InteractiveServer
+@attribute [Authorize(Roles = "Administrator")]
 
 <PageTitle>Gestisci Account - CinemaNova</PageTitle>
 
+@if (films == null || films.Count == 0)
+{
+    <div class="error-container">
+        <p>Nessun Film presente.</p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+            <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"/>
+        </svg>
+    </div>    
+}
+else
+{
+    <div class="layout-wrapper">
+        <div class="container content">
+            <div class="header">
+                <h1>Gestione Film</h1>
+                <p>Visualizza e gestisci tutti i film presenti nel database</p>
+            </div>
+            
+            <div class="action-bar">
+                <button class="btn btn-primary" @onclick="() => GoToCreateFilm()">
+                    Nuovo Film
+                </button>
+            </div>
 
-    @if (films == null || films.Count == 0)
-    {
-        <div class="error-container">
-            <p>Nessun Film presente.</p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
-                <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"/>
-            </svg>
-        </div>    
-    }
-    else
-    {
-        <div class="layout-wrapper">
-            <div class="container content">
-                <div class="header">
-                    <h1>Gestione Film</h1>
-                    <p>Visualizza e gestisci tutti i film presenti nel database</p>
-                </div>
-                
-                <div class="action-bar">
-                    <button class="btn btn-primary" @onclick="() => GoToCreateFilm()"> Nuovo Film
-                    </button>
-                </div>
-
-                <div class="table-wrapper">
-                    <table>
-                        <thead>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
                         <tr>
                             <th>Titolo</th>
                             <th>Data di Uscita</th>
@@ -43,20 +43,20 @@
                             <th>Valutazione</th>
                             <th>Azioni</th>
                         </tr>
-                        </thead>
-                        <tbody>
-                        @foreach (var film in films)
-                        {
-                            <tr>
-                                <td><span class="user-name">@film.Titolo</span></td>
-                                <td>@film.DataUscita</td>
-                                <td><span class="badge badge-admin">@film.Genere</span></td>
-                                <td>@film.Regista</td>
-                                <td>@film.DurataMinuti min</td>
-                                <td>@(film.Adulti ? "Si" : "No")</td>
-                                <td><MudRating ReadOnly="true" SelectedValue="@film.Valutazione"/></td>
-                                <td>
-                                    <div style="display: flex; gap: 8px;">
+                    </thead>
+                    <tbody>
+                    @foreach (var film in films)
+                    {
+                        <tr>
+                            <td><span class="user-name">@film.Titolo</span></td>
+                            <td>@film.DataUscita</td>
+                            <td><span class="badge badge-admin">@film.Genere</span></td>
+                            <td>@film.Regista</td>
+                            <td>@film.DurataMinuti min</td>
+                            <td>@(film.Adulti ? "Si" : "No")</td>
+                            <td><MudRating ReadOnly="true" SelectedValue="@film.Valutazione"/></td>
+                            <td>
+                                <div style="display: flex; gap: 8px;">
                                     <button class="btn btn-edit" @onclick="() => ModifyFilm(film)" title="Modifica">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 24 24">
                                             <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" transform="scale(1.5)"/>
@@ -69,18 +69,16 @@
                                             <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z" transform="scale(1.5)"/>
                                         </svg>
                                     </button>
-                                    </div>
-                                </td>
-                                
-                            </tr>
-                        }
-                        </tbody>
-                    </table>
-                </div>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                    </tbody>
+                </table>
             </div>
         </div>
-    }
-
+    </div>
+}
 
 @if (showEditDialog && filmToEdit != null)
 {
@@ -141,10 +139,9 @@
     </div>
 }
 
-
 @if (showDeleteDialog)
 {
-    <div class="dialog-overlay" @onclick="ChiudiDialogElimina">
+    <div class="dialog-overlay" @onclick="CloseDeleteDialog">
         <div class="edit-dialog" @onclick:stopPropagation="true">
             <h2>Conferma Eliminazione</h2>
 
@@ -152,8 +149,8 @@
             <p>Questa azione non può essere annullata.</p>
 
             <div class="button-group">
-                <button class="btn btn-secondary" @onclick="ChiudiDialogElimina">Annulla</button>
-                <button class="btn btn-delete" @onclick="ConfermaElimina">Elimina</button>
+                <button class="btn btn-secondary" @onclick="CloseDeleteDialog">Annulla</button>
+                <button class="btn btn-delete" @onclick="ConfirmDelete">Elimina</button>
             </div>
         </div>
     </div>
@@ -163,10 +160,9 @@
     private List<Film> films = new();
     
     private Film filmToEdit;
-    private bool showEditDialog = false;
-    private bool showDeleteDialog = false;
     private Film filmToDelete;
-
+    private bool showEditDialog;
+    private bool showDeleteDialog;
 
     protected override async Task OnInitializedAsync()
     {
@@ -175,12 +171,12 @@
 
     private async Task LoadFilms()
     {
-        films = await dbContext.Films.ToListAsync();
+        films = await DbContext.Films.ToListAsync();
     }
     
     private void GoToCreateFilm()
     {
-        Navigation.NavigateTo($"/insert-film");
+        Navigation.NavigateTo($"/admin/manage-films/insert-film");
     }
     
     private async Task ModifyFilm(Film film)
@@ -189,16 +185,18 @@
         showEditDialog = true;
         StateHasChanged();
     }
+    
     private async Task SaveChanges()
     {
         if (filmToEdit != null)
         {
-            dbContext.Films.Update(filmToEdit);
-            await dbContext.SaveChangesAsync();
+            DbContext.Films.Update(filmToEdit);
+            await DbContext.SaveChangesAsync();
             await LoadFilms();
             showEditDialog = false;
         }
     }
+    
     private void CancelEdit()
     {
         showEditDialog = false;
@@ -210,21 +208,21 @@
         showDeleteDialog = true;
     }
 
-    private void ChiudiDialogElimina()
+    private void CloseDeleteDialog()
     {
         showDeleteDialog = false;
         filmToDelete = null;
     }
 
-    private async Task ConfermaElimina()
+    private async Task ConfirmDelete()
     {
         if (filmToDelete != null)
         {
-            dbContext.Films.Remove(filmToDelete);
-            await dbContext.SaveChangesAsync();
+            DbContext.Films.Remove(filmToDelete);
+            await DbContext.SaveChangesAsync();
             await LoadFilms();
         }
-        ChiudiDialogElimina();
+        CloseDeleteDialog();
     }
     
 }

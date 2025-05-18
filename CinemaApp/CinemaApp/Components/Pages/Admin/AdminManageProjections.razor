@@ -1,7 +1,7 @@
 ﻿@page "/admin/manage-projections"
-@rendermode InteractiveServer
 @inject CinemaDbContext DbContext
-@* @attribute [Authorize(Roles = "Administrator")] *@
+@rendermode InteractiveServer
+@attribute [Authorize(Roles = "Administrator")]
 
 <PageTitle>Gestione Proiezioni - CinemaNova Admin</PageTitle>
 <div class="layout-wrapper">
@@ -11,7 +11,7 @@
             <p>Crea e gestisci le proiezioni dei film nelle sale</p>
         </div>
         <div class="action-bar">
-            <button class="btn btn-primary" @onclick="MostraFormCreazione">Nuova Proiezione</button>
+            <button class="btn btn-primary" @onclick="ShowCreationForm">Nuova Proiezione</button>
         </div>
         <div class="table-wrapper @(proiezioni == null || !proiezioni.Any() ? "no-shadow" : "")">
             @if (proiezioni != null && proiezioni.Any())
@@ -49,14 +49,14 @@
                             </td>
                             <td>
                                 <div style="display: flex; gap: 8px;">
-                                    <button class="btn btn-edit" @onclick="() => ModificaProiezione(proiezione.Id)" title="Modifica">
+                                    <button class="btn btn-edit" @onclick="() => ModifyProjection(proiezione.Id)" title="Modifica">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 24 24">
                                             <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" transform="scale(1.5)"/>
                                             <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z" transform="scale(1.5)"/>
                                         </svg>
                                     </button>
                                     <button class="btn @(proiezione.Attiva ? "btn-deactivate" : "btn-activate")"
-                                            @onclick="() => ToggleStatoProiezione(proiezione)"
+                                            @onclick="() => ToggleProjectionState(proiezione)"
                                             title="@(proiezione.Attiva ? "Disattiva" : "Attiva")">
                                         @if (proiezione.Attiva)
                                         {
@@ -91,7 +91,7 @@
 
 @if (showInsertDialog)
     {
-        <div class="dialog-overlay" @onclick="ChiudiDialog">
+        <div class="dialog-overlay" @onclick="CloseDialog">
             <div class="edit-dialog" @onclick:stopPropagation="true">
                 <h2>@(proiezioneSelezionata.Id == 0 ? "Nuova Proiezione" : "Modifica Proiezione")</h2>
 
@@ -148,23 +148,23 @@
                 </div>
 
                 <div class="button-group">
-                    <button class="btn btn-secondary" @onclick="ChiudiDialog">Annulla</button>
-                    <button class="btn btn-primary" @onclick="SalvaProiezione">Salva</button>
+                    <button class="btn btn-secondary" @onclick="CloseDialog">Annulla</button>
+                    <button class="btn btn-primary" @onclick="SaveProjections">Salva</button>
                 </div>
             </div>
         </div>
     }
 
 @code {
-    private List<Proiezione>? proiezioni;
-    private List<Film>? films;
-    private List<Sala>? sale;
+    private bool showInsertDialog;
+    private string errorMessage;
     private dynamic elementToDelete; 
-    private bool showInsertDialog = false;
-    private string? errorMessage = null;
-    private Proiezione proiezioneSelezionata = new Proiezione
+    private List<Sala>? sale;
+    private List<Film>? films;
+    private List<Proiezione>? proiezioni;
+
     
-    {
+    private Proiezione proiezioneSelezionata = new Proiezione {
         DataOra = DateTime.Now.AddHours(1).Date.AddHours(20),
         PrezzoBase = 9.00m,
         Attiva = true
@@ -172,10 +172,10 @@
 
     protected override async Task OnInitializedAsync()
     {
-        await CaricaDati();
+        await LoadData();
     }
 
-    private async Task CaricaDati()
+    private async Task LoadData()
     {
         try
         {
@@ -195,7 +195,7 @@
         }
     }
 
-    private void MostraFormCreazione()
+    private void ShowCreationForm()
     {
         proiezioneSelezionata = new Proiezione
         {
@@ -207,7 +207,7 @@
         showInsertDialog = true;
     }
 
-    private async Task ModificaProiezione(int id)
+    private async Task ModifyProjection(int id)
     {
         try
         {
@@ -225,13 +225,19 @@
         }
     }
 
-    private async Task ToggleStatoProiezione(Proiezione proiezione)
+    private void CloseDialog()
+    {
+        showInsertDialog = false;
+        errorMessage = null;
+    }
+    
+    private async Task ToggleProjectionState(Proiezione proiezione)
     {
         try
         {
             proiezione.Attiva = !proiezione.Attiva;
             await DbContext.SaveChangesAsync();
-            await CaricaDati();
+            await LoadData();
         }
         catch (Exception ex)
         {
@@ -239,13 +245,7 @@
         }
     }
 
-    private void ChiudiDialog()
-    {
-        showInsertDialog = false;
-        errorMessage = null;
-    }
-
-    private async Task SalvaProiezione()
+    private async Task SaveProjections()
     {
         errorMessage = null;
 
@@ -314,7 +314,7 @@
             }
 
             await DbContext.SaveChangesAsync();
-            await CaricaDati();
+            await LoadData();
             showInsertDialog = false;
         }
         catch (Exception ex)

@@ -1,14 +1,8 @@
 @page "/login"
-@using System.Security.Claims
-@using CinemaApp.Models
-@using CinemaApp.Models.ViewModels
-@using Microsoft.AspNetCore.Authentication
-@using Microsoft.AspNetCore.Authentication.Cookies
 @inject CinemaDbContext DbContext
 @inject NavigationManager NavigationManager
 
 <PageTitle>Login - CinemaNova</PageTitle>
-
 
 <div class="login-container">
     <div class="login-card">
@@ -45,8 +39,6 @@
             <div class="register-link">
                 Non hai un account? <a href="/login/create-user"><strong>Registrati qui</strong></a>
             </div>
-
-            
         </EditForm>
     </div>
 </div>

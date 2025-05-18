@@ -13,7 +13,8 @@
     padding: 40px;
     width: 100%;
     max-width: 450px;
-    margin: 95px auto;
+    margin: 261px auto;
+    text-align: center;
 }
 
 .login-header {
@@ -34,47 +35,18 @@
     margin-bottom: 25px;
 }
 
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 500;
-    color: #444;
-}
-
-.form-control {
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
     width: 100%;
-    padding: 12px 15px;
-    font-size: 15px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    transition: border-color 0.2s, box-shadow 0.2s;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.form-control:focus {
-    border-color: #171717FF;
-    box-shadow: 0 0 0 3px rgba(74, 74, 74, 0.15);
-    outline: none;
-}
-
-.validation-message {
-    color: #d9534f;
-    font-size: 13px;
-    margin-top: 5px;
-}
-
-.error-message {
-    color: #d9534f;
-    text-align: center;
-    font-size: 14px;
-    margin-bottom: 10px;
-    min-height: 21px;
-}
-
-.btn-login {
+.btn-primary {
     background-color: #171717FF;
     color: white;
     border: none;
@@ -86,26 +58,33 @@
     cursor: pointer;
     transition: background-color 0.2s, transform 0.2s;
     box-shadow: 0 2px 4px rgba(37, 37, 37, 0.25);
+    text-decoration: none;
+    display: block;
+    text-align: center;
 }
 
-.btn-login:hover {
+.btn-primary:hover {
     background-color: #232323;
     transform: translateY(-1px);
     box-shadow: 0 3px 6px rgba(58, 58, 58, 0.35);
 }
 
-.register-link {
-    text-align: center;
-    margin-top: 1rem;
-    font-size: 0.8rem;
-}
-
-.register-link a {
-    font-weight: bold;
-    color: #171717FF;
+.btn-outline {
+    background-color: #f8f9fa;
+    color: #444;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 12px 16px;
+    font-size: 15px;
+    font-weight: 500;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.2s;
     text-decoration: none;
+    display: block;
+    text-align: center;
 }
 
-.register-link a:hover {
-    text-decoration: underline;
+.btn-outline:hover {
+    background-color: #e9ecef;
 }

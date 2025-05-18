@@ -1,12 +1,11 @@
 @page "/admin/manage-accounts"
+@inject CinemaDbContext DbContext
 @rendermode InteractiveServer
-@inject CinemaDbContext dbContext
-@using CinemaApp.Models.ViewModels
-@* @attribute [Authorize(Roles = "Administrator")] *@
+@attribute [Authorize(Roles = "Administrator")]
 
 <PageTitle>Gestisci Account - CinemaNova</PageTitle>
 
-    @if (users == null || users.Count == 0)
+@if (accounts == null || accounts.Count == 0)
     {
         <div class="error-container">
             <p>Nessun Account presente.</p>
@@ -25,7 +24,7 @@
                 </div>
                 
                 <div class="action-bar">
-                    <button class="btn btn-primary" @onclick="MostraFormCreazione">Nuovo Account</button>
+                    <button class="btn btn-primary" @onclick="ShowCreationForm">Nuovo Account</button>
                 </div>
                 
                 <div class="table-wrapper">
@@ -38,14 +37,14 @@
                         </tr>
                         </thead>
                         <tbody>
-                        @foreach (var user in users)
+                        @foreach (var account in accounts)
                         {
                             <tr>
-                                <td><span class="user-name">@user.UserName</span></td>
-                                <td>@user.Email</td>
+                                <td><span class="user-name">@account.UserName</span></td>
+                                <td>@account.Email</td>
                                 <td>
                                     <div style="display: flex; gap: 8px;">
-                                        <button class="btn btn-delete" @onclick="() => DeleteUser(user)" title="Elimina">
+                                        <button class="btn btn-delete" @onclick="() => DeleteAccount(account)" title="Elimina">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-trash" viewBox="0 0 24 24">
                                                 <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z" transform="scale(1.5)"/>
                                                 <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z" transform="scale(1.5)"/>
@@ -64,7 +63,7 @@
 
 @if (showEditDialog)
 {
-    <div class="dialog-overlay" @onclick="ChiudiDialog">
+    <div class="dialog-overlay" @onclick="CloseEditDialog">
         <div class="edit-dialog" @onclick:stopPropagation="true">
             <h2>Nuovo Amministratore</h2>
 
@@ -103,7 +102,7 @@
                 </div>
 
                 <div class="button-group">
-                    <button type="button" class="btn btn-secondary" @onclick="ChiudiDialog">Annulla</button>
+                    <button type="button" class="btn btn-secondary" @onclick="CloseEditDialog">Annulla</button>
                     <button type="submit" class="btn btn-primary">Salva</button>
                 </div>
             </EditForm>
@@ -113,7 +112,7 @@
 
 @if (showDeleteDialog)
 {
-    <div class="dialog-overlay" @onclick="ChiudiDialogElimina">
+    <div class="dialog-overlay" @onclick="CloseDeleteDialog">
         <div class="edit-dialog" @onclick:stopPropagation="true">
             <h2>Conferma Eliminazione</h2>
             
@@ -121,21 +120,20 @@
             <p>Questa azione non può essere annullata.</p>
             
             <div class="button-group">
-                <button class="btn btn-secondary" @onclick="ChiudiDialogElimina">Annulla</button>
-                <button class="btn btn-delete" @onclick="ConfermaElimina">Elimina</button>
+                <button class="btn btn-secondary" @onclick="CloseDeleteDialog">Annulla</button>
+                <button class="btn btn-delete" @onclick="ConfirmDelete">Elimina</button>
             </div>
         </div>
     </div>
 }
 
 @code {
-    private List<UserAccount> users = new();
-    private bool showEditDialog = false;
-    private string? errorMessage = null;
-    private bool showDeleteDialog = false;
-    private UserAccount userToDelete;
-
-    private RegisterAdminViewModel registerModel = new RegisterAdminViewModel();
+    private bool showEditDialog;
+    private string errorMessage;
+    private bool showDeleteDialog;
+    private List<UserAccount> accounts = new();
+    private RegisterAdminViewModel registerModel = new ();
+    private UserAccount accountToDelete;
 
     protected override async Task OnInitializedAsync()
     {
@@ -144,17 +142,17 @@
 
     private async Task LoadUsers()
     {
-        users = await dbContext.UserAccounts.Where(u => u.Role == "Administrator").ToListAsync();
+        accounts = await DbContext.UserAccounts.Where(u => u.Role == "Administrator").ToListAsync();
     }
     
-    private void MostraFormCreazione()
+    private void ShowCreationForm()
     {
         registerModel = new RegisterAdminViewModel();
         errorMessage = null;
         showEditDialog = true;
     }
     
-    private void ChiudiDialog()
+    private void CloseEditDialog()
     {
         showEditDialog = false;
         errorMessage = null;
@@ -166,7 +164,7 @@
         
         try
         {
-            var existingUser = await dbContext.UserAccounts
+            var existingUser = await DbContext.UserAccounts
                 .FirstOrDefaultAsync(u => u.UserName == registerModel.UserName || u.Email == registerModel.Email);
                 
             if (existingUser != null)
@@ -183,8 +181,8 @@
                 Role = "Administrator"
             };
             
-            dbContext.UserAccounts.Add(nuovoAdmin);
-            await dbContext.SaveChangesAsync();
+            DbContext.UserAccounts.Add(nuovoAdmin);
+            await DbContext.SaveChangesAsync();
             await LoadUsers();
             showEditDialog = false;
         }
@@ -194,26 +192,26 @@
         }
     }
     
-    private void DeleteUser(UserAccount user)
+    private void DeleteAccount(UserAccount Account)
     {
-        userToDelete = user;
+        accountToDelete = Account;
         showDeleteDialog = true;
     }
 
-    private void ChiudiDialogElimina()
+    private void CloseDeleteDialog()
     {
         showDeleteDialog = false;
-        userToDelete = null;
+        accountToDelete = null;
     }
 
-    private async Task ConfermaElimina()
+    private async Task ConfirmDelete()
     {
-        if (userToDelete != null)
+        if (accountToDelete != null)
         {
-            dbContext.UserAccounts.Remove(userToDelete);
-            await dbContext.SaveChangesAsync();
+            DbContext.UserAccounts.Remove(accountToDelete);
+            await DbContext.SaveChangesAsync();
             await LoadUsers();
         }
-        ChiudiDialogElimina();
+        CloseDeleteDialog();
     }
 }

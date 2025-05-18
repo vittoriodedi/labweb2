@@ -196,33 +196,17 @@ a:hover {
     touch-action: manipulation;
     box-sizing: border-box;
 }
+
 .card-button:hover {
     background-color: rgb(249,250,251);
     color: #800020;
 }
+
 .card-button:focus {
     outline: 2px solid transparent;
     outline-offset: 2px;
 }
+
 .card-button:focus-visible {
     box-shadow: none;
-}
-
-@media (max-width: 768px) {
-    .films-grid {
-        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-        gap: 20px;
-    }
-
-    .film-title {
-        font-size: 1.1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .films-grid {
-        grid-template-columns: 1fr;
-        max-width: 320px;
-        margin: 0 auto;
-    }
 }

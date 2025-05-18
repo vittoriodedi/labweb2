@@ -1,10 +1,10 @@
-.login-container[b-tlqy9uwvpf] {
+.login-container[b-q6sbz7g7fw] {
     max-width: 1100px;
     margin: 40px auto;
     padding: 0;
 }
 
-.login-card[b-tlqy9uwvpf] {
+.login-card[b-q6sbz7g7fw] {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 16px rgba(62, 62, 62, 0.1);
@@ -13,39 +13,39 @@
     padding: 40px;
     width: 100%;
     max-width: 450px;
-    margin: 95px auto;
+    margin: 205px auto;
 }
 
-.login-header[b-tlqy9uwvpf] {
+.login-header[b-q6sbz7g7fw] {
     text-align: center;
     margin-bottom: 30px;
 }
 
-.login-title[b-tlqy9uwvpf] {
+.login-title[b-q6sbz7g7fw] {
     color: #171717FF;
     font-size: 25px;
     font-weight: 700;
     margin-bottom: 8px;
 }
 
-.login-subtitle[b-tlqy9uwvpf] {
+.login-subtitle[b-q6sbz7g7fw] {
     color: #666;
     font-size: 0.8rem;
     margin-bottom: 25px;
 }
 
-.form-group[b-tlqy9uwvpf] {
+.form-group[b-q6sbz7g7fw] {
     margin-bottom: 20px;
 }
 
-.form-label[b-tlqy9uwvpf] {
+.form-label[b-q6sbz7g7fw] {
     display: block;
     margin-bottom: 8px;
     font-weight: 500;
     color: #444;
 }
 
-.form-control[b-tlqy9uwvpf] {
+.form-control[b-q6sbz7g7fw] {
     width: 100%;
     padding: 12px 15px;
     font-size: 15px;
@@ -54,19 +54,19 @@
     transition: border-color 0.2s, box-shadow 0.2s;
 }
 
-.form-control:focus[b-tlqy9uwvpf] {
+.form-control:focus[b-q6sbz7g7fw] {
     border-color: #171717FF;
     box-shadow: 0 0 0 3px rgba(74, 74, 74, 0.15);
     outline: none;
 }
 
-.validation-message[b-tlqy9uwvpf] {
+.validation-message[b-q6sbz7g7fw] {
     color: #d9534f;
     font-size: 13px;
     margin-top: 5px;
 }
 
-.error-message[b-tlqy9uwvpf] {
+.error-message[b-q6sbz7g7fw] {
     color: #d9534f;
     text-align: center;
     font-size: 14px;
@@ -74,7 +74,7 @@
     min-height: 21px;
 }
 
-.btn-login[b-tlqy9uwvpf] {
+.btn-login[b-q6sbz7g7fw] {
     background-color: #171717FF;
     color: white;
     border: none;
@@ -88,24 +88,24 @@
     box-shadow: 0 2px 4px rgba(37, 37, 37, 0.25);
 }
 
-.btn-login:hover[b-tlqy9uwvpf] {
+.btn-login:hover[b-q6sbz7g7fw] {
     background-color: #232323;
     transform: translateY(-1px);
     box-shadow: 0 3px 6px rgba(58, 58, 58, 0.35);
 }
 
-.register-link[b-tlqy9uwvpf] {
+.register-link[b-q6sbz7g7fw] {
     text-align: center;
     margin-top: 1rem;
     font-size: 0.8rem;
 }
 
-.register-link a[b-tlqy9uwvpf] {
+.register-link a[b-q6sbz7g7fw] {
     font-weight: bold;
     color: #171717FF;
     text-decoration: none;
 }
 
-.register-link a:hover[b-tlqy9uwvpf] {
+.register-link a:hover[b-q6sbz7g7fw] {
     text-decoration: underline;
 }

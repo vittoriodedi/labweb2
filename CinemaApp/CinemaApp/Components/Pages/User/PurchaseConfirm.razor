@@ -1,10 +1,8 @@
 ﻿@page "/purchase-confirm/{BigliettiIds}"
 @rendermode InteractiveServer
-@using CinemaApp.Models
-@using CinemaApp.Models.Entities
-@using Microsoft.EntityFrameworkCore
-@inject CinemaDbContext DbContext
+
 @inject IJSRuntime JSRuntime
+@inject CinemaDbContext DbContext
 @attribute [Authorize(Roles = "User")]
 
 

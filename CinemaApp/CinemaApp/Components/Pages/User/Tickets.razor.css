@@ -2,6 +2,7 @@ section{
     width: 1100px;
     margin: 0 auto;
 }
+
 section h1 {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 700;
@@ -11,6 +12,7 @@ section h1 {
     color: #171717FF;
     margin-bottom: .5rem;
 }
+
 section p {
     font-family: "Inter", sans-serif;
     font-weight: 400;
@@ -19,12 +21,14 @@ section p {
     text-align: center;
     color: #666;
 }
+
 section p a {
     font-weight: bold;
     text-decoration: none;
     transition: color 0.3s ease;
     color: #171717FF;
 }
+
 .divider {
     height: 4px;
     width: 80px;
@@ -32,34 +36,32 @@ section p a {
     margin: 0 auto;
 }
 
-
-
-
 .title-section {
-    margin-top: 4.5em;
+    margin-top: 30px;
     margin-bottom: 4.5em;
     text-align: center;
 }
+
 .title-section p {
     margin-top: 1em;
 }
-
-
-
 
 .prices-section{
     margin-top: 4.5em;
     margin-bottom: 4.5em;
     text-align: center;
 }
+
 .table-container {
     margin-top: 1em;
 }
+
 .price-table {
     width: 100%;
     border-collapse: collapse;
     border-radius: 8px;
 }
+
 .price-table th {
     background-color: #171717FF;
     color: white;
@@ -68,6 +70,7 @@ section p a {
     text-align: left;
     padding: 12px 16px;
 }
+
 .price-table td {
     padding: 12px 16px;
     border-bottom: 1px solid #e0e0e0;
@@ -77,38 +80,41 @@ section p a {
     font-size: 1em;
 }
 
-
-
-
 .information-section{
     margin-top: 4.5em;
     margin-bottom: 4.5em;
     text-align: center;
 }
+
 .information-section p :first-of-type{
     color: #171717FF;
     font-size: 1.1em;
     letter-spacing: 0;
 }
+
 .info-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
     margin-top: 30px;
 }
+
 .info-card {
     border-radius: 8px;
     box-shadow: 0 4px 16px rgba(128, 0, 32, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease;
 }
+
 .info-card:hover {
     transform: translateY(-5px);
 }
+
 .info-content {
     padding: 30px;
     position: relative;
 }
+
 .info-content p {
     margin-bottom: 15px;
     position: relative;
