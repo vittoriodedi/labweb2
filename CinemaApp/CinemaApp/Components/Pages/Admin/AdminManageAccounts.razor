@@ -1,71 +1,101 @@
 @page "/admin/manage-accounts"
 @inject CinemaDbContext DbContext
 @rendermode InteractiveServer
-@attribute [Authorize(Roles = "Administrator")]
+@attribute [Authorize(Roles = "Administrator, Employee")]
 
 <PageTitle>Gestisci Account - CinemaNova</PageTitle>
 
-@if (accounts == null || accounts.Count == 0)
-    {
-        <div class="error-container">
-            <p>Nessun Account presente.</p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
-                <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"/>
-            </svg>
+<div class="layout-wrapper">
+    <div class="container content">
+        <div class="header">
+            <h1>Gestione Account</h1>
+            
+            <AuthorizeView Roles="Administrator">
+                <Authorized>
+                    <p>Visualizza e gestisci tutti gli account Impiegati presenti nel sistema</p>
+                </Authorized>
+            </AuthorizeView>
+            
+            <AuthorizeView Roles="Employee">
+                <Authorized>
+                    <p>Visualizza e gestisci tutti gli account Utenti presenti nel sistema</p>
+                </Authorized>
+            </AuthorizeView>
         </div>
-    }
-    else
-    {
-        <div class="layout-wrapper">
-            <div class="container content">
-                <div class="header">
-                    <h1>Gestione Account</h1>
-                    <p>Visualizza e gestisci tutti gli account Amministratori presenti nel sistema</p>
-                </div>
-                
-                <div class="action-bar">
-                    <button class="btn btn-primary" @onclick="ShowCreationForm">Nuovo Account</button>
-                </div>
-                
-                <div class="table-wrapper">
-                    <table>
-                        <thead>
-                        <tr>
-                            <th>Username</th>
-                            <th>Email</th>
-                            <th>Azioni</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        @foreach (var account in accounts)
-                        {
-                            <tr>
-                                <td><span class="user-name">@account.UserName</span></td>
-                                <td>@account.Email</td>
-                                <td>
-                                    <div style="display: flex; gap: 8px;">
-                                        <button class="btn btn-delete" @onclick="() => DeleteAccount(account)" title="Elimina">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-trash" viewBox="0 0 24 24">
-                                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z" transform="scale(1.5)"/>
-                                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z" transform="scale(1.5)"/>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </td>
-                            </tr>
-                        }
-                        </tbody>
-                    </table>
-                </div>
+        
+        <div class="action-bar">
+            <AuthorizeView Roles="Administrator">
+                <Authorized>
+                    <button class="btn btn-primary" @onclick="ShowCreationForm">Nuovo Dipendente</button>
+                </Authorized>
+            </AuthorizeView>
+            
+            <AuthorizeView Roles="Employee">
+                <Authorized>
+                    <button class="btn btn-primary" @onclick="ShowCreationForm">Nuovo Utente</button>
+                </Authorized>
+            </AuthorizeView>
+        </div>
+        
+        @if (accounts == null || accounts.Count == 0)
+        {
+            <div class="error-container">
+                <p>Nessun Account presente.</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"/>
+                </svg>
             </div>
-        </div>
-    }
+        }
+        else
+        {
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Azioni</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    @foreach (var account in accounts)
+                    {
+                        <tr>
+                            <td><span class="user-name">@account.UserName</span></td>
+                            <td>@account.Email</td>
+                            <td>
+                                <div style="display: flex; gap: 8px;">
+                                    <button class="btn btn-delete" @onclick="() => DeleteAccount(account)" title="Elimina">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-trash" viewBox="0 0 24 24">
+                                            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z" transform="scale(1.5)"/>
+                                            <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z" transform="scale(1.5)"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                    </tbody>
+                </table>
+            </div>
+        }
+    </div>
+</div>
 
 @if (showEditDialog)
 {
     <div class="dialog-overlay" @onclick="CloseEditDialog">
         <div class="edit-dialog" @onclick:stopPropagation="true">
-            <h2>Nuovo Amministratore</h2>
+            <AuthorizeView Roles="Administrator">
+                <Authorized>
+                    <h2>Nuovo Impiegato</h2>
+                </Authorized>
+            </AuthorizeView>
+            <AuthorizeView Roles="Employee">
+                <Authorized>
+                    <h2>Nuovo Utente</h2>
+                </Authorized>
+            </AuthorizeView>
 
             @if (!string.IsNullOrEmpty(errorMessage))
             {
@@ -74,7 +104,7 @@
                 </div>
             }
 
-            <EditForm Model="registerModel" OnValidSubmit="SalvaAdmin">
+            <EditForm Model="registerModel" OnValidSubmit="SalvaAccount">
                 <DataAnnotationsValidator />
 
                 <div class="form-group">
@@ -132,17 +162,34 @@
     private string errorMessage;
     private bool showDeleteDialog;
     private List<UserAccount> accounts = new();
-    private RegisterAdminViewModel registerModel = new ();
+    private RegisterAdminViewModel registerModel = new();
     private UserAccount accountToDelete;
+    private string currentRole;
+
+    [CascadingParameter]
+    private Task<AuthenticationState> AuthStateTask { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
+        var authState = await AuthStateTask;
+        var user = authState.User;
+        
+        if (user.IsInRole("Administrator"))
+        {
+            currentRole = "Employee";
+        }
+        else if (user.IsInRole("Employee"))
+        {
+            currentRole = "User";
+        }
+        
         await LoadUsers();
     }
 
     private async Task LoadUsers()
     {
-        accounts = await DbContext.UserAccounts.Where(u => u.Role == "Administrator").ToListAsync();
+        // Carica gli account in base al ruolo dell'utente corrente
+        accounts = await DbContext.UserAccounts.Where(u => u.Role == currentRole).ToListAsync();
     }
     
     private void ShowCreationForm()
@@ -158,7 +205,7 @@
         errorMessage = null;
     }
     
-    private async Task SalvaAdmin()
+    private async Task SalvaAccount()
     {
         errorMessage = null;
         
@@ -173,15 +220,15 @@
                 return;
             }
             
-            var nuovoAdmin = new UserAccount
+            var nuovoAccount = new UserAccount
             {
                 UserName = registerModel.UserName,
                 Email = registerModel.Email,
                 Password = registerModel.Password,
-                Role = "Administrator"
+                Role = currentRole
             };
             
-            DbContext.UserAccounts.Add(nuovoAdmin);
+            DbContext.UserAccounts.Add(nuovoAccount);
             await DbContext.SaveChangesAsync();
             await LoadUsers();
             showEditDialog = false;

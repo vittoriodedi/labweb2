@@ -1,7 +1,7 @@
 ﻿@page "/admin/manage-projections"
 @inject CinemaDbContext DbContext
 @rendermode InteractiveServer
-@attribute [Authorize(Roles = "Administrator")]
+@attribute [Authorize(Roles = "Administrator, Employee")]
 
 <PageTitle>Gestione Proiezioni - CinemaNova Admin</PageTitle>
 <div class="layout-wrapper">

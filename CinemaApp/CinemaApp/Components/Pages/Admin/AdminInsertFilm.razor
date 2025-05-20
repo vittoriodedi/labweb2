@@ -4,21 +4,26 @@
 @inject IConfiguration Configuration
 @inject NavigationManager Navigation
 @rendermode InteractiveServer
-@attribute [Authorize(Roles = "Administrator")]
+@attribute [Authorize(Roles = "Administrator, Employee")]
 
 <PageTitle>Gestione Films</PageTitle>
 
 <div class="layout-wrapper">
     <div class="content">
 
-        <div class="search-container">
-            <h1>Cerca Film</h1>
-            <div class="search-bar">
-                <input type="text" @bind="filmTitle" placeholder="Titolo del film" />
-                <button @onclick="SearchMovie">Cerca</button>
-            </div>
+        <div class="search-bar">
+            @* Uso di bind-value e bind-value:event per rendere più responsivo l'input *@
+            <input type="text" 
+                   @bind-value="filmTitle" 
+                   @bind-value:event="oninput" 
+                   @onkeydown="HandleKeyDown" 
+                   placeholder="Titolo del film" 
+                   class="search-input" />
+    
+            <button @onclick="SearchMovie" class="search-button">
+                <i class="oi oi-magnifying-glass"></i> Cerca
+            </button>
         </div>
-
         @if (movies?.Any() == true)
         {
             <p>Risultati trovati per <strong>@savedTitle</strong>:</p>
@@ -240,6 +245,16 @@
             await DbContext.SaveChangesAsync();
             editDialogVisible = false;
             Navigation.NavigateTo("/admin/manage-films");
+        }
+    }
+    
+    private async Task HandleKeyDown(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter" && !string.IsNullOrWhiteSpace(filmTitle))
+        {
+            await SearchMovie();
+            await Task.Delay(100);
+            StateHasChanged();
         }
     }
     

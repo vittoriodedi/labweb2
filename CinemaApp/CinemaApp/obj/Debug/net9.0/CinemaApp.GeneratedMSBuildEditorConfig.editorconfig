@@ -55,6 +55,10 @@ build_metadata.AdditionalFiles.CssScope = b-bzwoa0zsix
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9BZG1pbi9BZG1pbk1hbmFnZUFjY291bnRzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-ebyd3y61hz
 
+[/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/Components/Pages/Admin/AdminManageAccounts1.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9BZG1pbi9BZG1pbk1hbmFnZUFjY291bnRzMS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-j83p81cs0g
+
 [/Users/vittoriodedi/Documents/GitHub/labweb2/CinemaApp/CinemaApp/Components/Pages/Admin/AdminManageFilms.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9BZG1pbi9BZG1pbk1hbmFnZUZpbG1zLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-dwhmbly1rr

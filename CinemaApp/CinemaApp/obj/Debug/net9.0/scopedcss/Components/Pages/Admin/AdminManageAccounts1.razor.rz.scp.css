@@ -1,0 +1,307 @@
+html[b-j83p81cs0g], body[b-j83p81cs0g] {
+    height: 100%;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+.error-container[b-j83p81cs0g] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.layout-wrapper[b-j83p81cs0g] {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container[b-j83p81cs0g] {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.content[b-j83p81cs0g] {
+    flex: 1;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.header[b-j83p81cs0g] {
+    margin-bottom: 2rem;
+}
+
+.header h1[b-j83p81cs0g] {
+    font-weight: 600;
+    font-size: 1.75rem;
+    color: #111;
+    margin-bottom: 0.5rem;
+}
+
+.header p[b-j83p81cs0g] {
+    font-weight: 400;
+    color: #555;
+}
+
+.action-bar[b-j83p81cs0g] {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 25px;
+}
+
+.btn-primary[b-j83p81cs0g] {
+    background-color: #212529;
+    color: white;
+    border: none;
+    box-shadow: 0 4px 12px rgba(33, 37, 41, 0.15);
+}
+
+.btn-primary:hover[b-j83p81cs0g] {
+    background-color: #343a40;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(33, 37, 41, 0.2);
+}
+
+.table-wrapper[b-j83p81cs0g] {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+table[b-j83p81cs0g] {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+thead[b-j83p81cs0g] {
+    background-color: #f3f3f3;
+    position: sticky;
+    top: 0;
+}
+
+th[b-j83p81cs0g] {
+    padding: 1rem 1.5rem;
+    font-weight: 600;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+}
+
+tbody tr[b-j83p81cs0g] {
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.2s;
+}
+
+tbody tr:hover[b-j83p81cs0g] {
+    background-color: #f9f9f9;
+}
+
+td[b-j83p81cs0g] {
+    padding: 1rem 1.5rem;
+    color: #444;
+}
+
+.user-name[b-j83p81cs0g] {
+    font-weight: 500;
+    color: #222;
+}
+
+.badge[b-j83p81cs0g] {
+    display: inline-block;
+    padding: 0.2rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.badge-admin[b-j83p81cs0g] {
+    background-color: #000;
+    color: #fff;
+}
+
+.btn[b-j83p81cs0g] {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
+}
+
+.btn-delete[b-j83p81cs0g] {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    margin-right: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background-color: rgba(250, 82, 82, 0.05);
+    color: #dc3545;
+}
+
+.btn-delete:hover[b-j83p81cs0g] {
+    background-color: rgba(250, 82, 82, 0.1);
+    color: #e03131;
+}
+
+.btn-edit svg[b-j83p81cs0g], .btn-delete svg[b-j83p81cs0g], .btn-deactivate svg[b-j83p81cs0g], .btn-activate svg[b-j83p81cs0g] {
+    width: 24px !important;
+    height: 24px !important;
+}
+.dialog-overlay[b-j83p81cs0g] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.edit-dialog[b-j83p81cs0g] {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 600px;
+    max-width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.edit-dialog h2[b-j83p81cs0g] {
+    font-weight: 600;
+    font-size: 1.75rem;
+    color: #111;
+    margin-bottom: 1.5rem;
+}
+
+.form-group[b-j83p81cs0g] {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label[b-j83p81cs0g] {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.form-control[b-j83p81cs0g] {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    color: #444;
+    transition: border-color 0.2s;
+}
+
+.form-control:focus[b-j83p81cs0g] {
+    border-color: #aaa;
+    outline: none;
+}
+
+.button-group[b-j83p81cs0g] {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 2rem;
+}
+
+.alert[b-j83p81cs0g] {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+.alert-danger[b-j83p81cs0g] {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.btn[b-j83p81cs0g] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: none;
+}
+
+.btn-primary[b-j83p81cs0g] {
+    background-color: #212529;
+    color: white;
+    border: none;
+    box-shadow: 0 4px 12px rgba(33, 37, 41, 0.15);
+}
+
+.btn-primary:hover[b-j83p81cs0g] {
+    background-color: #343a40;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(33, 37, 41, 0.2);
+}
+
+.btn-secondary[b-j83p81cs0g] {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    color: #555;
+}
+
+.btn-secondary:hover[b-j83p81cs0g] {
+    background-color: #f3f3f3;
+    border-color: #ccc;
+}
+
+.edit-dialog .btn-delete[b-j83p81cs0g] {
+    width: auto;
+    height: auto;
+    background-color: #dc3545;
+    color: white;
+    padding: 0.5rem 1rem;
+}
+
+.edit-dialog .btn-delete:hover[b-j83p81cs0g] {
+    background-color: #c82333;
+    color: white;
+}
+
+.edit-dialog .button-group[b-j83p81cs0g] {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 2rem;
+}
+
+.edit-dialog .button-group .btn[b-j83p81cs0g] {
+    min-width: 100px;
+}
