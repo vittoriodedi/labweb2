@@ -52,11 +52,7 @@ else
                             <div class="meta-label">Durata</div>
                             <div class="meta-value">@film.DurataMinuti minuti</div>
                         </div>
-
-                        <div class="meta-item">
-                            <div class="meta-label">Per adulti</div>
-                            <div class="meta-value">@(film.Adulti ? "Si" : "No")</div>
-                        </div>
+                        
                         <div class="meta-item">
                             <div class="meta-label">Valutazione</div>
                             <MudRating ReadOnly="true" SelectedValue="@film.Valutazione"/>

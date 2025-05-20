@@ -21,7 +21,7 @@ namespace CinemaApp.Models.Entities
         [Required]
         public string LocandinaUrl { get; set; }
         [Required]
-        public bool Adulti { get; set; }
+        public bool Attivo { get; set; }
         [Required]
         [Range(1, 5)]
         public int Valutazione { get; set; }

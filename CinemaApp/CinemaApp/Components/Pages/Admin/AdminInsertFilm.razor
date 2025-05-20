@@ -12,7 +12,6 @@
     <div class="content">
 
         <div class="search-bar">
-            @* Uso di bind-value e bind-value:event per rendere più responsivo l'input *@
             <input type="text" 
                    @bind-value="filmTitle" 
                    @bind-value:event="oninput" 
@@ -20,9 +19,7 @@
                    placeholder="Titolo del film" 
                    class="search-input" />
     
-            <button @onclick="SearchMovie" class="search-button">
-                <i class="oi oi-magnifying-glass"></i> Cerca
-            </button>
+            <button @onclick="SearchMovie" class="btn-confirm"> Cerca </button>
         </div>
         @if (movies?.Any() == true)
         {
@@ -54,9 +51,7 @@
                             </div>
 
                             <div class="card-footer">
-                                <button class="btn btn-primary" @onclick="() => OpenEditDialog(movie)">
-                                    <span class="oi oi-plus me-1"></span> Aggiungi al catalogo
-                                </button>
+                                <button class="btn-confirm" @onclick="() => OpenEditDialog(movie)"> Aggiungi al catalogo </button>
                             </div>
                         </div>
                     </div>
@@ -113,8 +108,8 @@
             </div>
 
             <div class="form-group">
-                <label for="adulti">Contenuto per Adulti:</label>
-                <input type="checkbox" id="adulti" @bind="filmToEdit.Adulti" />
+                <label for="Attivo">Attivo:</label>
+                <input type="checkbox" id="Attivo" @bind="filmToEdit.Attivo" />
             </div>
 
             <div class="form-group">
@@ -123,12 +118,13 @@
             </div>
 
             <div class="button-group">
-                <button class="btn btn-primary" @onclick="SaveChanges">Salva</button>
-                <button class="btn btn-secondary" @onclick="CancelEdit">Annulla</button>
+                <button class="btn-cancel" @onclick="CancelEdit">Annulla</button>
+                <button class="btn-confirm" @onclick="SaveChanges">Salva</button>
             </div>
         </div>
     </div>
 }
+
 
 @code {
     private bool editDialogVisible;
@@ -159,26 +155,6 @@
         { 10752, "Guerra" },
         { 37, "Western" }
     };
-    
-    public class RootResponse
-    {
-        public List<Movie> results { get; set; }
-    }
-    
-    public class Movie
-    {
-        public bool adult { get; set; }
-        public string original_title { get; set; }
-        public string original_language { get; set; }
-        public string poster_path { get; set; }
-        public string release_date { get; set; }
-        public int[] genre_ids { get; set; }
-        public string overview { get; set; }
-        public string title { get; set; }
-        public double vote_average { get; set; }
-
-    }
-    
     private Film ConvertMovieToFilm(Movie selectedMovie)
     {
         string generi = "";
@@ -187,7 +163,7 @@
             var genreNames = selectedMovie.genre_ids
                 .Where(id => GenreMap.ContainsKey(id))
                 .Select(id => GenreMap[id])
-                .Take(3);
+                .Take(2);
     
             generi = string.Join(", ", genreNames);
         }
@@ -207,13 +183,32 @@
                 ? DateOnly.FromDateTime(DateTime.Parse(selectedMovie.release_date)) 
                 : DateOnly.FromDateTime(DateTime.Now),
             LocandinaUrl = selectedMovie.poster_path,
-            Adulti = selectedMovie.adult,
+            Attivo = true,
             Genere = generi,
             Regista = "", 
             DurataMinuti = 0,
             Trama = selectedMovie.overview ?? "",
             Valutazione = valutazione
         };
+    }
+    
+    public class RootResponse
+    {
+        public List<Movie> results { get; set; }
+    }
+    
+    public class Movie
+    {
+        public bool adult { get; set; }
+        public string original_title { get; set; }
+        public string original_language { get; set; }
+        public string poster_path { get; set; }
+        public string release_date { get; set; }
+        public int[] genre_ids { get; set; }
+        public string overview { get; set; }
+        public string title { get; set; }
+        public double vote_average { get; set; }
+
     }
     
     private async Task SearchMovie()

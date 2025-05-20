@@ -11,65 +11,71 @@
             <p>Crea e gestisci le proiezioni dei film nelle sale</p>
         </div>
         <div class="action-bar">
-            <button class="btn btn-primary" @onclick="ShowCreationForm">Nuova Proiezione</button>
+            <button class="btn-confirm" @onclick="ShowCreationForm">Nuova Proiezione</button>
         </div>
         <div class="table-wrapper @(proiezioni == null || !proiezioni.Any() ? "no-shadow" : "")">
             @if (proiezioni != null && proiezioni.Any())
             {
                 <table>
                     <thead>
-                        <tr>
-                            <th>Film</th>
-                            <th>Sala</th>
-                            <th>Data e Ora</th>
-                            <th>Prezzo Base</th>
-                            <th>Biglietti Venduti</th>
-                            <th>Stato</th>
-                            <th>Azioni</th>
-                        </tr>
+                    <tr>
+                        <th class="first-th">Film</th>
+                        <th>Sala</th>
+                        <th>Data e Ora</th>
+                        <th>Prezzo Base</th>
+                        <th>Biglietti Venduti</th>
+                        <th>Stato</th>
+                        <th>Azioni</th>
+                    </tr>
                     </thead>
                     <tbody>
                     @foreach (var proiezione in proiezioni.OrderBy(p => p.DataOra))
                     {
                         <tr>
-                            <td>@proiezione.Film.Titolo</td>
+                            <td class="first-td">@proiezione.Film.Titolo</td>
                             <td>@proiezione.Sala.Nome</td>
                             <td>@proiezione.DataOra.ToString("dd/MM/yyyy HH:mm")</td>
                             <td>€@proiezione.PrezzoBase</td>
                             <td>@proiezione.Biglietti.Count / @proiezione.Sala.CapacitaPosti</td>
-                            <td>
-                                @if (proiezione.Attiva)
+                            <td> @if (proiezione.Attiva)
                                 {
-                                    <span class="badge badge-active">Attiva</span>
+                                    <span class="badge-active">Attiva</span>
                                 }
                                 else
                                 {
-                                    <span class="badge badge-inactive">Disattivata</span>
-                                }
-                            </td>
+                                    <span class="badge-inactive">Disattivata</span>
+                                } </td>
                             <td>
                                 <div style="display: flex; gap: 8px;">
-                                    <button class="btn btn-edit" @onclick="() => ModifyProjection(proiezione.Id)" title="Modifica">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 24 24">
-                                            <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" transform="scale(1.5)"/>
-                                            <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z" transform="scale(1.5)"/>
-                                        </svg>
-                                    </button>
-                                    <button class="btn @(proiezione.Attiva ? "btn-deactivate" : "btn-activate")"
+                                    <button class="@(proiezione.Attiva ? "btn-deactivate" : "btn-activate")"
                                             @onclick="() => ToggleProjectionState(proiezione)"
                                             title="@(proiezione.Attiva ? "Disattiva" : "Attiva")">
                                         @if (proiezione.Attiva)
                                         {
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-toggle-on" viewBox="0 0 16 16">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-toggle-on" viewBox="0 0 16 16">
                                                 <path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8"/>
                                             </svg>
                                         }
                                         else
                                         {
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-toggle-off" viewBox="0 0 16 16">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-toggle-off" viewBox="0 0 16 16">
                                                 <path d="M11 4a4 4 0 0 1 0 8H8a5 5 0 0 0 2-4 5 5 0 0 0-2-4zm-6 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8M0 8a5 5 0 0 0 5 5h6a5 5 0 0 0 0-10H5a5 5 0 0 0-5 5"/>
                                             </svg>
                                         }
+                                    </button>
+
+                                    <button class="btn-edit" @onclick="() => ModifyProjection(proiezione.Id)" title="Modifica">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                            <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                                            <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+                                        </svg>
+                                    </button>
+
+                                    <button class="btn-delete" @onclick="() => DeleteProjection(proiezione)" title="Elimina">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                            <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                                        </svg>
                                     </button>
                                 </div>
                             </td>
@@ -148,22 +154,40 @@
                 </div>
 
                 <div class="button-group">
-                    <button class="btn btn-secondary" @onclick="CloseDialog">Annulla</button>
-                    <button class="btn btn-primary" @onclick="SaveProjections">Salva</button>
+                    <button class="btn-cancel" @onclick="CloseDialog">Annulla</button>
+                    <button class="btn-confirm" @onclick="SaveProjections">Salva</button>
                 </div>
             </div>
         </div>
     }
 
+@if (showDeleteDialog)
+{
+    <div class="dialog-overlay" @onclick="CloseDeleteDialog">
+        <div class="edit-dialog" @onclick:stopPropagation="true">
+            <h2>Conferma Eliminazione</h2>
+
+            <p>Sei sicuro di voler eliminare questa proiezione?</p>
+            <p>Questa azione non può essere annullata.</p>
+
+            <div class="button-group">
+                <button class="btn-cancel" @onclick="CloseDeleteDialog">Annulla</button>
+                <button class="btn-delete" @onclick="ConfirmDelete">Elimina</button>
+            </div>
+        </div>
+    </div>
+}
+
 @code {
     private bool showInsertDialog;
+    private bool showDeleteDialog;
     private string errorMessage;
-    private dynamic elementToDelete; 
+    private dynamic elementToDelete;
     private List<Sala>? sale;
     private List<Film>? films;
     private List<Proiezione>? proiezioni;
+    private Proiezione proiezioneDaEliminare;
 
-    
     private Proiezione proiezioneSelezionata = new Proiezione {
         DataOra = DateTime.Now.AddHours(1).Date.AddHours(20),
         PrezzoBase = 9.00m,
@@ -230,7 +254,7 @@
         showInsertDialog = false;
         errorMessage = null;
     }
-    
+
     private async Task ToggleProjectionState(Proiezione proiezione)
     {
         try
@@ -265,7 +289,7 @@
 
             if (proiezioneSelezionata.DataOra < DateTime.Now)
             {
-                errorMessage = "Non è possibile creare proiezioni nel passato";
+                errorMessage = "Non è possibile creare o aggiornare proiezioni nel passato";
                 return;
             }
 
@@ -321,5 +345,28 @@
         {
             errorMessage = $"Errore nel salvataggio della proiezione: {ex.Message}";
         }
+    }
+
+    private void DeleteProjection(Proiezione proiezione)
+    {
+        proiezioneDaEliminare = proiezione;
+        showDeleteDialog = true;
+    }
+
+    private void CloseDeleteDialog()
+    {
+        showDeleteDialog = false;
+        proiezioneDaEliminare = null;
+    }
+
+    private async Task ConfirmDelete()
+    {
+        if (proiezioneDaEliminare != null)
+        {
+            DbContext.Proiezioni.Remove(proiezioneDaEliminare);
+            await DbContext.SaveChangesAsync();
+            await LoadData();
+        }
+        CloseDeleteDialog();
     }
 }

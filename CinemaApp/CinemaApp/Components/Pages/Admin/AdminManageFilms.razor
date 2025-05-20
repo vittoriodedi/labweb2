@@ -5,68 +5,86 @@
 @attribute [Authorize(Roles = "Administrator, Employee")]
 
 <PageTitle>Gestisci Account - CinemaNova</PageTitle>
+<div class="layout-wrapper">
+    <div class="container content">
+        <div class="header">
+            <h1>Gestione Film</h1>
+            <p>Visualizza e gestisci tutti i film presenti nel database</p>
+        </div>
+                        
+        <div class="action-bar">
+            <button class="btn-confirm" @onclick="() => GoToCreateFilm()">
+                Nuovo Film
+            </button>
+        </div>
 
-@if (films == null || films.Count == 0)
-{
-    <div class="error-container">
-        <p>Nessun Film presente.</p>
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
-            <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"/>
-        </svg>
-    </div>    
-}
-else
-{
-    <div class="layout-wrapper">
-        <div class="container content">
-            <div class="header">
-                <h1>Gestione Film</h1>
-                <p>Visualizza e gestisci tutti i film presenti nel database</p>
-            </div>
-            
-            <div class="action-bar">
-                <button class="btn btn-primary" @onclick="() => GoToCreateFilm()">
-                    Nuovo Film
-                </button>
-            </div>
-
-            <div class="table-wrapper">
+        <div class="table-wrapper @(films == null || !films.Any() ? "no-shadow" : "")">
+            @if (films != null && films.Any())
+            {
                 <table>
                     <thead>
-                        <tr>
-                            <th>Titolo</th>
-                            <th>Data di Uscita</th>
-                            <th>Genere</th>
-                            <th>Regista</th>
-                            <th>Durata</th>
-                            <th>Adulti</th>
-                            <th>Valutazione</th>
-                            <th>Azioni</th>
-                        </tr>
+                    <tr>
+                        <th class="first-th">Titolo</th>
+                        <th>Uscita</th>
+                        <th>Genere</th>
+                        <th>Regista</th>
+                        <th>Durata</th>
+                        <th>Stato</th>
+                        <th>Valutazione</th>
+                        <th>Azioni</th>
+                    </tr>
                     </thead>
                     <tbody>
                     @foreach (var film in films)
                     {
                         <tr>
-                            <td><span class="user-name">@film.Titolo</span></td>
+                            <td class="first-td"><span class="film-title">@film.Titolo</span></td>
                             <td>@film.DataUscita</td>
-                            <td><span class="badge badge-admin">@film.Genere</span></td>
+                            <td><span class="badge-genre">@film.Genere</span></td>
                             <td>@film.Regista</td>
                             <td>@film.DurataMinuti min</td>
-                            <td>@(film.Adulti ? "Si" : "No")</td>
+                            <td>
+                                @if (film.Attivo)
+                                {
+                                    <span class="badge-active">Attivo</span>
+                                }
+                                else
+                                {
+                                    <span class="badge-inactive">Disattivato</span>
+                                }
+                            </td>
                             <td><MudRating ReadOnly="true" SelectedValue="@film.Valutazione"/></td>
                             <td>
                                 <div style="display: flex; gap: 8px;">
-                                    <button class="btn btn-edit" @onclick="() => ModifyFilm(film)" title="Modifica">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 24 24">
-                                            <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" transform="scale(1.5)"/>
-                                            <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z" transform="scale(1.5)"/>
+
+                                    <button class="@(film.Attivo ? "btn-deactivate" : "btn-activate")"
+                                            @onclick="() => ToggleFilmState(film)"
+                                            title="@(film.Attivo ? "Disattiva" : "Attiva")">
+                                        @if (film.Attivo)
+                                        {
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-toggle-on" viewBox="0 0 16 16">
+                                                <path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8"/>
+                                            </svg>
+                                        }
+                                        else
+                                        {
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-toggle-off" viewBox="0 0 16 16">
+                                                <path d="M11 4a4 4 0 0 1 0 8H8a5 5 0 0 0 2-4 5 5 0 0 0-2-4zm-6 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8M0 8a5 5 0 0 0 5 5h6a5 5 0 0 0 0-10H5a5 5 0 0 0-5 5"/>
+                                            </svg>
+                                        }
+                                    </button>
+
+                                    <button class="btn-edit" @onclick="() => ModifyFilm(film)" title="Modifica">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                            <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                                            <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
                                         </svg>
                                     </button>
-                                    <button class="btn btn-delete" @onclick="() => DeleteFilm(film)" title="Elimina">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-trash" viewBox="0 0 24 24">
-                                            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z" transform="scale(1.5)"/>
-                                            <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z" transform="scale(1.5)"/>
+
+                                    <button class="btn-delete" @onclick="() => DeleteFilm(film)" title="Elimina">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                            <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
                                         </svg>
                                     </button>
                                 </div>
@@ -75,10 +93,19 @@ else
                     }
                     </tbody>
                 </table>
-            </div>
+            }
+            else
+            {
+                <div class="error-container">
+                    <p>Nessun Film presente.</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                        <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"/>
+                    </svg>
+                </div>    
+            }
         </div>
     </div>
-}
+</div>
 
 @if (showEditDialog && filmToEdit != null)
 {
@@ -122,8 +149,8 @@ else
             </div>
             
             <div class="form-group">
-                <label for="adulti">Contenuto per Adulti:</label>
-                <input type="checkbox" id="adulti" @bind="filmToEdit.Adulti" />
+                <label for="Attivo">Attivo:</label>
+                <input type="checkbox" id="Attivo" @bind="filmToEdit.Attivo" />
             </div>
             
             <div class="form-group">
@@ -132,8 +159,8 @@ else
             </div>
             
             <div class="button-group">
-                <button class="btn btn-primary" @onclick="SaveChanges">Salva</button>
-                <button class="btn btn-secondary" @onclick="CancelEdit">Annulla</button>
+                <button class="btn-cancel" @onclick="CancelEdit">Annulla</button>
+                <button class="btn-confirm" @onclick="SaveChanges">Salva</button>
             </div>
         </div>
     </div>
@@ -149,16 +176,16 @@ else
             <p>Questa azione non può essere annullata.</p>
 
             <div class="button-group">
-                <button class="btn btn-secondary" @onclick="CloseDeleteDialog">Annulla</button>
-                <button class="btn btn-delete" @onclick="ConfirmDelete">Elimina</button>
+                <button class="btn-cancel" @onclick="CloseDeleteDialog">Annulla</button>
+                <button class="btn-delete" @onclick="ConfirmDelete">Elimina</button>
             </div>
         </div>
     </div>
 }
 
 @code {
-    private List<Film> films = new();
-    
+    private List<Film>? films = new();
+
     private Film filmToEdit;
     private Film filmToDelete;
     private bool showEditDialog;
@@ -173,19 +200,19 @@ else
     {
         films = await DbContext.Films.ToListAsync();
     }
-    
+
     private void GoToCreateFilm()
     {
         Navigation.NavigateTo($"/admin/manage-films/insert-film");
     }
-    
+
     private async Task ModifyFilm(Film film)
     {
         filmToEdit = film;
         showEditDialog = true;
         StateHasChanged();
     }
-    
+
     private async Task SaveChanges()
     {
         if (filmToEdit != null)
@@ -196,7 +223,7 @@ else
             showEditDialog = false;
         }
     }
-    
+
     private void CancelEdit()
     {
         showEditDialog = false;
@@ -222,7 +249,21 @@ else
             await DbContext.SaveChangesAsync();
             await LoadFilms();
         }
+
         CloseDeleteDialog();
     }
-    
+
+    private async Task ToggleFilmState(Film film)
+    {
+        try
+        {
+            film.Attivo = !film.Attivo;
+            await DbContext.SaveChangesAsync();
+            await LoadFilms();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error toggling film state: {ex.Message}");
+        }
+    }
 }

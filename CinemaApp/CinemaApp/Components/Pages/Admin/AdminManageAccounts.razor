@@ -26,13 +26,13 @@
         <div class="action-bar">
             <AuthorizeView Roles="Administrator">
                 <Authorized>
-                    <button class="btn btn-primary" @onclick="ShowCreationForm">Nuovo Dipendente</button>
+                    <button class="btn-confirm" @onclick="ShowCreationForm">Nuovo Dipendente</button>
                 </Authorized>
             </AuthorizeView>
             
             <AuthorizeView Roles="Employee">
                 <Authorized>
-                    <button class="btn btn-primary" @onclick="ShowCreationForm">Nuovo Utente</button>
+                    <button class="btn-confirm" @onclick="ShowCreationForm">Nuovo Utente</button>
                 </Authorized>
             </AuthorizeView>
         </div>
@@ -52,7 +52,7 @@
                 <table>
                     <thead>
                     <tr>
-                        <th>Username</th>
+                        <th class="first-th">Username</th>
                         <th>Email</th>
                         <th>Azioni</th>
                     </tr>
@@ -61,14 +61,14 @@
                     @foreach (var account in accounts)
                     {
                         <tr>
-                            <td><span class="user-name">@account.UserName</span></td>
+                            <td class="first-td">@account.UserName</td>
                             <td>@account.Email</td>
                             <td>
                                 <div style="display: flex; gap: 8px;">
-                                    <button class="btn btn-delete" @onclick="() => DeleteAccount(account)" title="Elimina">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-trash" viewBox="0 0 24 24">
-                                            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z" transform="scale(1.5)"/>
-                                            <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z" transform="scale(1.5)"/>
+                                    <button class="btn-delete" @onclick="() => DeleteAccount(account)" title="Elimina">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                            <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
                                         </svg>
                                     </button>
                                 </div>
@@ -132,8 +132,8 @@
                 </div>
 
                 <div class="button-group">
-                    <button type="button" class="btn btn-secondary" @onclick="CloseEditDialog">Annulla</button>
-                    <button type="submit" class="btn btn-primary">Salva</button>
+                    <button type="button" class="btn-cancel" @onclick="CloseEditDialog">Annulla</button>
+                    <button type="submit" class="btn-confirm">Salva</button>
                 </div>
             </EditForm>
         </div>
@@ -150,8 +150,8 @@
             <p>Questa azione non può essere annullata.</p>
             
             <div class="button-group">
-                <button class="btn btn-secondary" @onclick="CloseDeleteDialog">Annulla</button>
-                <button class="btn btn-delete" @onclick="ConfirmDelete">Elimina</button>
+                <button class="btn-cancel" @onclick="CloseDeleteDialog">Annulla</button>
+                <button class="btn-delete" @onclick="ConfirmDelete">Elimina</button>
             </div>
         </div>
     </div>
@@ -188,7 +188,6 @@
 
     private async Task LoadUsers()
     {
-        // Carica gli account in base al ruolo dell'utente corrente
         accounts = await DbContext.UserAccounts.Where(u => u.Role == currentRole).ToListAsync();
     }
     

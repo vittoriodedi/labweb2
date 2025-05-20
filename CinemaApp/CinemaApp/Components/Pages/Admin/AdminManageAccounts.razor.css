@@ -1,29 +1,22 @@
 html, body {
     height: 100%;
     margin: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
     background-color: #f8f8f8;
     color: #333;
     line-height: 1.6;
 }
 
-.error-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 90vh;
-}
-
 .layout-wrapper {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 70vh;
 }
 
 .container {
     max-width: 1300px;
     margin: 0 auto;
+    min-height: 90vh;
 }
 
 .content {
@@ -37,13 +30,15 @@ html, body {
 }
 
 .header h1 {
-    font-weight: 600;
     font-size: 1.75rem;
+    font-weight: 600;
     color: #111;
     margin-bottom: 0.5rem;
+    letter-spacing: -0.5px;
 }
 
 .header p {
+    font-size: 1rem;
     font-weight: 400;
     color: #555;
 }
@@ -54,119 +49,6 @@ html, body {
     margin-bottom: 25px;
 }
 
-.btn-primary {
-    background-color: #212529;
-    color: white;
-    border: none;
-    box-shadow: 0 4px 12px rgba(33, 37, 41, 0.15);
-}
-
-.btn-primary:hover {
-    background-color: #343a40;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(33, 37, 41, 0.2);
-}
-
-.table-wrapper {
-    background-color: white;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    text-align: left;
-    font-size: 0.95rem;
-}
-
-thead {
-    background-color: #f3f3f3;
-    position: sticky;
-    top: 0;
-}
-
-th {
-    padding: 1rem 1.5rem;
-    font-weight: 600;
-    color: #333;
-    border-bottom: 1px solid #ddd;
-    text-transform: uppercase;
-    font-size: 0.75rem;
-    letter-spacing: 0.05em;
-}
-
-tbody tr {
-    border-bottom: 1px solid #eee;
-    transition: background-color 0.2s;
-}
-
-tbody tr:hover {
-    background-color: #f9f9f9;
-}
-
-td {
-    padding: 1rem 1.5rem;
-    color: #444;
-}
-
-.user-name {
-    font-weight: 500;
-    color: #222;
-}
-
-.badge {
-    display: inline-block;
-    padding: 0.2rem 0.75rem;
-    border-radius: 20px;
-    font-size: 0.75rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.03em;
-}
-
-.badge-admin {
-    background-color: #000;
-    color: #fff;
-}
-
-.btn {
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    font-family: 'Inter', sans-serif;
-    font-size: 0.85rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.2s;
-    border: none;
-}
-
-.btn-delete {
-    width: 40px;
-    height: 40px;
-    border-radius: 8px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.1rem;
-    margin-right: 8px;
-    border: none;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    background-color: rgba(250, 82, 82, 0.05);
-    color: #dc3545;
-}
-
-.btn-delete:hover {
-    background-color: rgba(250, 82, 82, 0.1);
-    color: #e03131;
-}
-
-.btn-edit svg, .btn-delete svg, .btn-deactivate svg, .btn-activate svg {
-    width: 24px !important;
-    height: 24px !important;
-}
 .dialog-overlay {
     position: fixed;
     top: 0;
@@ -180,22 +62,25 @@ td {
     z-index: 1000;
 }
 
-.edit-dialog {
-    background-color: white;
-    padding: 2rem;
-    border-radius: 8px;
-    width: 600px;
-    max-width: 90%;
-    max-height: 90vh;
-    overflow-y: auto;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+.alert {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
 }
 
-.edit-dialog h2 {
-    font-weight: 600;
-    font-size: 1.75rem;
-    color: #111;
-    margin-bottom: 1.5rem;
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.error-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
 }
 
 .form-group {
@@ -225,61 +110,22 @@ td {
     outline: none;
 }
 
-.button-group {
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;
-    margin-top: 2rem;
-}
-
-.alert {
-    padding: 0.75rem 1.25rem;
-    margin-bottom: 1rem;
-    border: 1px solid transparent;
-    border-radius: 0.25rem;
-}
-
-.alert-danger {
-    color: #721c24;
-    background-color: #f8d7da;
-    border-color: #f5c6cb;
-}
-
-.btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.5rem 1rem;
+.edit-dialog {
+    background-color: white;
+    padding: 2rem;
     border-radius: 8px;
-    font-size: 0.85rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    border: none;
+    width: 600px;
+    max-width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-.btn-primary {
-    background-color: #212529;
-    color: white;
-    border: none;
-    box-shadow: 0 4px 12px rgba(33, 37, 41, 0.15);
-}
-
-.btn-primary:hover {
-    background-color: #343a40;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(33, 37, 41, 0.2);
-}
-
-.btn-secondary {
-    background-color: transparent;
-    border: 1px solid #ddd;
-    color: #555;
-}
-
-.btn-secondary:hover {
-    background-color: #f3f3f3;
-    border-color: #ccc;
+.edit-dialog h2 {
+    font-weight: 600;
+    font-size: 1.75rem;
+    color: #111;
+    margin-bottom: 1.5rem;
 }
 
 .edit-dialog .btn-delete {
@@ -304,4 +150,141 @@ td {
 
 .edit-dialog .button-group .btn {
     min-width: 100px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 2rem;
+}
+
+.btn-confirm {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: 1px solid #ddd;
+    background-color: #212529;
+    color: white;
+    box-shadow: 0 4px 12px rgba(33, 37, 41, 0.15);
+}
+
+.btn-confirm:hover {
+    background-color: #343a40;
+    box-shadow: 0 6px 15px rgba(33, 37, 41, 0.2);
+}
+
+.btn-cancel {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background-color: transparent;
+    border: 1px solid #ddd;
+    color: #555;
+}
+
+.btn-cancel:hover {
+    background-color: #f3f3f3;
+    border-color: #ccc;
+}
+
+.no-shadow {
+    box-shadow: none;
+}
+
+.table-wrapper {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+thead {
+    background-color: #f3f3f3;
+    position: sticky;
+    top: 0;
+}
+
+th {
+    padding: 1rem 0.5rem;
+    font-weight: 600;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+}
+
+.first-th {
+    padding: 1rem 1.5rem;
+    color: #444;
+}
+
+tbody tr {
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.2s;
+}
+
+tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+td {
+    padding: 1rem 0.5rem;
+    color: #444;
+}
+
+.first-td {
+    padding: 1rem 1.5rem;
+    color: #444;
+}
+
+
+
+.btn-delete {
+    font-size: 14px;
+    font-weight: 500;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-right: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background-color: rgba(250, 82, 82, 0.05);
+    color: #dc3545;
+}
+
+.btn-delete:hover {
+    background-color: rgba(220, 53, 69, 0.1);
+    color: #c82333;
+}
+
+.btn-delete svg {
+    width: 10px !important;
+    height: 10px !important;
+    display: block;
 }
