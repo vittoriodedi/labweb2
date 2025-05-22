@@ -124,11 +124,6 @@
             .Where(u => u.UserName == userName)
             .Select(u => u.Email)
             .FirstOrDefaultAsync() ?? string.Empty;     
-        
-        proiezione = await DbContext.Proiezioni
-        .Include(p => p.Film)
-        .Include(p => p.Sala)
-        .FirstOrDefaultAsync(p => p.Id == ProiezioneId);
 
         proiezione = await DbContext.Proiezioni
             .Include(p => p.Film)

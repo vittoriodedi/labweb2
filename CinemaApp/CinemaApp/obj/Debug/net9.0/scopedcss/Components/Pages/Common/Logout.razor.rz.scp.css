@@ -1,10 +1,10 @@
-.login-container[b-lf7sxjtei8] {
+.login-container[b-m3jpyibyj7] {
     max-width: 1100px;
     margin: 40px auto;
     padding: 0;
 }
 
-.login-card[b-lf7sxjtei8] {
+.login-card[b-m3jpyibyj7] {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 16px rgba(62, 62, 62, 0.1);
@@ -17,25 +17,25 @@
     text-align: center;
 }
 
-.login-header[b-lf7sxjtei8] {
+.login-header[b-m3jpyibyj7] {
     text-align: center;
     margin-bottom: 30px;
 }
 
-.login-title[b-lf7sxjtei8] {
+.login-title[b-m3jpyibyj7] {
     color: #171717FF;
     font-size: 25px;
     font-weight: 700;
     margin-bottom: 8px;
 }
 
-.login-subtitle[b-lf7sxjtei8] {
+.login-subtitle[b-m3jpyibyj7] {
     color: #666;
     font-size: 0.8rem;
     margin-bottom: 25px;
 }
 
-.action-buttons[b-lf7sxjtei8] {
+.action-buttons[b-m3jpyibyj7] {
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -46,7 +46,7 @@
     margin-right: auto;
 }
 
-.btn-primary[b-lf7sxjtei8] {
+.btn-primary[b-m3jpyibyj7] {
     background-color: #171717FF;
     color: white;
     border: none;
@@ -63,13 +63,13 @@
     text-align: center;
 }
 
-.btn-primary:hover[b-lf7sxjtei8] {
+.btn-primary:hover[b-m3jpyibyj7] {
     background-color: #232323;
     transform: translateY(-1px);
     box-shadow: 0 3px 6px rgba(58, 58, 58, 0.35);
 }
 
-.btn-outline[b-lf7sxjtei8] {
+.btn-outline[b-m3jpyibyj7] {
     background-color: #f8f9fa;
     color: #444;
     border: 1px solid #ddd;
@@ -85,6 +85,6 @@
     text-align: center;
 }
 
-.btn-outline:hover[b-lf7sxjtei8] {
+.btn-outline:hover[b-m3jpyibyj7] {
     background-color: #e9ecef;
 }

@@ -3,13 +3,174 @@
   "ManifestType": "Build",
   "Endpoints": [
     {
+      "Route": "CinemaApp.incs26y0yr.styles.css",
+      "AssetFile": "CinemaApp.styles.css.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000108849461"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9186"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Vd794Yp75y2EhIV8Q8aRzTZ14oG73IstnHR5y0TlLaI=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"8paKG1ycq/aogEWj0z3hU6Ryw4RWMIB0YkIkf+gEdLQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 21:38:47 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "incs26y0yr"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8paKG1ycq/aogEWj0z3hU6Ryw4RWMIB0YkIkf+gEdLQ="
+        },
+        {
+          "Name": "label",
+          "Value": "CinemaApp.styles.css"
+        }
+      ]
+    },
+    {
+      "Route": "CinemaApp.incs26y0yr.styles.css",
+      "AssetFile": "CinemaApp.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "73375"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8paKG1ycq/aogEWj0z3hU6Ryw4RWMIB0YkIkf+gEdLQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 21:38:47 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "incs26y0yr"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8paKG1ycq/aogEWj0z3hU6Ryw4RWMIB0YkIkf+gEdLQ="
+        },
+        {
+          "Name": "label",
+          "Value": "CinemaApp.styles.css"
+        }
+      ]
+    },
+    {
+      "Route": "CinemaApp.incs26y0yr.styles.css.gz",
+      "AssetFile": "CinemaApp.styles.css.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9186"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Vd794Yp75y2EhIV8Q8aRzTZ14oG73IstnHR5y0TlLaI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 20 May 2025 21:38:47 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "incs26y0yr"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Vd794Yp75y2EhIV8Q8aRzTZ14oG73IstnHR5y0TlLaI="
+        },
+        {
+          "Name": "label",
+          "Value": "CinemaApp.styles.css.gz"
+        }
+      ]
+    },
+    {
       "Route": "CinemaApp.styles.css",
       "AssetFile": "CinemaApp.styles.css.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000108896875"
+          "Quality": "0.000108849461"
         }
       ],
       "ResponseHeaders": [
@@ -27,7 +188,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9182"
+          "Value": "9186"
         },
         {
           "Name": "Content-Type",
@@ -35,15 +196,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"RshMDuMBHeG26lUm2I8xPnb43fmG3lUP+3qHyGGmqDc=\""
+          "Value": "\"Vd794Yp75y2EhIV8Q8aRzTZ14oG73IstnHR5y0TlLaI=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"1gftutcBtACkNcT3VkqJacD4n1P9EZoHmB5RYdrNFaU=\""
+          "Value": "W/\"8paKG1ycq/aogEWj0z3hU6Ryw4RWMIB0YkIkf+gEdLQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 20 May 2025 19:51:02 GMT"
+          "Value": "Tue, 20 May 2025 21:38:47 GMT"
         },
         {
           "Name": "Vary",
@@ -53,7 +214,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-1gftutcBtACkNcT3VkqJacD4n1P9EZoHmB5RYdrNFaU="
+          "Value": "sha256-8paKG1ycq/aogEWj0z3hU6Ryw4RWMIB0YkIkf+gEdLQ="
         }
       ]
     },
@@ -72,7 +233,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "73365"
+          "Value": "73375"
         },
         {
           "Name": "Content-Type",
@@ -80,17 +241,17 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"1gftutcBtACkNcT3VkqJacD4n1P9EZoHmB5RYdrNFaU=\""
+          "Value": "\"8paKG1ycq/aogEWj0z3hU6Ryw4RWMIB0YkIkf+gEdLQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 20 May 2025 19:51:02 GMT"
+          "Value": "Tue, 20 May 2025 21:38:47 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-1gftutcBtACkNcT3VkqJacD4n1P9EZoHmB5RYdrNFaU="
+          "Value": "sha256-8paKG1ycq/aogEWj0z3hU6Ryw4RWMIB0YkIkf+gEdLQ="
         }
       ]
     },
@@ -113,7 +274,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9182"
+          "Value": "9186"
         },
         {
           "Name": "Content-Type",
@@ -121,11 +282,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"RshMDuMBHeG26lUm2I8xPnb43fmG3lUP+3qHyGGmqDc=\""
+          "Value": "\"Vd794Yp75y2EhIV8Q8aRzTZ14oG73IstnHR5y0TlLaI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 20 May 2025 19:51:02 GMT"
+          "Value": "Tue, 20 May 2025 21:38:47 GMT"
         },
         {
           "Name": "Vary",
@@ -135,168 +296,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-RshMDuMBHeG26lUm2I8xPnb43fmG3lUP+3qHyGGmqDc="
-        }
-      ]
-    },
-    {
-      "Route": "CinemaApp.u3iuhglkqz.styles.css",
-      "AssetFile": "CinemaApp.styles.css.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000108896875"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "9182"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"RshMDuMBHeG26lUm2I8xPnb43fmG3lUP+3qHyGGmqDc=\""
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"1gftutcBtACkNcT3VkqJacD4n1P9EZoHmB5RYdrNFaU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 20 May 2025 19:51:02 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "u3iuhglkqz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-1gftutcBtACkNcT3VkqJacD4n1P9EZoHmB5RYdrNFaU="
-        },
-        {
-          "Name": "label",
-          "Value": "CinemaApp.styles.css"
-        }
-      ]
-    },
-    {
-      "Route": "CinemaApp.u3iuhglkqz.styles.css",
-      "AssetFile": "CinemaApp.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "73365"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"1gftutcBtACkNcT3VkqJacD4n1P9EZoHmB5RYdrNFaU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 20 May 2025 19:51:02 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "u3iuhglkqz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-1gftutcBtACkNcT3VkqJacD4n1P9EZoHmB5RYdrNFaU="
-        },
-        {
-          "Name": "label",
-          "Value": "CinemaApp.styles.css"
-        }
-      ]
-    },
-    {
-      "Route": "CinemaApp.u3iuhglkqz.styles.css.gz",
-      "AssetFile": "CinemaApp.styles.css.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "9182"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"RshMDuMBHeG26lUm2I8xPnb43fmG3lUP+3qHyGGmqDc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 20 May 2025 19:51:02 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "u3iuhglkqz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-RshMDuMBHeG26lUm2I8xPnb43fmG3lUP+3qHyGGmqDc="
-        },
-        {
-          "Name": "label",
-          "Value": "CinemaApp.styles.css.gz"
+          "Value": "sha256-Vd794Yp75y2EhIV8Q8aRzTZ14oG73IstnHR5y0TlLaI="
         }
       ]
     },

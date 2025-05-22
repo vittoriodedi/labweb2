@@ -86,16 +86,16 @@
     {
         var today = DateTime.Now.DayOfWeek;
         var isCurrentDay = dayName.ToLower() switch
-        {
-            "lunedì" => today == DayOfWeek.Monday,
-            "martedì" => today == DayOfWeek.Tuesday,
-            "mercoledì" => today == DayOfWeek.Wednesday,
-            "giovedì" => today == DayOfWeek.Thursday,
-            "venerdì" => today == DayOfWeek.Friday,
-            "sabato" => today == DayOfWeek.Saturday,
-            "domenica" => today == DayOfWeek.Sunday,
-            _ => false
-        };
+            {
+                "lunedì" => today == DayOfWeek.Monday,
+                "martedì" => today == DayOfWeek.Tuesday,
+                "mercoledì" => today == DayOfWeek.Wednesday,
+                "giovedì" => today == DayOfWeek.Thursday,
+                "venerdì" => today == DayOfWeek.Friday,
+                "sabato" => today == DayOfWeek.Saturday,
+                "domenica" => today == DayOfWeek.Sunday,
+                _ => false
+            };
         return isCurrentDay ? "current-day" : "";
     }
 }
